@@ -27,3 +27,14 @@ Embed one of these in your README:
 | Available Cards | Example | Available Params | Preview |
 | --------------- | ------- | ---------------- | ------- |
 | `jokes-card` | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
+
+
+## How to contribute
+
+1. Fork this repository
+2. Add your card in cards directory, you can take the refrence from already added cards
+3. Add any data file inside data directory that your card will use
+4. Add route of your card in `index.js` file
+5. Add your api refrence inside in `help.js` file and also in README.md file
+6. Create pull request
+
