@@ -1,0 +1,2475 @@
+[
+    {
+        "index": 0,
+        "joke": "3 logicians walk into a bar. The bartender asks: Do all of you want a drink? The first logician says \"I don't know\". The second logician says \"I don't know\" the third logician says \"Yes!\"",
+        "type": "single"
+    },
+    {
+        "index": 1,
+        "joke": "There are only 10 types of people in the world: those that understand binary and those that don\u2019t.",
+        "type": "single"
+    },
+    {
+        "index": 2,
+        "joke": "Computers make very fast and very accurate mistakes.",
+        "type": "single"
+    },
+    {
+        "index": 3,
+        "joke": "Be nice to the nerds; for all you know they might be the next Bill Gates!",
+        "type": "single"
+    },
+    {
+        "index": 4,
+        "joke": "Artificial intelligence usually beats real stupidity.",
+        "type": "single"
+    },
+    {
+        "index": 5,
+        "joke": "To err is human \u2013 and to blame it on a computer is even more so.",
+        "type": "single"
+    },
+    {
+        "index": 6,
+        "joke": "CAPS LOCK \u2013 Preventing Login Since 1980.",
+        "type": "single"
+    },
+    {
+        "index": 7,
+        "joke": "The truth is out there. Anybody got the URL?",
+        "type": "single"
+    },
+    {
+        "index": 8,
+        "joke": "The Internet: where men are men women are men and children are FBI agents.",
+        "type": "single"
+    },
+    {
+        "index": 9,
+        "joke": "Some things Man was never meant to know. For everything else there\u2019s Google.",
+        "type": "single"
+    },
+    {
+        "index": 10,
+        "joke": "The box said \u2018Requires Windows Vista or better\u2019. So I installed LINUX.",
+        "type": "single"
+    },
+    {
+        "index": 11,
+        "joke": "UNIX is basically a simple operating system... but you have to be a genius to understand the simplicity.",
+        "type": "single"
+    },
+    {
+        "index": 12,
+        "joke": "In a world without fences and walls... who needs Gates and Windows?",
+        "type": "single"
+    },
+    {
+        "index": 13,
+        "joke": "C:\/\/dos  <br>C:\/\/dos.run  <br>run.dos.run",
+        "type": "single"
+    },
+    {
+        "index": 14,
+        "joke": "Bugs come in through open Windows.",
+        "type": "single"
+    },
+    {
+        "index": 15,
+        "joke": "Penguins love cold... they wont survive the sun.",
+        "type": "single"
+    },
+    {
+        "index": 16,
+        "joke": "Unix is user friendly. It\u2019s just selective about who its friends are.",
+        "type": "single"
+    },
+    {
+        "index": 17,
+        "joke": "Failure is not an option. It comes bundled with your Microsoft product.",
+        "type": "single"
+    },
+    {
+        "index": 18,
+        "joke": "NT is the only OS that has caused me to beat a piece of hardware to death with my bare hands.",
+        "type": "single"
+    },
+    {
+        "index": 19,
+        "joke": "My daily Unix command list: unzip; strip; touch; finger; mount; fsck; more; yes; unmount; sleep.",
+        "type": "single"
+    },
+    {
+        "index": 20,
+        "joke": "Microsoft: \u201cYou\u2019ve got questions. We\u2019ve got dancing paperclips.\u201d",
+        "type": "single"
+    },
+    {
+        "index": 21,
+        "joke": "Erik Naggum: \u201cMicrosoft is not the answer. Microsoft is the question. NO is the answer.\u201d",
+        "type": "single"
+    },
+    {
+        "index": 22,
+        "joke": "Windows isn\u2019t a virus atleast viruses do something.",
+        "type": "single"
+    },
+    {
+        "index": 23,
+        "joke": "Computers are like air conditioners: they stop working when you open Windows.",
+        "type": "single"
+    },
+    {
+        "index": 24,
+        "joke": "Mac users swear by their Mac and PC users swear at their PC.",
+        "type": "single"
+    },
+    {
+        "index": 25,
+        "joke": "If at first you don\u2019t succeed; call it version 1.0.",
+        "type": "single"
+    },
+    {
+        "index": 26,
+        "joke": "My software never has bugs. It just develops random features.",
+        "type": "single"
+    },
+    {
+        "index": 27,
+        "joke": "I would love to change the world but they won\u2019t give me the source code.",
+        "type": "single"
+    },
+    {
+        "index": 28,
+        "joke": "The code that is the hardest to debug is the code that you know cannot possibly be wrong.",
+        "type": "single"
+    },
+    {
+        "index": 29,
+        "joke": "Beware of programmers that carry screwdrivers.",
+        "type": "single"
+    },
+    {
+        "index": 30,
+        "joke": "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs and the Universe trying to produce bigger and better idiots. So far the Universe is winning.",
+        "type": "single"
+    },
+    {
+        "index": 31,
+        "joke": "The beginning of the programmer\u2019s wisdom is understanding the difference between getting program to run and having a runnable program.",
+        "type": "single"
+    },
+    {
+        "index": 32,
+        "joke": "I\u2019m not anti-social; I\u2019m just not user friendly.",
+        "type": "single"
+    },
+    {
+        "index": 33,
+        "joke": "Hey! It compiles! Ship it!",
+        "type": "single"
+    },
+    {
+        "index": 34,
+        "joke": "If Ruby is not and Perl is the answer then you don\u2019t understand the question.",
+        "type": "single"
+    },
+    {
+        "index": 35,
+        "joke": "The more I C.... the less I see.",
+        "type": "single"
+    },
+    {
+        "index": 36,
+        "joke": "COBOL programmers understand why women hate periods.",
+        "type": "single"
+    },
+    {
+        "index": 37,
+        "joke": "Michael Sinz: \u201cProgramming is like sex... one mistake and you have to support it for the rest of your life.\u201d",
+        "type": "single"
+    },
+    {
+        "index": 38,
+        "joke": "If you give someone a program... you will frustrate them for a day; if you teach them how to program... you will frustrate them for a lifetime.",
+        "type": "single"
+    },
+    {
+        "index": 39,
+        "joke": "Programmers are tools for converting caffeine into code.",
+        "type": "single"
+    },
+    {
+        "index": 40,
+        "joke": "My attitude isn\u2019t bad. It\u2019s in beta.",
+        "type": "single"
+    },
+    {
+        "index": 41,
+        "joke": "Enter any 11-digit prime number to continue.",
+        "type": "single"
+    },
+    {
+        "index": 42,
+        "joke": "E-mail returned to sender... insufficient voltage.",
+        "type": "single"
+    },
+    {
+        "index": 43,
+        "joke": "All wiyht. Rho sritched mg kegtops awound?",
+        "type": "single"
+    },
+    {
+        "index": 44,
+        "joke": "Black holes are where God divided by zero.",
+        "type": "single"
+    },
+    {
+        "index": 45,
+        "joke": "If I wanted a warm fuzzy feeling... I\u2019d antialias my graphics!",
+        "type": "single"
+    },
+    {
+        "index": 46,
+        "joke": "If brute force doesn\u2019t solve your problems... then you aren\u2019t using enough.",
+        "type": "single"
+    },
+    {
+        "index": 47,
+        "joke": "SUPERCOMPUTER: what it sounded like before you bought it.",
+        "type": "single"
+    },
+    {
+        "index": 48,
+        "joke": "Evolution is God\u2019s way of issuing upgrades.",
+        "type": "single"
+    },
+    {
+        "index": 49,
+        "joke": "Linus Torvalds: \u201cReal men don\u2019t use backups... they post their stuff on a public ftp server and let the rest of the world make copies.\u201d",
+        "type": "single"
+    },
+    {
+        "index": 50,
+        "joke": "Hacking is like sex. You get in... you get out... and hope that you didn\u2019t leave something that can be traced back to you.",
+        "type": "single"
+    },
+    {
+        "index": 51,
+        "joke": "There are three kinds of people: those who can count and those who can\u2019t.",
+        "type": "single"
+    },
+    {
+        "index": 52,
+        "joke": "Latest survey shows that 3 out of 4 people make up 75% of the world\u2019s population.",
+        "type": "single"
+    },
+    {
+        "index": 53,
+        "joke": "Hand over the calculator... friends don\u2019t let friends derive drunk.",
+        "type": "single"
+    },
+    {
+        "index": 54,
+        "joke": "An infinite crowd of mathematicians enters a bar. The first one orders a pint... the second one a half pint... the third one a quarter pint\u2026 \u201cI understand\u201d... says the bartender \u2013 and pours two pints.",
+        "type": "single"
+    },
+    {
+        "index": 55,
+        "joke": "1f u c4n r34d th1s u r34lly n33d t0 g37 l41d.",
+        "type": "single"
+    },
+    {
+        "index": 56,
+        "joke": "Theres no place like 127.0.0.1",
+        "type": "single"
+    },
+    {
+        "index": 57,
+        "joke": "Real programmers start counting from 0",
+        "type": "single"
+    },
+    {
+        "index": 58,
+        "joke": "If the box says: 'This software requires Windows 7 or better' Does that mean it'll run on Linux?",
+        "type": "single"
+    },
+    {
+        "index": 59,
+        "joke": "I don't see women as objects. I consider each to be in a class of her own.",
+        "type": "single"
+    },
+    {
+        "index": 60,
+        "joke": "I've got a really good UDP joke to tell you, but i don't know if you'll get it",
+        "type": "single"
+    },
+    {
+        "index": 61,
+        "joke": "Pluto is actually an orbiting group of British soldiers from the American Revolution who entered space after the Chuck gave them a roundhouse kick to the face.",
+        "type": "single"
+    },
+    {
+        "index": 62,
+        "joke": "There is in fact an 'I' in Norris, but there is no 'team'. Not even close.",
+        "type": "single"
+    },
+    {
+        "index": 63,
+        "joke": "An anagram for Walker Texas Ranger is KARATE WRANGLER SEX. I don't know what that is, but it sounds AWESOME.",
+        "type": "single"
+    },
+    {
+        "index": 64,
+        "joke": "Science Fact: Roundhouse kicks are comprised primarily of an element called Chucktanium.",
+        "type": "single"
+    },
+    {
+        "index": 65,
+        "joke": "Superman once watched an episode of Walker, Texas Ranger. He then cried himself to sleep.",
+        "type": "single"
+    },
+    {
+        "index": 66,
+        "joke": "The movie \"Delta Force\" was extremely hard to make because Chuck had to downplay his abilities. The first few cuts were completely unbelievable.",
+        "type": "single"
+    },
+    {
+        "index": 67,
+        "joke": "Movie trivia: The movie \"Invasion U.S.A.\" is, in fact, a documentary.",
+        "type": "single"
+    },
+    {
+        "index": 68,
+        "joke": "Once you go Norris, you are physically unable to go back.",
+        "type": "single"
+    },
+    {
+        "index": 69,
+        "joke": "Wo hu cang long. The translation from Mandarin Chinese reads: \"Crouching Chuck, Hidden Norris\"",
+        "type": "single"
+    },
+    {
+        "index": 70,
+        "joke": "In an act of great philanthropy, Chuck made a generous donation to the American Cancer Society. He donated 6,000 dead bodies for scientific research.",
+        "type": "single"
+    },
+    {
+        "index": 71,
+        "joke": "Crime does not pay - unless you are an undertaker following Walker, Texas Ranger, on a routine patrol.",
+        "type": "single"
+    },
+    {
+        "index": 72,
+        "joke": "Coroners refer to dead people as \"ABC's\". Already Been Chucked.",
+        "type": "single"
+    },
+    {
+        "index": 73,
+        "joke": "Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.",
+        "type": "single"
+    },
+    {
+        "index": 74,
+        "joke": "All browsers support the hex definitions #chuck and #norris for the colors black and blue.",
+        "type": "single"
+    },
+    {
+        "index": 75,
+        "joke": "MySpace actually isn't your space, it's Chuck's (he just lets you use it).",
+        "type": "single"
+    },
+    {
+        "index": 76,
+        "joke": "No statement can catch the ChuckNorrisException.",
+        "type": "single"
+    },
+    {
+        "index": 77,
+        "joke": "What does a subatomic duck say? Quark.",
+        "type": "single"
+    },
+    {
+        "index": 78,
+        "joke": "Why does a burger have less energy than a steak? A burger is in its ground state.",
+        "type": "single"
+    },
+    {
+        "index": 79,
+        "joke": "Why did I divide sin by tan? Just cos.",
+        "type": "single"
+    },
+    {
+        "index": 80,
+        "joke": "How many theoretical physicists does it take to screw in a light bulb? Two. One to hold the bulb and one to rotate the universe.",
+        "type": "single"
+    },
+    {
+        "index": 81,
+        "joke": "Why do fish likes nibbles the size of 2^n? So they can byte",
+        "type": "single"
+    },
+    {
+        "index": 82,
+        "joke": "There are only 10 types of people in the world: those that understand binary, those that don\u2019t, and those that didn't expect a ternary joke.",
+        "type": "single"
+    },
+    {
+        "index": 83,
+        "joke": "Programmer (noun.): A machine that turns coffee into code",
+        "type": "single"
+    },
+    {
+        "index": 84,
+        "joke": "Algorith (noun.): Word used by programmers when... they do not want to explain what they did.",
+        "type": "single"
+    },
+    {
+        "index": 85,
+        "joke": "What's the object-oriented way to become wealthy? Inheritance.",
+        "type": "single"
+    },
+    {
+        "index": 86,
+        "joke": "Why did the programmer quit his job? Because he didn't get arrays.",
+        "type": "single"
+    },
+    {
+        "index": 87,
+        "joke": "What do computers and air conditioners have in common? They both become useless when you open windows.",
+        "type": "single"
+    },
+    {
+        "index": 88,
+        "joke": "Why do Java programmers have to wear glasses? Because they don't C#.",
+        "type": "single"
+    },
+    {
+        "index": 89,
+        "joke": "A foo walks into a bar, takes a look around and says \"Hello World!\".",
+        "type": "single"
+    },
+    {
+        "index": 90,
+        "joke": "3 Database SQL walked into a NoSQL bar. A little while later they walked out, because they couldn't find a table.",
+        "type": "single"
+    },
+    {
+        "index": 91,
+        "joke": "UNIX is user friendly, it's just very particular about who it's friends are.",
+        "type": "single"
+    },
+    {
+        "index": 92,
+        "joke": "Why is C sad? Because C++ told him \"You have no class\".",
+        "type": "single"
+    },
+    {
+        "index": 93,
+        "joke": "Why are fishes illiterate?Because C doesnt have Classes",
+        "type": "single"
+    },
+    {
+        "index": 94,
+        "joke": "Who called it female foeticide and not Binary ?",
+        "type": "single"
+    },
+    {
+        "index": 95,
+        "joke": "Le gf: I'll dump you.Le bf: hex dump or binary dump? ",
+        "type": "single"
+    },
+    {
+        "index": 96,
+        "joke": "How does a Programmer COok food ? In O(1)",
+        "type": "single"
+    },
+    {
+        "index": 97,
+        "joke": "binary digits are called bits i love ternary digits",
+        "type": "single"
+    },
+    {
+        "index": 98,
+        "joke": "Yuvraj's Batting- 1 1 0 1 1 1 0 0 1 0 0 1 0 1 0 1 0 1 1 0 W.He has specialization in Digital Electronics.",
+        "type": "single"
+    },
+    {
+        "index": 99,
+        "joke": "Why did Microsoft release Windows 10 ( and not windows 9) ?Because 7 8 9",
+        "type": "single"
+    },
+    {
+        "index": 100,
+        "joke": "Gotta love the people who wrote the algorithm for Ola share,They go out of their way to help others",
+        "type": "single"
+    },
+    {
+        "index": 101,
+        "joke": "Linux: Born to be root. Windows: Born to re-boot",
+        "type": "single"
+    },
+    {
+        "index": 102,
+        "joke": "I can't access Git. I guess I have... commitment issues",
+        "type": "single"
+    },
+    {
+        "index": 103,
+        "joke": "Don't fart in an Apple Store, because they don't have Windows.",
+        "type": "single"
+    },
+    {
+        "index": 104,
+        "joke": "I have a good joke on Information Technology, but you won't get IT",
+        "type": "single"
+    },
+    {
+        "index": 105,
+        "joke": "Do you have a girlfriend? I will leave the relationship to the databases",
+        "type": "single"
+    },
+    {
+        "index": 106,
+        "joke": "Roses are #ff0000, violets are #0000ff, I use hex codes, but I'd use RGB for you",
+        "type": "single"
+    },
+    {
+        "index": 107,
+        "joke": "Java programmers are some of the most materialistic people I know, very object-oriented",
+        "type": "single"
+    },
+    {
+        "index": 108,
+        "joke": "SON: What are clouds made of? DAD: Linux servers, mostly",
+        "type": "single"
+    },
+    {
+        "index": 109,
+        "joke": "SHE: Are you just gonna sit here on the computer OR are we going out? HE: Yes",
+        "type": "single"
+    },
+    {
+        "index": 110,
+        "joke": "CPU (Coffee Processing Unit)",
+        "type": "single"
+    },
+    {
+        "index": 111,
+        "joke": "I told him I can't open the jar, he said download and install Java",
+        "type": "single"
+    },
+    {
+        "index": 112,
+        "joke": "'Knock knock.' 'Who's there?' *10 mins later* 'Java.'",
+        "type": "single"
+    },
+    {
+        "index": 113,
+        "joke": "A programmer is having trouble with his keyboard double-pressing. He asks his coworker what he should do. 'Hit it,' he says. The programmer hits it, but nothing changes. His coworker exclaims 'No, really BASH it!'",
+        "type": "single"
+    },
+    {
+        "index": 114,
+        "joke": "Why did the chicken cross the road? It was called with theOtherSide(chicken)",
+        "type": "single"
+    },
+    {
+        "index": 115,
+        "joke": "How do you tell an introverted computer scientist from an extroverted computer scientist? The extrovert looks at *your* shoes when he talks to you.",
+        "type": "single"
+    },
+    {
+        "index": 116,
+        "joke": "Why Do programmers always mix up Haloween and Christmas? Because Oct31 == Dec25.",
+        "type": "single"
+    },
+    {
+        "index": 117,
+        "joke": "Why did the programmer die in the shower? The shampoo bottle said: Wash, rinse, repeat.",
+        "type": "single"
+    },
+    {
+        "index": 118,
+        "joke": "A UDP packet walks into a bar. The bartender doesn't acknowledge him.",
+        "type": "single"
+    },
+    {
+        "index": 119,
+        "joke": "99 Bugs in the Code.  99 Bugs in the Code.  You take one down, patch it around, 127 Bugs in the code",
+        "type": "single"
+    },
+    {
+        "index": 120,
+        "joke": "<code>[Please Enter New Password]<\/code><p>fortnight<\/p><code>[Error: Password is Two Week]<\/code>",
+        "type": "single"
+    },
+    {
+        "index": 121,
+        "joke": "I\u2019ve been hearing news about this big boolean. Huge if true.",
+        "type": "single"
+    },
+    {
+        "index": 122,
+        "joke": "**!false**It's funny 'cause it's true.",
+        "type": "single"
+    },
+    {
+        "index": 123,
+        "joke": "A programmer's significant other tells them, \"Run to the store and pick up a loaf of bread. If they have eggs, get a dozen.\"The programmer comes home with 12 loaves of bread.",
+        "type": "single"
+    },
+    {
+        "index": 124,
+        "joke": "I never tell the same joke twice I have a DRY sense of humor.",
+        "type": "single"
+    },
+    {
+        "index": 125,
+        "joke": "Java truly is an OOP language...As in: OOPs I used Java!",
+        "type": "single"
+    },
+    {
+        "index": 126,
+        "joke": "Asynchronous JavaScript is amazing.I Promise you, await and see.",
+        "type": "single"
+    },
+    {
+        "index": 127,
+        "joke": "I've got a great UDP joke but I'm afraid you wouldn't get it...",
+        "type": "single"
+    },
+    {
+        "index": 128,
+        "joke": "A programmer was arrested for writing unreadable code. They refused to comment.",
+        "type": "single"
+    },
+    {
+        "index": 129,
+        "joke": "There are 10 types of people in this world, those who understand binary and those who don't.",
+        "type": "single"
+    },
+    {
+        "index": 130,
+        "joke": "**-** Knock Knock!**-** An async function**-** Who's there?",
+        "type": "single"
+    },
+    {
+        "index": 131,
+        "joke": "The next time you're using Safari or Firefox and it's running slowly, you can say to yourself,<br\/> \"I could've had a V8 (a browser 'engine')\".",
+        "type": "single"
+    },
+    {
+        "index": 132,
+        "joke": "A new database query walks into a bar. The server says \"Sorry, cache only.\"",
+        "type": "single"
+    },
+    {
+        "index": 133,
+        "joke": "What's the best tool for automatically ignoring long email threads about tech buzzwords?\"Block-chain\"",
+        "type": "single"
+    },
+    {
+        "index": 134,
+        "joke": "Chuck Norris can take a screenshot of his blue screen.",
+        "type": "single"
+    },
+    {
+        "index": 135,
+        "joke": "I went to a street where the houses were numbered 8k, 16k, 32k, 64k, 128k, 256k and 512k.It was a trip down Memory Lane.",
+        "type": "single"
+    },
+    {
+        "index": 136,
+        "joke": "Lisp programmers don't make prank calls. They make <code>FUNCALL<\/code>s",
+        "type": "single"
+    },
+    {
+        "index": 137,
+        "joke": "When I wrote this code, only God and I understood what I was doing. Now, only God knows.",
+        "type": "single"
+    },
+    {
+        "index": 138,
+        "joke": "8 bytes walk into a bar, the bartenders asks \"What will it be?\" <br\/>One of them says, \"Make us a double.\"",
+        "type": "single"
+    },
+    {
+        "index": 139,
+        "joke": "An SEO couple had twins. For the first time, they were happy with duplicate content.",
+        "type": "single"
+    },
+    {
+        "index": 140,
+        "joke": "LISP - Lots of Infuriating Superfluous Parentheses",
+        "type": "single"
+    },
+    {
+        "index": 141,
+        "joke": "I'm starting a band called 1023MB. I don't think we'll ever get a gig.",
+        "type": "single"
+    },
+    {
+        "index": 142,
+        "joke": "There are two ways to write error-free programs; only the third one works.",
+        "type": "single"
+    },
+    {
+        "index": 143,
+        "joke": "Dev 1 -  We have a problem. Dev 2 -  Let\u2019s use RegEx! Dev 1 -  Now we have two problems",
+        "type": "single"
+    },
+    {
+        "index": 144,
+        "joke": "99 little bugs in the code, 99 bugs in the code, 1 bug fixed...compile again, 100 little bugs in the code.",
+        "type": "single"
+    },
+    {
+        "index": 145,
+        "joke": "UNIX is very user friendly... It's just very particular about who its friends are.",
+        "type": "single"
+    },
+    {
+        "index": 146,
+        "joke": "Debugging: Removing the needles from the haystack.",
+        "type": "single"
+    },
+    {
+        "index": 147,
+        "joke": "You are the CSS to my HTML",
+        "type": "single"
+    },
+    {
+        "index": 148,
+        "joke": "An optimist says: \u201cthe glass is half full.\u201d<br>A pessimist says: \u201cthe glass is half empty.\u201d<br>A programmer says: \u201cthe glass is twice as large as necessary.",
+        "type": "single"
+    },
+    {
+        "index": 149,
+        "joke": "CSS developers have the biggest ego, they think they're so !important",
+        "type": "single"
+    },
+    {
+        "index": 150,
+        "joke": "The Professor says \"Welcome to English 101\".The student panicks.\"What's wrong?\" asks the Professor.\"I missed the first 4 English classes\".",
+        "type": "single"
+    },
+    {
+        "index": 151,
+        "joke": "Java and C were telling jokes. It was C's turn, so he writes something on the wall, points to it and says \"Do you get the reference?\" But Java didn't.",
+        "type": "single"
+    },
+    {
+        "index": 152,
+        "joke": "To understand recursion. You must first understand recursion.",
+        "type": "single"
+    },
+    {
+        "index": 153,
+        "joke": "Two bytes meet. The first byte asks, \"Are you ill?\"The second byte replies, \"No, just feeling a bit off.\" ",
+        "type": "single"
+    },
+    {
+        "index": 154,
+        "joke": "I put so much more effort into naming my first Wi-Fi than my first child.",
+        "type": "single"
+    },
+    {
+        "index": 155,
+        "joke": "When an Apple employees dies, does their life HTML5 in front of their eyes?",
+        "type": "single"
+    },
+    {
+        "index": 156,
+        "joke": "A data Scientist goes to a bar and sees two tables. Then he says: Hey bro... Can I join you?",
+        "type": "single"
+    },
+    {
+        "index": 157,
+        "joke": "Give a man a program, frustate him for a day. Teach a man to program, frustrate him for a lifetime.",
+        "type": "single"
+    },
+    {
+        "index": 158,
+        "joke": "I've got a really good UDP joke to tell you but I don\u2019t know if you'll get it.",
+        "type": "single"
+    },
+    {
+        "index": 159,
+        "joke": "A guy walks into a bar and asks for 1.4 root beers.\nThe bartender says \"I'll have to charge you extra, that's a root beer float\".\nThe guy says \"In that case, better make it a double.\"",
+        "type": "single"
+    },
+    {
+        "index": 160,
+        "joke": "A programmer puts two glasses on his bedside table before going to sleep.\nA full one, in case he gets thirsty, and an empty one, in case he doesn't.",
+        "type": "single"
+    },
+    {
+        "index": 161,
+        "joke": "Java and C were telling jokes. It was C's turn, so he writes something on the wall, points to it and says \"Do you get the reference?\" But Java didn't.",
+        "type": "single"
+    },
+    {
+        "index": 162,
+        "joke": "A SQL statement walks into a bar and sees two tables.\nIt approaches, and asks \"may I join you?\"",
+        "type": "single"
+    },
+    {
+        "index": 163,
+        "joke": "Your mama's so FAT she can't save files bigger than 4GB.",
+        "type": "single"
+    },
+    {
+        "index": 164,
+        "joke": "\/\/ This line doesn't actually do anything, but the code stops working when I delete it.",
+        "type": "single"
+    },
+    {
+        "index": 165,
+        "joke": "\"Honey, go to the store and buy some eggs.\"\n\"OK.\"\n\"Oh and while you're there, get some milk.\"\nHe never returned.",
+        "type": "single"
+    },
+    {
+        "index": 166,
+        "joke": "\"We messed up the keming again guys.\"",
+        "type": "single"
+    },
+    {
+        "index": 167,
+        "joke": "If Bill Gates had a dime for every time Windows crashed ... Oh wait, he does.",
+        "type": "single"
+    },
+    {
+        "index": 168,
+        "joke": "The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.",
+        "type": "single"
+    },
+    {
+        "index": 169,
+        "joke": "A byte walks into a bar looking miserable.\nThe bartender asks it: \"What's wrong buddy?\"\n\"Parity error.\" it replies. \n\"Ah that makes sense, I thought you looked a bit off.\"",
+        "type": "single"
+    },
+    {
+        "index": 170,
+        "joke": "ASCII silly question, get a silly ANSI.",
+        "type": "single"
+    },
+    {
+        "index": 171,
+        "joke": "Java is like Alzheimer's, it starts off slow, but eventually, your memory is gone.",
+        "type": "single"
+    },
+    {
+        "index": 172,
+        "joke": "Two C strings walk into a bar.\nThe bartender asks \"What can I get ya?\"\nThe first string says \"I'll have a gin and tonic.\"\nThe second string thinks for a minute, then says \"I'll take a tequila sunriseJF()#$JF(#)$(@J#()$@#())!*FNIN!OBN134ufh1ui34hf9813f8h8384h981h3984h5F!##@\"\nThe first string apologizes, \"You'll have to excuse my friend, he's not null-terminated.\"",
+        "type": "single"
+    },
+    {
+        "index": 173,
+        "joke": "Saying that Java is nice because it works on every OS is like saying that anal sex is nice because it works on every gender.",
+        "type": "single"
+    },
+    {
+        "index": 174,
+        "joke": "Today I learned that changing random stuff until your program works is \"hacky\" and a \"bad coding practice\" but if you do it fast enough it's \"Machine Learning\" and pays 4x your current salary.",
+        "type": "single"
+    },
+    {
+        "index": 175,
+        "joke": "Eight bytes walk into a bar.\nThe bartender asks, \"Can I get you anything?\"\n\"Yeah,\" reply the bytes.\n\"Make us a double.\"",
+        "type": "single"
+    },
+    {
+        "index": 176,
+        "joke": "There are only 10 kinds of people in this world: those who know binary and those who don't.",
+        "type": "single"
+    },
+    {
+        "index": 177,
+        "joke": "\"Knock, knock.\"\n\"Who's there?\"\n\n[very long pause]\n\n\"Java.\"",
+        "type": "single"
+    },
+    {
+        "index": 178,
+        "joke": "Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.",
+        "type": "single"
+    },
+    {
+        "index": 179,
+        "joke": "A man is smoking a cigarette and blowing smoke rings into the air. His girlfriend becomes irritated with the smoke and says \"Can't you see the warning on the cigarette pack? Smoking is hazardous to your health!\" to which the man replies, \"I am a programmer.  We don't worry about warnings; we only worry about errors.\"",
+        "type": "single"
+    },
+    {
+        "index": 180,
+        "joke": "The generation of random numbers is too important to be left to chance.",
+        "type": "single"
+    },
+    {
+        "index": 181,
+        "joke": "Debugging: Removing the needles from the haystack.",
+        "type": "single"
+    },
+    {
+        "index": 182,
+        "joke": "Hey Girl,\nRoses are #ff0000,\nViolets are #0000ff,\nI use hex codes,\nBut I'd use RGB for you.",
+        "type": "single"
+    },
+    {
+        "index": 183,
+        "joke": "Debugging is like being the detective in a crime movie where you're also the murderer at the same time.",
+        "type": "single"
+    },
+    {
+        "index": 184,
+        "joke": "How do you tell HTML from HTML5?\n- Try it out in Internet Explorer\n- Did it work?\n- No?\n- It's HTML5.",
+        "type": "single"
+    },
+    {
+        "index": 185,
+        "joke": "Have a great weekend!\nI hope your code behaves the same on Monday as it did on Friday.",
+        "type": "single"
+    },
+    {
+        "index": 186,
+        "joke": "Judge: \"I sentence you to the maximum punishment...\"\nMe (thinking): \"Please be death, please be death...\"\nJudge: \"Learn Java!\"\nMe: \"Damn.\"",
+        "type": "single"
+    },
+    {
+        "index": 187,
+        "joke": "Algorithm: A word used by programmers when they don't want to explain how their code works.",
+        "type": "single"
+    },
+    {
+        "index": 188,
+        "joke": "Your momma is so fat, you need to switch to NTFS to store a picture of her.",
+        "type": "single"
+    },
+    {
+        "index": 189,
+        "joke": "\"Can I tell you a TCP joke?\"\n\"Please tell me a TCP joke.\"\n\"OK, I'll tell you a TCP joke.\"",
+        "type": "single"
+    },
+    {
+        "index": 190,
+        "joke": "The six stages of debugging:\n1. That can't happen.\n2. That doesn't happen on my machine.\n3. That shouldn't happen.\n4. Why does that happen?\n5. Oh, I see.\n6. How did that ever work?",
+        "type": "single"
+    },
+    {
+        "index": 191,
+        "joke": "Four engineers get into a car. The car won't start.\nThe Mechanical engineer says \"It's a broken starter\".\nThe Electrical engineer says \"Dead battery\".\nThe Chemical engineer says \"Impurities in the gasoline\".\nThe IT engineer says \"Hey guys, I have an idea: How about we all get out of the car and get back in\".",
+        "type": "single"
+    },
+    {
+        "index": 192,
+        "joke": "Knock knock.\nWho's there?\nRecursion.\nRecursion who?\nKnock knock.",
+        "type": "single"
+    },
+    {
+        "index": 193,
+        "joke": "Being a self-taught developer is almost the same as being a cut neck chicken because you have no sense of direction in the beginning.",
+        "type": "single"
+    },
+    {
+        "index": 194,
+        "joke": "Two SQL tables sit at the bar. A query approaches and asks \"Can I join you?\"",
+        "type": "single"
+    },
+    {
+        "index": 195,
+        "joke": "UDP is better in the COVID era since it avoids unnecessary handshakes.",
+        "type": "single"
+    },
+    {
+        "index": 196,
+        "joke": "I have a joke about Stack Overflow, but you would say it's a duplicate.",
+        "type": "single"
+    },
+    {
+        "index": 197,
+        "joke": {
+            "q": "Relationship status?",
+            "a": "I'll leave the relations to the database."
+        },
+        "type": "double"
+    },
+    {
+        "index": 198,
+        "joke": {
+            "q": "How do you get the code for the bank vault?",
+            "a": "You checkout their branch."
+        },
+        "type": "double"
+    },
+    {
+        "index": 199,
+        "joke": {
+            "q": "How did the developer announce their engagement?",
+            "a": "They <code>return<\/code>ed <code>true<\/code>!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 200,
+        "joke": {
+            "q": "Why did the security conscious engineer refuse to pay their dinner bill?",
+            "a": "Because they could not verify the checksum."
+        },
+        "type": "double"
+    },
+    {
+        "index": 201,
+        "joke": {
+            "q": "What do you call a busy waiter?",
+            "a": "A server."
+        },
+        "type": "double"
+    },
+    {
+        "index": 202,
+        "joke": {
+            "q": "What do you call an idle server?",
+            "a": "A waiter."
+        },
+        "type": "double"
+    },
+    {
+        "index": 203,
+        "joke": {
+            "q": "How many Prolog programmers does it take to change a lightbulb?",
+            "a": "Yes."
+        },
+        "type": "double"
+    },
+    {
+        "index": 204,
+        "joke": {
+            "q": "What diet did the ghost developer go on?",
+            "a": "Boooooolean"
+        },
+        "type": "double"
+    },
+    {
+        "index": 205,
+        "joke": {
+            "q": "Why was the developer unhappy at their job?",
+            "a": "They wanted arrays."
+        },
+        "type": "double"
+    },
+    {
+        "index": 206,
+        "joke": {
+            "q": "Why did 10 get paid less than \"10\"?",
+            "a": "There was workplace inequality."
+        },
+        "type": "double"
+    },
+    {
+        "index": 207,
+        "joke": {
+            "q": "Why was the function sad after a successful first call?",
+            "a": "It didn\u2019t get a callback."
+        },
+        "type": "double"
+    },
+    {
+        "index": 208,
+        "joke": {
+            "q": "Why did the angry function exceed the callstack size?",
+            "a": "It got into an Argument with itself"
+        },
+        "type": "double"
+    },
+    {
+        "index": 209,
+        "joke": {
+            "q": "Whats the object-oriented way to become wealthy?",
+            "a": "Inheritance"
+        },
+        "type": "double"
+    },
+    {
+        "index": 210,
+        "joke": {
+            "q": "Why did the developer ground their kid?",
+            "a": "They weren't telling the truthy"
+        },
+        "type": "double"
+    },
+    {
+        "index": 211,
+        "joke": {
+            "q": "What did the array say after it was extended?",
+            "a": "Stop objectifying me."
+        },
+        "type": "double"
+    },
+    {
+        "index": 212,
+        "joke": {
+            "q": "Where did the parallel function wash its hands?",
+            "a": "Async"
+        },
+        "type": "double"
+    },
+    {
+        "index": 213,
+        "joke": {
+            "q": "I'm starting a band called HTML Encoder",
+            "a": "Looking to buy a guitar \\&"
+        },
+        "type": "double"
+    },
+    {
+        "index": 214,
+        "joke": {
+            "q": "Why did the functions stop calling each other?",
+            "a": "Because they had constant arguments."
+        },
+        "type": "double"
+    },
+    {
+        "index": 215,
+        "joke": {
+            "q": "What's the second movie about a database engineer called?",
+            "a": "The SQL."
+        },
+        "type": "double"
+    },
+    {
+        "index": 216,
+        "joke": {
+            "q": "Why doesn't Hollywood make more Big Data movies?",
+            "a": "NoSQL."
+        },
+        "type": "double"
+    },
+    {
+        "index": 217,
+        "joke": {
+            "q": "What did the spider do on the computer?",
+            "a": "Made a website!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 218,
+        "joke": {
+            "q": "What did the computer do at lunchtime?",
+            "a": "Had a byte!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 219,
+        "joke": {
+            "q": "What does a baby computer call his father?",
+            "a": "Data!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 220,
+        "joke": {
+            "q": "Why did the computer keep sneezing?",
+            "a": "It had a virus!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 221,
+        "joke": {
+            "q": "What is a computer virus?",
+            "a": "A terminal illness!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 222,
+        "joke": {
+            "q": "Why was the computer freezing?",
+            "a": "It left its Windows open!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 223,
+        "joke": {
+            "q": "Why was there a bug in the computer?",
+            "a": "Because it was looking for a byte to eat?"
+        },
+        "type": "double"
+    },
+    {
+        "index": 224,
+        "joke": {
+            "q": "Why did the computer squeak?",
+            "a": "Because someone stepped on its mouse!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 225,
+        "joke": {
+            "q": "What do you get when you cross a computer and a life guard?",
+            "a": "A screensaver!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 226,
+        "joke": {
+            "q": "Where do all the cool mice live?",
+            "a": "In their mousepads!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 227,
+        "joke": {
+            "q": "What do you get when you cross a computer with an elephant?",
+            "a": "Lots of memory!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 228,
+        "joke": {
+            "q": "How do programming pirates pass method parameters?",
+            "a": "Varrrrarrrgs."
+        },
+        "type": "double"
+    },
+    {
+        "index": 229,
+        "joke": {
+            "q": "How do programming shepherds count their flock?",
+            "a": "With lambda functions"
+        },
+        "type": "double"
+    },
+    {
+        "index": 230,
+        "joke": {
+            "q": "What airline do developers prefer when they're in a rush?",
+            "a": "Delta."
+        },
+        "type": "double"
+    },
+    {
+        "index": 231,
+        "joke": {
+            "q": "How did pirates collaborate before computers?",
+            "a": "Pier to pier networking."
+        },
+        "type": "double"
+    },
+    {
+        "index": 232,
+        "joke": {
+            "q": "Why don't bachelors like Git?",
+            "a": "Because they are afraid to commit."
+        },
+        "type": "double"
+    },
+    {
+        "index": 233,
+        "joke": {
+            "q": "A SQL query goes into a bar, walks up to two tables and asks:",
+            "a": "Can I JOIN you?"
+        },
+        "type": "double"
+    },
+    {
+        "index": 234,
+        "joke": {
+            "q": "How does a developer make a cheer?",
+            "a": "[\"hip\",\"hip\"] \/\/ (hip hip array!)"
+        },
+        "type": "double"
+    },
+    {
+        "index": 235,
+        "joke": {
+            "q": "Why was the developer's family upset with them at dinner?",
+            "a": "They forgot to git squash before going home"
+        },
+        "type": "double"
+    },
+    {
+        "index": 236,
+        "joke": {
+            "q": "What did JavaScript call his son?",
+            "a": "JSON!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 237,
+        "joke": {
+            "q": "What did the proud React component say to its child?",
+            "a": "I've got to give you props"
+        },
+        "type": "double"
+    },
+    {
+        "index": 238,
+        "joke": {
+            "q": "What did the server say to his client who was having a bad day?",
+            "a": "Everything's going to be 200"
+        },
+        "type": "double"
+    },
+    {
+        "index": 239,
+        "joke": {
+            "q": "Why did the developer go broke?",
+            "a": "Because they used up all their cache"
+        },
+        "type": "double"
+    },
+    {
+        "index": 240,
+        "joke": {
+            "q": "Are computers dangerous?",
+            "a": "Nah, they don't byte. They just nibble a bit."
+        },
+        "type": "double"
+    },
+    {
+        "index": 241,
+        "joke": {
+            "q": "How did the mafioso kill the Node server?",
+            "a": "Tie await to it and let it async."
+        },
+        "type": "double"
+    },
+    {
+        "index": 242,
+        "joke": {
+            "q": "You know what the best thing about booleans is?",
+            "a": "Even if you are wrong, you are only off by a bit."
+        },
+        "type": "double"
+    },
+    {
+        "index": 243,
+        "joke": {
+            "q": "Why couldn\u2019t the user update a file on a shared server?",
+            "a": "They didn\u2019t have the write permissions"
+        },
+        "type": "double"
+    },
+    {
+        "index": 244,
+        "joke": {
+            "q": "What do you do when you can't understand your husband's behavior?",
+            "a": "man man"
+        },
+        "type": "double"
+    },
+    {
+        "index": 245,
+        "joke": {
+            "q": "What do you call a doctor who fixes websites?",
+            "a": "A URLogist"
+        },
+        "type": "double"
+    },
+    {
+        "index": 246,
+        "joke": {
+            "q": "How many developers does it take to change a light bulb?",
+            "a": "None. It's a hardware issue"
+        },
+        "type": "double"
+    },
+    {
+        "index": 247,
+        "joke": {
+            "q": "Why do programmers always mix up Halloween and Christmas?",
+            "a": "Because 31 OCT == 25 DEC"
+        },
+        "type": "double"
+    },
+    {
+        "index": 248,
+        "joke": {
+            "q": "Why do kayakers make bad programmers?",
+            "a": "Because they're afraid of waterfall."
+        },
+        "type": "double"
+    },
+    {
+        "index": 249,
+        "joke": {
+            "q": "What are computers' favorite snacks?",
+            "a": "Microchips, phish sticks, and cookies. But just a few bytes of each."
+        },
+        "type": "double"
+    },
+    {
+        "index": 250,
+        "joke": {
+            "q": "What do computers love to do at the beach?",
+            "a": "Put on some spam block for protection so they can safely surf the net while catching some .WAVs!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 251,
+        "joke": {
+            "q": "What do you call a computer that sings?",
+            "a": "A-dell."
+        },
+        "type": "double"
+    },
+    {
+        "index": 252,
+        "joke": {
+            "q": "What's a compiler developer's favorite spice?",
+            "a": "Parsley."
+        },
+        "type": "double"
+    },
+    {
+        "index": 253,
+        "joke": {
+            "q": "When do front end developers go out to eat?",
+            "a": "On their lunch <code>&lt;&#98;&#114;&gt;<\/code>."
+        },
+        "type": "double"
+    },
+    {
+        "index": 254,
+        "joke": {
+            "q": "A SQL developer walked into a NoSQL bar.",
+            "a": "They left because they couldn't find a table."
+        },
+        "type": "double"
+    },
+    {
+        "index": 255,
+        "joke": {
+            "q": "How do you help JS errors?",
+            "a": "You <code>console<\/code> them!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 256,
+        "joke": {
+            "q": "Why don't parents teach their kids about regular expressions?",
+            "a": "Because they don't want them playing with matches"
+        },
+        "type": "double"
+    },
+    {
+        "index": 257,
+        "joke": {
+            "q": "Why didn't the <code>div<\/code> get invited to the dinner party?",
+            "a": "Because it had no <code>class<\/code>!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 258,
+        "joke": {
+            "q": "Why aren't cryptocurrency engineers allowed to vote?",
+            "a": "Because they're miners!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 259,
+        "joke": {
+            "q": "Why did the constant break up with the variable?",
+            "a": "Because they changed."
+        },
+        "type": "double"
+    },
+    {
+        "index": 260,
+        "joke": {
+            "q": "Why did the database administrator leave his wife?",
+            "a": "She had one-to-many relationships."
+        },
+        "type": "double"
+    },
+    {
+        "index": 261,
+        "joke": {
+            "q": "What did the Class say in court when put on trial?",
+            "a": "I strongly object!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 262,
+        "joke": {
+            "q": "Why do Java developers wear glasses?",
+            "a": "Because they don't C#!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 263,
+        "joke": {
+            "q": "What are the three hardest problems in computer science?",
+            "a": "Naming things and off-by-one errors"
+        },
+        "type": "double"
+    },
+    {
+        "index": 264,
+        "joke": {
+            "q": "What did the fruit basket say to the developer?",
+            "a": "I hope you're ready for some pear programming!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 265,
+        "joke": {
+            "q": "How does a sysadmin keep a fire going?",
+            "a": "They rotate the logs."
+        },
+        "type": "double"
+    },
+    {
+        "index": 266,
+        "joke": {
+            "q": "I love you and I only love you. Does that turn you on?",
+            "a": "ATE:** No."
+        },
+        "type": "double"
+    },
+    {
+        "index": 267,
+        "joke": {
+            "q": "Why do all HTML emails get blocked?",
+            "a": "Because they are all <code>span<\/code>"
+        },
+        "type": "double"
+    },
+    {
+        "index": 268,
+        "joke": {
+            "q": "What did the process say after working in an infinite loop all day?",
+            "a": "I need a break."
+        },
+        "type": "double"
+    },
+    {
+        "index": 269,
+        "joke": {
+            "q": "An Agent died unexpectedly. How was the crime solved?",
+            "a": "By looking at the Stack Trace."
+        },
+        "type": "double"
+    },
+    {
+        "index": 270,
+        "joke": {
+            "q": "Why did the document store go out of business?",
+            "a": "It had NoSQL."
+        },
+        "type": "double"
+    },
+    {
+        "index": 271,
+        "joke": {
+            "q": "Why can't SQL and NoSQL Developers date one other?",
+            "a": "Because they don't agree on relationships."
+        },
+        "type": "double"
+    },
+    {
+        "index": 272,
+        "joke": {
+            "q": "Why is Python like the Soviet Union?",
+            "a": "Because it has no private fields"
+        },
+        "type": "double"
+    },
+    {
+        "index": 273,
+        "joke": {
+            "q": "Where did the API go to eat?",
+            "a": "To the RESTaurant"
+        },
+        "type": "double"
+    },
+    {
+        "index": 274,
+        "joke": {
+            "q": "Why shouldn't you trust Matlab developers?",
+            "a": "Because they're always plotting something."
+        },
+        "type": "double"
+    },
+    {
+        "index": 275,
+        "joke": {
+            "q": "Why did the developer have to quit smoking?",
+            "a": "Because they couldn't afford to pay the new syntax."
+        },
+        "type": "double"
+    },
+    {
+        "index": 276,
+        "joke": {
+            "q": "How does a programmer open a jar for their significant other?",
+            "a": "They install Java"
+        },
+        "type": "double"
+    },
+    {
+        "index": 277,
+        "joke": {
+            "q": "What did the psychic say to the developers?",
+            "a": "I see dev people."
+        },
+        "type": "double"
+    },
+    {
+        "index": 278,
+        "joke": {
+            "q": "Where does the pirate stash all of their digital treasures?",
+            "a": "RAR"
+        },
+        "type": "double"
+    },
+    {
+        "index": 279,
+        "joke": {
+            "q": "What is React's favorite movie genre?",
+            "a": "Suspense"
+        },
+        "type": "double"
+    },
+    {
+        "index": 280,
+        "joke": {
+            "q": "Why couldn't the React component understand the joke?",
+            "a": "Because it didn't get the context."
+        },
+        "type": "double"
+    },
+    {
+        "index": 281,
+        "joke": {
+            "q": "What did XHR say to AJAX when it thought it was being a Mean Girl?",
+            "a": "Stop trying to make fetch happen!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 282,
+        "joke": {
+            "q": "What was Grace Hopper's favorite car?",
+            "a": "VW Bug"
+        },
+        "type": "double"
+    },
+    {
+        "index": 283,
+        "joke": {
+            "q": "What sits on a pirate's shoulder and calls, \"Pieces of seven, Pieces of seven\"?",
+            "a": "Parroty error."
+        },
+        "type": "double"
+    },
+    {
+        "index": 284,
+        "joke": {
+            "q": "What is a pirate's favorite programming language?",
+            "a": "You'd think it was R, but a pirate's first love is Objectively C."
+        },
+        "type": "double"
+    },
+    {
+        "index": 285,
+        "joke": {
+            "q": "Why did the programmer come home crying?\"",
+            "a": "His friends were always boolean him."
+        },
+        "type": "double"
+    },
+    {
+        "index": 286,
+        "joke": {
+            "q": "What PostgreSQL library should Python developers use for adult-oriented code?",
+            "a": "psycoPG13"
+        },
+        "type": "double"
+    },
+    {
+        "index": 287,
+        "joke": {
+            "q": "What accommodations did the JavaScript developer request at the hotel?",
+            "a": "A room with a Vue."
+        },
+        "type": "double"
+    },
+    {
+        "index": 288,
+        "joke": {
+            "q": "Where do developers drink?",
+            "a": "The Foo bar"
+        },
+        "type": "double"
+    },
+    {
+        "index": 289,
+        "joke": {
+            "q": "Why do assembly programmers need to know how to swim?",
+            "a": "Because they work below C level."
+        },
+        "type": "double"
+    },
+    {
+        "index": 290,
+        "joke": {
+            "q": "Who used the internet before it was cool?",
+            "a": "Httpsters"
+        },
+        "type": "double"
+    },
+    {
+        "index": 291,
+        "joke": {
+            "q": "What kind of computer can hold a musical note?",
+            "a": "A Dell."
+        },
+        "type": "double"
+    },
+    {
+        "index": 292,
+        "joke": {
+            "q": "Why did the web developer always go to the wrong hotel room?",
+            "a": "They were in room 301."
+        },
+        "type": "double"
+    },
+    {
+        "index": 293,
+        "joke": {
+            "q": "How do you stop a web developer stealing your stuff?",
+            "a": "Write 403 on it."
+        },
+        "type": "double"
+    },
+    {
+        "index": 294,
+        "joke": {
+            "q": "Why are machine learning models so fit?",
+            "a": "Because they do weight training."
+        },
+        "type": "double"
+    },
+    {
+        "index": 295,
+        "joke": {
+            "q": "Why did Gargamel shut down the internet?",
+            "a": "Because he didn't want people **SMURFING** the web!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 296,
+        "joke": {
+            "q": "What did the command line die of?",
+            "a": "A Terminal illness."
+        },
+        "type": "double"
+    },
+    {
+        "index": 297,
+        "joke": {
+            "q": "Did you hear what the clumsy cryptographer did to their password?",
+            "a": "Made a hash of it."
+        },
+        "type": "double"
+    },
+    {
+        "index": 298,
+        "joke": {
+            "q": "Why are keyboards always working so hard?",
+            "a": "Cause they have two shifts!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 299,
+        "joke": {
+            "q": "What are clouds made of?",
+            "a": "Mostly linux servers."
+        },
+        "type": "double"
+    },
+    {
+        "index": 300,
+        "joke": {
+            "q": "How does Mr. Potato Head (dev edition 0.0.1) remove his mustache?",
+            "a": "git stache pop"
+        },
+        "type": "double"
+    },
+    {
+        "index": 301,
+        "joke": {
+            "q": "Why can't you use 'Soup' as your password?",
+            "a": "Because it isn't <code>stroganoff<\/code>"
+        },
+        "type": "double"
+    },
+    {
+        "index": 302,
+        "joke": {
+            "q": "Why do developers use mechanical keyboards?",
+            "a": "To strongly type their code."
+        },
+        "type": "double"
+    },
+    {
+        "index": 303,
+        "joke": {
+            "q": "What is a developer's favorite country song?",
+            "a": "Hello World - by Lady Antebellum"
+        },
+        "type": "double"
+    },
+    {
+        "index": 304,
+        "joke": {
+            "q": "Why was nobody given food at the developer conference?",
+            "a": "It was a serverless function!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 305,
+        "joke": {
+            "q": "Why did the developer cancel their dinner plans?",
+            "a": "They were unable to fulfil peer dependencies"
+        },
+        "type": "double"
+    },
+    {
+        "index": 306,
+        "joke": {
+            "q": "Why did the functional programmer finally move out of their house?",
+            "a": "For(e) closure"
+        },
+        "type": "double"
+    },
+    {
+        "index": 307,
+        "joke": {
+            "q": "How do JavaScript developers break up?",
+            "a": "They always promise to callback"
+        },
+        "type": "double"
+    },
+    {
+        "index": 308,
+        "joke": {
+            "q": "Why do developers mixup Terminals and Polygraphs?",
+            "a": "Because they both can see a lie (CLI)"
+        },
+        "type": "double"
+    },
+    {
+        "index": 309,
+        "joke": {
+            "q": "Did you hear about the programmer that was scared of IDEs?",
+            "a": "They retreated back into their shell"
+        },
+        "type": "double"
+    },
+    {
+        "index": 310,
+        "joke": {
+            "q": "What do you call optimistic front-end developers?",
+            "a": "Stack half-full developers."
+        },
+        "type": "double"
+    },
+    {
+        "index": 311,
+        "joke": {
+            "q": "Have you heard the one about the Corduroy pillow?",
+            "a": "It's making HEADLINES!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 312,
+        "joke": {
+            "q": "Hey officer! How did the hackers escape?",
+            "a": "No idea. They just ransomware."
+        },
+        "type": "double"
+    },
+    {
+        "index": 313,
+        "joke": {
+            "q": "Why can\u2019t data engineers become hat makers?",
+            "a": "They can only guarantee two thirds of a CAP!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 314,
+        "joke": {
+            "q": "How did the hippie learn about database transactions?",
+            "a": "By taking ACID"
+        },
+        "type": "double"
+    },
+    {
+        "index": 315,
+        "joke": {
+            "q": "Why is it called the Dark Ages?",
+            "a": "There were a lot of KNIGHTS!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 316,
+        "joke": {
+            "q": "What did the Network Administrator say when they caught a nasty virus?",
+            "a": "It hurts when IP"
+        },
+        "type": "double"
+    },
+    {
+        "index": 317,
+        "joke": {
+            "q": "Which programming language is the shortest?",
+            "a": "HTML. Because it doesn't have a neck between its <code>head<\/code> and <code>body<\/code>."
+        },
+        "type": "double"
+    },
+    {
+        "index": 318,
+        "joke": {
+            "q": "What good can come of 2989 witches casting a hex?",
+            "a": "None, it is always 0xBAD"
+        },
+        "type": "double"
+    },
+    {
+        "index": 319,
+        "joke": {
+            "q": "Did you hear about the witch who was off by two when casting a hex?",
+            "a": "They failed to make the target DEAD and made them DEAF instead!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 320,
+        "joke": {
+            "q": "Why do Front-End Developers eat lunch alone?",
+            "a": "Because, they don't know how to join tables."
+        },
+        "type": "double"
+    },
+    {
+        "index": 321,
+        "joke": {
+            "q": "What advice do you give to a JS developer who has never played baseball?",
+            "a": "Try catch."
+        },
+        "type": "double"
+    },
+    {
+        "index": 322,
+        "joke": {
+            "q": "Why are the arrays that Chuck Norris declare, of infinite size.",
+            "a": "Because Chuck Norris knows no bounds."
+        },
+        "type": "double"
+    },
+    {
+        "index": 323,
+        "joke": {
+            "q": "Why doesn't Chuck Norris need garbage collection.",
+            "a": "Because he doesn\u2019t call <code>.Dispose()<\/code>, he calls <code>.DropKick()<\/code>."
+        },
+        "type": "double"
+    },
+    {
+        "index": 324,
+        "joke": {
+            "q": "How did the programmer die in the shower?",
+            "a": "He read the shampoo bottle instructions: Lather. Rinse. Repeat."
+        },
+        "type": "double"
+    },
+    {
+        "index": 325,
+        "joke": {
+            "q": "What did the Java code say to the C code?",
+            "a": "You've got no class."
+        },
+        "type": "double"
+    },
+    {
+        "index": 326,
+        "joke": {
+            "q": "What is the most used language in programming?",
+            "a": "Profanity."
+        },
+        "type": "double"
+    },
+    {
+        "index": 327,
+        "joke": {
+            "q": "Why did the geek add <code>body { padding-top: 1000px; }<\/code> to his Facebook profile?",
+            "a": "He wanted to keep a low profile."
+        },
+        "type": "double"
+    },
+    {
+        "index": 328,
+        "joke": {
+            "q": "Why did the developer quit his job?",
+            "a": "He did not get arrays."
+        },
+        "type": "double"
+    },
+    {
+        "index": 329,
+        "joke": {
+            "q": "Why couldn't the developer pull the weeds from the garden?",
+            "a": "They didn't have root access."
+        },
+        "type": "double"
+    },
+    {
+        "index": 330,
+        "joke": {
+            "q": "How do you tell HTML from HTML5?",
+            "a": "Try it out in Internet Explorer, if it does not work then it's HTML5."
+        },
+        "type": "double"
+    },
+    {
+        "index": 331,
+        "joke": {
+            "q": "What do computers and air conditioners have in common?",
+            "a": "They both become useless when you open windows."
+        },
+        "type": "double"
+    },
+    {
+        "index": 332,
+        "joke": {
+            "q": "Hamlet: To be - or not to be...",
+            "a": "Programmer: True !"
+        },
+        "type": "double"
+    },
+    {
+        "index": 333,
+        "joke": {
+            "q": "What do cats and programmers have in common?",
+            "a": "When either one is unusually happy and excited, an appropriate question would be, \"did you find a bug\"."
+        },
+        "type": "double"
+    },
+    {
+        "index": 334,
+        "joke": {
+            "q": "Why was the developer unable to find his room?",
+            "a": "His room card said 404"
+        },
+        "type": "double"
+    },
+    {
+        "index": 335,
+        "joke": {
+            "q": "How do you tell an introverted computer scientist from an extroverted scientist?",
+            "a": "An extroverted computer scientist looks at your shoes when he talks to you."
+        },
+        "type": "double"
+    },
+    {
+        "index": 336,
+        "joke": {
+            "q": "How do you comfort a JS bug?",
+            "a": "You console it"
+        },
+        "type": "double"
+    },
+    {
+        "index": 337,
+        "joke": {
+            "q": "What's 0.1+0.2?",
+            "a": "It's 0.30000000000000004"
+        },
+        "type": "double"
+    },
+    {
+        "index": 338,
+        "joke": {
+            "q": "Why do programmers prefer dark mode?",
+            "a": "Because light attracts bugs."
+        },
+        "type": "double"
+    },
+    {
+        "index": 339,
+        "joke": {
+            "q": "Did you know?",
+            "a": "Spiders are the only web developers in the world that like finding bugs"
+        },
+        "type": "double"
+    },
+    {
+        "index": 340,
+        "joke": {
+            "q": "Don't add a programming language to your skills list after watching a 15-minute video on it.",
+            "a": "Yes wait until you've written hello world"
+        },
+        "type": "double"
+    },
+    {
+        "index": 341,
+        "joke": {
+            "q": "Why do python developers wear glasses?",
+            "a": "Because they can't C"
+        },
+        "type": "double"
+    },
+    {
+        "index": 342,
+        "joke": {
+            "q": "Why does the Docker container fail?",
+            "a": "So that, Kubernetes can start it again"
+        },
+        "type": "double"
+    },
+    {
+        "index": 343,
+        "joke": {
+            "q": "How many programmers does it take to screw in a light bulb?",
+            "a": "None. It's a hardware problem."
+        },
+        "type": "double"
+    },
+    {
+        "index": 344,
+        "joke": {
+            "q": "Why did the web developer walk out of a resturant in disgust?",
+            "a": "The seating was laid out in tables."
+        },
+        "type": "double"
+    },
+    {
+        "index": 345,
+        "joke": {
+            "q": "Why is 6 afraid of 7 in hexadecimal Canada?",
+            "a": "Because 7 8 9 A?"
+        },
+        "type": "double"
+    },
+    {
+        "index": 346,
+        "joke": {
+            "q": "Programming is like sex.",
+            "a": "Make one mistake and you end up supporting it for the rest of your life."
+        },
+        "type": "double"
+    },
+    {
+        "index": 347,
+        "joke": {
+            "q": "Hey, wanna hear a joke?",
+            "a": "Parsing HTML with regex."
+        },
+        "type": "double"
+    },
+    {
+        "index": 348,
+        "joke": {
+            "q": "Why do programmers confuse Halloween and Christmas?",
+            "a": "Because Oct 31 = Dec 25"
+        },
+        "type": "double"
+    },
+    {
+        "index": 349,
+        "joke": {
+            "q": "Why does no one like SQLrillex?",
+            "a": "He keeps dropping the database."
+        },
+        "type": "double"
+    },
+    {
+        "index": 350,
+        "joke": {
+            "q": "What do you call a developer who doesn't comment code?",
+            "a": "A developer."
+        },
+        "type": "double"
+    },
+    {
+        "index": 351,
+        "joke": {
+            "q": "Why did the Python programmer not respond to the foreign mails he got?",
+            "a": "Because his interpreter was busy collecting garbage."
+        },
+        "type": "double"
+    },
+    {
+        "index": 352,
+        "joke": {
+            "q": "Why did the programmer quit his job?",
+            "a": "Because he didn't get arrays."
+        },
+        "type": "double"
+    },
+    {
+        "index": 353,
+        "joke": {
+            "q": "How can you tell an extroverted programmer?",
+            "a": "He looks at YOUR shoes when he's talking."
+        },
+        "type": "double"
+    },
+    {
+        "index": 354,
+        "joke": {
+            "q": "How do you know God is a shitty programmer?",
+            "a": "He wrote the OS for an entire universe, but didn't leave a single useful comment."
+        },
+        "type": "double"
+    },
+    {
+        "index": 355,
+        "joke": {
+            "q": "Why are modern programming languages so materialistic?",
+            "a": "Because they are object-oriented."
+        },
+        "type": "double"
+    },
+    {
+        "index": 356,
+        "joke": {
+            "q": "What do you get if you lock a monkey in a room with a typewriter for 8 hours?",
+            "a": "A regular expression."
+        },
+        "type": "double"
+    },
+    {
+        "index": 357,
+        "joke": {
+            "q": "What do you call a group of 8 Hobbits?",
+            "a": "A Hobbyte."
+        },
+        "type": "double"
+    },
+    {
+        "index": 358,
+        "joke": {
+            "q": "Why did the JavaScript heap close shop?",
+            "a": "It ran out of memory."
+        },
+        "type": "double"
+    },
+    {
+        "index": 359,
+        "joke": {
+            "q": "What is the best prefix for global variables?",
+            "a": "\/\/"
+        },
+        "type": "double"
+    },
+    {
+        "index": 360,
+        "joke": {
+            "q": "What's the object-oriented way to become wealthy?",
+            "a": "Inheritance."
+        },
+        "type": "double"
+    },
+    {
+        "index": 361,
+        "joke": {
+            "q": "Genders are a lot like booleans.",
+            "a": "There's only two of them."
+        },
+        "type": "double"
+    },
+    {
+        "index": 362,
+        "joke": {
+            "q": "Why did the functional programmer get thrown out of school?",
+            "a": "Because he refused to take classes."
+        },
+        "type": "double"
+    },
+    {
+        "index": 363,
+        "joke": {
+            "q": ".NET developers are picky when it comes to food.",
+            "a": "They only like chicken NuGet."
+        },
+        "type": "double"
+    },
+    {
+        "index": 364,
+        "joke": {
+            "q": "Why do programmers wear glasses?",
+            "a": "Because they need to C#"
+        },
+        "type": "double"
+    },
+    {
+        "index": 365,
+        "joke": {
+            "q": "So what's a set of predefined steps the government might take to preserve the environment?",
+            "a": "An Al-Gore-ithm."
+        },
+        "type": "double"
+    },
+    {
+        "index": 366,
+        "joke": {
+            "q": "Why do Java programmers hate communism?",
+            "a": "They don't want to live in a classless society."
+        },
+        "type": "double"
+    },
+    {
+        "index": 367,
+        "joke": {
+            "q": "Hey baby I wish your name was asynchronous...",
+            "a": "... so you'd give me a callback."
+        },
+        "type": "double"
+    },
+    {
+        "index": 368,
+        "joke": {
+            "q": "What is a dying programmer's last program?",
+            "a": "Goodbye, world!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 369,
+        "joke": {
+            "q": "How do you generate a random string?",
+            "a": "Put a Windows user in front of Vim and tell them to exit."
+        },
+        "type": "double"
+    },
+    {
+        "index": 370,
+        "joke": {
+            "q": "How did you make your friend rage?",
+            "a": "I implemented a greek question mark in his JavaScript code."
+        },
+        "type": "double"
+    },
+    {
+        "index": 371,
+        "joke": {
+            "q": "What is the most used language in programming?",
+            "a": "Profanity."
+        },
+        "type": "double"
+    },
+    {
+        "index": 372,
+        "joke": {
+            "q": "What are bits?",
+            "a": "Tiny things left when you drop your computer down the stairs."
+        },
+        "type": "double"
+    },
+    {
+        "index": 373,
+        "joke": {
+            "q": "Why did the programmer jump on the table?",
+            "a": "Because debug was on his screen."
+        },
+        "type": "double"
+    },
+    {
+        "index": 374,
+        "joke": {
+            "q": "Why do they call it hyper terminal?",
+            "a": "Too much Java."
+        },
+        "type": "double"
+    },
+    {
+        "index": 375,
+        "joke": {
+            "q": "Why do programmers prefer using the dark mode?",
+            "a": "Because light attracts bugs."
+        },
+        "type": "double"
+    },
+    {
+        "index": 376,
+        "joke": {
+            "q": "Why did the Python data scientist get arrested at customs?",
+            "a": "She was caught trying to import pandas!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 377,
+        "joke": {
+            "q": "Why is Linux safe?",
+            "a": "Hackers peak through Windows only."
+        },
+        "type": "double"
+    },
+    {
+        "index": 378,
+        "joke": {
+            "q": "Why are Assembly programmers always soaking wet?",
+            "a": "They work below C-level."
+        },
+        "type": "double"
+    },
+    {
+        "index": 379,
+        "joke": {
+            "q": "Why did the database administrator leave his wife?",
+            "a": "She had one-to-many relationships."
+        },
+        "type": "double"
+    },
+    {
+        "index": 380,
+        "joke": {
+            "q": "How did the programmer die in the shower?",
+            "a": "He read the shampoo bottle instructions: Lather. Rinse. Repeat."
+        },
+        "type": "double"
+    },
+    {
+        "index": 381,
+        "joke": {
+            "q": "Why was the JavaScript developer sad?",
+            "a": "Because they didn't Node how to Express themself!"
+        },
+        "type": "double"
+    },
+    {
+        "index": 382,
+        "joke": {
+            "q": "why do python programmers wear glasses?",
+            "a": "Because they can't C."
+        },
+        "type": "double"
+    }
+]

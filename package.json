@@ -1,0 +1,20 @@
+{
+  "name": "GithubCardsApi",
+  "version": "1.0.0",
+  "description": "Github readme cards api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "nodemon index.js",
+    "publish": "git add . && git commit -am \"Improved version\" && git push heroku master"
+  },
+  "keywords": [],
+  "author": "Akansh Sirohi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
