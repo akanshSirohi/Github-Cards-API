@@ -24,6 +24,6 @@ Embed one of these in your README:
 
 ### List of card names currently available
 
-| Available Card  | Example | Available Params | Preview |
+| Available Cards | Example | Available Params | Preview |
 | --------------- | ------- | ---------------- | ------- |
-| `jokes-card`  | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
+| `jokes-card` | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
