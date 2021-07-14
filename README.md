@@ -26,4 +26,4 @@ Embed one of these in your README:
 
 | Available Card  | Example | Available Params | Preview |
 | --------------- | ------- | ---------------- | ------- |
-| `jokes-card`  | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | ![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)
+| `jokes-card`  | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
