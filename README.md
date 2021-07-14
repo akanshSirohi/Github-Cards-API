@@ -4,7 +4,8 @@ Github README.md cards api
 
 ### How to use
 
-Endpoint URL: `https://github-cards-api.herokuapp.com/`
+Visit endpoint url for all available cards and available options for each card <br/>
+Endpoint URL: `https://github-cards-api.herokuapp.com`
 
 Embed one of these in your README:
 
@@ -13,7 +14,7 @@ Embed one of these in your README:
 ![Card](https://github-cards-api.herokuapp.com/any_card_name)
 ```
 
-<h2 align="center">OR</h2>
+<h3 align="center">OR</h3>
 
 ```html
 <!-- HTML -->
@@ -23,6 +24,6 @@ Embed one of these in your README:
 
 ### List of card names currently available
 
-| Available Card  | URL |
-| ------------- | ------------- |
-| `joke-card`  | https://github-cards-api.herokuapp.com/joke-card  |
+| Available Card  | Example | Available Params | Preview |
+| --------------- | ------- | ---------------- | ------- |
+| `jokes-card`  | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | ![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)
