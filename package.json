@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "debug": "nodemon test.js",
-    "publish": "git add . && git commit -am \"Improved version\" && git push origin master"
+    "publish": "git add . && git commit -am \"Testing version\" && git push origin master"
   },
   "keywords": [],
   "author": "Akansh Sirohi",

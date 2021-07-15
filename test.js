@@ -1,4 +1,5 @@
 const { createCanvas } = require("canvas");
+const fs = require("fs");
 
 function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
   if (typeof stroke === "undefined") {
@@ -102,7 +103,7 @@ const getTestSvg = () => {
     true
   );
 
-  canvas.height = mHeight + fontSize * 6;
+  canvas.height = mHeight + fontSize * 6.5;
 
   // Gradient Creation
   let grad = ctx.createLinearGradient(
@@ -153,7 +154,7 @@ const getTestSvg = () => {
 
   let svg = "data:image/svg+xml;base64," + canvas.toBuffer().toString("base64");
   return svg;
-  // fs.writeFileSync("out.svg", buff);
+  // fs.writeFileSync("out.svg", canvas.toBuffer());
 };
-
+// getTestSvg();
 module.exports.getTestSvg = getTestSvg;
