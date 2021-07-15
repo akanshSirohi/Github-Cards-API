@@ -76,7 +76,7 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, measure) {
 }
 
 const getTestSvg = () => {
-  const W = 500;
+  const W = 400;
   const fontSize = 11;
   const padding = 30;
 
@@ -84,12 +84,12 @@ const getTestSvg = () => {
   const ctx = canvas.getContext("2d");
 
   let txt =
-    "Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print";
+    "Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print";
 
   let textConf = {
     x: padding,
     y: fontSize * 3.6,
-    maxWidth: W - padding * 1.5,
+    maxWidth: W - padding * 1.8,
     lineHeight: fontSize,
   };
 
@@ -103,7 +103,7 @@ const getTestSvg = () => {
     true
   );
 
-  canvas.height = mHeight + fontSize * 6.5;
+  canvas.height = mHeight + fontSize * 6.8;
 
   // Gradient Creation
   let grad = ctx.createLinearGradient(
@@ -156,5 +156,5 @@ const getTestSvg = () => {
   return svg;
   // fs.writeFileSync("out.svg", canvas.toBuffer());
 };
-// getTestSvg();
+
 module.exports.getTestSvg = getTestSvg;
