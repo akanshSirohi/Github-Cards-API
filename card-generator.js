@@ -105,7 +105,7 @@ const generateCard = (txt, theme) => {
   let mHeight = wrapText(ctx,txt,textConf.x,textConf.y,textConf.maxWidth,textConf.lineHeight,true);
 
   // Change card height according to text
-  canvas.height = mHeight + fontSize * 6.8;
+  canvas.height = mHeight + fontSize * 6.5;
 
   // Gradient Creation
   // prettier-ignore
