@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "debug": "nodemon index.js",
+    "debug": "nodemon test.js",
     "publish": "git add . && git commit -am \"Improved version\" && git push origin master"
   },
   "keywords": [],
@@ -15,6 +15,9 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "canvas": "^2.8.0",
+    "express": "^4.17.1",
+    "html-2-canvas": "0.0.8",
+    "source-map-support": "^0.5.19"
   }
 }
