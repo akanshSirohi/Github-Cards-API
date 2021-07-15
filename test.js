@@ -152,7 +152,7 @@ const getTestSvg = () => {
     false
   );
 
-  let svg = "data:image/svg+xml;base64," + canvas.toBuffer().toString("base64");
+  let svg = canvas.toBuffer().toString("base64");
   return svg;
   // fs.writeFileSync("out.svg", canvas.toBuffer());
 };
