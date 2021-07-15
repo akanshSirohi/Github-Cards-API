@@ -152,7 +152,7 @@ const getTestSvg = () => {
     false
   );
 
-  let svg = canvas.toBuffer().toString("base64");
+  let svg = canvas.toBuffer().toString("utf-8");
   return svg;
   // fs.writeFileSync("out.svg", canvas.toBuffer());
 };
