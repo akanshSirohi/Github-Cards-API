@@ -1,7 +1,9 @@
 const { createCanvas } = require("canvas");
-const fs = require("fs");
 
-function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
+const valid_themes = ["dark", "light"];
+
+// prettier-ignore
+const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
   if (typeof stroke === "undefined") {
     stroke = true;
   }
@@ -33,19 +35,20 @@ function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
   ctx.quadraticCurveTo(x, y, x + radius.tl, y);
   ctx.closePath();
   if (fill) {
-    ctx.shadowColor = "#000";
-    ctx.shadowBlur = 7;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
-
+    if(shadow) {
+      ctx.shadowColor = shadowColor;
+      ctx.shadowBlur = 7;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 0;
+    }
     ctx.fill();
   }
   if (stroke) {
     ctx.stroke();
   }
-}
+};
 
-function wrapText(context, text, x, y, maxWidth, lineHeight, measure) {
+const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
   var cars = text.split("\n");
   let linesCnt = 0;
   for (var ii = 0; ii < cars.length; ii++) {
@@ -73,47 +76,58 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, measure) {
     y += lineHeight;
   }
   return linesCnt * lineHeight;
-}
+};
 
-const getTestSvg = () => {
+const generateCard = (txt, theme) => {
   const W = 400;
   const fontSize = 11;
   const padding = 30;
+  let card_bg = "#fff";
+  let font_color = "#fff";
+  let shadow = false;
+  let shadowColor = "#000";
+
+  if (!valid_themes.includes(theme)) {
+    theme = valid_themes[0];
+  }
 
   const canvas = createCanvas(W, W, "svg");
   const ctx = canvas.getContext("2d");
-
-  let txt =
-    "Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print Some very very long text to print";
 
   let textConf = {
     x: padding,
     y: fontSize * 3.6,
     maxWidth: W - padding * 1.8,
-    lineHeight: fontSize,
+    lineHeight: fontSize + 2,
   };
 
-  let mHeight = wrapText(
-    ctx,
-    txt,
-    textConf.x,
-    textConf.y,
-    textConf.maxWidth,
-    textConf.lineHeight,
-    true
-  );
+  // prettier-ignore
+  let mHeight = wrapText(ctx,txt,textConf.x,textConf.y,textConf.maxWidth,textConf.lineHeight,true);
 
+  // Change card height according to text
   canvas.height = mHeight + fontSize * 6.8;
 
   // Gradient Creation
-  let grad = ctx.createLinearGradient(
-    0,
-    canvas.height / 2,
-    W,
-    canvas.height / 2
-  );
-  grad.addColorStop(0, "rgba(106, 17, 203, 1)");
-  grad.addColorStop(1, "rgba(37, 117, 252, 1)");
+  // prettier-ignore
+  let grad;
+
+  // Card Themes
+  if (theme === "dark") {
+    grad = ctx.createLinearGradient(0, canvas.height / 2, W, canvas.height / 2);
+    grad.addColorStop(0, "rgba(106, 17, 203, 1)");
+    grad.addColorStop(1, "rgba(37, 117, 252, 1)");
+    card_bg = "#282828";
+    font_color = "#fff";
+    shadow = true;
+    shadowColor = "#000";
+  } else if (theme === "light") {
+    grad = ctx.createLinearGradient(W / 2, 0, W / 2, canvas.height);
+    grad.addColorStop(0, "rgba(42, 245, 152, 1)");
+    grad.addColorStop(1, "rgba(0, 158, 253, 1)");
+    card_bg = "#eee";
+    font_color = "#222";
+    shadow = false;
+  }
 
   // Draw Gradient
   ctx.beginPath();
@@ -124,8 +138,7 @@ const getTestSvg = () => {
 
   // Draw Card
   ctx.beginPath();
-  ctx.fillStyle = "#282828";
-  ctx.lineWidth = 0;
+  ctx.fillStyle = card_bg;
   ctx.strokeStyle = "#00000000";
   roundRect(
     ctx,
@@ -135,11 +148,13 @@ const getTestSvg = () => {
     canvas.height - padding,
     5,
     true,
-    true
+    true,
+    shadow,
+    shadowColor
   );
 
   // Draw Text
-  ctx.fillStyle = "#fff";
+  ctx.fillStyle = font_color;
   ctx.font = `${fontSize}px Ubuntu`;
 
   wrapText(
@@ -154,7 +169,6 @@ const getTestSvg = () => {
 
   let svg = canvas.toBuffer().toString("utf-8");
   return svg;
-  // fs.writeFileSync("out.svg", canvas.toBuffer());
 };
 
-module.exports.getTestSvg = getTestSvg;
+module.exports.generateCard = generateCard;
