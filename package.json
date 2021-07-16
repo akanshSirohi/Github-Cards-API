@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "debug": "nodemon test.js",
+    "debug": "nodemon index.js",
     "publish": "git add . && git commit -am \"Testing version\" && git push origin master"
   },
   "keywords": [],

@@ -26,7 +26,13 @@ Embed one of these in your README:
 
 | Available Cards | Example | Available Params | Preview |
 | --------------- | ------- | ---------------- | ------- |
-| `jokes-card` | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=dark\light | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
+| `jokes-card` | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=all_themes | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
+| `programming-quotes-card` | `![Card](https://github-cards-api.herokuapp.com/programming-quotes-card)` | theme=all_themes | https://github-cards-api.herokuapp.com/programming-quotes-card |
+
+### Available Themes List
+1. light
+2. dark
+3. dark_2
 
 
 ## How to contribute

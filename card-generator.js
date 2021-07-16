@@ -1,6 +1,6 @@
 const { createCanvas } = require("canvas");
 
-const valid_themes = ["dark", "light"];
+const valid_themes = ["dark", "dark_2", "light"];
 
 // prettier-ignore
 const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
@@ -127,6 +127,23 @@ const generateCard = (txt, theme) => {
     card_bg = "#eee";
     font_color = "#222";
     shadow = false;
+  } else if (theme === "dark_2") {
+    grad = ctx.createLinearGradient(
+      W / 2 - canvas.height >= 0 ? W / 2 - canvas.height : 0,
+      canvas.height / 2,
+      W / 2 + canvas.height,
+      canvas.height >= 290 ? canvas.height - 290 : 0
+    );
+
+    grad.addColorStop(0, "rgba(61, 51, 147, 1)");
+    grad.addColorStop(0.37, "rgba(43, 118, 185, 1)");
+    grad.addColorStop(0.65, "rgba(44, 172, 209, 1)");
+    grad.addColorStop(1, "rgba(53, 235, 147, 1)");
+
+    card_bg = "#282828";
+    font_color = "#fff";
+    shadow = true;
+    shadowColor = "#000";
   }
 
   // Draw Gradient
