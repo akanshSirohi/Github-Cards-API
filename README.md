@@ -34,6 +34,15 @@ Embed one of these in your README:
 2. dark
 3. dark_2
 
+## Examples
+- Light Theme Card
+![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=light)
+
+- Dark Theme Card
+![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)
+
+- Dark_2 Theme Card
+![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark_2)
 
 ## How to contribute
 
