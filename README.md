@@ -35,13 +35,13 @@ Embed one of these in your README:
 3. dark_2
 
 ## Examples
-- Light Theme Card
+- Light Theme Card <br/>
 ![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=light)
 
-- Dark Theme Card
+- Dark Theme Card <br/>
 ![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)
 
-- Dark_2 Theme Card
+- Dark_2 Theme Card <br/>
 ![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark_2)
 
 ## How to contribute
