@@ -1,6 +1,13 @@
 const { createCanvas, loadImage, Image } = require("canvas");
 
-const valid_themes = ["dark", "dark_2", "light", "pattern_1", "pattern_2"];
+const valid_themes = [
+  "dark",
+  "dark_2",
+  "light",
+  "pattern_1",
+  "pattern_2",
+  "pattern_3",
+];
 
 // prettier-ignore
 const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
@@ -155,6 +162,13 @@ const processCard = (txt, theme, image) => {
     card_bg = "#282828";
     font_color = "#fff";
     shadow = false;
+  } else if (theme === "pattern_3") {
+    image.height = canvas.height;
+    image.width = canvas.width;
+    background = ctx.createPattern(image, "repeat");
+    card_bg = "#eee";
+    font_color = "#222";
+    shadow = false;
   }
 
   // Draw Gradient
@@ -213,6 +227,8 @@ const generateCard = (txt, theme, callback) => {
       pattern_path = "./assets/endless-constellation-bg.svg";
     } else if (theme === "pattern_2") {
       pattern_path = "./assets/protruding-squares-bg.svg";
+    } else if (theme === "pattern_3") {
+      pattern_path = "./assets/rainbow-vortex-bg.svg";
     }
     loadImage(pattern_path)
       .then((image) => {
