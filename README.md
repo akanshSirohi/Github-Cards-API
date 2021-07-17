@@ -33,6 +33,9 @@ Embed one of these in your README:
 1. light
 2. dark
 3. dark_2
+4. pattern_1
+5. pattern_2
+6. pattern_3
 
 ## Examples
 - Light Theme Card <br/>
@@ -43,6 +46,15 @@ Embed one of these in your README:
 
 - Dark_2 Theme Card <br/>
 ![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark_2)
+
+- Pattern_1 Theme Card <br/>
+![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=pattern_1)
+
+- Pattern_2 Theme Card <br/>
+![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=pattern_2)
+
+- Pattern_3 Theme Card <br/>
+![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=pattern_3)
 
 ## How to contribute
 
