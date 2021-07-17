@@ -36,6 +36,7 @@ Embed one of these in your README:
 4. pattern_1
 5. pattern_2
 6. pattern_3
+7. random - Any random theme will we applied
 
 ## Examples
 - Light Theme Card <br/>

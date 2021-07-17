@@ -1,4 +1,4 @@
-const { createCanvas, loadImage, Image } = require("canvas");
+const { createCanvas, loadImage } = require("canvas");
 
 const valid_themes = [
   "dark",
@@ -217,6 +217,10 @@ const generateCard = (txt, theme, callback) => {
   // Pre processing for predefined pattern themes only
 
   let pattern_path;
+
+  if (theme === "random") {
+    theme = valid_themes[Math.floor(Math.random() * valid_themes.length)];
+  }
 
   if (!valid_themes.includes(theme)) {
     theme = valid_themes[0];
