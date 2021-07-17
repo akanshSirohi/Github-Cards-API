@@ -28,6 +28,8 @@ Embed one of these in your README:
 | --------------- | ------- | ---------------- | ------- |
 | `jokes-card` | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=all_themes | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
 | `programming-quotes-card` | `![Card](https://github-cards-api.herokuapp.com/programming-quotes-card)` | theme=all_themes | https://github-cards-api.herokuapp.com/programming-quotes-card |
+| `motivational-quotes-card` | `![Card](https://github-cards-api.herokuapp.com/motivational-quotes-card)` | theme=all_themes | https://github-cards-api.herokuapp.com/motivational-quotes-card |
+
 
 ### Available Themes List
 1. light
