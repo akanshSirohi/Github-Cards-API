@@ -1,6 +1,6 @@
-const { createCanvas } = require("canvas");
+const { createCanvas, loadImage, Image } = require("canvas");
 
-const valid_themes = ["dark", "dark_2", "light"];
+const valid_themes = ["dark", "dark_2", "light", "pattern_1", "pattern_2"];
 
 // prettier-ignore
 const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
@@ -78,7 +78,7 @@ const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
   return linesCnt * lineHeight;
 };
 
-const generateCard = (txt, theme) => {
+const processCard = (txt, theme, image) => {
   const W = 400;
   const fontSize = 11;
   const padding = 30;
@@ -86,10 +86,6 @@ const generateCard = (txt, theme) => {
   let font_color = "#fff";
   let shadow = false;
   let shadowColor = "#000";
-
-  if (!valid_themes.includes(theme)) {
-    theme = valid_themes[0];
-  }
 
   const canvas = createCanvas(W, W, "svg");
   const ctx = canvas.getContext("2d");
@@ -107,48 +103,63 @@ const generateCard = (txt, theme) => {
   // Change card height according to text
   canvas.height = mHeight + fontSize * 6.5;
 
-  // Gradient Creation
+  // Background Creation
   // prettier-ignore
-  let grad;
+  let background;
 
   // Card Themes
   if (theme === "dark") {
-    grad = ctx.createLinearGradient(0, canvas.height / 2, W, canvas.height / 2);
-    grad.addColorStop(0, "rgba(106, 17, 203, 1)");
-    grad.addColorStop(1, "rgba(37, 117, 252, 1)");
+    background = ctx.createLinearGradient(
+      0,
+      canvas.height / 2,
+      W,
+      canvas.height / 2
+    );
+    background.addColorStop(0, "rgba(106, 17, 203, 1)");
+    background.addColorStop(1, "rgba(37, 117, 252, 1)");
     card_bg = "#282828";
     font_color = "#fff";
     shadow = true;
     shadowColor = "#000";
   } else if (theme === "light") {
-    grad = ctx.createLinearGradient(W / 2, 0, W / 2, canvas.height);
-    grad.addColorStop(0, "rgba(42, 245, 152, 1)");
-    grad.addColorStop(1, "rgba(0, 158, 253, 1)");
+    background = ctx.createLinearGradient(W / 2, 0, W / 2, canvas.height);
+    background.addColorStop(0, "rgba(42, 245, 152, 1)");
+    background.addColorStop(1, "rgba(0, 158, 253, 1)");
     card_bg = "#eee";
     font_color = "#222";
     shadow = false;
   } else if (theme === "dark_2") {
-    grad = ctx.createLinearGradient(
+    background = ctx.createLinearGradient(
       W / 2 - canvas.height >= 0 ? W / 2 - canvas.height : 0,
       canvas.height / 2,
       W / 2 + canvas.height,
       canvas.height >= 290 ? canvas.height - 290 : 0
     );
 
-    grad.addColorStop(0, "rgba(61, 51, 147, 1)");
-    grad.addColorStop(0.37, "rgba(43, 118, 185, 1)");
-    grad.addColorStop(0.65, "rgba(44, 172, 209, 1)");
-    grad.addColorStop(1, "rgba(53, 235, 147, 1)");
+    background.addColorStop(0, "rgba(61, 51, 147, 1)");
+    background.addColorStop(0.37, "rgba(43, 118, 185, 1)");
+    background.addColorStop(0.65, "rgba(44, 172, 209, 1)");
+    background.addColorStop(1, "rgba(53, 235, 147, 1)");
 
     card_bg = "#282828";
     font_color = "#fff";
     shadow = true;
     shadowColor = "#000";
+  } else if (theme === "pattern_1") {
+    background = ctx.createPattern(image, "repeat");
+    card_bg = "#eee";
+    font_color = "#222";
+    shadow = false;
+  } else if (theme === "pattern_2") {
+    background = ctx.createPattern(image, "repeat");
+    card_bg = "#282828";
+    font_color = "#fff";
+    shadow = false;
   }
 
   // Draw Gradient
   ctx.beginPath();
-  ctx.fillStyle = grad;
+  ctx.fillStyle = background;
   ctx.strokeStyle = "#00000000";
   ctx.fillRect(0, 0, W, canvas.height);
   ctx.stroke();
@@ -186,6 +197,34 @@ const generateCard = (txt, theme) => {
 
   let svg = canvas.toBuffer().toString("utf-8");
   return svg;
+};
+
+const generateCard = (txt, theme, callback) => {
+  // Pre processing for predefined pattern themes only
+
+  let pattern_path;
+
+  if (!valid_themes.includes(theme)) {
+    theme = valid_themes[0];
+  }
+
+  if (theme.startsWith("pattern_")) {
+    if (theme === "pattern_1") {
+      pattern_path = "./assets/endless-constellation-bg.svg";
+    } else if (theme === "pattern_2") {
+      pattern_path = "./assets/protruding-squares-bg.svg";
+    }
+    loadImage(pattern_path)
+      .then((image) => {
+        callback(processCard(txt, theme, image));
+      })
+      .catch((err) => {
+        console.log(err);
+        callback(processCard(txt, valid_themes[0], null));
+      });
+  } else {
+    callback(processCard(txt, theme, null));
+  }
 };
 
 module.exports.generateCard = generateCard;

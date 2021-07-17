@@ -26,14 +26,13 @@ router.get("/", (req, res) => {
     joke_content = `Q. ${random_joke.joke.q}\n\n${random_joke.joke.a}`;
   }
 
-  let joke_card = generateCard(joke_content, theme);
-
-  res.writeHead(200, {
-    "Content-Type": "image/svg+xml",
-    "Cache-Control": "public, max-age=10",
+  generateCard(joke_content, theme, (joke_card) => {
+    res.writeHead(200, {
+      "Content-Type": "image/svg+xml",
+      "Cache-Control": "public, max-age=10",
+    });
+    res.end(joke_card);
   });
-
-  res.end(joke_card);
 });
 
 module.exports = router;

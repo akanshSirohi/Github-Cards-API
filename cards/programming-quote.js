@@ -21,14 +21,14 @@ router.get("/", (req, res) => {
 
   let quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
 
-  let quote_card = generateCard(quote_content, theme);
+  generateCard(quote_content, theme, (quote_card) => {
+    res.writeHead(200, {
+      "Content-Type": "image/svg+xml",
+      "Cache-Control": "public, max-age=10",
+    });
 
-  res.writeHead(200, {
-    "Content-Type": "image/svg+xml",
-    "Cache-Control": "public, max-age=10",
+    res.end(quote_card);
   });
-
-  res.end(quote_card);
 });
 
 module.exports = router;
