@@ -95,6 +95,7 @@ const processCard = (txt, theme, image) => {
   let shadowColor = "#000";
 
   const canvas = createCanvas(W, W, "svg");
+
   const ctx = canvas.getContext("2d");
 
   let textConf = {
