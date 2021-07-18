@@ -46,8 +46,6 @@ router.get("/", (req, res) => {
           console.log(err);
           res.json({ msg: "Error" });
         });
-    } else if (type === "txt") {
-      res.send(quote_content);
     } else {
       res.writeHead(200, {
         "Content-Type": "image/svg+xml",
