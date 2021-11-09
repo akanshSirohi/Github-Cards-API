@@ -12,7 +12,7 @@
   "author": "Akansh Sirohi",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "canvas": "^2.8.0",
