@@ -15,7 +15,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "canvas": "^2.8.0",
+    "canvas": "^2.9.0",
     "express": "^4.17.1",
     "svg-png-converter": "0.0.9"
   }
