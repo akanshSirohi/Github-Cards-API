@@ -21,6 +21,14 @@ router.get("/", (req, res) => {
       },
       example: `${baseurl}/programming-quotes-card`,
     },
+    "motivational-quotes-card": {
+      info: "Random motivational quotes card",
+      api: {
+        theme:
+          "Theme of card, any available theme. Default: dark_2  [Optional]",
+      },
+      example: `${baseurl}/motivational-quotes-card`,
+    },
   });
 });
 
