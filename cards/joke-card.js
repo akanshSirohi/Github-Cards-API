@@ -33,6 +33,7 @@ router.get("/", (req, res) => {
     options = {
       card_color: "#ffffffc2",
       font_color: "#000",
+      shadow: false,
     };
   }
 
