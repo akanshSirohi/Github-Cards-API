@@ -26,7 +26,17 @@ router.get("/", (req, res) => {
     joke_content = `Q. ${random_joke.joke.q}\n\n${random_joke.joke.a}`;
   }
 
-  generateCard(joke_content, theme, (joke_card) => {
+  // Example of custom theme moderation
+  let options = null;
+  if (theme === "my_theme") {
+    theme = "pattern_3";
+    options = {
+      card_color: "#ffffffc2",
+      font_color: "#000",
+    };
+  }
+
+  generateCard(joke_content, theme, options, (joke_card) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",

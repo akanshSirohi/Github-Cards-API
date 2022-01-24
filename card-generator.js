@@ -9,6 +9,8 @@ const valid_themes = [
   "pattern_3",
 ];
 
+let extra_opt = null;
+
 // prettier-ignore
 const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
   if (typeof stroke === "undefined") {
@@ -172,6 +174,20 @@ const processCard = (txt, theme, image) => {
     shadow = false;
   }
 
+  if (extra_opt != null) {
+    if ("card_color" in extra_opt) {
+      card_bg = extra_opt.card_color;
+    }
+    if ("font_color" in extra_opt) {
+      font_color = extra_opt.font_color;
+    }
+    if ("shadow" in extra_opt) {
+      if (typeof extra_opt.shadow === "boolean") {
+        shadow = extra_opt.shadow;
+      }
+    }
+  }
+
   // Draw Gradient
   ctx.beginPath();
   ctx.fillStyle = background;
@@ -214,10 +230,12 @@ const processCard = (txt, theme, image) => {
   return svg;
 };
 
-const generateCard = (txt, theme, callback) => {
+const generateCard = (txt, theme, options, callback) => {
   // Pre processing for predefined pattern themes only
 
   let pattern_path;
+
+  extra_opt = options;
 
   if (theme === "random") {
     theme = valid_themes[Math.floor(Math.random() * valid_themes.length)];

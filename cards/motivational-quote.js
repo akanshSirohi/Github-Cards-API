@@ -21,7 +21,7 @@ router.get("/", (req, res) => {
 
   let quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
 
-  generateCard(quote_content, theme, (quote_card) => {
+  generateCard(quote_content, theme, null, (quote_card) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",
