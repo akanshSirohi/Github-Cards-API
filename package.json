@@ -18,7 +18,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "canvas": "^2.8.0",
+    "canvas": "^2.9.1",
     "express": "^4.17.1"
   }
 }
