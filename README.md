@@ -7,20 +7,20 @@ Github README.md cards api
 ### How to use
 
 Visit endpoint url for all available cards and available options for each card <br/>
-Endpoint URL: `https://github-cards-api.herokuapp.com`
+Endpoint URL: `https://github-cards.onrender.com`
 
 Embed one of these in your README:
 
 ```md
 <!-- Markdown -->
-![Card](https://github-cards-api.herokuapp.com/any_card_name)
+![Card](https://github-cards.onrender.com/any_card_name)
 ```
 
 <h3 align="center">OR</h3>
 
 ```html
 <!-- HTML -->
-<img src="https://github-cards-api.herokuapp.com/any_card_name" alt="Card" />
+<img src="https://github-cards.onrender.com/any_card_name" alt="Card" />
 ```
 
 
@@ -28,9 +28,9 @@ Embed one of these in your README:
 
 | Available Cards | Example | Available Params | Preview |
 | --------------- | ------- | ---------------- | ------- |
-| `jokes-card` | `![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)` | theme=all_themes | https://github-cards-api.herokuapp.com/jokes-card?theme=dark |
-| `programming-quotes-card` | `![Card](https://github-cards-api.herokuapp.com/programming-quotes-card)` | theme=all_themes | https://github-cards-api.herokuapp.com/programming-quotes-card |
-| `motivational-quotes-card` | `![Card](https://github-cards-api.herokuapp.com/motivational-quotes-card)` | theme=all_themes | https://github-cards-api.herokuapp.com/motivational-quotes-card |
+| `jokes-card` | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)` | theme=all_themes | https://github-cards.onrender.com/jokes-card?theme=dark |
+| `programming-quotes-card` | `![Card](https://github-cards.onrender.com/programming-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/programming-quotes-card |
+| `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/motivational-quotes-card |
 
 
 ### Available Themes List
@@ -44,22 +44,22 @@ Embed one of these in your README:
 
 ## Examples
 - Light Theme Card <br/>
-![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=light)
+![Card](https://github-cards.onrender.com/jokes-card?theme=light)
 
 - Dark Theme Card <br/>
-![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark)
+![Card](https://github-cards.onrender.com/jokes-card?theme=dark)
 
 - Dark_2 Theme Card <br/>
-![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=dark_2)
+![Card](https://github-cards.onrender.com/jokes-card?theme=dark_2)
 
 - Pattern_1 Theme Card <br/>
-![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=pattern_1)
+![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_1)
 
 - Pattern_2 Theme Card <br/>
-![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=pattern_2)
+![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_2)
 
 - Pattern_3 Theme Card <br/>
-![Card](https://github-cards-api.herokuapp.com/jokes-card?theme=pattern_3)
+![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_3)
 
 ## How to contribute
 
