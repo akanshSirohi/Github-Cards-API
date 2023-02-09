@@ -1,9 +1,5 @@
 # Github-Cards-Api
 
-## ⚠️ THIS API ISN'T WORKING RIGHT NOW BECAUSE OF HEROKU TURNED OFF ITS FREE TIER, I WILL REDEPLOY IT ON ANY OTHER ALTERNATE PLATFORM SOON ⚠️
-
-Github README.md cards api
-
 ### How to use
 
 Visit endpoint url for all available cards and available options for each card <br/>
