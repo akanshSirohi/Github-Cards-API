@@ -8,9 +8,6 @@
     "debug": "nodemon index.js",
     "publish": "git add . && git commit -am \"Improved version\" && git push origin master"
   },
-  "engines": {
-    "node": "14.x"
-  },
   "keywords": [],
   "author": "Akansh Sirohi",
   "license": "ISC",
