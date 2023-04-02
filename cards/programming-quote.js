@@ -2,12 +2,18 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 const { generateCard } = require("../card-generator");
+const { parseOptions } = require("../options-parser");
 
 router.get("/", (req, res) => {
   let theme = "dark_2";
 
   if ("theme" in req.query) {
     theme = req.query.theme;
+  }
+
+  let options = null;
+  if(theme === "custom") {
+    options = parseOptions(req.query);
   }
 
   let quotes = fs.readFileSync("./data/programming_quotes.json", {
@@ -21,7 +27,7 @@ router.get("/", (req, res) => {
 
   let quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
 
-  generateCard(quote_content, theme, null, (quote_card) => {
+  generateCard(quote_content, theme, options, (quote_card) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",

@@ -4,6 +4,14 @@ const router = express.Router();
 // All available api routes and parameters
 
 router.get("/", (req, res) => {
+  const port = process.env.PORT || 5000;
+  let hostname = req.hostname;
+  let baseurl;
+  if(hostname == "localhost") {
+    baseurl = `http://localhost:${port}`;
+  }else{
+    baseurl = `https://${hostname}`;
+  }
   res.json({
     "jokes-card": {
       info: "Random programming jokes card",

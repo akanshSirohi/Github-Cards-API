@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 const { generateCard } = require("../card-generator");
+const { parseOptions } = require("../options-parser");
 
 router.get("/", (req, res) => {
   let theme = "light";
@@ -35,6 +36,8 @@ router.get("/", (req, res) => {
       font_color: "#000",
       shadow: false,
     };
+  }else if(theme === "custom") {
+    options = parseOptions(req.query);
   }
 
   generateCard(joke_content, theme, options, (joke_card) => {

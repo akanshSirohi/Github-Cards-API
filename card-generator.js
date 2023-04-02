@@ -7,6 +7,7 @@ const valid_themes = [
   "pattern_1",
   "pattern_2",
   "pattern_3",
+  "custom"
 ];
 
 let extra_opt = null;
@@ -51,6 +52,12 @@ const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shado
       ctx.shadowOffsetY = 0;
     }
     ctx.fill();
+    if(shadow) {
+      ctx.shadowColor = "transparent";
+      ctx.shadowBlur = 0;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 0;
+    }
   }
   if (stroke) {
     ctx.stroke();
@@ -184,7 +191,15 @@ const processCard = (txt, theme, image) => {
     if ("shadow" in extra_opt) {
       if (typeof extra_opt.shadow === "boolean") {
         shadow = extra_opt.shadow;
+        if(shadow) {
+          if("shadow_color" in extra_opt) {
+            shadowColor = extra_opt.shadow_color;
+          }
+        }
       }
+    }
+    if ("bg_color" in extra_opt) {
+      background = extra_opt.bg_color;
     }
   }
 
@@ -238,7 +253,7 @@ const generateCard = (txt, theme, options, callback) => {
   extra_opt = options;
 
   if (theme === "random") {
-    theme = valid_themes[Math.floor(Math.random() * valid_themes.length)];
+    theme = valid_themes[Math.floor(Math.random() * (valid_themes.length-1))];
   }
 
   if (!valid_themes.includes(theme)) {
