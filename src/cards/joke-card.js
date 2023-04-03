@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
     theme = req.query.theme;
   }
 
-  let jokes = fs.readFileSync("./data/jokes.json", {
+  let jokes = fs.readFileSync("./src/data/jokes.json", {
     encoding: "utf8",
     flag: "r",
   });

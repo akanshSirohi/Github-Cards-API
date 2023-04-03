@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
     options = parseOptions(req.query);
   }
 
-  let quotes = fs.readFileSync("./data/programming_quotes.json", {
+  let quotes = fs.readFileSync("./src/data/programming_quotes.json", {
     encoding: "utf8",
     flag: "r",
   });

@@ -1,16 +1,7 @@
 const { createCanvas, loadImage } = require("canvas");
-
-const valid_themes = [
-  "dark",
-  "dark_2",
-  "light",
-  "pattern_1",
-  "pattern_2",
-  "pattern_3",
-  "custom"
-];
-
-let extra_opt = null;
+const { GradientConstants, generateGradient } = require("./gradients");
+const { THEMES } = require("./themes");
+let extra_options = null;
 
 // prettier-ignore
 const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
@@ -95,18 +86,22 @@ const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
 };
 
 const processCard = (txt, theme, image) => {
-  const W = 400;
-  const fontSize = 11;
-  const padding = 30;
+  
+  // Card Constants
+  const W = 400; // Width Of Card
+  const fontSize = 11; // Font Size
+  const padding = 30; // Padding Of Card
+
+  // Card Variables
   let card_bg = "#fff";
   let font_color = "#fff";
   let shadow = false;
   let shadowColor = "#000";
 
   const canvas = createCanvas(W, W, "svg");
-
   const ctx = canvas.getContext("2d");
 
+  // Text Configuration
   let textConf = {
     x: padding,
     y: fontSize * 3.6,
@@ -114,54 +109,32 @@ const processCard = (txt, theme, image) => {
     lineHeight: fontSize + 2,
   };
 
-  // prettier-ignore
   let mHeight = wrapText(ctx,txt,textConf.x,textConf.y,textConf.maxWidth,textConf.lineHeight,true);
 
   // Change card height according to text
   canvas.height = mHeight + fontSize * 6.5;
 
   // Background Creation
-  // prettier-ignore
   let background;
 
   // Card Themes
   if (theme === "dark") {
-    background = ctx.createLinearGradient(
-      0,
-      canvas.height / 2,
-      W,
-      canvas.height / 2
-    );
-    background.addColorStop(0, "rgba(106, 17, 203, 1)");
-    background.addColorStop(1, "rgba(37, 117, 252, 1)");
+    background = generateGradient(GradientConstants.DARK_1,ctx,canvas,W);
+    card_bg = "#282828";
+    font_color = "#fff";
+    shadow = true;
+    shadowColor = "#000";
+  } else if (theme === "dark_2") {
+    background = generateGradient(GradientConstants.DARK_2,ctx,canvas,W);
     card_bg = "#282828";
     font_color = "#fff";
     shadow = true;
     shadowColor = "#000";
   } else if (theme === "light") {
-    background = ctx.createLinearGradient(W / 2, 0, W / 2, canvas.height);
-    background.addColorStop(0, "rgba(42, 245, 152, 1)");
-    background.addColorStop(1, "rgba(0, 158, 253, 1)");
+    background = generateGradient(GradientConstants.LIGHT,ctx,canvas,W);
     card_bg = "#eee";
     font_color = "#222";
     shadow = false;
-  } else if (theme === "dark_2") {
-    background = ctx.createLinearGradient(
-      W / 2 - canvas.height >= 0 ? W / 2 - canvas.height : 0,
-      canvas.height / 2,
-      W / 2 + canvas.height,
-      canvas.height >= 290 ? canvas.height - 290 : 0
-    );
-
-    background.addColorStop(0, "rgba(61, 51, 147, 1)");
-    background.addColorStop(0.37, "rgba(43, 118, 185, 1)");
-    background.addColorStop(0.65, "rgba(44, 172, 209, 1)");
-    background.addColorStop(1, "rgba(53, 235, 147, 1)");
-
-    card_bg = "#282828";
-    font_color = "#fff";
-    shadow = true;
-    shadowColor = "#000";
   } else if (theme === "pattern_1") {
     background = ctx.createPattern(image, "repeat");
     card_bg = "#eee";
@@ -181,25 +154,25 @@ const processCard = (txt, theme, image) => {
     shadow = false;
   }
 
-  if (extra_opt != null) {
-    if ("card_color" in extra_opt) {
-      card_bg = extra_opt.card_color;
+  if (extra_options != null) {
+    if ("card_color" in extra_options) {
+      card_bg = extra_options.card_color;
     }
-    if ("font_color" in extra_opt) {
-      font_color = extra_opt.font_color;
+    if ("font_color" in extra_options) {
+      font_color = extra_options.font_color;
     }
-    if ("shadow" in extra_opt) {
-      if (typeof extra_opt.shadow === "boolean") {
-        shadow = extra_opt.shadow;
+    if ("shadow" in extra_options) {
+      if (typeof extra_options.shadow === "boolean") {
+        shadow = extra_options.shadow;
         if(shadow) {
-          if("shadow_color" in extra_opt) {
-            shadowColor = extra_opt.shadow_color;
+          if("shadow_color" in extra_options) {
+            shadowColor = extra_options.shadow_color;
           }
         }
       }
     }
-    if ("bg_color" in extra_opt) {
-      background = extra_opt.bg_color;
+    if ("bg_color" in extra_options) {
+      background = extra_options.bg_color;
     }
   }
 
@@ -245,37 +218,37 @@ const processCard = (txt, theme, image) => {
   return svg;
 };
 
-const generateCard = (txt, theme, options, callback) => {
+const generateCard = async (txt, theme, options, callback) => {
   // Pre processing for predefined pattern themes only
 
   let pattern_path;
 
-  extra_opt = options;
+  extra_options = options;
 
   if (theme === "random") {
-    theme = valid_themes[Math.floor(Math.random() * (valid_themes.length-1))];
+    theme = THEMES[Math.floor(Math.random() * (valid_themes.length-1))];
   }
 
-  if (!valid_themes.includes(theme)) {
-    theme = valid_themes[0];
+  if (!THEMES.includes(theme)) {
+    theme = THEMES[0];
   }
 
   if (theme.startsWith("pattern_")) {
     if (theme === "pattern_1") {
-      pattern_path = "./assets/endless-constellation-bg.svg";
+      pattern_path = "./src/assets/endless-constellation-bg.svg";
     } else if (theme === "pattern_2") {
-      pattern_path = "./assets/protruding-squares-bg.svg";
+      pattern_path = "./src/assets/protruding-squares-bg.svg";
     } else if (theme === "pattern_3") {
-      pattern_path = "./assets/rainbow-vortex-bg.svg";
+      pattern_path = "./src/assets/rainbow-vortex-bg.svg";
     }
-    loadImage(pattern_path)
-      .then((image) => {
-        callback(processCard(txt, theme, image));
-      })
-      .catch((err) => {
-        console.log(err);
-        callback(processCard(txt, valid_themes[0], null));
-      });
+
+    try {
+      const image = await loadImage(pattern_path);
+      callback(processCard(txt, theme, image));
+    }catch(e) {
+      console.log(e);
+      callback(processCard(txt, THEMES[0], null));
+    }
   } else {
     callback(processCard(txt, theme, null));
   }
