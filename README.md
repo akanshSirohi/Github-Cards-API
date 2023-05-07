@@ -37,8 +37,20 @@ Embed one of these in your README:
 5. pattern_2
 6. pattern_3
 7. random - Any random theme will we applied
+8. custom - You can set your custom arguments
 
-## Examples
+## Custom Theme Arguments
+```JS
+args: {
+    card_color: "Card color. Default: #ffffff  [Optional]",
+    font_color: "Card text color. Default: #000000  [Optional]",
+    bg_color: "Card Background color. Default: #fff  [Optional]",
+    shadow: "Card shadow. Default: false  [Optional]",
+    shadow_color: "Card shadow color. Default: #000000  [Optional]",
+},
+```
+
+## Themes Example
 - Light Theme Card <br/>
 ![Card](https://github-cards.onrender.com/jokes-card?theme=light)
 
@@ -56,6 +68,10 @@ Embed one of these in your README:
 
 - Pattern_3 Theme Card <br/>
 ![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_3)
+
+
+## For More Visit
+[https://github-cards.onrender.com/help](https://github-cards.onrender.com/help)
 
 ## How to contribute
 
