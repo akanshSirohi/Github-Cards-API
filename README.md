@@ -71,7 +71,7 @@ args: {
 
 
 ## For More Visit
-[https://github-cards.onrender.com/help](https://github-cards.onrender.com/help)
+[https://github-cards.onrender.com/](https://github-cards.onrender.com/)
 
 ## How to contribute
 
