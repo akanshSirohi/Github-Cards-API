@@ -1,0 +1,252 @@
+[
+  {
+    "index": 0,
+    "emoji": "😊",
+    "type": "smiley face"
+  },
+  {
+    "index": 1,
+    "emoji": "😂",
+    "type": "face with tears of joy"
+  },
+  {
+    "index": 2,
+    "emoji": "😍",
+    "type": "heart eyes"
+  },
+  {
+    "index": 3,
+    "emoji": "🤣",
+    "type": "rolling on the floor laughing"
+  },
+  {
+    "index": 4,
+    "emoji": "🥰",
+    "type": "smiling face with hearts"
+  },
+  {
+    "index": 5,
+    "emoji": "😎",
+    "type": "smiling face with sunglasses"
+  },
+  {
+    "index": 6,
+    "emoji": "😁",
+    "type": "grinning face with smiling eyes"
+  },
+  {
+    "index": 7,
+    "emoji": "😇",
+    "type": "smiling face with halo"
+  },
+  {
+    "index": 8,
+    "emoji": "🙂",
+    "type": "slightly smiling face"
+  },
+  {
+    "index": 9,
+    "emoji": "🙃",
+    "type": "upside-down face"
+  },
+  {
+    "index": 10,
+    "emoji": "😋",
+    "type": "face savoring food"
+  },
+  {
+    "index": 11,
+    "emoji": "😆",
+    "type": "grinning squinting face"
+  },
+  {
+    "index": 12,
+    "emoji": "😄",
+    "type": "grinning face with smiling eyes"
+  },
+  {
+    "index": 13,
+    "emoji": "😜",
+    "type": "winking face with tongue"
+  },
+  {
+    "index": 14,
+    "emoji": "😌",
+    "type": "relieved face"
+  },
+  {
+    "index": 15,
+    "emoji": "😏",
+    "type": "smirking face"
+  },
+  {
+    "index": 16,
+    "emoji": "😐",
+    "type": "neutral face"
+  },
+  {
+    "index": 17,
+    "emoji": "😒",
+    "type": "unamused face"
+  },
+  {
+    "index": 18,
+    "emoji": "😞",
+    "type": "disappointed face"
+  },
+  {
+    "index": 19,
+    "emoji": "😔",
+    "type": "pensive face"
+  },
+  {
+    "index": 20,
+    "emoji": "😕",
+    "type": "confused face"
+  },
+  {
+    "index": 21,
+    "emoji": "🙁",
+    "type": "slightly frowning face"
+  },
+  {
+    "index": 22,
+    "emoji": "😢",
+    "type": "crying face"
+  },
+  {
+    "index": 23,
+    "emoji": "😭",
+    "type": "loudly crying face"
+  },
+  {
+    "index": 24,
+    "emoji": "😤",
+    "type": "face with steam from nose"
+  },
+  {
+    "index": 25,
+    "emoji": "😠",
+    "type": "angry face"
+  },
+  {
+    "index": 26,
+    "emoji": "😡",
+    "type": "pouting face"
+  },
+  {
+    "index": 27,
+    "emoji": "🤬",
+    "type": "face with symbols on mouth"
+  },
+  {
+    "index": 28,
+    "emoji": "🤯",
+    "type": "exploding head"
+  },
+  {
+    "index": 29,
+    "emoji": "😷",
+    "type": "face with medical mask"
+  },
+  {
+    "index": 30,
+    "emoji": "🤒",
+    "type": "face with thermometer"
+  },
+  {
+    "index": 31,
+    "emoji": "🤕",
+    "type": "face with head-bandage"
+  },
+  {
+    "index": 32,
+    "emoji": "🥴",
+    "type": "woozy face"
+  },
+  {
+    "index": 33,
+    "emoji": "🤢",
+    "type": "nauseated face"
+  },
+  {
+    "index": 34,
+    "emoji": "🤮",
+    "type": "face vomiting"
+  },
+  {
+    "index": 35,
+    "emoji": "🤧",
+    "type": "sneezing face"
+  },
+  {
+    "index": 36,
+    "emoji": "🥵",
+    "type": "hot face"
+  },
+  {
+    "index": 37,
+    "emoji": "🥶",
+    "type": "cold face"
+  },
+  {
+    "index": 38,
+    "emoji": "🥳",
+    "type": "partying face"
+  },
+  {
+    "index": 39,
+    "emoji": "😱",
+    "type": "face screaming in fear"
+  },
+  {
+    "index": 40,
+    "emoji": "😨",
+    "type": "fearful face"
+  },
+  {
+    "index": 41,
+    "emoji": "😰",
+    "type": "anxious face with sweat"
+  },
+  {
+    "index": 42,
+    "emoji": "😥",
+    "type": "sad but relieved face"
+  },
+  {
+    "index": 43,
+    "emoji": "😓",
+    "type": "face with cold sweat"
+  },
+  {
+    "index": 44,
+    "emoji": "🤗",
+    "type": "hugging face"
+  },
+  {
+    "index": 45,
+    "emoji": "🤔",
+    "type": "thinking face"
+  },
+  {
+    "index": 46,
+    "emoji": "🤫",
+    "type": "shushing face"
+  },
+  {
+    "index": 47,
+    "emoji": "🤭",
+    "type": "face with hand over mouth"
+  },
+  {
+    "index": 48,
+    "emoji": "🤥",
+    "type": "lying face"
+  },
+  {
+    "index": 49,
+    "emoji": "🧐",
+    "type": "face with monocle"
+  }
+]

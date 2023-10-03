@@ -1,5 +1,5 @@
-const { createCanvas } = require("canvas");
-const { THEMES, create_theme } = require("./themes");
+const {createCanvas} = require("canvas");
+const {THEMES, create_theme} = require("./themes");
 let extra_options = null;
 
 // prettier-ignore
@@ -85,7 +85,6 @@ const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
 };
 
 const processCard = async (txt, theme) => {
-  
   // Card Constants
   const W = 400; // Width Of Card
   const fontSize = 11; // Font Size
@@ -103,7 +102,15 @@ const processCard = async (txt, theme) => {
     lineHeight: fontSize + 2,
   };
 
-  let mHeight = wrapText(ctx,txt,textConf.x,textConf.y,textConf.maxWidth,textConf.lineHeight,true);
+  let mHeight = wrapText(
+    ctx,
+    txt,
+    textConf.x,
+    textConf.y,
+    textConf.maxWidth,
+    textConf.lineHeight,
+    true
+  );
 
   // Change card height according to text
   canvas.height = mHeight + fontSize * 6.5;
@@ -130,8 +137,8 @@ const processCard = async (txt, theme) => {
     if ("shadow" in extra_options) {
       if (typeof extra_options.shadow === "boolean") {
         shadow = extra_options.shadow;
-        if(shadow) {
-          if("shadow_color" in extra_options) {
+        if (shadow) {
+          if ("shadow_color" in extra_options) {
             shadowColor = extra_options.shadow_color;
           }
         }
@@ -168,7 +175,8 @@ const processCard = async (txt, theme) => {
 
   // Draw Text
   ctx.fillStyle = font_color;
-  ctx.font = `${fontSize}px Ubuntu`;
+  // ctx.font = `${fontSize}px Ubuntu`;
+  ctx.font = `${fontSize}px 'Montserrat', sans-serif`;
 
   wrapText(
     ctx,
@@ -185,11 +193,10 @@ const processCard = async (txt, theme) => {
 };
 
 const generateCard = async (txt, theme, options, callback) => {
-
   extra_options = options;
 
   if (theme === "random") {
-    theme = THEMES[Math.floor(Math.random() * (valid_themes.length-1))];
+    theme = THEMES[Math.floor(Math.random() * (valid_themes.length - 1))];
   }
 
   if (!THEMES.includes(theme)) {

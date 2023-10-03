@@ -11,26 +11,27 @@ router.get("/", (req, res) => {
     theme = req.query.theme;
   }
 
-  let jokes = fs.readFileSync("./src/data/jokes.json", {
+  // Read the emoji data from emoji_data.json file
+  let emojiData = fs.readFileSync("./src/data/emoji_data.json", {
     encoding: "utf8",
     flag: "r",
   });
 
-  jokes = JSON.parse(jokes);
+  emojiData = JSON.parse(emojiData);
 
-  let random_joke = jokes[Math.floor(Math.random() * jokes.length)];
+  // Pick a random emoji from the data
+  let randomEmoji = emojiData[Math.floor(Math.random() * emojiData.length)];
 
-  let joke_content;
-  if (random_joke.type === "single") {
-    joke_content = random_joke.joke;
-  } else if (random_joke.type === "double") {
-    joke_content = `Q. ${random_joke.joke.q}\n\n${random_joke.joke.a}`;
-  }
+  // Get only the emoji content
+  let emojiContent = randomEmoji.emoji;
+
+  // Create an array of 5 copies of the same emoji
+  let emojiArray = Array(10).fill(emojiContent);
 
   // Example of custom theme moderation
   let options = null;
   if (theme === "my_theme") {
-    theme = "pattern_2";
+    theme = "pattern_3";
     options = {
       card_color: "#ffffffc2",
       font_color: "#000",
@@ -40,12 +41,13 @@ router.get("/", (req, res) => {
     options = parseOptions(req.query);
   }
 
-  generateCard(joke_content, theme, options, (joke_card) => {
+  // Generate the card with the emoji content
+  generateCard(emojiArray.join(""), theme, options, (emojiCard) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",
     });
-    res.end(joke_card);
+    res.end(emojiCard);
   });
 });
 
