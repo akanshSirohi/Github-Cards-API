@@ -1,7 +1,7 @@
 const { loadImage } = require("canvas");
 const { GradientConstants, generateGradient } = require("./gradients");
 
-// custom theme should be in the last position always
+// 'custom' theme should be in the last position always
 const THEMES = [
     "dark",
     "dark_2",
@@ -9,7 +9,7 @@ const THEMES = [
     "pattern_1",
     "pattern_2",
     "pattern_3",
-    "custom"
+    "custom" // It should be in the last position always, add your theme name above this
 ];
 
 const create_theme = async (ctx, canvas, theme, W) => {
