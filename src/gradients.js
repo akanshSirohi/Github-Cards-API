@@ -1,3 +1,4 @@
+// Add gradient unique name here
 const GradientConstants = {
     DARK_1 : "dark_1",
     DARK_2 : "dark_2",
@@ -6,6 +7,7 @@ const GradientConstants = {
 
 const generateGradient = (grad_name,ctx,canvas,w) => {
     let background;
+    // Add gradient here
     switch (grad_name) {
         case GradientConstants.DARK_1:
             background = ctx.createLinearGradient(
