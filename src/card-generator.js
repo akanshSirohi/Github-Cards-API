@@ -1,6 +1,5 @@
-const { createCanvas, loadImage } = require("canvas");
-const { GradientConstants, generateGradient } = require("./gradients");
-const { THEMES } = require("./themes");
+const { createCanvas } = require("canvas");
+const { THEMES, create_theme } = require("./themes");
 let extra_options = null;
 
 // prettier-ignore
@@ -58,10 +57,10 @@ const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shado
 const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
   var cars = text.split("\n");
   let linesCnt = 0;
-  for (var ii = 0; ii < cars.length; ii++) {
+  for (let ii = 0; ii < cars.length; ii++) {
     var line = "";
     var words = cars[ii].split(" ");
-    for (var n = 0; n < words.length; n++) {
+    for (let n = 0; n < words.length; n++) {
       var testLine = line + words[n] + " ";
       var metrics = context.measureText(testLine);
       var testWidth = metrics.width;
@@ -85,19 +84,14 @@ const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
   return linesCnt * lineHeight;
 };
 
-const processCard = (txt, theme, image) => {
+const processCard = async (txt, theme) => {
   
   // Card Constants
   const W = 400; // Width Of Card
   const fontSize = 11; // Font Size
   const padding = 30; // Padding Of Card
 
-  // Card Variables
-  let card_bg = "#fff";
-  let font_color = "#fff";
-  let shadow = false;
-  let shadowColor = "#000";
-
+  // Canvas Creation
   const canvas = createCanvas(W, W, "svg");
   const ctx = canvas.getContext("2d");
 
@@ -117,43 +111,15 @@ const processCard = (txt, theme, image) => {
   // Background Creation
   let background;
 
-  // Card Themes
-  if (theme === "dark") {
-    background = generateGradient(GradientConstants.DARK_1,ctx,canvas,W);
-    card_bg = "#282828";
-    font_color = "#fff";
-    shadow = true;
-    shadowColor = "#000";
-  } else if (theme === "dark_2") {
-    background = generateGradient(GradientConstants.DARK_2,ctx,canvas,W);
-    card_bg = "#282828";
-    font_color = "#fff";
-    shadow = true;
-    shadowColor = "#000";
-  } else if (theme === "light") {
-    background = generateGradient(GradientConstants.LIGHT,ctx,canvas,W);
-    card_bg = "#eee";
-    font_color = "#222";
-    shadow = false;
-  } else if (theme === "pattern_1") {
-    background = ctx.createPattern(image, "repeat");
-    card_bg = "#eee";
-    font_color = "#222";
-    shadow = false;
-  } else if (theme === "pattern_2") {
-    background = ctx.createPattern(image, "repeat");
-    card_bg = "#282828";
-    font_color = "#fff";
-    shadow = false;
-  } else if (theme === "pattern_3") {
-    image.height = canvas.height;
-    image.width = canvas.width;
-    background = ctx.createPattern(image, "repeat");
-    card_bg = "#eee";
-    font_color = "#222";
-    shadow = false;
-  }
+  // Theme Creation
+  const theme_obj = await create_theme(ctx, canvas, theme);
+  card_bg = theme_obj.card_bg;
+  font_color = theme_obj.font_color;
+  shadow = theme_obj.shadow;
+  shadowColor = theme_obj.shadowColor;
+  background = theme_obj.background;
 
+  // Custom Theme Using Url Params
   if (extra_options != null) {
     if ("card_color" in extra_options) {
       card_bg = extra_options.card_color;
@@ -176,7 +142,7 @@ const processCard = (txt, theme, image) => {
     }
   }
 
-  // Draw Gradient
+  // Draw Background
   ctx.beginPath();
   ctx.fillStyle = background;
   ctx.strokeStyle = "#00000000";
@@ -219,9 +185,6 @@ const processCard = (txt, theme, image) => {
 };
 
 const generateCard = async (txt, theme, options, callback) => {
-  // Pre processing for predefined pattern themes only
-
-  let pattern_path;
 
   extra_options = options;
 
@@ -233,25 +196,8 @@ const generateCard = async (txt, theme, options, callback) => {
     theme = THEMES[0];
   }
 
-  if (theme.startsWith("pattern_")) {
-    if (theme === "pattern_1") {
-      pattern_path = "./src/assets/endless-constellation-bg.svg";
-    } else if (theme === "pattern_2") {
-      pattern_path = "./src/assets/protruding-squares-bg.svg";
-    } else if (theme === "pattern_3") {
-      pattern_path = "./src/assets/rainbow-vortex-bg.svg";
-    }
-
-    try {
-      const image = await loadImage(pattern_path);
-      callback(processCard(txt, theme, image));
-    }catch(e) {
-      console.log(e);
-      callback(processCard(txt, THEMES[0], null));
-    }
-  } else {
-    callback(processCard(txt, theme, null));
-  }
+  const svg = await processCard(txt, theme);
+  callback(svg);
 };
 
 module.exports.generateCard = generateCard;

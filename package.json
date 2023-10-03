@@ -1,12 +1,11 @@
 {
   "name": "GithubCardsApi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Github readme cards api",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "debug": "nodemon index.js",
-    "publish": "git add . && git commit -am \"Improved version\" && git push origin master"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Akansh Sirohi",
