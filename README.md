@@ -75,10 +75,20 @@ args: {
 
 ## How to contribute
 
-1. Fork this repository
-2. Add your card in cards directory, you can take the refrence from already added cards
-3. Add any data file inside data directory that your card will use
-4. Add route of your card in `index.js` file
-5. Add your api refrence inside in `help.js` file and also in README.md file
-6. Create pull request
+### Add new card
+1. Fork this repository.
+2. Add your card in `src/cards` directory, you can take the refrence from already added cards.
+3. Add any data file inside data directory that your card will use.
+4. Add route of your card in `index.js` file.
+5. Add your card api refrence inside in `src/help.js` file and also in README.md file.
+6. Create pull request.
 
+### Add new theme
+1. Fork this repository.
+2. If you want to add gradient background then add your gradient code in `src/gradients.js` file.
+> Take refrence from already added gradients.
+3. Add your theme name in the `src/themes.js` file.
+> Theme name should be unique and should be in the second last position of the array.
+4. Create your theme in `src/themes.js` file.
+> Take refrence from already added themes.
+5. Add your theme api refrence inside in `src/help.js` file and also in README.md file.
