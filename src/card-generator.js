@@ -112,7 +112,7 @@ const processCard = async (txt, theme) => {
   let background;
 
   // Theme Creation
-  const theme_obj = await create_theme(ctx, canvas, theme);
+  const theme_obj = await create_theme(ctx, canvas, theme, W);
   card_bg = theme_obj.card_bg;
   font_color = theme_obj.font_color;
   shadow = theme_obj.shadow;

@@ -12,7 +12,7 @@ const THEMES = [
     "custom"
 ];
 
-const create_theme = async (ctx, canvas, theme) => {
+const create_theme = async (ctx, canvas, theme, W) => {
     let theme_obj = {
         card_bg: "#fff",
         font_color: "#fff",
