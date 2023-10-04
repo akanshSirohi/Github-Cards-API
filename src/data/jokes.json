@@ -2471,5 +2471,13 @@
             "a": "Because they can't C."
         },
         "type": "double"
+    },
+    {
+        "index":383,
+        "joke":{
+            "q": "Why don't programmers like nature?",
+            "a": "It has too many bugs!"
+        },
+        "type": "double"
     }
 ]
