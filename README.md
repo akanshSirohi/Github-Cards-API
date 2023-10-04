@@ -22,10 +22,10 @@ Embed one of these in your README:
 
 ### List of card names currently available
 
-| Available Cards            | Example                                                               | Available Params | Preview                                                    |
-| -------------------------- | --------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------- |
-| `jokes-card`               | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)`    | theme=all_themes | https://github-cards.onrender.com/jokes-card?theme=dark    |
-| `programming-quotes-card`  | `![Card](https://github-cards.onrender.com/programming-quotes-card)`  | theme=all_themes | https://github-cards.onrender.com/programming-quotes-card  |
+| Available Cards | Example | Available Params | Preview |
+| --------------- | ------- | ---------------- | ------- |
+| `jokes-card` | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)` | theme=all_themes | https://github-cards.onrender.com/jokes-card?theme=dark |
+| `programming-quotes-card` | `![Card](https://github-cards.onrender.com/programming-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/programming-quotes-card |
 | `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/motivational-quotes-card |
 | `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | theme=all_themes | https://github-cards.onrender.com/word-of-the-day-card |
 
