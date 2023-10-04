@@ -27,7 +27,8 @@ Embed one of these in your README:
 | `jokes-card` | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)` | theme=all_themes | https://github-cards.onrender.com/jokes-card?theme=dark |
 | `programming-quotes-card` | `![Card](https://github-cards.onrender.com/programming-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/programming-quotes-card |
 | `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/motivational-quotes-card |
-| `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | theme=all_themes | https://github-cards.onrender.com/word-of-the-day-card |
+| `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | theme=all_themes | https://github-cards.onrender.com/word-of-the-day-card |`challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | theme=all_themes | https://github-cards.onrender.com/challenge-of-the-week-card |
+
 
 ### Available Themes List
 
