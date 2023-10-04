@@ -25,7 +25,7 @@ router.get("/", (req, res) => {
 
   let randomChallenge = challenegeOfTheWeekData[Math.floor(Math.random() * challenegeOfTheWeekData.length)];
 
-  let challengeContent = `${randomChallenge.challenge}\n`;
+  let challengeContent = `Challenge of the week:\n${randomChallenge.challenge}`;
 
   generateCard(challengeContent, theme, options, (challengeCard) => {
     res.writeHead(200, {
