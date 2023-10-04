@@ -121,6 +121,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/word-of-the-day-card`],
       },
     },
+    "challenge-of-the-week-card": {
+      info: "Generates a random challenge for you to take on in that week.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: light  [Optional]",
+        },
+        example: [`${baseurl}/challenge-of-the-week-card`],
+      },
+    },
   };
 
   res.json({themes,cards});
