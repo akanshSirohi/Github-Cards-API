@@ -112,6 +112,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/motivational-quotes-card`],
       },
     },
+    "word-of-the-day-card": {
+      info: "Generates random word of the day with their meanings.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: light  [Optional]",
+        },
+        example: [`${baseurl}/word-of-the-day-card`],
+      },
+    },
   };
 
   res.json({themes,cards});
