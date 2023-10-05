@@ -22,15 +22,15 @@ Embed one of these in your README:
 
 ### List of card names currently available
 
-| Available Cards | Example | Available Params | Preview |
-| --------------- | ------- | ---------------- | ------- |
-| `jokes-card` | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)` | theme=all_themes | ![Card](https://github-cards.onrender.com/jokes-card?theme=dark) |
-| `programming-quotes-card` | `![Card](https://github-cards.onrender.com/programming-quotes-card)` | theme=all_themes | ![Card](https://github-cards.onrender.com/programming-quotes-card) |
-| `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | theme=all_themes | ![Card](https://github-cards.onrender.com/motivational-quotes-card) |
-| `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | theme=all_themes | ![Card](https://github-cards.onrender.com/word-of-the-day-card) |
-| `challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | theme=all_themes | ![Card](https://github-cards.onrender.com/challenge-of-the-week-card) |
-| `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | theme=all_themes | ![Card](https://github-cards.onrender.com/team-work-quote-card) |
-| `random-card` | `![Card](https://github-cards.onrender.com/random-card)` | theme=all_themes | ![Card](https://github-cards.onrender.com/random-card) |
+| Available Cards | Example | Preview |
+| --------------- | ------- | ------- |
+| `jokes-card` | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)` | ![Card](https://github-cards.onrender.com/jokes-card?theme=dark) |
+| `programming-quotes-card` | `![Card](https://github-cards.onrender.com/programming-quotes-card)` | ![Card](https://github-cards.onrender.com/programming-quotes-card) |
+| `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | ![Card](https://github-cards.onrender.com/motivational-quotes-card) |
+| `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | ![Card](https://github-cards.onrender.com/word-of-the-day-card) |
+| `challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | ![Card](https://github-cards.onrender.com/challenge-of-the-week-card) |
+| `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | ![Card](https://github-cards.onrender.com/team-work-quote-card) |
+| `random-card` | `![Card](https://github-cards.onrender.com/random-card)` | ![Card](https://github-cards.onrender.com/random-card) |
 
 ### Available Themes List
 
