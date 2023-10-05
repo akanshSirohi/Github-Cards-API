@@ -4,7 +4,6 @@ const port = process.env.PORT || 5000;
 
 const available_cards = {
   "/jokes-card": require("./src/cards/joke-card"),
-  "/jokes-card": require("./src/cards/joke-card"),
   "/programming-quotes-card": require("./src/cards/programming-quote"),
   "/motivational-quotes-card": require("./src/cards/motivational-quote"),
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
