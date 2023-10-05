@@ -77,7 +77,7 @@ router.get("/", (req, res) => {
         `${baseurl}/jokes-card?theme=custom&bg_color=ffff00&font_color=0000ff&shadow=true`,
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=000000&font_color=ff0000&shadow=true&shadow_color=ff0000`,
         `${baseurl}/motivational-quotes-card?theme=custom&bg_color=008000&font_color=000000`,
-        `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000`
+        `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000`,
       ],
     }
   };
@@ -130,6 +130,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/challenge-of-the-week-card`],
       },
     },
+    "team-work-quote-card": {
+      info: "Generate random motivational quote related to the teamwork.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+        },
+        example: [`${baseurl}/team-work-quote-card`],
+      },
+    }
   };
 
   res.json({themes,cards});

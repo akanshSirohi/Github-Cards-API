@@ -29,7 +29,7 @@ Embed one of these in your README:
 | `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | theme=all_themes | https://github-cards.onrender.com/motivational-quotes-card |
 | `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | theme=all_themes | https://github-cards.onrender.com/word-of-the-day-card |
 | `challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | theme=all_themes | https://github-cards.onrender.com/challenge-of-the-week-card |
-
+| `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | theme=all_themes | https://github-cards.onrender.com/team-work-quote-card |
 
 ### Available Themes List
 
