@@ -2,27 +2,36 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
 
+const available_cards = {
+  "/jokes-card": require("./src/cards/joke-card"),
+  "/jokes-card": require("./src/cards/joke-card"),
+  "/programming-quotes-card": require("./src/cards/programming-quote"),
+  "/motivational-quotes-card": require("./src/cards/motivational-quote"),
+  "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
+  "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
+  "/team-work-quote-card" : require("./src/cards/team-work-quote"),
+};
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const routeHandlers = [
-  { path: "/", handler: require("./src/help") },
-  { path: "/jokes-card", handler: require("./src/cards/joke-card") },
-  { path: "/programming-quotes-card", handler: require("./src/cards/programming-quote") },
-  { path: "/motivational-quotes-card", handler: require("./src/cards/motivational-quote") },
-  { path: "/word-of-the-day-card", handler: require("./src/cards/word_of_the_day") },
-  { path: "/challenge-of-the-week-card", handler: require("./src/cards/challenge-of-the-week") },
-  { path: "/team-work-quote-card", handler: require("./src/cards/team-work-quote") },
-  //New routes here
-];
-routeHandlers.forEach((route) => {
-  app.use(route.path, route.handler);
-});
+app.use("/", require("./src/help"));
 
-//Random route that redirects to a random route
-app.get("/random-card", (req, res) => {
-  const randomRoute = routeHandlers[Math.floor(Math.random() * routeHandlers.length)].path;
-  res.redirect(randomRoute);
+for(const key in available_cards) {
+  if(available_cards.hasOwnProperty(key)) {
+    app.use(key, available_cards[key]);
+  }
+}
+
+app.get("/random-card", (req,res) => {
+  let urls = Object.keys(available_cards);
+  let query = "";
+  if(req.originalUrl.indexOf("?") > -1) {
+    const queryParameters = req.originalUrl.split("?")[1];
+    query = `?${queryParameters}`;
+  }
+  const randomIndex = Math.floor(Math.random() * urls.length);
+  res.redirect(urls[randomIndex] + query);
 });
 
 app.listen(port, () => {
