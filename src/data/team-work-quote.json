@@ -1,0 +1,547 @@
+[
+  {
+    "index": 0,
+    "quote": "Alone we can do so little; together we can do so much.",
+    "author": "Helen Keller"
+  },
+  {
+    "index": 1,
+    "quote": "Coming together is a beginning; keeping together is progress; working together is success.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 2,
+    "quote": "Teamwork makes the dream work.",
+    "author": "John C. Maxwell"
+  },
+  {
+    "index": 3,
+    "quote": "The strength of the team is each individual member. The strength of each member is the team.",
+    "author": "Phil Jackson"
+  },
+  {
+    "index": 4,
+    "quote": "None of us is as smart as all of us.",
+    "author": "Ken Blanchard"
+  },
+  {
+    "index": 5,
+    "quote": "If you want to go fast, go alone. If you want to go far, go together.",
+    "author": "African Proverb"
+  },
+  {
+    "index": 6,
+    "quote": "Individual commitment to a group effort – that is what makes a team work, a company work, a society work, a civilization work.",
+    "author": "Vince Lombardi"
+  },
+  {
+    "index": 7,
+    "quote": "It takes two flints to make a fire.",
+    "author": "Louisa May Alcott"
+  },
+  {
+    "index": 8,
+    "quote": "The best teamwork comes from men who are working independently toward one goal in unison.",
+    "author": "James Cash Penney"
+  },
+  {
+    "index": 9,
+    "quote": "Talent wins games, but teamwork and intelligence win championships.",
+    "author": "Michael Jordan"
+  },
+  {
+    "index": 10,
+    "quote": "Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+    "author": "Patrick Lencioni"
+  },
+  {
+    "index": 11,
+    "quote": "It's amazing what you can accomplish if you do not care who gets the credit.",
+    "author": "Harry S. Truman"
+  },
+  {
+    "index": 12,
+    "quote": "Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.",
+    "author": "Mattie Stepanek"
+  },
+  {
+    "index": 13,
+    "quote": "The whole is greater than the sum of its parts.",
+    "author": "Aristotle"
+  },
+  {
+    "index": 14,
+    "quote": "No one can whistle a symphony. It takes a whole orchestra to play it.",
+    "author": "H.E. Luccock"
+  },
+  {
+    "index": 15,
+    "quote": "Teamwork is the secret that makes common people achieve uncommon results.",
+    "author": "Ifeyinwa Egbosiuba"
+  },
+  {
+    "index": 16,
+    "quote": "A successful team is a group of many hands and one mind.",
+    "author": "Bill Bethel"
+  },
+  {
+    "index": 17,
+    "quote": "Individually, we are one drop. Together, we are an ocean.",
+    "author": "Ryunosuke Satoro"
+  },
+  {
+    "index": 18,
+    "quote": "The way to achieve your own success is to be willing to help somebody else get it first.",
+    "author": "Iyanla Vanzant"
+  },
+  {
+    "index": 19,
+    "quote": "Great teamwork is the only way we create the breakthroughs that define our careers.",
+    "author": "Pat Riley"
+  },
+  {
+    "index": 20,
+    "quote": "If everyone is moving forward together, then success takes care of itself.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 21,
+    "quote": "It is literally true that you can succeed best and quickest by helping others to succeed.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "index": 22,
+    "quote": "The strength of the team is each individual member. The strength of each member is the team.",
+    "author": "Phil Jackson"
+  },
+  {
+    "index": 23,
+    "quote": "The best teamwork comes from men who are working independently toward one goal in unison.",
+    "author": "James Cash Penney"
+  },
+  {
+    "index": 24,
+    "quote": "Talent wins games, but teamwork and intelligence win championships.",
+    "author": "Michael Jordan"
+  },
+  {
+    "index": 25,
+    "quote": "Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+    "author": "Patrick Lencioni"
+  },
+  {
+    "index": 26,
+    "quote": "It's amazing what you can accomplish if you do not care who gets the credit.",
+    "author": "Harry S. Truman"
+  },
+  {
+    "index": 27,
+    "quote": "Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.",
+    "author": "Mattie Stepanek"
+  },
+  {
+    "index": 28,
+    "quote": "The whole is greater than the sum of its parts.",
+    "author": "Aristotle"
+  },
+  {
+    "index": 29,
+    "quote": "No one can whistle a symphony. It takes a whole orchestra to play it.",
+    "author": "H.E. Luccock"
+  },
+  {
+    "index": 30,
+    "quote": "Teamwork is the secret that makes common people achieve uncommon results.",
+    "author": "Ifeyinwa Egbosiuba"
+  },
+  {
+    "index": 31,
+    "quote": "A successful team is a group of many hands and one mind.",
+    "author": "Bill Bethel"
+  },
+  {
+    "index": 32,
+    "quote": "Individually, we are one drop. Together, we are an ocean.",
+    "author": "Ryunosuke Satoro"
+  },
+  {
+    "index": 33,
+    "quote": "The way to achieve your own success is to be willing to help somebody else get it first.",
+    "author": "Iyanla Vanzant"
+  },
+  {
+    "index": 34,
+    "quote": "Great teamwork is the only way we create the breakthroughs that define our careers.",
+    "author": "Pat Riley"
+  },
+  {
+    "index": 35,
+    "quote": "If everyone is moving forward together, then success takes care of itself.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 36,
+    "quote": "It is literally true that you can succeed best and quickest by helping others to succeed.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "index": 37,
+    "quote": "Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.",
+    "author": "Andrew Carnegie"
+  },
+  {
+    "index": 38,
+    "quote": "Teamwork is the lynchpin in our long term success.",
+    "author": "Ned Lautenbach"
+  },
+  {
+    "index": 39,
+    "quote": "It takes two flints to make a fire.",
+    "author": "Louisa May Alcott"
+  },
+  {
+    "index": 40,
+    "quote": "The best teamwork comes from men who are working independently toward one goal in unison.",
+    "author": "James Cash Penney"
+  },
+  {
+    "index": 41,
+    "quote": "Talent wins games, but teamwork and intelligence win championships.",
+    "author": "Michael Jordan"
+  },
+  {
+    "index": 42,
+    "quote": "Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+    "author": "Patrick Lencioni"
+  },
+  {
+    "index": 43,
+    "quote": "It's amazing what you can accomplish if you do not care who gets the credit.",
+    "author": "Harry S. Truman"
+  },
+  {
+    "index": 44,
+    "quote": "Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.",
+    "author": "Mattie Stepanek"
+  },
+  {
+    "index": 45,
+    "quote": "The whole is greater than the sum of its parts.",
+    "author": "Aristotle"
+  },
+  {
+    "index": 46,
+    "quote": "No one can whistle a symphony. It takes a whole orchestra to play it.",
+    "author": "H.E. Luccock"
+  },
+  {
+    "index": 47,
+    "quote": "Teamwork is the secret that makes common people achieve uncommon results.",
+    "author": "Ifeyinwa Egbosiuba"
+  },
+  {
+    "index": 48,
+    "quote": "A successful team is a group of many hands and one mind.",
+    "author": "Bill Bethel"
+  },
+  {
+    "index": 49,
+    "quote": "Individually, we are one drop. Together, we are an ocean.",
+    "author": "Ryunosuke Satoro"
+  },
+  {
+    "index": 50,
+    "quote": "Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.",
+    "author": "Andrew Carnegie"
+  },
+  {
+    "index": 51,
+    "quote": "Teamwork is the lynchpin in our long term success.",
+    "author": "Ned Lautenbach"
+  },
+  {
+    "index": 52,
+    "quote": "It takes two flints to make a fire.",
+    "author": "Louisa May Alcott"
+  },
+  {
+    "index": 53,
+    "quote": "The best teamwork comes from men who are working independently toward one goal in unison.",
+    "author": "James Cash Penney"
+  },
+  {
+    "index": 54,
+    "quote": "Talent wins games, but teamwork and intelligence win championships.",
+    "author": "Michael Jordan"
+  },
+  {
+    "index": 55,
+    "quote": "Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+    "author": "Patrick Lencioni"
+  },
+  {
+    "index": 56,
+    "quote": "It's amazing what you can accomplish if you do not care who gets the credit.",
+    "author": "Harry S. Truman"
+  },
+  {
+    "index": 57,
+    "quote": "Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.",
+    "author": "Mattie Stepanek"
+  },
+  {
+    "index": 58,
+    "quote": "The whole is greater than the sum of its parts.",
+    "author": "Aristotle"
+  },
+  {
+    "index": 59,
+    "quote": "No one can whistle a symphony. It takes a whole orchestra to play it.",
+    "author": "H.E. Luccock"
+  },
+  {
+    "index": 60,
+    "quote": "Teamwork is the secret that makes common people achieve uncommon results.",
+    "author": "Ifeyinwa Egbosiuba"
+  },
+  {
+    "index": 61,
+    "quote": "A successful team is a group of many hands and one mind.",
+    "author": "Bill Bethel"
+  },
+  {
+    "index": 62,
+    "quote": "Individually, we are one drop. Together, we are an ocean.",
+    "author": "Ryunosuke Satoro"
+  },
+  {
+    "index": 63,
+    "quote": "The way to achieve your own success is to be willing to help somebody else get it first.",
+    "author": "Iyanla Vanzant"
+  },
+  {
+    "index": 64,
+    "quote": "Great teamwork is the only way we create the breakthroughs that define our careers.",
+    "author": "Pat Riley"
+  },
+  {
+    "index": 65,
+    "quote": "If everyone is moving forward together, then success takes care of itself.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 66,
+    "quote": "It is literally true that you can succeed best and quickest by helping others to succeed.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "index": 67,
+    "quote": "Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.",
+    "author": "Andrew Carnegie"
+  },
+  {
+    "index": 68,
+    "quote": "Teamwork is the lynchpin in our long term success.",
+    "author": "Ned Lautenbach"
+  },
+  {
+    "index": 69,
+    "quote": "It takes two flints to make a fire.",
+    "author": "Louisa May Alcott"
+  },
+  {
+    "index": 70,
+    "quote": "The best teamwork comes from men who are working independently toward one goal in unison.",
+    "author": "James Cash Penney"
+  },
+  {
+    "index": 71,
+    "quote": "Talent wins games, but teamwork and intelligence win championships.",
+    "author": "Michael Jordan"
+  },
+  {
+    "index": 72,
+    "quote": "Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+    "author": "Patrick Lencioni"
+  },
+  {
+    "index": 73,
+    "quote": "It's amazing what you can accomplish if you do not care who gets the credit.",
+    "author": "Harry S. Truman"
+  },
+  {
+    "index": 74,
+    "quote": "Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.",
+    "author": "Mattie Stepanek"
+  },
+  {
+    "index": 75,
+    "quote": "The whole is greater than the sum of its parts.",
+    "author": "Aristotle"
+  },
+  {
+    "index": 76,
+    "quote": "No one can whistle a symphony. It takes a whole orchestra to play it.",
+    "author": "H.E. Luccock"
+  },
+  {
+    "index": 77,
+    "quote": "Teamwork is the secret that makes common people achieve uncommon results.",
+    "author": "Ifeyinwa Egbosiuba"
+  },
+  {
+    "index": 78,
+    "quote": "A successful team is a group of many hands and one mind.",
+    "author": "Bill Bethel"
+  },
+  {
+    "index": 79,
+    "quote": "Individually, we are one drop. Together, we are an ocean.",
+    "author": "Ryunosuke Satoro"
+  },
+  {
+    "index": 80,
+    "quote": "Coming together is a beginning; keeping together is progress; working together is success.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 81,
+    "quote": "Teamwork makes the dream work.",
+    "author": "John C. Maxwell"
+  },
+  {
+    "index": 82,
+    "quote": "The strength of the team is each individual member. The strength of each member is the team.",
+    "author": "Phil Jackson"
+  },
+  {
+    "index": 83,
+    "quote": "None of us is as smart as all of us.",
+    "author": "Ken Blanchard"
+  },
+  {
+    "index": 84,
+    "quote": "If you want to go fast, go alone. If you want to go far, go together.",
+    "author": "African Proverb"
+  },
+  {
+    "index": 85,
+    "quote": "Individual commitment to a group effort – that is what makes a team work, a company work, a society work, a civilization work.",
+    "author": "Vince Lombardi"
+  },
+  {
+    "index": 86,
+    "quote": "Alone we can do so little; together we can do so much.",
+    "author": "Helen Keller"
+  },
+  {
+    "index": 87,
+    "quote": "The strength of the team is each individual member. The strength of each member is the team.",
+    "author": "Phil Jackson"
+  },
+  {
+    "index": 88,
+    "quote": "The best teamwork comes from men who are working independently toward one goal in unison.",
+    "author": "James Cash Penney"
+  },
+  {
+    "index": 89,
+    "quote": "Talent wins games, but teamwork and intelligence win championships.",
+    "author": "Michael Jordan"
+  },
+  {
+    "index": 90,
+    "quote": "Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+    "author": "Patrick Lencioni"
+  },
+  {
+    "index": 91,
+    "quote": "It's amazing what you can accomplish if you do not care who gets the credit.",
+    "author": "Harry S. Truman"
+  },
+  {
+    "index": 92,
+    "quote": "Unity is strength. . . when there is teamwork and collaboration, wonderful things can be achieved.",
+    "author": "Mattie Stepanek"
+  },
+  {
+    "index": 93,
+    "quote": "The whole is greater than the sum of its parts.",
+    "author": "Aristotle"
+  },
+  {
+    "index": 94,
+    "quote": "No one can whistle a symphony. It takes a whole orchestra to play it.",
+    "author": "H.E. Luccock"
+  },
+  {
+    "index": 95,
+    "quote": "Teamwork is the secret that makes common people achieve uncommon results.",
+    "author": "Ifeyinwa Egbosiuba"
+  },
+  {
+    "index": 96,
+    "quote": "A successful team is a group of many hands and one mind.",
+    "author": "Bill Bethel"
+  },
+  {
+    "index": 97,
+    "quote": "Individually, we are one drop. Together, we are an ocean.",
+    "author": "Ryunosuke Satoro"
+  },
+  {
+    "index": 98,
+    "quote": "The way to achieve your own success is to be willing to help somebody else get it first.",
+    "author": "Iyanla Vanzant"
+  },
+  {
+    "index": 99,
+    "quote": "Great teamwork is the only way we create the breakthroughs that define our careers.",
+    "author": "Pat Riley"
+  },
+  {
+    "index": 100,
+    "quote": "If everyone is moving forward together, then success takes care of itself.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 101,
+    "quote": "It is literally true that you can succeed best and quickest by helping others to succeed.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "index": 102,
+    "quote": "Alone we can do so little; together we can do so much.",
+    "author": "Helen Keller"
+  },
+  {
+    "index": 103,
+    "quote": "Coming together is a beginning; keeping together is progress; working together is success.",
+    "author": "Henry Ford"
+  },
+  {
+    "index": 104,
+    "quote": "Teamwork makes the dream work.",
+    "author": "John C. Maxwell"
+  },
+  {
+    "index": 105,
+    "quote": "The strength of the team is each individual member. The strength of each member is the team.",
+    "author": "Phil Jackson"
+  },
+  {
+    "index": 106,
+    "quote": "None of us is as smart as all of us.",
+    "author": "Ken Blanchard"
+  },
+  {
+    "index": 107,
+    "quote": "If you want to go fast, go alone. If you want to go far, go together.",
+    "author": "African Proverb"
+  },
+  {
+    "index": 108,
+    "quote": "Individual commitment to a group effort – that is what makes a team work, a company work, a society work, a civilization work.",
+    "author": "Vince Lombardi"
+  }
+]
