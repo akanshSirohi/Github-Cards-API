@@ -66,6 +66,9 @@ args: {
 - Dark_2 Theme Card <br/>
   ![Card](https://github-cards.onrender.com/jokes-card?theme=dark_2)
 
+- Rgb Theme Card <br/>
+  ![Card](https://github-cards.onrender.com/jokes-card?theme=rgb)
+
 - Pattern_1 Theme Card <br/>
   ![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_1)
 

@@ -1,11 +1,12 @@
 // Add gradient unique name here
 const GradientConstants = {
-    DARK_1 : "dark_1",
-    DARK_2 : "dark_2",
-    LIGHT : "light",
+    DARK_1: "dark_1",
+    DARK_2: "dark_2",
+    LIGHT: "light",
+    RGB: "rgb"
 };
 
-const generateGradient = (grad_name,ctx,canvas,w) => {
+const generateGradient = (grad_name, ctx, canvas, w) => {
     let background;
     // Add gradient here
     switch (grad_name) {
@@ -32,12 +33,25 @@ const generateGradient = (grad_name,ctx,canvas,w) => {
             background.addColorStop(0.65, "rgba(44, 172, 209, 1)");
             background.addColorStop(1, "rgba(53, 235, 147, 1)");
             return background;
-            
+
         case GradientConstants.LIGHT:
             background = ctx.createLinearGradient(w / 2, 0, w / 2, canvas.height);
             background.addColorStop(0, "rgba(42, 245, 152, 1)");
             background.addColorStop(1, "rgba(0, 158, 253, 1)");
             return background;
+
+        case GradientConstants.RGB:
+            background = ctx.createLinearGradient(
+                0,
+                canvas.height / 2,
+                w,
+                canvas.height / 2
+            );
+            background.addColorStop(0, "rgba(255, 0, 0, 1)");
+            background.addColorStop(0.5, "rgba(0, 255, 0, 1)");
+            background.addColorStop(1, "rgba(0, 0, 255, 1)"); 
+            return background;
+
     }
 };
 module.exports.GradientConstants = GradientConstants;
