@@ -46,27 +46,27 @@ const create_theme = async (ctx, canvas, theme, W) => {
     // Add more your theme here
     switch (theme) {
         case "dark":
-            theme_obj.background = generateGradient(GradientConstants.DARK_1, ctx, canvas, W);
+            theme_obj.background = await generateGradient(GradientConstants.DARK_1, ctx, canvas, W);
             theme_obj.card_bg = "#282828";
             theme_obj.font_color = "#fff";
             theme_obj.shadow = true;
             theme_obj.shadowColor = "#000";
             break;
         case "dark_2":
-            theme_obj.background = generateGradient(GradientConstants.DARK_2, ctx, canvas, W);
+            theme_obj.background = await generateGradient(GradientConstants.DARK_2, ctx, canvas, W);
             theme_obj.card_bg = "#282828";
             theme_obj.font_color = "#fff";
             theme_obj.shadow = true;
             theme_obj.shadowColor = "#000";
             break;
         case "light":
-            theme_obj.background = generateGradient(GradientConstants.LIGHT, ctx, canvas, W);
+            theme_obj.background = await generateGradient(GradientConstants.LIGHT, ctx, canvas, W);
             theme_obj.card_bg = "#eee";
             theme_obj.font_color = "#222";
             theme_obj.shadow = false;
             break;
         case "rgb":
-            theme_obj.background = generateGradient(GradientConstants.RGB, ctx, canvas, W);
+            theme_obj.background = await generateGradient(GradientConstants.RGB, ctx, canvas, W);
             theme_obj.card_bg = "#282828";
             theme_obj.font_color = "#fff";
             theme_obj.shadow = true;
@@ -93,7 +93,7 @@ const create_theme = async (ctx, canvas, theme, W) => {
             theme_obj.shadow = false;
             break;
         case "lemonade":
-            theme_obj.background = generateGradient(GradientConstants.LEMONADE, ctx, canvas, W);
+            theme_obj.background = await generateGradient(GradientConstants.LEMONADE, ctx, canvas, W);
             theme_obj.card_bg = "#E1E5EA";
             theme_obj.font_color = "#222";
             theme_obj.shadow = false;

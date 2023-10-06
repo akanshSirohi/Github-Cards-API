@@ -1,3 +1,5 @@
+const {generateCssGradient} = require("./satori_renderer");
+
 // Add gradient unique name here
 const GradientConstants = {
     DARK_1: "dark_1",
@@ -7,22 +9,17 @@ const GradientConstants = {
     LEMONADE: "lemonade"
 };
 
-const generateGradient = (grad_name, ctx, canvas, w) => {
+const generateGradient = async (grad_name, ctx, canvas, w) => {
     let background;
     // Add gradient here
     switch (grad_name) {
         case GradientConstants.DARK_1:
-            background = ctx.createLinearGradient(
-                0,
-                canvas.height / 2,
-                w,
-                canvas.height / 2
-            );
-            background.addColorStop(0, "rgba(106, 17, 203, 1)");
-            background.addColorStop(1, "rgba(37, 117, 252, 1)");
+            // CSS Gradient
+            background = await generateCssGradient("linear-gradient(to right, rgb(106, 17, 203), rgb(37, 117, 252));",w,canvas.height,ctx);
             return background;
 
         case GradientConstants.DARK_2:
+            // SVG Gradient
             background = ctx.createLinearGradient(
                 w / 2 - canvas.height >= 0 ? w / 2 - canvas.height : 0,
                 canvas.height / 2,
@@ -36,21 +33,11 @@ const generateGradient = (grad_name, ctx, canvas, w) => {
             return background;
 
         case GradientConstants.LIGHT:
-            background = ctx.createLinearGradient(w / 2, 0, w / 2, canvas.height);
-            background.addColorStop(0, "rgba(42, 245, 152, 1)");
-            background.addColorStop(1, "rgba(0, 158, 253, 1)");
+            background = await generateCssGradient("linear-gradient(to bottom, rgb(42, 245, 152), rgb(0, 158, 253));",w,canvas.height,ctx);
             return background;
 
         case GradientConstants.RGB:
-            background = ctx.createLinearGradient(
-                0,
-                canvas.height / 2,
-                w,
-                canvas.height / 2
-            );
-            background.addColorStop(0, "rgba(255, 0, 0, 1)");
-            background.addColorStop(0.5, "rgba(0, 255, 0, 1)");
-            background.addColorStop(1, "rgba(0, 0, 255, 1)"); 
+            background = generateCssGradient("linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0) 50%, rgb(0, 0, 255));",w,canvas.height,ctx);
             return background;
 
         case GradientConstants.LEMONADE:
