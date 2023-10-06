@@ -37,6 +37,14 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=light`,
       ],
     },
+    "rgb": {
+      info: "Rgb theme",
+      example: [
+        `${baseurl}/jokes-card?theme=rgb`,
+        `${baseurl}/programming-quotes-card?theme=rgb`,
+        `${baseurl}/motivational-quotes-card?theme=rgb`,
+      ],
+    },
     "pattern_1": {
       info: "Pattern theme 1",
       example: [
@@ -59,6 +67,14 @@ router.get("/", (req, res) => {
         `${baseurl}/jokes-card?theme=pattern_3`,
         `${baseurl}/programming-quotes-card?theme=pattern_3`,
         `${baseurl}/motivational-quotes-card?theme=pattern_3`,
+      ],
+    },
+    "lemonade": {
+      info: "Lemonade theme",
+      example: [
+        `${baseurl}/jokes-card?theme=lemonade`,
+        `${baseurl}/programming-quotes-card?theme=lemonade`,
+        `${baseurl}/motivational-quotes-card?theme=lemonade`,
       ],
     },
     "custom": {
@@ -137,6 +153,15 @@ router.get("/", (req, res) => {
         theme: "Theme of card. All themes. Default: dark_2  [Optional]",
         },
         example: [`${baseurl}/team-work-quote-card`],
+      },
+    },
+    "bhagavad-geeta-card": {
+      info: "Generate a random quote from the bhagavad-geeta-card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/bhagavad-geeta-card`],
       },
     }
   };

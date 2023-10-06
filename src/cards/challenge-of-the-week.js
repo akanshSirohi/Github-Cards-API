@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs").promises; // Use the promise-based version of fs
 const { generateCard } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
+const Languages = require("../languages");
 
 const CHALLENGE_FILE_PATH = "./src/data/challenge_of_the_week.json";
 const DEFAULT_THEME = "light";
@@ -30,8 +31,8 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
 
     const challengeContent = `Challenge of the week:\n${randomChallenge.challenge}`;
 
-    const challengeCard = await generateCard(challengeContent, req.theme, req.options);
-
+    const challengeCard = await generateCard(challengeContent, req.theme, req.options, Languages.ENGLISH);
+    
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",

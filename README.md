@@ -30,6 +30,7 @@ Embed one of these in your README:
 | `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | ![Card](https://github-cards.onrender.com/word-of-the-day-card) |
 | `challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | ![Card](https://github-cards.onrender.com/challenge-of-the-week-card) |
 | `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | ![Card](https://github-cards.onrender.com/team-work-quote-card) |
+| `bhagavad-geeta-card` | `![Card](https://github-cards.onrender.com/bhagavad-geeta-card)` | ![Card](https://github-cards.onrender.com/bhagavad-geeta-card) |
 | `random-card` | `![Card](https://github-cards.onrender.com/random-card)` | ![Card](https://github-cards.onrender.com/random-card) |
 
 ### Available Themes List
@@ -37,11 +38,13 @@ Embed one of these in your README:
 1. light
 2. dark
 3. dark_2
-4. pattern_1
-5. pattern_2
-6. pattern_3
-7. random - Any random theme will we applied
-8. custom - You can set your custom arguments
+4. rgb
+5. lemonade
+6. pattern_1
+7. pattern_2
+8. pattern_3
+9. random - Any random theme will we applied
+10. custom - You can set your custom arguments
 
 ## Custom Theme Arguments
 
@@ -66,6 +69,12 @@ args: {
 - Dark_2 Theme Card <br/>
   ![Card](https://github-cards.onrender.com/jokes-card?theme=dark_2)
 
+- Rgb Theme Card <br/>
+  ![Card](https://github-cards.onrender.com/jokes-card?theme=rgb)
+
+- Lemonade Theme Card <br/>
+  ![Card](https://github-cards.onrender.com/jokes-card?theme=lemonade)
+
 - Pattern_1 Theme Card <br/>
   ![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_1)
 
@@ -85,10 +94,11 @@ args: {
 
 1. Fork this repository.
 2. Add your card in `src/cards` directory, you can take the refrence from already added cards.
-3. Add any data file inside data directory that your card will use.
+3. Add any data file inside data directory that your card will use. (Languages Support: Hindi & English)
 4. Add route of your card in `index.js` file.
 5. Add your card api refrence inside in `src/help.js` file and also in README.md file.
 6. Create pull request.
+7. Note: Data file must have arounf 100 entries minimum.
 
 ### Add new theme
 
@@ -99,4 +109,4 @@ args: {
    > Theme name should be unique and should be in the second last position of the array.
 4. Create your theme in `src/themes.js` file.
    > Take refrence from already added themes.
-5. Add your theme api refrence inside in `src/help.js` file and also in README.md file.
+5. Add your theme api refrence inside in `src/help.js` file and also in `README.md` file.

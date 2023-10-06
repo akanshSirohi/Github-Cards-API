@@ -9,6 +9,7 @@ const available_cards = {
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
   "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
   "/team-work-quote-card" : require("./src/cards/team-work-quote"),
+  "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
 };
 
 app.use(express.json());
