@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 const { generateCard } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
+const Languages = require("../languages");
 
 router.get("/", (req, res) => {
   let theme = "light";
@@ -27,7 +28,7 @@ router.get("/", (req, res) => {
 
   let challengeContent = `Challenge of the week:\n${randomChallenge.challenge}`;
 
-  generateCard(challengeContent, theme, options, (challengeCard) => {
+  generateCard(challengeContent, theme, options, Languages.ENGLISH, (challengeCard) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",

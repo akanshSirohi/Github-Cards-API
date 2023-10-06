@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 const { generateCard } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
+const Languages = require("../languages");
 
 router.get("/", (req, res) => {
   let theme = "light";
@@ -40,7 +41,7 @@ router.get("/", (req, res) => {
     options = parseOptions(req.query);
   }
 
-  generateCard(joke_content, theme, options, (joke_card) => {
+  generateCard(joke_content, theme, options, Languages.ENGLISH, (joke_card) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",

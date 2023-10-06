@@ -1,5 +1,9 @@
-const { createCanvas } = require("canvas");
+const { createCanvas, registerFont } = require("canvas");
 const { THEMES, create_theme } = require("./themes");
+const Languages = require("./languages");
+registerFont("./src/assets/fonts/Ubuntu-Regular.ttf", { family: "Ubuntu" }); // English Font
+registerFont("./src/assets/fonts/NotoSans-Regular.ttf", { family: "NotoSans" }); // Hindi Font
+
 let extra_options = null;
 
 // prettier-ignore
@@ -84,7 +88,7 @@ const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
   return linesCnt * lineHeight;
 };
 
-const processCard = async (txt, theme) => {
+const processCard = async (txt, theme, language) => {
   
   // Card Constants
   const W = 400; // Width Of Card
@@ -168,7 +172,11 @@ const processCard = async (txt, theme) => {
 
   // Draw Text
   ctx.fillStyle = font_color;
-  ctx.font = `${fontSize}px Ubuntu`;
+  if(language === Languages.HINDI) {
+    ctx.font = `${fontSize}px NotoSans`;
+  }else{
+    ctx.font = `${fontSize}px Ubuntu`;
+  }
 
   wrapText(
     ctx,
@@ -184,7 +192,7 @@ const processCard = async (txt, theme) => {
   return svg;
 };
 
-const generateCard = async (txt, theme, options, callback) => {
+const generateCard = async (txt, theme, options, language, callback) => {
 
   extra_options = options;
 
@@ -196,7 +204,7 @@ const generateCard = async (txt, theme, options, callback) => {
     theme = THEMES[0];
   }
 
-  const svg = await processCard(txt, theme);
+  const svg = await processCard(txt, theme, language);
   callback(svg);
 };
 

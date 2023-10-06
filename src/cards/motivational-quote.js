@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 const { generateCard } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
+const Languages = require("../languages");
 
 router.get("/", (req, res) => {
   let theme = "dark_2";
@@ -27,7 +28,7 @@ router.get("/", (req, res) => {
 
   let quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
 
-  generateCard(quote_content, theme, options, (quote_card) => {
+  generateCard(quote_content, theme, options, Languages.ENGLISH, (quote_card) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=10",
