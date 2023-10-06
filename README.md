@@ -37,11 +37,12 @@ Embed one of these in your README:
 1. light
 2. dark
 3. dark_2
-4. pattern_1
-5. pattern_2
-6. pattern_3
-7. random - Any random theme will we applied
-8. custom - You can set your custom arguments
+4. rgb
+5. pattern_1
+6. pattern_2
+7. pattern_3
+8. random - Any random theme will we applied
+9. custom - You can set your custom arguments
 
 ## Custom Theme Arguments
 
