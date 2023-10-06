@@ -3,7 +3,8 @@ const GradientConstants = {
     DARK_1: "dark_1",
     DARK_2: "dark_2",
     LIGHT: "light",
-    RGB: "rgb"
+    RGB: "rgb",
+    LEMONADE: "lemonade"
 };
 
 const generateGradient = (grad_name, ctx, canvas, w) => {
@@ -51,6 +52,19 @@ const generateGradient = (grad_name, ctx, canvas, w) => {
             background.addColorStop(0.5, "rgba(0, 255, 0, 1)");
             background.addColorStop(1, "rgba(0, 0, 255, 1)"); 
             return background;
+
+        case GradientConstants.LEMONADE:
+            background = ctx.createLinearGradient(
+                0,
+                canvas.height / 2,
+                w,
+                canvas.height / 2
+            );
+            background.addColorStop(0, "rgba(171, 236, 54, 1)"); 
+            background.addColorStop(0.49, "rgba(238, 219, 92, 1)"); 
+            background.addColorStop(1, "rgba(249, 245, 75, 1)");
+            return background;
+            
 
     }
 };

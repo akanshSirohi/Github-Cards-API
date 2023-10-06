@@ -69,6 +69,14 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=pattern_3`,
       ],
     },
+    "lemonade": {
+      info: "Lemonade theme",
+      example: [
+        `${baseurl}/jokes-card?theme=lemonade`,
+        `${baseurl}/programming-quotes-card?theme=lemonade`,
+        `${baseurl}/motivational-quotes-card?theme=lemonade`,
+      ],
+    },
     "custom": {
       info: "Custom theme",
       args: {
