@@ -9,6 +9,7 @@ const THEMES = [
     "pattern_1",
     "pattern_2",
     "pattern_3",
+    "rgb",
     "custom" // It should be in the last position always, add your theme name above this
 ];
 
@@ -27,7 +28,7 @@ const create_theme = async (ctx, canvas, theme, W) => {
         // Load image for pattern theme
         // Add pattern path here if theme has pattern in it
         if (theme === "pattern_1") {
-           pattern_path = "./src/assets/endless-constellation-bg.svg";
+            pattern_path = "./src/assets/endless-constellation-bg.svg";
         } else if (theme === "pattern_2") {
             pattern_path = "./src/assets/protruding-squares-bg.svg";
         } else if (theme === "pattern_3") {
@@ -35,7 +36,7 @@ const create_theme = async (ctx, canvas, theme, W) => {
         }
         try {
             image = await loadImage(pattern_path);
-        }catch(e) {
+        } catch (e) {
             // If image is not found, fallback to default theme
             theme = THEMES[0];
         }
@@ -44,24 +45,31 @@ const create_theme = async (ctx, canvas, theme, W) => {
     // Add more your theme here
     switch (theme) {
         case "dark":
-            theme_obj.background = generateGradient(GradientConstants.DARK_1,ctx,canvas,W);
+            theme_obj.background = generateGradient(GradientConstants.DARK_1, ctx, canvas, W);
             theme_obj.card_bg = "#282828";
             theme_obj.font_color = "#fff";
             theme_obj.shadow = true;
             theme_obj.shadowColor = "#000";
             break;
         case "dark_2":
-            theme_obj.background = generateGradient(GradientConstants.DARK_2,ctx,canvas,W);
+            theme_obj.background = generateGradient(GradientConstants.DARK_2, ctx, canvas, W);
             theme_obj.card_bg = "#282828";
             theme_obj.font_color = "#fff";
             theme_obj.shadow = true;
             theme_obj.shadowColor = "#000";
             break;
         case "light":
-            theme_obj.background = generateGradient(GradientConstants.LIGHT,ctx,canvas,W);
+            theme_obj.background = generateGradient(GradientConstants.LIGHT, ctx, canvas, W);
             theme_obj.card_bg = "#eee";
             theme_obj.font_color = "#222";
             theme_obj.shadow = false;
+            break;
+        case "rgb":
+            theme_obj.background = generateGradient(GradientConstants.RGB, ctx, canvas, W);
+            theme_obj.card_bg = "#282828";
+            theme_obj.font_color = "#fff";
+            theme_obj.shadow = true;
+            theme_obj.shadowColor = "#000";
             break;
         case "pattern_1":
             theme_obj.background = ctx.createPattern(image, "repeat");
@@ -83,6 +91,7 @@ const create_theme = async (ctx, canvas, theme, W) => {
             theme_obj.font_color = "#222";
             theme_obj.shadow = false;
             break;
+
     }
 
     return theme_obj;
