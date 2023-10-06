@@ -30,6 +30,7 @@ Embed one of these in your README:
 | `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | ![Card](https://github-cards.onrender.com/word-of-the-day-card) |
 | `challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | ![Card](https://github-cards.onrender.com/challenge-of-the-week-card) |
 | `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | ![Card](https://github-cards.onrender.com/team-work-quote-card) |
+| `bhagavad-geeta-card` | `![Card](https://github-cards.onrender.com/bhagavad-geeta-card)` | ![Card](https://github-cards.onrender.com/bhagavad-geeta-card) |
 | `random-card` | `![Card](https://github-cards.onrender.com/random-card)` | ![Card](https://github-cards.onrender.com/random-card) |
 
 ### Available Themes List
