@@ -138,6 +138,15 @@ router.get("/", (req, res) => {
         },
         example: [`${baseurl}/team-work-quote-card`],
       },
+    },
+    "bhagavad-geeta-card": {
+      info: "Generate a random quote from the bhagavad-geeta-card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/bhagavad-geeta-card`],
+      },
     }
   };
 
