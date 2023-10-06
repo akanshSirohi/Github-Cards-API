@@ -94,7 +94,7 @@ args: {
 
 1. Fork this repository.
 2. Add your card in `src/cards` directory, you can take the refrence from already added cards.
-3. Add any data file inside data directory that your card will use.
+3. Add any data file inside data directory that your card will use. (Languages Support: Hindi & English)
 4. Add route of your card in `index.js` file.
 5. Add your card api refrence inside in `src/help.js` file and also in README.md file.
 6. Create pull request.
