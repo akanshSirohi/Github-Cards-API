@@ -10,6 +10,7 @@ const THEMES = [
     "pattern_2",
     "pattern_3",
     "rgb",
+    "lemonade",
     "custom" // It should be in the last position always, add your theme name above this
 ];
 
@@ -88,6 +89,12 @@ const create_theme = async (ctx, canvas, theme, W) => {
             image.width = canvas.width;
             theme_obj.background = ctx.createPattern(image, "repeat");
             theme_obj.card_bg = "#eee";
+            theme_obj.font_color = "#222";
+            theme_obj.shadow = false;
+            break;
+        case "lemonade":
+            theme_obj.background = generateGradient(GradientConstants.LEMONADE, ctx, canvas, W);
+            theme_obj.card_bg = "#E1E5EA";
             theme_obj.font_color = "#222";
             theme_obj.shadow = false;
             break;
