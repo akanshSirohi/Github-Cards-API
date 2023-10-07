@@ -1,0 +1,523 @@
+[
+    {
+        "index": 0,
+        "facts": "R programming language is an implementation of the S programming language. It also combines with lexical scoping semantics inspired by Scheme. It is named partly after the first names of the first two R authors and partly as a play on the name of S.",
+        "topic": "R language"
+    },
+    {
+        "index": 1,
+        "facts": "R supports both procedural programming and object-oriented programming. Procedural programming includes the procedure, records, modules, and procedure calls. While object-oriented programming language includes class, objects, and generic functions.",
+        "topic": "R language"
+    },
+    {
+        "index": 2,
+        "facts": "R language is an interpreted language instead of a compiled language. Therefore, it doesnt need a compiler to compile code into an executable program. This makes running an R script much less time-consuming.",
+         "topic": "R language"
+    },
+    {
+        "index": 3,
+        "facts": "The number of R packages available either through CRAN or GitHub is 1, 00, 000 and they do epic stuff with just one line of code. It could range from Regression to Bayesian analysis.",
+        "topic": "R language"
+    },
+    {
+        "index": 4,
+        "facts": "R is growing faster than any other data science language. Its the most-used data science language after SQL. It is used by 70% of data miners.",
+        "topic": "R language"
+    },
+    {
+        "index": 5,
+        "facts": "One of the packages in R namely rmarkdown package helps you create reproducible Word documents and reproducible Powerpoint Presentations from your R markdown code just by changing one line in the YAML! (“YAML Ain’t Markup Language!”)",
+        "topic": "R language"
+    },
+    {
+        "index": 6,
+        "facts": "It is really very easy in R to connect to almost any database using the dbplyr package. This makes possible for an R user to work independently and pulling data from almost all common database types. You can also use packages like bigquery to work directly with BigQuery and other high-performance data stores.",
+        "topic": "R language"
+    },
+    {
+        "index": 7,
+        "facts": "You can build and host interactive web apps in just a few lines of code in R. Using the flexdashboard package in R you can create interactive web apps with a few lines of code. And using the rsconnect package you can also host your web apps on your own server or, even easier, host them on a cloud server.",
+        "topic": "R language"
+    },
+    {
+        "index": 8,
+        "facts": "You can not only deploy web apps but also can make them into awesome video games in R. The nessy package helps you create NES(The Nintendo Entertainment System) looking Shiny apps and deploy them just like you would any other Shiny app.",
+        "topic": "R language"
+    },
+    {
+        "index": 9,
+        "facts": "According to PYPL PopularitY of Programming Language R is #7 of all programming languages. R is the #1 Google Search for Advanced Analytics software. It has more than 3 million users worldwide make a huge community for R programming language.",
+        "topic": "R language"
+    },
+    {
+        "index": 10,
+        "facts": "The origin of R programming language can be traced back to 1993 when Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand introduced it.",
+        "topic": "R language"
+    },
+    {
+        "index": 11,
+        "facts": "R is an open-source language and it is available for free for everyone to use for statistical and graphical purposes.",
+        "topic": "R language"
+    },
+    {
+        "index": 12,
+        "facts": "The R programming language has a supportive and enthusiastic user community, providing ample resources and assistance to users.",
+        "topic": "R language"
+    },    
+    {
+        "index": 13,
+        "facts": "The widespread usage of R in fields such as data science, machine learning, and statistical modeling has made it one of the most sought-after programming languages.",
+        "topic": "R language"
+    },
+    {
+        "index": 14,
+        "facts": "R has a wealth of packages and libraries, allowing users to perform complex tasks easily and extend its functionality.",
+        "topic": "R language"
+    },
+    {
+        "index": 15,
+        "facts": "Industries such as finance, healthcare, pharmaceuticals, and marketing make use of R for data analysis and modeling.",
+        "topic": "R language"
+    },
+    {
+        "index": 16,
+        "facts": "In academic research, R has become a crucial tool across various disciplines such as biology, psychology, and economics.",
+        "topic": "R language"
+    },
+    {
+        "index": 17,
+        "facts": "R operates seamlessly on different platforms like Windows, macOS, and Linux, making it easily accessible to users regardless of the operating system they use.",
+        "topic": "R language"
+    },
+    {
+        "index": 18,
+        "facts": "It’s believed that Python was developed during the Christmas holidays as a hobby in December 1989. Guido Van Rossum (his creator) was looking for a project to keep him occupied during his free time on Christmas.",
+        "topic": "Python language"
+    },
+    {
+        "index": 19,
+        "facts": "Python is developed under an OSI-approved open-source license. This makes it freely usable and distributable, even for commercial use",
+        "topic": "Python language"
+    },
+    {
+        "index": 20,
+        "facts": "The language name is not about snakes, but about the popular British comedy troupe Monty Python (from the 1970s). Guido himself is a big fan of Monty Python’s Flying Circus. Being in a rather irreverent mood, he named the project ‘Python’. ",
+        "topic": "Python language"
+    },
+    {
+        "index": 21,
+        "facts": "Unlike Java and C++, Python does not use braces to delimit code. Indentation is mandatory with Python. If you choose to import it from the __future__ package, it gives you a witty error.",
+        "topic": "Python language"
+    },
+    {
+        "index": 22,
+        "facts": "Python will let you assign the same value to multiple variables in one statement. It will also let you assign values to multiple variables at once.",
+        "topic": "Python language"
+    },
+    {
+        "index": 23,
+        "facts": "Python is one of the 9 languages that influenced the design of JavaScript. Others include AWK, C, HyperTalk, Java, Lua, Perl, Scheme, and Self.",
+        "topic": "Python language"
+    },
+    {
+        "index": 24,
+        "facts": "According to a recent survey, in the UK in 2015, Python overtook French to be the most popular language taught in primary schools. Out of 10, 6 parents preferred their children to learn Python over French. One of my favorite facts about Python programming.",
+        "topic": "Python language"
+    },
+    {
+        "index": 25,
+        "facts": "As a high-level and interpreted language, Python does not need a compiler. This is unlike Java and C++ which have to be compiled first before being interpreted. For Python, it relies on the application interpreter.",
+        "topic": "Python language"
+    },
+    {
+        "index": 26,
+        "facts": "Despite being an independent programming language, Python has variants for C and Java programming languages. The C variant is known as CPython and is designed to give Python the advantages of C. One of these characteristics is in terms of performance. The variant can act both as an interpreter and at the same time as a compiler.",
+        "topic": "Python language"
+    },
+    {
+        "index": 27,
+        "facts": "The Java variant of Python is known as Jython. It brings some key aspects of Java such as productivity and enables them to run on a virtual machine.",
+        "topic": "Python language"
+    },
+    {
+        "index": 28,
+        "facts": "Some of the big companies and institutions using python are: NASA, Facebook, IBM, Google, Nokia, Netflix, Yahoo! Maps, Quora, Hike, Amazon, Youtube, Mozilla, Uber, Dropbox, Expedia",
+        "topic": "Python language"
+    },
+    {
+        "index": 29,
+        "facts": "The initial name of java was “Oak”. It was changed to Java by Sun’s marketing department changed it to “java” when they found that name was already registered for some computer company.",
+        "topic": "Java language"
+    },
+    {
+        "index": 30,
+        "facts": "Java was made by an accident. Around 1992, James Gosling was working at the Sun Labs. He and his team at that time were building a set-top box and which is started by “cleaning up” the C++ and they all wound up with a new language called Java or Oak.",
+        "topic": "Python language"
+    },
+    {
+        "index": 31,
+        "facts": "Java is the second most popular language and is very popular among the developers.",
+        "topic": "Java language"
+    },
+    {
+        "index": 32,
+        "facts": "Java is free from the concept of Pointer as adding pointers to Java language would compromise security and the robustness, making this language more complex.",
+        "topic": "Java language"
+    },
+    {
+        "index": 33,
+        "facts": "In Java, The meaning of Final keyword is not final. It has different meanings in java. It can be Final class, Final method, Final field or Final variable.",
+        "topic": "Java language"
+    },
+    {
+        "index": 34,
+        "facts": "Java is used by 95% of the enterprises as their primary language. It is much more than C and the other languages.",
+        "topic": "Java language"
+    },
+    {
+        "index": 35,
+        "facts": "In one year Java gets downloaded one billion times.",
+        "topic": "Java language"
+    },
+    {
+        "index": 36,
+        "facts": "A Java developers median salary is $83, 975.00. It pays to be a Java developer",
+         "topic": "Java language"
+    },
+    {
+        "index": 37,
+        "facts": "Today, Java rationally runs on more than 1 billion as the Android operating system of Google uses Java APIs.",
+        "topic": "Java language"
+    },
+    {
+        "index": 38,
+        "facts": "The main technology site of Sun is java.sun.com. The name of Collaborative site which is run by Sun is java.net. A news site which is run by Sun is java.com. If you want to know about Java programs related news, just log on to the www.javaworld.com.",
+        "topic": "Java language"
+    },
+    {
+        "index": 39,
+        "facts": "While Java is widely recognized for its role in web development, it also plays a significant part in the Internet of Things (IoT) ecosystem. Java’s portability and scalability make it an ideal choice for developing embedded systems, connecting various IoT devices, and enabling communication between them.",
+        "topic": "Java language"
+    },
+    {
+        "index": 40,
+        "facts": "The phrase “Write Once, Run Anywhere” encapsulates Java’s cross-platform capabilities and became the language’s iconic slogan. It embodies the core philosophy of Java and reflects its commitment to portability, allowing developers to write code once and run it on various devices with Java support.",
+        "topic": "Java language"
+    },
+    {
+        "index": 41,
+        "facts": "Java robustness and scalability have made it a preferred choice for developing enterprise-level applications. Numerous big companies, including banking institutions, e-commerce platforms, and government organizations, rely on Java for their critical business systems.",
+        "topic": "Java language"
+    },
+    {
+        "index": 42,
+        "facts": "The TIOBE index, which measures the popularity of programming languages, consistently ranks Java among the top programming languages. Java wide adoption in diverse domains, along with its extensive ecosystem, ensures its continued relevance and popularity among developers.",
+        "topic": "Java language"
+    },
+    {
+        "index": 43,
+        "facts": "C Language was not called C at the beginning. It has been named as C after passing many stages of evolution.",
+        "topic": "C language"
+    },
+    {
+        "index": 44,
+        "facts": "C is the only programming language that exists for such a long period and still it is widely used.",
+        "topic": "C language"
+    },
+    {
+        "index": 45,
+        "facts": "C is the basis of many other programming languages like C++, Java, JavaScript, Go, C#, PHP, Python, Perl, C-shell and many more.",
+        "topic": "C language"
+    },
+    {
+        "index": 46,
+        "facts": "Unix was one of the first operating system kernels implemented in a language other than assembly and that was C.",
+        "topic": "C language"
+    },
+    {
+        "index": 47,
+        "facts": "Previously, C was considered as the high level language but today many programmers consider it as a low level language as it supports only scalar operations.",
+        "topic": "C language"
+    },
+    {
+        "index": 48,
+        "facts": "C18 is the latest version of C programming Language published in June 2018.",
+        "topic": "C language"
+    },
+    {
+        "index": 49,
+        "facts": "The name of C++ signifies the evolutionary nature of the changes from C. “++” is the C increment operator. ",
+        "topic": "CPP language"
+    },
+    {
+        "index": 50,
+        "facts": "C++ is one of the predominant languages for the development of all kinds of technical and commercial software.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 51,
+        "facts": "C++ introduces Object-Oriented Programming, not present in C. Like other things, C++ supports the four primary features of OOP: encapsulation, polymorphism, abstraction, and inheritance. ",
+        "topic": "CPP language"
+    },
+    {
+        "index": 52,
+        "facts": "C++ got the OOP features from Simula67 Programming language.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 53,
+        "facts": "A function is a minimum requirement for a C++ program to run.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 54,
+        "facts": "C and C++ have invented in the same place i.e. at AT&T (American Telephone & Telegraph) bell laboratories, located in the U.S.A.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 55,
+        "facts": "Not purely object-oriented: We can write C++ code without using classes and it will compile without showing any error message. The language has some extensions over C, that make OOP and generic programming more convenient.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 56,
+        "facts": "Many programming languages are influenced by c++, some of which include C#, Java, and even newer versions of C.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 57,
+        "facts": "Concept of reference variables: operator overloading borrowed from Algol 68 programming language.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 58,
+        "facts": "A major reason behind the success of C++ is that it supports various programming styles.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 59,
+        "facts": " It is a multiparadigm programming language that not only supports the OOP paradigm but also many other paradigms. ",
+        "topic": "CPP language"
+    },
+    {
+        "index": 60,
+        "facts": " C/C++ is extensively used by NASA. This language is the most flexible and efficient choice when it comes to flight software. Those who think that C/C++ is becoming an “artifact” language only do so because of tunnel vision and a career surrounded by the ecosystem of web-based applications.",
+        "topic": "CPP language"
+    },
+    {
+        "index": 61,
+        "facts": "Along with HTML an CSS, JavaScript is one of the three main things of the www (World Wide Web). It enables interactive web pages and thus is an essential part of web applications. A majority of websites use it and all major web browsers have a devoted JavaScript engine to execute it.",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 62,
+        "facts": "JavaScript is single threaded. This is the reason lots of people who use multi-threaded programming thinks its working is slow as it would not be able to make use of all the cores of the CPU properly.",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 63,
+        "facts": "Despite the fact that there are similarities between JavaScript and Java, including language name, respective standard libraries and syntax, these two languages are distinct and differ significantly in design.",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 64,
+        "facts": "Like all other scripting languages, arrays and objects can be created with a brief shortcut syntax. These literals structure the basis of JSON data format.",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 65,
+        "facts": "JavaScript supports regular expressions in a manner similar to Perl, which provides a concise and powerful syntax for text manipulation that is more sophisticated than the built-in string functions.",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 66,
+        "facts": "There is a CSRF attack known as “JavaScript hijacking” in which a tag on an attacker’s site damages a page on the victim’s site that returns private information such as JavaScript or JSON ",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 67,
+        "facts": "JavaScript is supported by all modern Web browsers with the built-in interpreters.",
+        "topic": "Javascript language"
+    },
+    {
+        "index": 68,
+        "facts": "TypeScript builds upon JavaScript by adding static typing and other features. This means that any valid JavaScript code is also valid TypeScript code.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 69,
+        "facts": "TypeScript code is transpiled into JavaScript code, which can then be executed by any JavaScript runtime. This allows TypeScript to be used in any environment where JavaScript is supported.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 70,
+        "facts": "TypeScript introduces static typing, allowing developers to define types for variables, function parameters, return values, and more. This helps catch type-related errors during development and improves code robustness.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 71,
+        "facts": "TypeScript has powerful type inference capabilities, meaning it can often infer the types of variables and expressions without explicit annotations. This reduces the need for excessive type annotations, making code more concise and readable.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 72,
+        "facts": "TypeScript performs various static checks during compilation, such as type checking, catching syntax errors, and providing helpful warnings and suggestions. This helps catch potential issues early in the development process and improves code quality.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 73,
+        "facts": "TypeScript supports optional function parameters and allows developers to specify default values for parameters. This makes function calls more flexible and provides better control over function behavior.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 74,
+        "facts": "TypeScript closely follows the ECMAScript standard and adopts new features from JavaScript as they are introduced. This ensures that TypeScript developers can leverage the latest JavaScript language features while enjoying the benefits of static typing.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 75,
+        "facts": "TypeScript has excellent support in popular Integrated Development Environments (IDEs) like Visual Studio Code. IDEs provide features like code completion, refactoring, and real-time error checking, enhancing productivity when working with TypeScript.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 76,
+        "facts": "TypeScript allows gradual adoption in existing JavaScript projects. You can start by adding type annotations to specific files or modules while leaving the rest of the codebase untouched. This incremental approach makes it easier to adopt TypeScript in large-scale projects.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 77,
+        "facts": "TypeScript has a thriving community and a rich ecosystem of libraries and frameworks. Many popular JavaScript frameworks, such as React, Angular, and Vue.js, have official TypeScript support, making it easier to develop robust applications using these technologies.",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 78,
+        "facts": "One of the selling points of TypeScript is that its a superset of JavaScript — meaning that all JavaScript is valid TypeScript. This fact allows you to take a *.js file and switch it to a *.ts file and use it as-is in TypeScript",
+        "topic": "Typescript language"
+    },
+    {
+        "index": 79,
+        "facts": "SQL was developed at IBM by Donald D. Chamberlin and Raymond F. Boyce in the early 1970s. It was initially called sequel (even today), but later changed to SQL.",
+        "topic": "SQL Query language"
+    },
+    {
+        "index": 80,
+        "facts": "SQL is a powerful language that uses simple English sentences, and also uses very few lines. SQL is declarative language.",
+        "topic": "SQL Query language"
+    },
+    {
+        "index": 81,
+        "facts": "SQL is a core of relational type databases. It is the language used to perform actions such as update, retrieve, manipulate and store data on a relational database.",
+        "topic": "SQL Query language"
+    },
+    {
+        "index": 82,
+        "facts": "Rust speed makes it a pretty good candidate for developers looking to create a game engine. Its the smart choice for applications that use Virtual Reality to build a simulation. Its not limited to just gaming though, and can be used as the basis of an operating system, file system, or to write browser components.",
+        "topic": "Rust language"
+    },
+    {
+        "index": 83,
+        "facts": "Unlike other programming languages that leave you flipping over tables in a blind nerd rage, or tearing out your hair out of pure frustration, Rust offers memory safety and will actively reduce common programming errors.",
+        "topic": "Rust language"
+    },
+    {
+        "index": 84,
+        "facts": "Rust arguably supports more code complexity than any other programming language. It supports generics, and you will find it way easier to build powerful web apps using Rust.",
+        "topic": "Rust language"
+    },
+    {
+        "index": 85,
+        "facts": "Despite being released a decade ago, the current iteration of Rust as a polished product is still relatively new. ",
+        "topic": "Rust language"
+    },
+    {
+        "index": 86,
+        "facts": "Though Rust itself works very quickly, the same cant be said for writing it. It does take longer to compile, and the code itself can be less efficient than other languages.",
+        "topic": "Rust language"
+    },
+    {
+        "index": 87,
+        "facts": "Rust does have a tendency to leak memory, despite its reputation of doing the opposite. Its possible to create references where items refer to each other in a cycle, causing a memory leak where the reference count of each item will never reach 0 and the values will never be dropped. An endless cycle.",
+        "topic": "Rust language"
+    },
+    {
+        "index": 88,
+        "facts": "Because it does so much, the complexity of Rust is a double-edged sword in that there is a pretty steep learning curve at the beginner level. The compiler is there to hold your hand and think for you to an extent, and certainly once you’re up and running it’s great, but the fact remains that a novice will be in over their heads.",
+        "topic": "Rust language"
+    },
+    {
+        "index": 89,
+        "facts": "SQL is a core of relational type databases. It is the language used to perform actions such as update, retrieve, manipulate and store data on a relational database.",
+        "topic": "HTML language"
+    },
+    {
+        "index": 90,
+        "facts": "HTML was created by Tim Berners-Lee, a British computer scientist, in 1990. He had the idea of creating a system where people could share information between different computers. He wrote the first version of HTML and released it to the public. Since then, HTML has evolved and become an integral part of the internet.",
+        "topic": "HTML language"
+    },
+    {
+        "index": 91,
+        "facts": "Although HTML has code that looks similar to a programming language, it is not actually a programming language. HTML is a markup language, which means it is used to structure content on a webpage. It is made up of tags, which are used to tell the browser how to display the content on the page. HTML does not have the ability to create complex programs like other programming languages like Java, Python, or C++.",
+        "topic": "HTML language"
+    },
+    {
+        "index": 92,
+        "facts": "Although HTML has code that looks similar to a programming language, it is not actually a programming language. HTML is a markup language, which means it is used to structure content on a webpage. It is made up of tags, which are used to tell the browser how to display the content on the page. HTML does not have the ability to create complex programs like other programming languages like Java, Python, or C++.",
+        "topic": "HTML language"
+    },
+    {
+        "index": 93,
+        "facts": "In 2006, the World Wide Web Consortium recognized the need for a renewed version of HyperText Markup Language. They decided to work with the Web Hypertext Application Technology Working Group to create the newest version of HTML, which is now referred to as HTML5. ",
+        "topic": "HTML language"
+    },
+    {
+        "index": 94,
+        "facts": "HTML5 is the latest version of HTML and it is the fifth major revision of the HTML standard. It supports new features such as audio and video elements, drag and drop, geolocation, local storage, and web sockets. HTML5 is designed to be more semantic than previous versions, making it easier for developers to create well-structured web pages.",
+        "topic": "HTML language"
+    },
+    {
+        "index": 95,
+        "facts": "HTML5 has an attribute called “contenteditable” which can be set on any element such as DIV, P, UL, etc. This attribute allows the content of the element to be edited directly in the browser, without the need of a form field.",
+        "topic": "HTML language"
+    },
+    {
+        "index": 96,
+        "facts": "In just three years, Kotlin is now used by 7.8% of the industry experts.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 97,
+        "facts": "With Kotlin Multiplatform, now it is possible to build cross-platform apps using Kotlin.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 98,
+        "facts": "Kotlin is used by global companies like Google, NetFlix, Amazon, Trello, and more.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 99,
+        "facts": "At I/O Annual Summit 2017, Google declared Kotlin as the official language supporting Android. It became Kotilins core foundation for survival in this digital realm.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 100,
+        "facts": "The impressive feature of Kotlin is its 100% interoperability with Java. This means developers can obtain the codes from Java and Kotlin in the same project. Moreover, they can compile both perfectly. Post-compilation, it would be difficult to identify which parts are developed in Kotlin or Java.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 101,
+        "facts": "Kotlin programs can effortlessly use all the existing Java frameworks and libraries. Kotlin programs can also use all the sophisticated frameworks which rely on annotation processing. Kotlin language is interoperable and can be integrated seamlessly with Gradle, Maven, and other build systems.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 102,
+        "facts": "Kotlin enables extending a class with new functionality without inheriting or using any design pattern. Extension functions are the functions that help us expand the functionalities of classes without touching the code.",
+        "topic": "Kotlin language"
+    },
+    {
+        "index": 103,
+        "facts": "In just three years, Kotlin is now used by 7.8% of the industry experts.",
+        "topic": "Kotlin language"
+    }    
+
+]

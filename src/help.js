@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=dark`,
         `${baseurl}/programming-quotes-card?theme=dark`,
+        `${baseurl}/programming-facts-card?theme=dark`,
         `${baseurl}/motivational-quotes-card?theme=dark`,
       ],
     },
@@ -26,6 +27,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=dark_2`,
         `${baseurl}/programming-quotes-card?theme=dark_2`,
+        `${baseurl}/programming-facts-card?theme=dark_2`,
         `${baseurl}/motivational-quotes-card?theme=dark_2`,
       ],
     },
@@ -34,6 +36,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=light`,
         `${baseurl}/programming-quotes-card?theme=light`,
+        `${baseurl}/programming-facts-card?theme=light`,
         `${baseurl}/motivational-quotes-card?theme=light`,
       ],
     },
@@ -42,6 +45,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=rgb`,
         `${baseurl}/programming-quotes-card?theme=rgb`,
+        `${baseurl}/programming-facts-card?theme=rgb`,
         `${baseurl}/motivational-quotes-card?theme=rgb`,
       ],
     },
@@ -50,6 +54,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=pattern_1`,
         `${baseurl}/programming-quotes-card?theme=pattern_1`,
+        `${baseurl}/programming-facts-card?theme=pattern_1`,
         `${baseurl}/motivational-quotes-card?theme=pattern_1`,
       ],
     },
@@ -58,6 +63,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=pattern_2`,
         `${baseurl}/programming-quotes-card?theme=pattern_2`,
+        `${baseurl}/programming-facts-card?theme=pattern_2`,
         `${baseurl}/motivational-quotes-card?theme=pattern_2`,
       ],
     },
@@ -66,6 +72,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=pattern_3`,
         `${baseurl}/programming-quotes-card?theme=pattern_3`,
+        `${baseurl}/programming-facts-card?theme=pattern_3`,
         `${baseurl}/motivational-quotes-card?theme=pattern_3`,
       ],
     },
@@ -74,6 +81,7 @@ router.get("/", (req, res) => {
       example: [
         `${baseurl}/jokes-card?theme=lemonade`,
         `${baseurl}/programming-quotes-card?theme=lemonade`,
+        `${baseurl}/programming-facts-card?theme=lemonade`,
         `${baseurl}/motivational-quotes-card?theme=lemonade`,
       ],
     },
@@ -94,6 +102,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=000000&font_color=ff0000&shadow=true&shadow_color=ff0000`,
         `${baseurl}/motivational-quotes-card?theme=custom&bg_color=008000&font_color=000000`,
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000`,
+        `${baseurl}/programming-facts-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
       ],
     }
   };
@@ -163,7 +172,17 @@ router.get("/", (req, res) => {
         },
         example: [`${baseurl}/bhagavad-geeta-card`],
       },
-    }
+    },
+
+    "programming-facts-card": {
+      info: "Random programming facts card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark  [Optional]"
+        },
+        example: [`${baseurl}/programming-facts-card`],
+      },
+    },
   };
 
   res.json({themes,cards});
