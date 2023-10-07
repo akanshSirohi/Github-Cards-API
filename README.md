@@ -32,6 +32,7 @@ Embed one of these in your README:
 | `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | ![Card](https://github-cards.onrender.com/team-work-quote-card) |
 | `bhagavad-geeta-card` | `![Card](https://github-cards.onrender.com/bhagavad-geeta-card)` | ![Card](https://github-cards.onrender.com/bhagavad-geeta-card) |
 | `random-card` | `![Card](https://github-cards.onrender.com/random-card)` | ![Card](https://github-cards.onrender.com/random-card) |
+| `programming-facts-card` | `![Card](https://github-cards.onrender.com/programming-facts-card?theme=dark)` | ![Card](https://github-cards.onrender.com/programming-facts-card?theme=dark) |
 
 ### Available Themes List
 
