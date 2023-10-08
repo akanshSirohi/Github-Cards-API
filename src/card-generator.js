@@ -1,10 +1,15 @@
 const { createCanvas, registerFont } = require("canvas");
 const { THEMES, create_theme } = require("./themes");
-const Languages = require("./languages");
 registerFont("./src/assets/fonts/Ubuntu-Regular.ttf", { family: "Ubuntu" }); // English Font
 registerFont("./src/assets/fonts/NotoSans-Regular.ttf", { family: "NotoSans" }); // Hindi Font
 
 let extra_options = null;
+
+// Supported Languages
+const Languages = {
+  HINDI: 'hindi',
+  ENGLISH: 'english',
+}
 
 // prettier-ignore
 const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
@@ -192,7 +197,7 @@ const processCard = async (txt, theme, language) => {
   return svg;
 };
 
-const generateCard = async (txt, theme, options, language, callback) => {
+const generateCard = async (txt, theme, options, language) => {
 
   extra_options = options;
 
@@ -205,7 +210,11 @@ const generateCard = async (txt, theme, options, language, callback) => {
   }
 
   const svg = await processCard(txt, theme, language);
-  callback(svg);
+  return svg;
 };
 
 module.exports.generateCard = generateCard;
+
+// Card Options
+module.exports.CARD_AGE = 300;
+module.exports.Languages = Languages;

@@ -1,42 +1,48 @@
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
-const { generateCard } = require("../card-generator");
+const fs = require("fs").promises;
+const { generateCard, CARD_AGE, Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
-const Languages = require("../languages");
 
-router.get("/", (req, res) => {
-    let theme = "dark_2";
-  
-    if ("theme" in req.query) {
-      theme = req.query.theme;
-    }
-  
-    let options = null;
-    
-    if(theme === "custom") {
-      options = parseOptions(req.query);
-    }
+const DATA_FILE_PATH = "./src/data/team-work-quote.json";
+const DEFAULT_THEME = "dark_2";
 
-  let teamworkQuotesData = fs.readFileSync("./src/data/team-work-quote.json", {
-    encoding: "utf8",
-    flag: "r",
-  });
+const handleTheme = (req, res, next) => {
+  req.theme = req.query.theme || DEFAULT_THEME;
+  next();
+};
 
-  teamworkQuotesData = JSON.parse(teamworkQuotesData);
+const handleOptions = (req, res, next) => {
+  if (req.theme === "custom") {
+    req.options = parseOptions(req.query);
+  }
+  next();
+};
 
-  let randomQuote =
-    teamworkQuotesData[Math.floor(Math.random() * teamworkQuotesData.length)];
+router.get("/", handleTheme, handleOptions, async (req, res) => {
+  try {
+    const teamworkQuotesData = JSON.parse(
+      await fs.readFile(DATA_FILE_PATH, "utf8")
+    );
+    const randomQuote = teamworkQuotesData[Math.floor(Math.random() * teamworkQuotesData.length)];
+    const quoteContent = `"${randomQuote.quote}"\n\nAuthor- ${randomQuote.author}`;
 
-  let quoteContent = `"${randomQuote.quote}"\n\nAuthor- ${randomQuote.author}`;
+    const quoteCard = await generateCard(
+      quoteContent,
+      req.theme,
+      req.options,
+      Languages.ENGLISH
+    );
 
-  generateCard(quoteContent, theme, options, Languages.ENGLISH, (quoteCard) => {
     res.writeHead(200, {
       "Content-Type": "image/svg+xml",
-      "Cache-Control": "public, max-age=10",
+      "Cache-Control": `public, max-age=${CARD_AGE}`,
     });
     res.end(quoteCard);
-  });
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 module.exports = router;
