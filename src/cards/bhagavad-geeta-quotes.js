@@ -30,10 +30,20 @@ router.get("/", (req, res) => {
     }
 
     let randomQuote = bhagavad_geeta_quotes[Math.floor(Math.random() * bhagavad_geeta_quotes.length)];
+    
+    let language;
+    let quoteContent = "";
 
-    let quoteContent = `Quote of the day:\n\n"${randomQuote.quote}" \n\t\t\t\t\t\t\t\t\t${randomQuote.chapter}`;
+    if(randomQuote.lang == "en") {
+      quoteContent = `Quote of the day:-\n\n"${randomQuote.quote}"`;
+      language = Languages.ENGLISH;
+    }else if(randomQuote.lang == "hi") {
+      quoteContent = `आज का विचार:-\n\n"${randomQuote.quote}"`;
+      language = Languages.HINDI;
+    }
 
-    generateCard(quoteContent, theme, options, Languages.ENGLISH, (quoteCard) => {
+
+    generateCard(quoteContent, theme, options, language, (quoteCard) => {
       res.writeHead(200, {
         "Content-Type": "image/svg+xml",
         "Cache-Control": "public, max-age=10",
