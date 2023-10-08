@@ -29,11 +29,11 @@ const create_theme = async (ctx, canvas, theme, W) => {
         // Load image for pattern theme
         // Add pattern path here if theme has pattern in it
         if (theme === "pattern_1") {
-            pattern_path = "./src/assets/endless-constellation-bg.svg";
+            pattern_path = "./src/assets/images/endless-constellation-bg.svg";
         } else if (theme === "pattern_2") {
-            pattern_path = "./src/assets/protruding-squares-bg.svg";
+            pattern_path = "./src/assets/images/protruding-squares-bg.svg";
         } else if (theme === "pattern_3") {
-            pattern_path = "./src/assets/rainbow-vortex-bg.svg";
+            pattern_path = "./src/assets/images/rainbow-vortex-bg.svg";
         }
         try {
             image = await loadImage(pattern_path);
