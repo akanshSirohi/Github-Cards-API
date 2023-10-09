@@ -1,5 +1,7 @@
 const { createCanvas, registerFont } = require("canvas");
 const { THEMES, create_theme } = require("./themes");
+const { generateSvg } = require("./satori_renderer");
+
 registerFont("./src/assets/fonts/Ubuntu-Regular.ttf", { family: "Ubuntu" }); // English Font
 registerFont("./src/assets/fonts/NotoSans-Regular.ttf", { family: "NotoSans" }); // Hindi Font
 
@@ -213,7 +215,13 @@ const generateCard = async (txt, theme, options, language) => {
   return svg;
 };
 
+const generateHTMLCard = async (html, language) => {
+  const font = language === Languages.ENGLISH ? "Ubuntu" : "NotoSans";
+  return await generateSvg(html, font);
+}
+
 module.exports.generateCard = generateCard;
+module.exports.generateHTMLCard = generateHTMLCard;
 
 // Card Options
 module.exports.CARD_AGE = 300;
