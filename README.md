@@ -3,36 +3,36 @@
 ### How to use
 
 Visit endpoint url for all available cards and available options for each card <br/>
-Endpoint URL: `https://github-cards.onrender.com`
+Endpoint URL: `https://afraid-ninnetta-github-cards.koyeb.app`
 
 Embed one of these in your README:
 
 ```md
 <!-- Markdown -->
 
-![Card](https://github-cards.onrender.com/any_card_name)
+![Card](https://afraid-ninnetta-github-cards.koyeb.app/any_card_name)
 ```
 
 <h3 align="center">OR</h3>
 
 ```html
 <!-- HTML -->
-<img src="https://github-cards.onrender.com/any_card_name" alt="Card" />
+<img src="https://afraid-ninnetta-github-cards.koyeb.app/any_card_name" alt="Card" />
 ```
 
 ### List of card names currently available
 
 | Available Cards | Example | Preview |
 | --------------- | ------- | ------- |
-| `jokes-card` | `![Card](https://github-cards.onrender.com/jokes-card?theme=dark)` | ![Card](https://github-cards.onrender.com/jokes-card?theme=dark) |
-| `programming-quotes-card` | `![Card](https://github-cards.onrender.com/programming-quotes-card)` | ![Card](https://github-cards.onrender.com/programming-quotes-card) |
-| `motivational-quotes-card` | `![Card](https://github-cards.onrender.com/motivational-quotes-card)` | ![Card](https://github-cards.onrender.com/motivational-quotes-card) |
-| `word-of-the-day-card` | `![Card](https://github-cards.onrender.com/word-of-the-day-card)` | ![Card](https://github-cards.onrender.com/word-of-the-day-card) |
-| `challenge-of-the-week-card` | `![Card](https://github-cards.onrender.com/challenge-of-the-week-card)` | ![Card](https://github-cards.onrender.com/challenge-of-the-week-card) |
-| `team-work-quote-card` | `![Card](https://github-cards.onrender.com/team-work-quote-card)` | ![Card](https://github-cards.onrender.com/team-work-quote-card) |
-| `bhagavad-geeta-card` | `![Card](https://github-cards.onrender.com/bhagavad-geeta-card)` | ![Card](https://github-cards.onrender.com/bhagavad-geeta-card) |
-| `random-card` | `![Card](https://github-cards.onrender.com/random-card)` | ![Card](https://github-cards.onrender.com/random-card) |
-| `programming-facts-card` | `![Card](https://github-cards.onrender.com/programming-facts-card?theme=dark)` | ![Card](https://github-cards.onrender.com/programming-facts-card?theme=dark) |
+| `jokes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark) |
+| `programming-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card) |
+| `motivational-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card) |
+| `word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card) |
+| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card) |
+| `team-work-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card) |
+| `bhagavad-geeta-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card) |
+| `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card) |
+| `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
 
 ### Available Themes List
 
@@ -62,32 +62,32 @@ args: {
 ## Themes Example
 
 - Light Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=light)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=light)
 
 - Dark Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=dark)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)
 
 - Dark_2 Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=dark_2)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark_2)
 
 - Rgb Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=rgb)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=rgb)
 
 - Lemonade Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=lemonade)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=lemonade)
 
 - Pattern_1 Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_1)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_1)
 
 - Pattern_2 Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_2)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_2)
 
 - Pattern_3 Theme Card <br/>
-  ![Card](https://github-cards.onrender.com/jokes-card?theme=pattern_3)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
 
 ## For More Visit
 
-[https://github-cards.onrender.com/](https://github-cards.onrender.com/)
+[https://afraid-ninnetta-github-cards.koyeb.app/](https://afraid-ninnetta-github-cards.koyeb.app/)
 
 ## How to contribute
 
