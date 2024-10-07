@@ -19,7 +19,7 @@
   "dependencies": {
     "canvas": "2.11.2",
     "express": "^4.18.2",
-    "satori": "^0.10.13",
+    "satori": "^0.11.2",
     "satori-html": "^0.3.2"
   }
 }
