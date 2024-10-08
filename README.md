@@ -22,17 +22,18 @@ Embed one of these in your README:
 
 ### List of card names currently available
 
-| Available Cards | Example | Preview |
-| --------------- | ------- | ------- |
-| `jokes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark) |
-| `programming-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card) |
-| `motivational-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card) |
-| `word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card) |
-| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card) |
-| `team-work-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card) |
-| `bhagavad-geeta-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card) |
-| `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card) |
-| `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
+| Available Cards              | Example                                                                                     | Preview                                                                                   |
+|------------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| `jokes-card`                 | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)`             | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)             |
+| `programming-quotes-card`    | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)`           | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)           |
+| `motivational-quotes-card`   | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)`          | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)          |
+| `word-of-the-day-card`       | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)`              | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)              |
+| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)`        | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)        |
+| `team-work-quote-card`       | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)`              | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)              |
+| `bhagavad-geeta-card`        | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)`               | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)               |
+| `random-card`                | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)`                       | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)                       |
+| `programming-facts-card`     | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
+| `spanish-quote-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)     |
 
 ### Available Themes List
 

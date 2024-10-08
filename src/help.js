@@ -183,6 +183,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/programming-facts-card`],
       },
     },
+     "spanish-quote-card": {
+          info: "Random spanish quote card",
+          api: {
+            args: {
+              theme: "Theme of card. All themes. Default: dark  [Optional]"
+            },
+            example: [`${baseurl}/spanish-quote-card`],
+          },
+        },
   };
 
   res.json({themes,cards});

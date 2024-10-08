@@ -1,0 +1,57 @@
+[
+  {
+    "type": "single",
+    "joke": "¿Qué le dice una iguana a su hermana gemela? Somos iguanitas."
+  },
+  {
+    "type": "single",
+    "joke": "¿Cómo se despiden los químicos? Ácido un placer."
+  },
+  {
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los pájaros no usan Facebook?",
+      "a": "Porque ya tienen Twitter."
+    }
+  },
+  {
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace una abeja en el gimnasio?",
+      "a": "Zum-ba."
+    }
+  },
+  {
+    "type": "single",
+    "joke": "Mi ordenador me gana al ajedrez, pero yo le gano al fútbol."
+  },
+  {
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice una impresora a otra?",
+      "a": "¿Esa hoja es tuya o es una impresión mía?"
+    }
+  },
+  {
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo maldice un pollito a otro pollito?",
+      "a": "¡Caldo seas!"
+    }
+  },
+  {
+    "type": "single",
+    "joke": "¿Qué hace una rata con una ametralladora? ¡Ratatatatatatata!"
+  },
+  {
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los esqueletos no pelean entre sí?",
+      "a": "Porque no tienen agallas."
+    }
+  },
+  {
+    "type": "single",
+    "joke": "¿Cómo se llama el pez que cayó en un hechizo? ¡Mojarra mágica!"
+  }
+]
