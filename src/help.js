@@ -132,9 +132,9 @@ router.get("/", (req, res) => {
       info: "Random motivational quotes card",
       api: {
         args: {
-        theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+          theme: "Theme of card. All themes. Default: dark_2  [Optional]. Additional themes: skeleton, neon",
         },
-        example: [`${baseurl}/motivational-quotes-card`],
+        example: [`${baseurl}/motivational-quotes-card`, `${baseurl}/motivational-quotes-card?theme=neon`, `${baseurl}/motivational-quotes-card?theme=skeleton`],
       },
     },
     "word-of-the-day-card": {
