@@ -99,7 +99,8 @@ args: {
 4. Add route of your card in `index.js` file.
 5. Add your card api refrence inside in `src/help.js` file and also in README.md file.
 6. Create pull request.
-7. Note: Data file must have arounf 100 entries minimum.
+7. Data file must have around 100 entries minimum.
+8. You can create cards in HTML and CSS too! Check out the `src/cards/motivational-quote.js` file to see how you can generate cards with your own unique styles. This project uses Satori to generate cards via HTML, so please refer to the official Satori documentation for the supported CSS properties.
 
 ### Add new theme
 
