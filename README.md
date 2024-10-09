@@ -54,6 +54,7 @@ Here is a list of cards that can currently be used:
 | `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card) |
 | `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
 | `top-tweets-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card) |
+| `spanish-quote-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)     |
 
 ## Themes
 

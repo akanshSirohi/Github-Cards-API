@@ -145,99 +145,55 @@ const getCards = (baseurl) => ({
         `${baseurl}/trivia-card?theme=dark`,
       ],
     },
-  },
-  "wisdom-of-the-day-card": {
-    info: "Daily wisdom or proverb card",
-    api: {
-      args: { theme: "Theme for the card (Default: light)" },
-      example: [`${baseurl}/wisdom-of-the-day-card`],
+    "challenge-of-the-week-card": {
+      info: "Generates a random challenge for you to take on in that week.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: light  [Optional]",
+        },
+        example: [`${baseurl}/challenge-of-the-week-card`],
+      },
     },
-  },
-  "team-work-quote-card": {
-    info: "Motivational quotes related to teamwork",
-    api: {
-      args: { theme: "Theme for the card (Default: dark_2)" },
-      example: [`${baseurl}/team-work-quote-card`],
+    "team-work-quote-card": {
+      info: "Generate random motivational quote related to the teamwork.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+        },
+        example: [`${baseurl}/team-work-quote-card`],
+      },
     },
-  },
-  "bhagavad-geeta-card": {
-    info: "Random quotes from the Bhagavad Geeta",
-    api: {
-      args: { theme: "Theme for the card (Default: light)" },
-      example: [`${baseurl}/bhagavad-geeta-card`],
+    "bhagavad-geeta-card": {
+      info: "Generate a random quote from the bhagavad-geeta-card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/bhagavad-geeta-card`],
+      },
     },
-  },
-  "programming-facts-card": {
-    info: "Random programming facts card",
-    api: {
-      args: { theme: "Theme for the card (Default: dark)" },
-      example: [`${baseurl}/programming-facts-card`],
+
+    "programming-facts-card": {
+      info: "Random programming facts card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark  [Optional]"
+        },
+        example: [`${baseurl}/programming-facts-card`],
+      },
     },
-  },
-  "top-tweets-card": {
-    info: "Top tweets card",
-    api: {
-      args: { theme: "Theme for the card (Default: dark_2)" },
-      example: [`${baseurl}/top-tweets-card`],
+    "top-tweets-card": {
+      info: "Random top Twitter Tweets card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark_2  [Optional]"
+        },
+        example: [`${baseurl}/top-tweets-card`],
+      },
     },
-  },
-});
+  };
 
-/* Helper function to validate the theme */
-const validateTheme = (theme, themes) => {
-  if (!themes[theme]) {
-    return {
-      valid: false,
-      message: `Invalid theme '${theme}'. Please choose from available themes.`,
-    };
-  }
-  return { valid: true };
-};
-
-/* Root route for listing themes and cards */
-router.get("/", (req, res) => {
-  const baseurl = generateBaseURL(req);
-
-  // Get all themes and cards dynamically
-  const themes = getThemes(baseurl);
-  const cards = getCards(baseurl);
-
-  // Send the JSON response with all themes and cards
-  res.json({ themes, cards });
-});
-
-/* New API endpoint for fetching cards with error handling */
-router.get("/api/card", (req, res) => {
-  const { theme = "light", type = "jokes-card" } = req.query;
-
-  // Get baseurl
-  const baseurl = generateBaseURL(req);
-
-  // Get available themes and cards
-  const themes = getThemes(baseurl);
-  const cards = getCards(baseurl);
-
-  // Validate theme
-  const themeValidation = validateTheme(theme, themes);
-  if (!themeValidation.valid) {
-    return res.status(400).json({ error: themeValidation.message });
-  }
-
-  // Check if card type exists
-  if (!cards[type]) {
-    return res.status(404).json({ error: `Card type '${type}' not found.` });
-  }
-
-  // Generate card data dynamically
-  const cardInfo = cards[type].info;
-  const example = cards[type].api.example;
-
-  res.json({
-    card: type,
-    theme: theme,
-    description: cardInfo,
-    examples: example,
-  });
+  res.json({themes,cards});
 });
 
 module.exports = router;
