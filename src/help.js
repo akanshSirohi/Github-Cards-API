@@ -183,6 +183,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/programming-facts-card`],
       },
     },
+    "top-tweets-card": {
+      info: "Random top Twitter Tweets card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark_2  [Optional]"
+        },
+        example: [`${baseurl}/top-tweets-card`],
+      },
+    },
   };
 
   res.json({themes,cards});
