@@ -43,16 +43,16 @@ Here is a list of cards that can currently be used:
 
 You can customize the appearance of the cards by selecting one of the following themes:
 
-1. `light`
-2. `dark`
-3. `dark_2`
-4. `rgb`
-5. `lemonade`
-6. `pattern_1`
-7. `pattern_2`
-8. `pattern_3`
-9. `random` - Any random theme will we applied
-10. `custom` - You can set your custom arguments
+1. [`light`](#light-theme-card)
+2. [`dark`](#dark-theme-card)
+3. [`dark_2`](#dark_2-theme-card)
+4. [`rgb`](#rgb-theme-card)
+5. [`lemonade`](#lemonade-theme-card)
+6. [`pattern_1`](#pattern_1-theme-card)
+7. [`pattern_2`](#pattern_2-theme-card)
+8. [`pattern_3`](#pattern_3-theme-card)
+9. `random` - A random theme from those listed above will be applied
+10. `custom` - You may set your own custom arguments
 
 ### Custom Arguments
 
@@ -70,28 +70,36 @@ args: {
 
 ### Examples
 
-- `Light` Theme Card <br/>
+- #### `Light` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=light)
 
-- `Dark` Theme Card <br/>
+- #### `Dark` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)
 
-- `Dark_2` Theme Card <br/>
+- #### `Dark_2` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark_2)
 
-- `Rgb` Theme Card <br/>
+- #### `Rgb` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=rgb)
 
-- `Lemonade` Theme Card <br/>
+- #### `Lemonade` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=lemonade)
 
-- `Pattern_1` Theme Card <br/>
+- #### `Pattern_1` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_1)
 
-- `Pattern_2` Theme Card <br/>
+- #### `Pattern_2` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_2)
 
-- `Pattern_3` Theme Card <br/>
+- #### `Pattern_3` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
 
 ## Contributing
