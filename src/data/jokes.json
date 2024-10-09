@@ -2471,5 +2471,55 @@
             "a": "Because they can't C."
         },
         "type": "double"
-    }
+    },
+    {
+        "index": 383,
+        "joke": "Why do programmers prefer dark mode? Because the light attracts bugs.",
+        "type": "single"
+      },
+      {
+        "index": 384,
+        "joke": "A SQL query walks into a bar, walks up to two tables and asks, 'Can I join you?'",
+        "type": "single"
+      },
+      {
+        "index": 385,
+        "joke": "Why don't programmers like nature? It has too many bugs.",
+        "type": "single"
+      },
+      {
+        "index": 386,
+        "joke": "There are 10 types of people in the world: those who understand binary and those who don’t.",
+        "type": "single"
+      },
+      {
+        "index": 387,
+        "joke": "Why do Java developers wear glasses? Because they don’t C#.",
+        "type": "single"
+      },
+      {
+        "index": 388,
+        "joke": "What is a programmer's favorite place to hang out? The Foo Bar.",
+        "type": "single"
+      },
+      {
+        "index": 389,
+        "joke": "How many programmers does it take to change a light bulb? None, that's a hardware problem.",
+        "type": "single"
+      },
+      {
+        "index": 390,
+        "joke": "Why do Python programmers have low self-esteem? Because they constantly compare themselves to others.",
+        "type": "single"
+      },
+      {
+        "index": 391,
+        "joke": "Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings.",
+        "type": "single"
+      },
+      {
+        "index": 392,
+        "joke": "Why can't you trust an atom? Because they make up everything!",
+        "type": "single"
+      }
 ]
