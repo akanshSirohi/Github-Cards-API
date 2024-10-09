@@ -164,6 +164,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/team-work-quote-card`],
       },
     },
+    "breaking-bad-quote-card": {
+      info: "Generate random motivational quote related to the breaking bad.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+        },
+        example: [`${baseurl}/breaking-bad-quote-card`],
+      },
+    },
     "bhagavad-geeta-card": {
       info: "Generate a random quote from the bhagavad-geeta-card",
       api: {
