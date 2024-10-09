@@ -11,7 +11,8 @@ const available_cards = {
   "/team-work-quote-card" : require("./src/cards/team-work-quote"),
   "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
-  "/top-tweets-card": require("./src/cards/top-tweets")
+  "/top-tweets-card": require("./src/cards/top-tweets"),
+  "/github-facts-card": require("./src/cards/github-facts"),
 };
 
 app.use(express.json());
