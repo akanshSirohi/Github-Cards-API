@@ -5,224 +5,167 @@ const { generateSvg } = require("./satori_renderer");
 registerFont("./src/assets/fonts/Ubuntu-Regular.ttf", { family: "Ubuntu" }); // English Font
 registerFont("./src/assets/fonts/NotoSans-Regular.ttf", { family: "NotoSans" }); // Hindi Font
 
-let extra_options = null;
-
 // Supported Languages
 const Languages = {
   HINDI: 'hindi',
   ENGLISH: 'english',
-}
+};
 
-// prettier-ignore
-const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow, shadowColor) => {
-  if (typeof stroke === "undefined") {
-    stroke = true;
-  }
-  if (typeof radius === "undefined") {
-    radius = 5;
-  }
-  if (typeof radius === "number") {
-    radius = { tl: radius, tr: radius, br: radius, bl: radius };
-  } else {
-    var defaultRadius = { tl: 0, tr: 0, br: 0, bl: 0 };
-    for (var side in defaultRadius) {
-      radius[side] = radius[side] || defaultRadius[side];
-    }
-  }
+// Default Card Constants
+const DEFAULT_CARD_WIDTH = 400;
+const DEFAULT_CARD_HEIGHT = 200;
+const DEFAULT_FONT_SIZE = 14; // Default font size
+const DEFAULT_PADDING = 30; // Padding of card
+
+// Function to generate a rounded rectangle with optional shadow
+const roundRect = (ctx, x, y, width, height, radius, fill, stroke, shadow = false, shadowOptions = {}) => {
   ctx.beginPath();
-  ctx.moveTo(x + radius.tl, y);
-  ctx.lineTo(x + width - radius.tr, y);
-  ctx.quadraticCurveTo(x + width, y, x + width, y + radius.tr);
-  ctx.lineTo(x + width, y + height - radius.br);
-  ctx.quadraticCurveTo(
-    x + width,
-    y + height,
-    x + width - radius.br,
-    y + height
-  );
-  ctx.lineTo(x + radius.bl, y + height);
-  ctx.quadraticCurveTo(x, y + height, x, y + height - radius.bl);
-  ctx.lineTo(x, y + radius.tl);
-  ctx.quadraticCurveTo(x, y, x + radius.tl, y);
+  ctx.moveTo(x + radius, y);
+  ctx.lineTo(x + width - radius, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+  ctx.lineTo(x + width, y + height - radius);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  ctx.lineTo(x + radius, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+  ctx.lineTo(x, y + radius);
+  ctx.quadraticCurveTo(x, y, x + radius, y);
   ctx.closePath();
-  if (fill) {
-    if(shadow) {
-      ctx.shadowColor = shadowColor;
-      ctx.shadowBlur = 7;
-      ctx.shadowOffsetX = 0;
-      ctx.shadowOffsetY = 0;
-    }
-    ctx.fill();
-    if(shadow) {
-      ctx.shadowColor = "transparent";
-      ctx.shadowBlur = 0;
-      ctx.shadowOffsetX = 0;
-      ctx.shadowOffsetY = 0;
-    }
+
+  if (shadow) {
+    ctx.shadowColor = shadowOptions.shadowColor || '#000000';
+    ctx.shadowBlur = shadowOptions.shadowBlur || 10;
+    ctx.shadowOffsetX = shadowOptions.shadowOffsetX || 5;
+    ctx.shadowOffsetY = shadowOptions.shadowOffsetY || 5;
   }
+
+  if (fill) {
+    ctx.fill();
+  }
+
   if (stroke) {
     ctx.stroke();
   }
 };
 
+// Function to wrap text
 const wrapText = (context, text, x, y, maxWidth, lineHeight, measure) => {
-  var cars = text.split("\n");
-  let linesCnt = 0;
-  for (let ii = 0; ii < cars.length; ii++) {
-    var line = "";
-    var words = cars[ii].split(" ");
-    for (let n = 0; n < words.length; n++) {
-      var testLine = line + words[n] + " ";
-      var metrics = context.measureText(testLine);
-      var testWidth = metrics.width;
-      if (testWidth > maxWidth) {
-        if (!measure) {
-          context.fillText(line, x, y);
-        }
-        linesCnt++;
-        line = words[n] + " ";
-        y += lineHeight;
-      } else {
-        line = testLine;
-      }
+  const words = text.split(' ');
+  let line = '';
+  let height = 0;
+
+  for (let n = 0; n < words.length; n++) {
+    const testLine = line + words[n] + ' ';
+    const metrics = context.measureText(testLine);
+    const testWidth = metrics.width;
+    if (testWidth > maxWidth && n > 0) {
+      if (!measure) context.fillText(line, x, y);
+      line = words[n] + ' ';
+      y += lineHeight;
+      height += lineHeight;
+    } else {
+      line = testLine;
     }
-    if (!measure) {
-      context.fillText(line, x, y);
-    }
-    linesCnt++;
-    y += lineHeight;
   }
-  return linesCnt * lineHeight;
+  if (!measure) context.fillText(line, x, y);
+  height += lineHeight;
+  return height;
 };
 
-const processCard = async (txt, theme, language) => {
-  
-  // Card Constants
-  const W = 400; // Width Of Card
-  const fontSize = 11; // Font Size
-  const padding = 30; // Padding Of Card
+// Dynamic Font Size Scaling Based on Content
+const adjustFontSize = (ctx, text, maxWidth, maxHeight, initialFontSize) => {
+  let fontSize = initialFontSize;
+  let textWidth;
+  do {
+    ctx.font = `${fontSize}px Ubuntu`;
+    textWidth = ctx.measureText(text).width;
+    fontSize -= 1;
+  } while (textWidth > maxWidth && fontSize > 5);
+  return fontSize;
+};
 
-  // Canvas Creation
-  const canvas = createCanvas(W, W, "svg");
+// Function to process the card creation
+const processCard = async (txt, theme, language, options) => {
+  const cardWidth = options?.width || DEFAULT_CARD_WIDTH;
+  const cardHeight = options?.height || DEFAULT_CARD_HEIGHT;
+  const fontSize = options?.fontSize || DEFAULT_FONT_SIZE;
+  const padding = options?.padding || DEFAULT_PADDING;
+
+  const canvas = createCanvas(cardWidth, cardHeight, "svg");
   const ctx = canvas.getContext("2d");
 
   // Text Configuration
-  let textConf = {
+  const textConf = {
     x: padding,
-    y: fontSize * 3.6,
-    maxWidth: W - padding * 1.8,
+    y: padding * 1.5,
+    maxWidth: cardWidth - padding * 2,
     lineHeight: fontSize + 2,
   };
 
-  let mHeight = wrapText(ctx,txt,textConf.x,textConf.y,textConf.maxWidth,textConf.lineHeight,true);
+  // Background, font color, shadow, and shadow color from theme
+  const themeObj = await create_theme(ctx, canvas, theme, cardWidth);
+  let { cardBg, fontColor, shadow, shadowColor, background } = themeObj;
 
-  // Change card height according to text
-  canvas.height = mHeight + fontSize * 6.5;
-
-  // Background Creation
-  let background;
-
-  // Theme Creation
-  const theme_obj = await create_theme(ctx, canvas, theme, W);
-  card_bg = theme_obj.card_bg;
-  font_color = theme_obj.font_color;
-  shadow = theme_obj.shadow;
-  shadowColor = theme_obj.shadowColor;
-  background = theme_obj.background;
-
-  // Custom Theme Using Url Params
-  if (extra_options != null) {
-    if ("card_color" in extra_options) {
-      card_bg = extra_options.card_color;
-    }
-    if ("font_color" in extra_options) {
-      font_color = extra_options.font_color;
-    }
-    if ("shadow" in extra_options) {
-      if (typeof extra_options.shadow === "boolean") {
-        shadow = extra_options.shadow;
-        if(shadow) {
-          if("shadow_color" in extra_options) {
-            shadowColor = extra_options.shadow_color;
-          }
-        }
-      }
-    }
-    if ("bg_color" in extra_options) {
-      background = extra_options.bg_color;
+  // Custom Theme Using URL Params
+  if (options) {
+    if (options.card_color) cardBg = options.card_color;
+    if (options.font_color) fontColor = options.font_color;
+    if (options.bg_color) background = options.bg_color;
+    if (options.shadow) {
+      shadow = options.shadow;
+      if (options.shadow_color) shadowColor = options.shadow_color;
     }
   }
 
   // Draw Background
-  ctx.beginPath();
   ctx.fillStyle = background;
-  ctx.strokeStyle = "#00000000";
-  ctx.fillRect(0, 0, W, canvas.height);
-  ctx.stroke();
+  ctx.fillRect(0, 0, cardWidth, cardHeight);
 
-  // Draw Card
-  ctx.beginPath();
-  ctx.fillStyle = card_bg;
-  ctx.strokeStyle = "#00000000";
-  roundRect(
-    ctx,
-    padding / 2,
-    padding / 2,
-    W - padding,
-    canvas.height - padding,
-    5,
-    true,
-    true,
-    shadow,
-    shadowColor
-  );
+  // Draw Card with Shadow
+  ctx.fillStyle = cardBg;
+  roundRect(ctx, padding / 2, padding / 2, cardWidth - padding, cardHeight - padding, 10, true, true, shadow, {
+    shadowColor,
+    shadowBlur: 20,
+    shadowOffsetX: 10,
+    shadowOffsetY: 10,
+  });
+
+  // Adjust font size dynamically based on text
+  const dynamicFontSize = adjustFontSize(ctx, txt, textConf.maxWidth, cardHeight, fontSize);
 
   // Draw Text
-  ctx.fillStyle = font_color;
-  if(language === Languages.HINDI) {
-    ctx.font = `${fontSize}px NotoSans`;
-  }else{
-    ctx.font = `${fontSize}px Ubuntu`;
-  }
+  ctx.fillStyle = fontColor;
+  ctx.font = `${dynamicFontSize}px ${language === Languages.HINDI ? 'NotoSans' : 'Ubuntu'}`;
+  wrapText(ctx, txt, textConf.x, textConf.y, textConf.maxWidth, textConf.lineHeight, false);
 
-  wrapText(
-    ctx,
-    txt,
-    textConf.x,
-    textConf.y,
-    textConf.maxWidth,
-    textConf.lineHeight,
-    false
-  );
-
-  let svg = canvas.toBuffer().toString("utf-8");
-  return svg;
+  // Return SVG output
+  return canvas.toBuffer().toString("utf-8");
 };
 
+// Function to generate a card
 const generateCard = async (txt, theme, options, language) => {
-
-  extra_options = options;
-
+  // If theme is random, pick a random theme
   if (theme === "random") {
-    theme = THEMES[Math.floor(Math.random() * (valid_themes.length-1))];
+    theme = THEMES[Math.floor(Math.random() * THEMES.length)];
   }
 
+  // If theme is invalid, fallback to default
   if (!THEMES.includes(theme)) {
     theme = THEMES[0];
   }
 
-  const svg = await processCard(txt, theme, language);
+  // Generate SVG
+  const svg = await processCard(txt, theme, language, options);
   return svg;
 };
 
+// Function to generate an HTML-based card
 const generateHTMLCard = async (html, language) => {
   const font = language === Languages.ENGLISH ? "Ubuntu" : "NotoSans";
   return await generateSvg(html, font);
-}
+};
 
+// Module exports
 module.exports.generateCard = generateCard;
 module.exports.generateHTMLCard = generateHTMLCard;
-
-// Card Options
 module.exports.CARD_AGE = 300;
 module.exports.Languages = Languages;
