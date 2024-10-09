@@ -13,8 +13,7 @@ const available_cards = {
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
-  "/github-facts-card": require("./src/cards/github-facts")
-  "/top-tweets-card": require("./src/cards/top-tweets"),
+  "/github-facts-card": require("./src/cards/github-facts"),
   "/random-facts": require("./src/cards/random-facts")
 };
 
