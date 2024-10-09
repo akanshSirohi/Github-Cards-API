@@ -1,5 +1,22 @@
 # Github-Cards-Api
 
+## Table of Contents
+
+- [Github-Cards-Api](#github-cards-api)
+  - [Table of Contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Using Markdown](#using-markdown)
+    - [Using HTML](#using-html)
+  - [Available Cards](#available-cards)
+  - [Themes](#themes)
+    - [Options](#options)
+    - [Custom Arguments](#custom-arguments)
+    - [Examples](#examples)
+  - [Contributing](#contributing)
+    - [Adding a New Card](#adding-a-new-card)
+    - [Adding a New Theme](#adding-a-new-theme)
+  - [Additional Information](#additional-information)
+
 ## Usage
 
 Visit the following endpoint URL for **all available cards and their respective options**:  
