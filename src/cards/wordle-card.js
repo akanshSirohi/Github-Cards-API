@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.use(express.urlencoded({ extended: true })); // Middleware to parse form data
+app.use(express.urlencoded({ extended: true }));
 
-let targetWord = ""; // Variable to hold the target word
-let guessCount = 0; // Variable to track the number of guesses
-let guesses = []; // Array to track all guesses
+let targetWord = ""; 
+let guessCount = 0; 
+let guesses = []; 
 
-// Expanded list of tech-related 5-letter words
+
 const techWords = [
     "array", "bytes", "class", "cloud", "crash", "debug", "drone", "email",
     "error", "frame", "graph", "haste", "index", "input", "query", "robot",
@@ -17,62 +17,61 @@ const techWords = [
     "sprint", "search", "style", "table", "scripts", "admin", "agent", "drive", "trace"
 ];
 
-// Function to get a random tech word
+
 const getRandomTechWord = () => {
     const randomIndex = Math.floor(Math.random() * techWords.length);
-    return techWords[randomIndex]; // Return a random 5-letter tech word
+    return techWords[randomIndex]; 
 };
 
-// Function to render the Wordle game
-const wordleCard = (req, res) => {
-    const userGuess = req.body.guess?.toLowerCase() || ''; // Retrieve the guess from the form input
 
-    // Initialize targetWord if not already set
+const wordleCard = (req, res) => {
+    const userGuess = req.body.guess?.toLowerCase() || ''; 
+
+    
     if (!targetWord) {
         targetWord = getRandomTechWord();
-        guessCount = 0; // Reset guess count when a new word is chosen
-        guesses = []; // Reset guesses
+        guessCount = 0; 
+        guesses = []; 
     }
 
     let feedback = '';
     let resultMessage = '';
     const nyTimesUrl = "https://www.nytimes.com/games/wordle/index.html"; // URL to New York Times Wordle
 
-    // Function to check the guess
+    
     const checkGuess = (guess) => {
-        if (guess.length !== 5) return ''; // Ensure guess is exactly 5 letters
+        if (guess.length !== 5) return ''; 
 
         let feedback = [];
-        let tempTarget = targetWord.split(''); // Create a temporary copy of the target word
+        let tempTarget = targetWord.split(''); 
 
-        // First pass: check for correct letters in the correct position
+        
         for (let i = 0; i < targetWord.length; i++) {
             if (guess[i] === tempTarget[i]) {
-                feedback[i] = `<span style="color: green;">${guess[i].toUpperCase()}</span>`; // Correct letter, correct position
-                tempTarget[i] = null; // Remove this letter from the temp array
+                feedback[i] = `<span style="color: green;">${guess[i].toUpperCase()}</span>`; 
+                tempTarget[i] = null; 
             } else {
-                feedback[i] = null; // Initialize feedback for letters not guessed correctly
+                feedback[i] = null; 
             }
         }
 
-        // Second pass: check for correct letters in the wrong position
+        
         for (let i = 0; i < targetWord.length; i++) {
             if (feedback[i] === null && tempTarget.includes(guess[i])) {
-                feedback[i] = `<span style="color: orange;">${guess[i].toUpperCase()}</span>`; // Correct letter, wrong position
-                tempTarget[tempTarget.indexOf(guess[i])] = null; // Remove this letter from the temp array
+                feedback[i] = `<span style="color: orange;">${guess[i].toUpperCase()}</span>`; 
+                tempTarget[tempTarget.indexOf(guess[i])] = null; 
             } else if (feedback[i] === null) {
-                feedback[i] = `<span style="color: red;">${guess[i].toUpperCase()}</span>`; // Incorrect letter
+                feedback[i] = `<span style="color: red;">${guess[i].toUpperCase()}</span>`; 
             }
         }
 
-        return feedback.join(' '); // Return the feedback
+        return feedback.join(' '); 
     };
 
     if (userGuess.length === 5) {
         feedback = checkGuess(userGuess);
-        guesses.push(userGuess); // Store the guess
-        guessCount++; // Increment guess count
-
+        guesses.push(userGuess); 
+        guessCount++; 
         if (userGuess === targetWord) {
             resultMessage = `<div style="color: green; margin-top: 10px;">Congratulations! You've guessed the word!</div>`;
             resultMessage += `<div>Play more at <a href="${nyTimesUrl}" target="_blank">${nyTimesUrl}</a></div>`;
@@ -119,21 +118,21 @@ const wordleCard = (req, res) => {
             <div style="margin-top: 10px; font-size: 15px;">
                 ${resultMessage}
             </div>
-            ${rulesHTML} <!-- Inserting the rules section -->
+            ${rulesHTML}
         </div>
     `;
 
     res.send(cardHTML);
 };
 
-// Route to reset the game with a new word
+
 app.get('/wordle-card', (req, res) => {
-    resetGame(); // Ensure we reset the game state
-    res.send(wordleCard(req, res)); // Send the response
+    resetGame(); 
+    res.send(wordleCard(req, res)); 
 });
 
-// Add the wordleCard route
+
 app.post('/wordle-card', wordleCard);
 
-// Export the wordleCard for usage in index.js
+
 module.exports = wordleCard;
