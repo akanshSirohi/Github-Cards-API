@@ -184,18 +184,15 @@ router.get("/", (req, res) => {
       },
     },
 
-    "wordle-card": {
-    info: "Wordle game card for guessing a 5-letter tech word.",
-    api: {
-        args: {
-            theme: "Theme of card: All themes. Default: light [Optional]"
-        },
-        example: [
-            `${baseurl}/wordle-card?theme=light`,
-            `${baseurl}/wordle-card?theme=dark`
-        ],
+    "fun-fact-card": {
+  info: "Displays a random fun fact card",
+  api: {
+    args: {
+      theme: "Theme of card. All themes. Default: light  [Optional]"
     },
+    example: [`${baseurl}/fun-fact-card`],
   },
+},
   };
 
   res.json({themes,cards});
