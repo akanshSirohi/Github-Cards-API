@@ -1,0 +1,502 @@
+[
+    {
+        "index": 1,
+        "quote": "GitHub was founded in 2008.",
+        "author": "GitHub"
+    },
+    {
+        "index": 2,
+        "quote": "Microsoft acquired GitHub in 2018 for $7.5 billion.",
+        "author": "Microsoft"
+    },
+    {
+        "index": 3,
+        "quote": "GitHub hosts over 200 million repositories.",
+        "author": "GitHub"
+    },
+    {
+        "index": 4,
+        "quote": "GitHub Actions allows you to automate workflows.",
+        "author": "GitHub"
+    },
+    {
+        "index": 5,
+        "quote": "You can create a GitHub Pages site directly from your repository.",
+        "author": "GitHub"
+    },
+    {
+        "index": 6,
+        "quote": "GitHub Sponsors allows developers to receive funding for their open-source projects.",
+        "author": "GitHub"
+    },
+    {
+        "index": 7,
+        "quote": "GitHub Gist is a service for sharing snippets of code or text.",
+        "author": "GitHub"
+    },
+    {
+        "index": 8,
+        "quote": "Over 65 million developers use GitHub globally.",
+        "author": "GitHub"
+    },
+    {
+        "index": 9,
+        "quote": "GitHub provides free private repositories for all users.",
+        "author": "GitHub"
+    },
+    {
+        "index": 10,
+        "quote": "GitHub supports integration with many CI/CD tools.",
+        "author": "GitHub"
+    },
+    {
+        "index": 11,
+        "quote": "GitHub supports over 300 programming languages.",
+        "author": "GitHub"
+    },
+    {
+        "index": 12,
+        "quote": "In 2020, GitHub introduced dark mode.",
+        "author": "GitHub"
+    },
+    {
+        "index": 13,
+        "quote": "The first repository created on GitHub was by one of its co-founders, Tom Preston-Werner.",
+        "author": "Tom Preston-Werner"
+    },
+    {
+        "index": 14,
+        "quote": "GitHub Archive Program preserves repositories in the Arctic for future generations.",
+        "author": "GitHub"
+    },
+    {
+        "index": 15,
+        "quote": "GitHub provides 'Dependabot' to help manage and update dependencies automatically.",
+        "author": "GitHub"
+    },
+    {
+        "index": 16,
+        "quote": "GitHub Copilot, powered by AI, assists developers by suggesting code completions.",
+        "author": "GitHub"
+    },
+    {
+        "index": 17,
+        "quote": "GitHub Desktop is a graphical tool for managing your repositories on your local machine.",
+        "author": "GitHub"
+    },
+    {
+        "index": 18,
+        "quote": "You can create issue templates in GitHub to streamline bug reporting and feature requests.",
+        "author": "GitHub"
+    },
+    {
+        "index": 19,
+        "quote": "GitHub provides an API for programmatically interacting with repositories, issues, and more.",
+        "author": "GitHub"
+    },
+    {
+        "index": 20,
+        "quote": "GitHub Pages can be used to host static sites, including personal blogs and project documentation.",
+        "author": "GitHub"
+    },
+    {
+        "index": 21,
+        "quote": "GitHub was created using Ruby on Rails.",
+        "author": "GitHub"
+    },
+    {
+        "index": 22,
+        "quote": "You can use GitHub Actions to deploy applications directly from a repository.",
+        "author": "GitHub"
+    },
+    {
+        "index": 23,
+        "quote": "You can tag other contributors in issues and pull requests by using the '@' symbol.",
+        "author": "GitHub"
+    },
+    {
+        "index": 24,
+        "quote": "GitHub allows project maintainers to assign labels to issues for easier management.",
+        "author": "GitHub"
+    },
+    {
+        "index": 25,
+        "quote": "The largest open-source project on GitHub is the 'Linux Kernel' with millions of lines of code.",
+        "author": "Linux"
+    },
+    {
+        "index": 26,
+        "quote": "You can enable two-factor authentication (2FA) for extra security on GitHub.",
+        "author": "GitHub"
+    },
+    {
+        "index": 27,
+        "quote": "GitHub automatically generates release notes based on your merged pull requests.",
+        "author": "GitHub"
+    },
+    {
+        "index": 28,
+        "quote": "GitHub supports branching, allowing developers to work on different features or fixes independently.",
+        "author": "GitHub"
+    },
+    {
+        "index": 29,
+        "quote": "You can mention specific lines of code in a pull request using the 'commit hash' and line number.",
+        "author": "GitHub"
+    },
+    {
+        "index": 30,
+        "quote": "GitHub's API allows access to repositories, commits, pull requests, and more via REST or GraphQL.",
+        "author": "GitHub"
+    },
+    {
+        "index": 31,
+        "quote": "GitHub Pages is widely used to host documentation and project websites.",
+        "author": "GitHub"
+    },
+    {
+        "index": 32,
+        "quote": "You can add status badges to your README to show the state of your CI/CD pipelines.",
+        "author": "GitHub"
+    },
+    {
+        "index": 33,
+        "quote": "GitHub allows you to review and comment on pull request changes line by line.",
+        "author": "GitHub"
+    },
+    {
+        "index": 34,
+        "quote": "GitHub Codespaces lets you develop directly in the cloud in a fully-configured environment.",
+        "author": "GitHub"
+    },
+    {
+        "index": 35,
+        "quote": "You can 'star' repositories on GitHub to bookmark them for later.",
+        "author": "GitHub"
+    },
+    {
+        "index": 36,
+        "quote": "GitHub allows users to create and manage organizations, which are groups of repositories.",
+        "author": "GitHub"
+    },
+    {
+        "index": 37,
+        "quote": "You can view the contributors graph on GitHub to see who has committed the most code.",
+        "author": "GitHub"
+    },
+    {
+        "index": 38,
+        "quote": "GitHub offers a 'GraphQL' API for more complex and efficient queries.",
+        "author": "GitHub"
+    },
+    {
+        "index": 39,
+        "quote": "GitHub supports markdown in README files, issues, and pull requests for better formatting.",
+        "author": "GitHub"
+    },
+    {
+        "index": 40,
+        "quote": "You can assign multiple reviewers to a pull request in GitHub.",
+        "author": "GitHub"
+    },
+    {
+        "index": 41,
+        "quote": "GitHub Pages automatically builds Jekyll-based static websites from your repository.",
+        "author": "GitHub"
+    },
+    {
+        "index": 42,
+        "quote": "You can track all your notifications on GitHub, including issues, pull requests, and discussions.",
+        "author": "GitHub"
+    },
+    {
+        "index": 43,
+        "quote": "GitHub Insights provides metrics about your repository's performance and contribution.",
+        "author": "GitHub"
+    },
+    {
+        "index": 44,
+        "quote": "You can archive a repository on GitHub, marking it as read-only.",
+        "author": "GitHub"
+    },
+    {
+        "index": 45,
+        "quote": "GitHub CLI allows you to manage your repositories from the command line.",
+        "author": "GitHub"
+    },
+    {
+        "index": 46,
+        "quote": "GitHub Actions has built-in support for common CI tasks such as testing and deployment.",
+        "author": "GitHub"
+    },
+    {
+        "index": 47,
+        "quote": "You can use GitHubs API to create bots that automate repetitive tasks.",
+        "author": "GitHub"
+    },
+    {
+        "index": 48,
+        "quote": "You can follow repositories or users to receive updates about their activity.",
+        "author": "GitHub"
+    },
+    {
+        "index": 49,
+        "quote": "You can restrict repository access by using GitHub's role-based access control system.",
+        "author": "GitHub"
+    },
+    {
+        "index": 50,
+        "quote": "GitHub Education offers free tools and resources for students and teachers.",
+        "author": "GitHub"
+    },
+    {
+        "index": 51,
+        "quote": "GitHub was originally created as a way to manage source code for Git.",
+        "author": "GitHub"
+    },
+    {
+        "index": 52,
+        "quote": "The first open-source project on GitHub was 'Ruby on Rails'.",
+        "author": "David Heinemeier Hansson"
+    },
+    {
+        "index": 53,
+        "quote": "GitHub allows you to 'fork' a repository, creating your own copy to modify.",
+        "author": "GitHub"
+    },
+    {
+        "index": 54,
+        "quote": "The GitHub Octocat is the company's mascot, representing creativity and code.",
+        "author": "GitHub"
+    },
+    {
+        "index": 55,
+        "quote": "GitHub provides a built-in code review tool for pull requests.",
+        "author": "GitHub"
+    },
+    {
+        "index": 56,
+        "quote": "The first GitHub headquarters was located in San Francisco.",
+        "author": "GitHub"
+    },
+    {
+        "index": 57,
+        "quote": "GitHub's commit history is a valuable resource for understanding project evolution.",
+        "author": "GitHub"
+    },
+    {
+        "index": 58,
+        "quote": "You can automate your GitHub workflows using webhooks.",
+        "author": "GitHub"
+    },
+    {
+        "index": 59,
+        "quote": "GitHub issues can be linked to pull requests for better project management.",
+        "author": "GitHub"
+    },
+    {
+        "index": 60,
+        "quote": "You can create a .github directory in your repository to store community health files.",
+        "author": "GitHub"
+    },
+    {
+        "index": 61,
+        "quote": "GitHub allows users to create custom emojis for reactions in discussions.",
+        "author": "GitHub"
+    },
+    {
+        "index": 62,
+        "quote": "You can set branch protection rules to prevent direct commits to a main branch.",
+        "author": "GitHub"
+    },
+    {
+        "index": 63,
+        "quote": "GitHub supports 'GPG' signing of commits for added security.",
+        "author": "GitHub"
+    },
+    {
+        "index": 64,
+        "quote": "You can use GitHub Projects to manage tasks using Kanban-style boards.",
+        "author": "GitHub"
+    },
+    {
+        "index": 65,
+        "quote": "GitHub allows multiple authentication methods, including OAuth and SSH keys.",
+        "author": "GitHub"
+    },
+    {
+        "index": 66,
+        "quote": "GitHub provides 'Code Scanning' to identify security vulnerabilities in your code.",
+        "author": "GitHub"
+    },
+    {
+        "index": 67,
+        "quote": "You can create an organization on GitHub to manage repositories and teams collaboratively.",
+        "author": "GitHub"
+    },
+    {
+        "index": 68,
+        "quote": "GitHub offers integration with various tools, including Slack, Trello, and Jira.",
+        "author": "GitHub"
+    },
+    {
+        "index": 69,
+        "quote": "GitHub allows users to conduct discussions for community engagement.",
+        "author": "GitHub"
+    },
+    {
+        "index": 70,
+        "quote": "GitHub CLI is designed to work seamlessly with Git and GitHub functionalities.",
+        "author": "GitHub"
+    },
+    {
+        "index": 71,
+        "quote": "You can create your own GitHub Action to automate tasks tailored to your needs.",
+        "author": "GitHub"
+    },
+    {
+        "index": 72,
+        "quote": "GitHub provides 'Insights' to view contributions, commit activity, and pull request statistics.",
+        "author": "GitHub"
+    },
+    {
+        "index": 73,
+        "quote": "GitHub's education program supports open-source projects by providing free tools.",
+        "author": "GitHub"
+    },
+    {
+        "index": 74,
+        "quote": "You can create custom workflows for CI/CD using GitHub Actions.",
+        "author": "GitHub"
+    },
+    {
+        "index": 75,
+        "quote": "GitHub has a robust API that allows developers to build applications on top of it.",
+        "author": "GitHub"
+    },
+    {
+        "index": 76,
+        "quote": "You can import repositories from other version control systems to GitHub.",
+        "author": "GitHub"
+    },
+    {
+        "index": 77,
+        "quote": "GitHub provides security advisories to help manage vulnerabilities in your dependencies.",
+        "author": "GitHub"
+    },
+    {
+        "index": 78,
+        "quote": "You can create a release on GitHub to package and distribute software versions.",
+        "author": "GitHub"
+    },
+    {
+        "index": 79,
+        "quote": "GitHub provides community templates to help create contribution guidelines.",
+        "author": "GitHub"
+    },
+    {
+        "index": 80,
+        "quote": "You can add a README file to any repository to provide important information about the project.",
+        "author": "GitHub"
+    },
+    {
+        "index": 81,
+        "quote": "GitHub's API supports webhooks, allowing for real-time notifications.",
+        "author": "GitHub"
+    },
+    {
+        "index": 82,
+        "quote": "GitHub supports internationalization, allowing users to create repositories in multiple languages.",
+        "author": "GitHub"
+    },
+    {
+        "index": 83,
+        "quote": "GitHub Actions has a marketplace for sharing and discovering actions.",
+        "author": "GitHub"
+    },
+    {
+        "index": 84,
+        "quote": "You can create and manage your personal access tokens for better security.",
+        "author": "GitHub"
+    },
+    {
+        "index": 85,
+        "quote": "GitHub allows you to import issues from other platforms like Jira.",
+        "author": "GitHub"
+    },
+    {
+        "index": 86,
+        "quote": "You can customize the branch default settings for new repositories on GitHub.",
+        "author": "GitHub"
+    },
+    {
+        "index": 87,
+        "quote": "GitHub provides a feature for automatic dependency updates.",
+        "author": "GitHub"
+    },
+    {
+        "index": 88,
+        "quote": "You can add a license file to your repository to clarify how others can use your code.",
+        "author": "GitHub"
+    },
+    {
+        "index": 89,
+        "quote": "You can utilize GitHub's search capabilities to find repositories, issues, and users.",
+        "author": "GitHub"
+    },
+    {
+        "index": 90,
+        "quote": "GitHub has a built-in wiki feature for maintaining project documentation.",
+        "author": "GitHub"
+    },
+    {
+        "index": 91,
+        "quote": "You can pin repositories to your profile for easy access.",
+        "author": "GitHub"
+    },
+    {
+        "index": 92,
+        "quote": "GitHub supports various authentication methods, including SAML for organizations.",
+        "author": "GitHub"
+    },
+    {
+        "index": 93,
+        "quote": "You can configure security settings for your repositories to enforce best practices.",
+        "author": "GitHub"
+    },
+    {
+        "index": 94,
+        "quote": "GitHub offers statistics on repository traffic and clones.",
+        "author": "GitHub"
+    },
+    {
+        "index": 95,
+        "quote": "You can create an environment variable for your GitHub Actions workflows.",
+        "author": "GitHub"
+    },
+    {
+        "index": 96,
+        "quote": "GitHub supports public, private, and internal repositories for flexible project management.",
+        "author": "GitHub"
+    },
+    {
+        "index": 97,
+        "quote": "You can share your repositories as templates for others to create their own projects.",
+        "author": "GitHub"
+    },
+    {
+        "index": 98,
+        "quote": "GitHub offers tools for vulnerability scanning and dependency management.",
+        "author": "GitHub"
+    },
+    {
+        "index": 99,
+        "quote": "You can use GitHub Actions to automate the release of software to production environments.",
+        "author": "GitHub"
+    },
+    {
+        "index": 100,
+        "quote": "GitHub provides a clear history of changes made to a repository through commits.",
+        "author": "GitHub"
+    }
+]

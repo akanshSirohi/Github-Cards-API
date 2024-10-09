@@ -201,6 +201,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/top-tweets-card`],
       },
     },
+    "github-facts-card": {
+      info: "Random github facts",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/github-facts-card`],
+      },
+    },
   };
 
   res.json({themes,cards});
