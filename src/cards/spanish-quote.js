@@ -43,7 +43,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
       joke_content,
       req.theme,
       req.options,
-      Languages.SPANISH // Changed language to Spanish
+      Languages.ENGLISH
     );
 
     res.writeHead(200, {
