@@ -173,7 +173,7 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/bhagavad-geeta-card`],
       },
     },
-
+    
     "programming-facts-card": {
       info: "Random programming facts card",
       api: {
@@ -183,6 +183,19 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/programming-facts-card`],
       },
     },
+
+    "wordle-card": {
+    info: "Wordle game card for guessing a 5-letter tech word.",
+    api: {
+        args: {
+            theme: "Theme of card: All themes. Default: light [Optional]"
+        },
+        example: [
+            `${baseurl}/wordle-card?theme=light`,
+            `${baseurl}/wordle-card?theme=dark`
+        ],
+    },
+  },
   };
 
   res.json({themes,cards});
