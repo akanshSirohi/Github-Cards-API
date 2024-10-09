@@ -1,4 +1,27 @@
 # Github-Cards-Api
+## About Wordle Card
+
+As part of Hacktoberfest, I created a Wordle card designed to offer users a fun way to take a break while coding. The Wordle card specifically focuses on tech-related words, providing a quick, enjoyable game that coders can play without leaving the platform.
+
+### Features:
+- **Tech-Themed Words:** The wordlist is made up of words related to technology, making the game more engaging for developers.
+- **Interactive Gameplay:** Users can guess letters and see immediate feedback on which letters are correct, just like a regular Wordle game.
+- **Simple Interface:** Designed to be easy to use, with a clean interface that allows users to jump right into the game.
+
+### Files Updated:
+- **New Card:** Added in `src/cards/wordle-card.js`
+- **API Reference:** Updated in `src/help.js`
+
+This card is my first contribution as part of Hacktoberfest, and I hope it adds value to the repository. Feedback and suggestions are welcome!
+
+
+```markdown
+<!-- Markdown -->
+![Wordle Card](https://afraid-ninnetta-github-cards.koyeb.app/wordle-card)
+
+<!-- HTML -->
+<img src="https://afraid-ninnetta-github-cards.koyeb.app/wordle-card" alt="Wordle Card" />
+
 
 ### How to use
 
