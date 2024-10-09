@@ -140,7 +140,10 @@ const getCards = (baseurl) => ({
     info: "Random trivia facts card",
     api: {
       args: { theme: "Theme for the card (Default: light)" },
-      example: [`${baseurl}/trivia-card?theme=light`, `${baseurl}/trivia-card?theme=dark`],
+      example: [
+        `${baseurl}/trivia-card?theme=light`,
+        `${baseurl}/trivia-card?theme=dark`,
+      ],
     },
   },
   "wisdom-of-the-day-card": {
