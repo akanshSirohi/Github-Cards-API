@@ -12,6 +12,7 @@ const available_cards = {
   "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
+  "/top-tweets-card": require("./src/cards/top-tweets")
 };
 
 app.use(express.json());
