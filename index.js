@@ -12,10 +12,18 @@ const available_cards = {
   "/breaking-bad-quote-card" : require("./src/cards/breaking-bad-quotes"),
   "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
+
+  "/fun-fact-card": require("./src/cards/fun-fact-card"),
+
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
+
+  "/random-facts": require("./src/cards/random-facts")
+
+
   "/random-facts-card": require("./src/cards/random-facts")
+
 };
 
 app.use(express.json());
