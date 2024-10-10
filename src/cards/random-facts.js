@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const { generateCard, CARD_AGE, Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
 
-const DATA_FILE_PATH = "./src/data/random-facts.json";
+const DATA_FILE_PATH = "./src/data/random_facts.json";
 const DEFAULT_THEME = "dark";
 
 const handleTheme = (req, res, next) => {
