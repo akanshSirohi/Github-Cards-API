@@ -1,252 +1,502 @@
 [
-    {
-        "index": 1,
-        "quote": "The one that says if I can't kill you, you'll sure as *beep* wish you were dead.",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 2,
-        "quote": "Is that your fly-sabre?",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 3,
-        "quote": "I'm the guy your boss brought here to show you how it's done.",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 4,
-        "quote": "Alright, I've got the talking pillow now... Okay?",
-        "author": "Walter White"
-    },
-    {
-        "index": 5,
-        "quote": "A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!",
-        "author": "Walter White"
-    },
-    {
-        "index": 6,
-        "quote": "You either run from things, or you face them, Mr. White.",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 7,
-        "quote": "I have spent my whole life scared frightened of things that could happen, might happen, might not happen.",
-        "author": "Walter White"
-    },
-    {
-        "index": 8,
-        "quote": "You know, I have never seen anybody work so hard not to get 5 million dollars.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 9,
-        "quote": "No more half-measures, Walter.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 10,
-        "quote": "I have lived under the threat of death for a year now, and because of that, I've made peace with it.",
-        "author": "Walter White"
-    },
-    {
-        "index": 11,
-        "quote": "What good is money that doesn't spend?",
-        "author": "Saul Goodman"
-    },
-    {
-        "index": 12,
-        "quote": "F*ck you! And your eyebrows!",
-        "author": "Walter White"
-    },
-    {
-        "index": 13,
-        "quote": "Chick's got an ass like an onion, makes me wanna cry.",
-        "author": "Hank Schrader"
-    },
-    {
-        "index": 14,
-        "quote": "You're the smartest guy I ever met, and you're too stupid to see he made up his mind 10 minutes ago.",
-        "author": "Hank Schrader"
-    },
-    {
-        "index": 15,
-        "quote": "You’re early lucky, you know that? You didn’t have to wait your whole life to do something special.",
-        "author": "Walter White"
-    },
-    {
-        "index": 16,
-        "quote": "What I came to realise is that fear, that's the worst of it. That's the real enemy. So, get up, get out in the real world and you kick that bastard as hard you can right in the teeth.",
-        "author": "Walter White"
-    },
-    {
-        "index": 17,
-        "quote": "Sometimes it just feels better not to talk. At All. About Anything. To Anyone.",
-        "author": "Walter White"
-    },
-    {
-        "index": 18,
-        "quote": "To all law enforcement entities, this is not an admission of guilt.",
-        "author": "Walter White"
-    },
-    {
-        "index": 19,
-        "quote": "We tried to poison you. We tried to poison you because you are an insane, degenerate piece of filth and you deserve to die.",
-        "author": "Walter White"
-    },
-    {
-        "index": 20,
-        "quote": "Just so you know, this isn't personal.",
-        "author": "Todd"
-    },
-    {
-        "index": 21,
-        "quote": "Get busy living or get busy dying.",
-        "author": "Stephen King"
-    },
-    {
-        "index": 22,
-        "quote": "I did it for me. I liked it. I was good at it. And... I was really... I was alive.",
-        "author": "Walter White"
-    },
-    {
-        "index": 23,
-        "quote": "Do you know how much I make a year? I mean, even if I told you, you wouldn't believe it.",
-        "author": "Walter White"
-    },
-    {
-        "index": 24,
-        "quote": "Jesse, we need to cook!",
-        "author": "Walter White"
-    },
-    {
-        "index": 25,
-        "quote": "I did it for the chemistry.",
-        "author": "Gale Boetticher"
-    },
-    {
-        "index": 26,
-        "quote": "No more prolonging the inevitable.",
-        "author": "Walter White"
-    },
-    {
-        "index": 27,
-        "quote": "Fifty years I spent like that. Finding myself awake at three in the morning. But you know what? Ever since my diagnosis, I sleep just fine.",
-        "author": "Walter White"
-    },
-    {
-        "index": 28,
-        "quote": "Cooking is art. And the shit I cook is the bomb.",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 29,
-        "quote": "We're done when I say we're done.",
-        "author": "Walter White"
-    },
-    {
-        "index": 30,
-        "quote": "I have done this long enough to know that there are two kinds of heists: Those where the guys get away with it and those that leave witnesses.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 31,
-        "quote": "Send him to Belize? I'll send YOU to Belize.",
-        "author": "Walter White"
-    },
-    {
-        "index": 32,
-        "quote": "You do seem to have a little “shit creek” action going… You know, FYI, you can buy a paddle.",
-        "author": "Saul Goodman"
-    },
-    {
-        "index": 33,
-        "quote": "Just because you shot Jesse James, don’t make you Jesse James.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 34,
-        "quote": "No more half-measures.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 35,
-        "quote": "I did it for me. I liked it. I was good at it. And I was really... I was alive.",
-        "author": "Walter White"
-    },
-    {
-        "index": 36,
-        "quote": "I am not in danger, Skyler. I am the danger.",
-        "author": "Walter White"
-    },
-    {
-        "index": 37,
-        "quote": "I chose a half measure when I should have gone all the way.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 38,
-        "quote": "You clearly don’t know who you’re talking to, so let me clue you in. I am not in danger, Skyler. I am the danger.",
-        "author": "Walter White"
-    },
-    {
-        "index": 39,
-        "quote": "I did it for my family.",
-        "author": "Walter White"
-    },
-    {
-        "index": 40,
-        "quote": "You don’t need a criminal lawyer. You need a criminal lawyer.",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 41,
-        "quote": "Yeah, science!",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 42,
-        "quote": "Say my name.",
-        "author": "Walter White"
-    },
-    {
-        "index": 43,
-        "quote": "You know, sometimes it feels better not to talk at all, about anything, to anyone.",
-        "author": "Walter White"
-    },
-    {
-        "index": 44,
-        "quote": "You either run from things, or you face them.",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 45,
-        "quote": "Name one thing in this world that is not negotiable.",
-        "author": "Walter White"
-    },
-    {
-        "index": 46,
-        "quote": "The moral of the story is I chose a half measure when I should have gone all the way.",
-        "author": "Mike Ehrmantraut"
-    },
-    {
-        "index": 47,
-        "quote": "You’re the smartest guy I ever met, and you’re too stupid to see…",
-        "author": "Jesse Pinkman"
-    },
-    {
-        "index": 48,
-        "quote": "I have nothing to lose.",
-        "author": "Walter White"
-    },
-    {
-        "index": 49,
-        "quote": "You can never trust a drug addict.",
-        "author": "Hank Schrader"
-    },
-    {
-        "index": 50,
-        "quote": "I did it for me. I liked it.",
-        "author": "Walter White"
-    }
-]    
+  {
+    "index": 1,
+    "quote": "Walter Jr., you're my big man. There are going to be some things that you'll come to learn about me in the next few days. But just know that no matter how it may look, I only had you in my heart. Goodbye!",
+    "author": "Walter White"
+  },
+  {
+    "index": 2,
+    "quote": "Do what you're gonna do.",
+    "author": "Hank Schrader"
+  },
+  {
+    "index": 3,
+    "quote": "I want my kids back. I want my life back. Please tell me – How much is enough? How big does this pile have to be?",
+    "author": "Skyler White"
+  },
+  {
+    "index": 4,
+    "quote": "It can be done exactly how I want it. The only question is: Are you the man to do it? Figure it out. That's what I'm paying you for.",
+    "author": "Walter White"
+  },
+  {
+    "index": 5,
+    "quote": "I am the man that I am son, and there's plenty that I would change about that but, here we are and this is just what it is.",
+    "author": "Walter White"
+  },
+  {
+    "index": 6,
+    "quote": "Never say never",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 7,
+    "quote": "Moral of the story is: I chose a half measure when I should have gone all the way. I'll never make that mistake again. No more half measures, Walter.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 8,
+    "quote": "Send him to Belize? I'll send YOU to Belize.",
+    "author": "Walter White"
+  },
+  {
+    "index": 9,
+    "quote": "I'm sorry, what were you asking me? Oh, yes, that stupid plastic container I asked you to buy. You see, hydrofluoric acid won't eat through plastic; it will however dissolve metal, rock, glass, ceramic. So there's that.",
+    "author": "Walter White"
+  },
+  {
+    "index": 10,
+    "quote": "Right now, what I need, is for you to climb down out of my ass. Can you do that? Will you do that for me honey? Will you please, just once, get off my ass? You know? I'd appreciate it. I really would.",
+    "author": "Walter White"
+  },
+  {
+    "index": 11,
+    "quote": "Being the best at something is a very rare thing. You don't just toss something like that away. And what, you wanna squander that potential?",
+    "author": "Walter White"
+  },
+  {
+    "index": 12,
+    "quote": "Cooking is art. And the shit I cook is the bomb.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 13,
+    "quote": "I do not believe fear to be an effective motivator. I want investment. For now, I'm simply interested in time frame.",
+    "author": "Gustavo Fring"
+  },
+  {
+    "index": 14,
+    "quote": "You need to stop focusing on the darkness behind you. The past is the past. Nothing can change what we’ve done.",
+    "author": "Walter White"
+  },
+  {
+    "index": 15,
+    "quote": "Ignorance of the law doesn't equate to criminality. It equates to ignorance.",
+    "author": "Skyler White"
+  },
+  {
+    "index": 16,
+    "quote": "Did you just bring a bomb into a hospital?",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 17,
+    "quote": "You're never too old for balloons.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 18,
+    "quote": "I did it for me. I liked it. I was good at it. And I was really... I was alive.",
+    "author": "Walter White"
+  },
+  {
+    "index": 19,
+    "quote": "I am not in danger, Skyler. I AM the danger!",
+    "author": "Walter White"
+  },
+  {
+    "index": 20,
+    "quote": "Don't drink and drive but if you do, call me.",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 21,
+    "quote": "Say my name.",
+    "author": "Walter White"
+  },
+  {
+    "index": 22,
+    "quote": "Yeah, science!",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 23,
+    "quote": "You know, you all know exactly who I am. Say my name.",
+    "author": "Walter White"
+  },
+  {
+    "index": 24,
+    "quote": "You either run from things, or you face them, Mr. White.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 25,
+    "quote": "I'm in the empire business.",
+    "author": "Walter White"
+  },
+  {
+    "index": 26,
+    "quote": "No matter what happens, no more bloodshed.",
+    "author": "Gustavo Fring"
+  },
+  {
+    "index": 27,
+    "quote": "I’ve still got things left to do.",
+    "author": "Walter White"
+  },
+  {
+    "index": 28,
+    "quote": "I will kill your wife, I will kill your son, I will kill your infant daughter.",
+    "author": "Gustavo Fring"
+  },
+  {
+    "index": 29,
+    "quote": "Yeah Mr. White! Yeah, science!",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 30,
+    "quote": "You clearly don’t know who you’re talking to, so let me clue you in. I am not in danger, Skyler. I am the danger.",
+    "author": "Walter White"
+  },
+  {
+    "index": 31,
+    "quote": "You are a time bomb, tick-tick-ticking. And I have no intention of being around for the boom.",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 32,
+    "quote": "I’m not in the meth business. I’m in the empire business.",
+    "author": "Walter White"
+  },
+  {
+    "index": 33,
+    "quote": "Shut up! Shut up! Shut up!",
+    "author": "Skyler White"
+  },
+  {
+    "index": 34,
+    "quote": "I watched Jane die.",
+    "author": "Walter White"
+  },
+  {
+    "index": 35,
+    "quote": "If you believe that there’s a hell, I don’t know if you’re into that. But we’re already pretty much going there, right?",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 36,
+    "quote": "I did it for me. I liked it.",
+    "author": "Walter White"
+  },
+  {
+    "index": 37,
+    "quote": "We’re done when I say we’re done.",
+    "author": "Walter White"
+  },
+  {
+    "index": 38,
+    "quote": "It’s over when I say it’s over.",
+    "author": "Walter White"
+  },
+  {
+    "index": 39,
+    "quote": "Run.",
+    "author": "Walter White"
+  },
+  {
+    "index": 40,
+    "quote": "You can’t sell millions of dollars of meth without breaking a few eggs.",
+    "author": "Walter White"
+  },
+  {
+    "index": 41,
+    "quote": "I am the one who knocks!",
+    "author": "Walter White"
+  },
+  {
+    "index": 42,
+    "quote": "You know, I'm not really a 'work for free' kind of guy.",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 43,
+    "quote": "What’s the point of being an outlaw when you got responsibilities?",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 44,
+    "quote": "We’re done when I say we’re done.",
+    "author": "Walter White"
+  },
+  {
+    "index": 45,
+    "quote": "I did it for me. I liked it. I was good at it. And I was really... I was alive.",
+    "author": "Walter White"
+  },
+  {
+    "index": 46,
+    "quote": "You’re the smartest guy I ever met. And you’re too stupid to see he made up his mind ten minutes ago.",
+    "author": "Hank Schrader"
+  },
+  {
+    "index": 47,
+    "quote": "I don’t know what’s wrong with me, Mr. White. I’m just so... I’m so sorry.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 48,
+    "quote": "The moral of the story is I chose a half measure, when I should have gone all the way.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 49,
+    "quote": "You all know exactly who I am. Say my name.",
+    "author": "Walter White"
+  },
+  {
+    "index": 50,
+    "quote": "You can’t keep getting away with this!",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 51,
+    "quote": "No more half-measures.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 52,
+    "quote": "You know, you all know exactly who I am. Say my name.",
+    "author": "Walter White"
+  },
+  {
+    "index": 53,
+    "quote": "I have nothing left to lose.",
+    "author": "Walter White"
+  },
+  {
+    "index": 54,
+    "quote": "Do you know how much I make a year?",
+    "author": "Walter White"
+  },
+  {
+    "index": 55,
+    "quote": "If you don’t know who I am, then maybe your best course would be to tread lightly.",
+    "author": "Walter White"
+  },
+  {
+    "index": 56,
+    "quote": "All I can do is wait for the cancer to come back.",
+    "author": "Walter White"
+  },
+  {
+    "index": 57,
+    "quote": "We’re done when I say we’re done.",
+    "author": "Walter White"
+  },
+  {
+    "index": 58,
+    "quote": "The moral of the story is I chose a half measure, when I should have gone all the way.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 59,
+    "quote": "Say my name.",
+    "author": "Walter White"
+  },
+  {
+    "index": 60,
+    "quote": "You clearly don’t know who you’re talking to, so let me clue you in. I am not in danger, Skyler. I am the danger.",
+    "author": "Walter White"
+  },
+  {
+    "index": 61,
+    "quote": "I chose a half measure when I should have gone all the way.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 62,
+    "quote": "It’s over when I say it’s over.",
+    "author": "Walter White"
+  },
+  {
+    "index": 63,
+    "quote": "You’re trouble. I’m trouble.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 64,
+    "quote": "This is my own private domicile, and I will not be harassed…b****!",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 65,
+    "quote": "I did it for me. I liked it. I was good at it.",
+    "author": "Walter White"
+  },
+  {
+    "index": 66,
+    "quote": "All the lies, I can't even keep them straight anymore.",
+    "author": "Skyler White"
+  },
+  {
+    "index": 67,
+    "quote": "Some people are immune to good advice.",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 68,
+    "quote": "I know what happens if I don’t.",
+    "author": "Gustavo Fring"
+  },
+  {
+    "index": 69,
+    "quote": "You got me. I’m in the empire business.",
+    "author": "Walter White"
+  },
+  {
+    "index": 70,
+    "quote": "The moral of the story is I chose a half measure, when I should have gone all the way.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 71,
+    "quote": "I am not in danger, Skyler. I am the danger.",
+    "author": "Walter White"
+  },
+  {
+    "index": 72,
+    "quote": "I trust the hole in the desert I’d leave you in.",
+    "author": "Mike Ehrmantraut"
+  },
+  {
+    "index": 73,
+    "quote": "You’re my free pass.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 74,
+    "quote": "I didn’t marry a criminal lawyer. I married a lawyer who’s a criminal.",
+    "author": "Skyler White"
+  },
+  {
+    "index": 75,
+    "quote": "I’m not a hero. I’m a coward.",
+    "author": "Walter White"
+  },
+  {
+    "index": 76,
+    "quote": "You don’t need a criminal lawyer. You need a criminal lawyer.",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 77,
+    "quote": "When the going gets tough, you don’t want a criminal lawyer. You want a criminal lawyer.",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 78,
+    "quote": "You think I came all this way just to let something as trivial as the truth get in the way?",
+    "author": "Saul Goodman"
+  },
+  {
+    "index": 79,
+    "quote": "I was alive.",
+    "author": "Walter White"
+  },
+  {
+    "index": 80,
+    "quote": "You got me. I’m in the empire business now.",
+    "author": "Walter White"
+  },
+  {
+    "index": 81,
+    "quote": "You either run from things, or you face them.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 82,
+    "quote": "I’m not in this for money. I’m in this for me.",
+    "author": "Walter White"
+  },
+  {
+    "index": 83,
+    "quote": "Family is everything.",
+    "author": "Walter White"
+  },
+  {
+    "index": 84,
+    "quote": "It’s not about money, it’s about power.",
+    "author": "Walter White"
+  },
+  {
+    "index": 85,
+    "quote": "I’m not a monster. I’m just ahead of the curve.",
+    "author": "Walter White"
+  },
+  {
+    "index": 86,
+    "quote": "I just wanted to say that you’re a time bomb, tick-tick-ticking, and I have no intention of being around for the boom.",
+    "author": "Skyler White"
+  },
+  {
+    "index": 87,
+    "quote": "I did it for my family.",
+    "author": "Walter White"
+  },
+  {
+    "index": 88,
+    "quote": "I watched Jane die.",
+    "author": "Walter White"
+  },
+  {
+    "index": 89,
+    "quote": "My name is ASAC Schrader, and you can go f*** yourself.",
+    "author": "Hank Schrader"
+  },
+  {
+    "index": 90,
+    "quote": "What the hell is wrong with you? We’re a family!",
+    "author": "Skyler White"
+  },
+  {
+    "index": 91,
+    "quote": "Jesse, you asked me if I was in the meth business or the money business. Neither. I’m in the empire business.",
+    "author": "Walter White"
+  },
+  {
+    "index": 92,
+    "quote": "I have nothing to lose anymore.",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 93,
+    "quote": "Look at me! I’m the one who knocks!",
+    "author": "Walter White"
+  },
+  {
+    "index": 94,
+    "quote": "I am the one who knocks.",
+    "author": "Walter White"
+  },
+  {
+    "index": 95,
+    "quote": "To hell with your cancer. I’ve been living with cancer for twenty years.",
+    "author": "Marie Schrader"
+  },
+  {
+    "index": 96,
+    "quote": "I’d rather not live in a world without Coca-Cola.",
+    "author": "Gustavo Fring"
+  },
+  {
+    "index": 97,
+    "quote": "I’m not in danger, I am the danger.",
+    "author": "Walter White"
+  },
+  {
+    "index": 98,
+    "quote": "What good is being an outlaw when you have responsibilities?",
+    "author": "Jesse Pinkman"
+  },
+  {
+    "index": 99,
+    "quote": "You know why I do this. I do this for my family.",
+    "author": "Walter White"
+  },
+  {
+    "index": 100,
+    "quote": "You don't need a criminal lawyer. You need a criminal lawyer.",
+    "author": "Saul Goodman"
+  }
+]
