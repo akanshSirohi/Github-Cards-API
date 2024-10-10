@@ -1,2 +1,4 @@
 node_modules
 .prettierignore
+.idea
+package-lock.json

@@ -20,6 +20,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=dark`,
         `${baseurl}/programming-facts-card?theme=dark`,
         `${baseurl}/motivational-quotes-card?theme=dark`,
+        `${baseurl}/random-facts-card?theme=dark`,
       ],
     },
     "dark_2": {
@@ -29,6 +30,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=dark_2`,
         `${baseurl}/programming-facts-card?theme=dark_2`,
         `${baseurl}/motivational-quotes-card?theme=dark_2`,
+        `${baseurl}/random-facts-card?theme=dark_2`,
       ],
     },
     "light": {
@@ -38,6 +40,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=light`,
         `${baseurl}/programming-facts-card?theme=light`,
         `${baseurl}/motivational-quotes-card?theme=light`,
+        `${baseurl}/random-facts-card?theme=light`,
       ],
     },
     "rgb": {
@@ -47,6 +50,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=rgb`,
         `${baseurl}/programming-facts-card?theme=rgb`,
         `${baseurl}/motivational-quotes-card?theme=rgb`,
+        `${baseurl}/random-facts-card?theme=rgb`,
       ],
     },
     "pattern_1": {
@@ -56,6 +60,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=pattern_1`,
         `${baseurl}/programming-facts-card?theme=pattern_1`,
         `${baseurl}/motivational-quotes-card?theme=pattern_1`,
+        `${baseurl}/random-facts-card?theme=pattern_1`,
       ],
     },
     "pattern_2": {
@@ -65,6 +70,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=pattern_2`,
         `${baseurl}/programming-facts-card?theme=pattern_2`,
         `${baseurl}/motivational-quotes-card?theme=pattern_2`,
+        `${baseurl}/random-facts-card?theme=pattern_2`,
       ],
     },
     "pattern_3": {
@@ -74,6 +80,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=pattern_3`,
         `${baseurl}/programming-facts-card?theme=pattern_3`,
         `${baseurl}/motivational-quotes-card?theme=pattern_3`,
+        `${baseurl}/random-facts-card?theme=pattern_3`,
       ],
     },
     "lemonade": {
@@ -83,6 +90,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=lemonade`,
         `${baseurl}/programming-facts-card?theme=lemonade`,
         `${baseurl}/motivational-quotes-card?theme=lemonade`,
+        `${baseurl}/random-facts-card?theme=lemonade`,
       ],
     },
     "custom": {
@@ -103,6 +111,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=custom&bg_color=008000&font_color=000000`,
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000`,
         `${baseurl}/programming-facts-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
+        `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
       ],
     }
   };
@@ -164,6 +173,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/team-work-quote-card`],
       },
     },
+    "breaking-bad-quote-card": {
+      info: "Generate random motivational quote related to the breaking bad.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+        },
+        example: [`${baseurl}/breaking-bad-quote-card`],
+      },
+    },
     "bhagavad-geeta-card": {
       info: "Generate a random quote from the bhagavad-geeta-card",
       api: {
@@ -184,6 +202,7 @@ router.get("/", (req, res) => {
       },
     },
 
+
     "fun-fact-card": {
   info: "Displays a random fun fact card",
   api: {
@@ -193,6 +212,44 @@ router.get("/", (req, res) => {
     example: [`${baseurl}/fun-fact-card`],
   },
 },
+
+     "spanish-quote-card": {
+          info: "Random spanish quote card",
+          api: {
+            args: {
+              theme: "Theme of card. All themes. Default: dark  [Optional]"
+            },
+            example: [`${baseurl}/spanish-quote-card`],
+          },
+        },
+    "top-tweets-card": {
+      info: "Random top Twitter Tweets card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark_2  [Optional]"
+        },
+        example: [`${baseurl}/top-tweets-card`],
+      },
+    },
+    "github-facts-card": {
+      info: "Random github facts",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/github-facts-card`],
+      },
+    },
+    "random-facts-card": {
+      info: "Generates a random interesting fact",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark [Optional]"
+        },
+        example: [`${baseurl}/random-facts`],
+      },
+    },
+
   };
 
   res.json({themes,cards});
