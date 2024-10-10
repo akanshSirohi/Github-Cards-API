@@ -215,8 +215,11 @@ const generateCard = async (txt, theme, options, language) => {
   return svg;
 };
 
-const generateHTMLCard = async (html, language) => {
+const generateHTMLCard = async (html, language, theme = false) => {
   const font = language === Languages.ENGLISH ? "Ubuntu" : "NotoSans";
+  if(theme) {
+    html = theme.replace("{{card_content}}", html);
+  }
   return await generateSvg(html, font);
 }
 
