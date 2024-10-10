@@ -31,7 +31,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
     const random_quote = quotes[Math.floor(Math.random() * quotes.length)];
 
     let quote_card;
-    let all_html_themes = Object.keys(HTML_THEMsES);
+    let all_html_themes = Object.keys(HTML_THEMES);
 
     // Custom theme moderation
     if (req.theme === "skeleton") {
