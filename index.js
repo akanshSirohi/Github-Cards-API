@@ -13,7 +13,8 @@ const available_cards = {
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
-  "/github-facts-card": require("./src/cards/github-facts")
+  "/github-facts-card": require("./src/cards/github-facts"),  // Missing comma added here
+  "/fun-fact-card": require("./src/cards/fun-fact"),          // Your new card
 };
 
 app.use(express.json());
@@ -21,16 +22,16 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", require("./src/help"));
 
-for(const key in available_cards) {
-  if(available_cards.hasOwnProperty(key)) {
+for (const key in available_cards) {
+  if (available_cards.hasOwnProperty(key)) {
     app.use(key, available_cards[key]);
   }
 }
 
-app.get("/random-card", (req,res) => {
+app.get("/random-card", (req, res) => {
   let urls = Object.keys(available_cards);
   let query = "";
-  if(req.originalUrl.indexOf("?") > -1) {
+  if (req.originalUrl.indexOf("?") > -1) {
     const queryParameters = req.originalUrl.split("?")[1];
     query = `?${queryParameters}`;
   }
