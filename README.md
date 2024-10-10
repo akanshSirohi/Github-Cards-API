@@ -75,6 +75,10 @@ You can customize the appearance of the cards by selecting one of the following 
 9. `random` - A random theme from those listed above will be applied
 10. `custom` - You may set your own custom arguments
 
+#### NEW HTML THEMES (LIMITED TO HTML CARDS)
+1. [`techy`](#techy-theme-card)
+2. (More coming soon...)
+
 ### Custom Arguments
 
 If you choose the `custom` theme, you can configure the card with the following arguments:
@@ -122,6 +126,10 @@ args: {
 - #### `Pattern_3` Theme Card
 
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
+
+- #### `Techy` Theme Card
+  (Limited to HTML Cards)
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card?theme=techy)
 
 ## Contributing
 
