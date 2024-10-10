@@ -128,7 +128,7 @@ args: {
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
 
 - #### `Techy` Theme Card
-  (Limited to HTML Cards)
+  (Limited to HTML Cards)<br>
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card?theme=techy)
 
 ## Contributing
