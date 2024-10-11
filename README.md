@@ -155,6 +155,13 @@ You can also create cards in HTML and CSS! Check out the `src/cards/motivational
 4. Define your theme in `src/themes.js` (refer to existing themes for structure).
 5. Update the `src/help.js` file and the `README` with your new theme's API reference.
 
+### Contributing Guidelines
+- Ensure your code is properly formatted and follows the existing code style.
+- Ensure your code is well-commented and tested before creating a pull request.
+- Ensure your card/theme is unique and not a duplicate of an existing card/theme.
+- Ensure your card/theme is not offensive or inappropriate.
+- Do not commit package-lock.json, yarn.lock, package.json, or any other unnecessary files.
+
 ## Additional Information
 
 For more information, visit [https://afraid-ninnetta-github-cards.koyeb.app/](https://afraid-ninnetta-github-cards.koyeb.app/).
