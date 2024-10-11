@@ -1,0 +1,402 @@
+[
+    {
+        "index": 1,
+        "fact": "The first computer was invented in the 1940s and took up an entire room."
+    },
+    {
+        "index": 2,
+        "fact": "The first website went live on August 6, 1991."
+    },
+    {
+        "index": 3,
+        "fact": "There are more stars in the universe than grains of sand on all the Earth’s beaches."
+    },
+    {
+        "index": 4,
+        "fact": "The first computer mouse was made of wood."
+    },
+    {
+        "index": 5,
+        "fact": "The term 'bug' in computing originated from a moth causing problems in a computer."
+    },
+    {
+        "index": 6,
+        "fact": "Google was originally called 'Backrub'."
+    },
+    {
+        "index": 7,
+        "fact": "The first video game ever created was 'Tennis for Two' in 1958."
+    },
+    {
+        "index": 8,
+        "fact": "The first 1 GB hard drive, released in 1980, weighed over 500 pounds."
+    },
+    {
+        "index": 9,
+        "fact": "There are over 1.7 billion websites on the internet."
+    },
+    {
+        "index": 10,
+        "fact": "The first email was sent by Ray Tomlinson to himself in 1971."
+    },
+    {
+        "index": 11,
+        "fact": "The world's first computer programmer was Ada Lovelace."
+    },
+    {
+        "index": 12,
+        "fact": "A computer's CPU is often referred to as its brain."
+    },
+    {
+        "index": 13,
+        "fact": "The original name for Windows was 'Interface Manager'."
+    },
+    {
+        "index": 14,
+        "fact": "The first smartphone was the IBM Simon, released in 1994."
+    },
+    {
+        "index": 15,
+        "fact": "The first computer virus was created in 1983."
+    },
+    {
+        "index": 16,
+        "fact": "The QWERTY keyboard layout was designed to slow down typing."
+    },
+    {
+        "index": 17,
+        "fact": "The first computer game to feature a jumping character was 'Donkey Kong'."
+    },
+    {
+        "index": 18,
+        "fact": "The first email attachment was sent in 1992."
+    },
+    {
+        "index": 19,
+        "fact": "The first hard disk drive was created by IBM in 1956."
+    },
+    {
+        "index": 20,
+        "fact": "The first version of Photoshop was released in 1988."
+    },
+    {
+        "index": 21,
+        "fact": "The first portable computer was the Osborne 1, released in 1981."
+    },
+    {
+        "index": 22,
+        "fact": "The first webcam was invented to monitor a coffee pot."
+    },
+    {
+        "index": 23,
+        "fact": "The word 'robot' comes from a Czech word meaning 'forced labor'."
+    },
+    {
+        "index": 24,
+        "fact": "Facebook was originally created for college students."
+    },
+    {
+        "index": 25,
+        "fact": "In 2021, over 300 billion emails were sent every day."
+    },
+    {
+        "index": 26,
+        "fact": "The average person spends over 6 years of their life on social media."
+    },
+    {
+        "index": 27,
+        "fact": "Wi-Fi was invented by Australian radio-astronomer John O'Sullivan."
+    },
+    {
+        "index": 28,
+        "fact": "The first 3D printer was created in 1983."
+    },
+    {
+        "index": 29,
+        "fact": "The first computer programming language was Fortran."
+    },
+    {
+        "index": 30,
+        "fact": "The first smartphone to use a touch screen was the iPhone."
+    },
+    {
+        "index": 31,
+        "fact": "The first search engine was Archie, created in 1990."
+    },
+    {
+        "index": 32,
+        "fact": "There are more than 2.5 billion active Android devices worldwide."
+    },
+    {
+        "index": 33,
+        "fact": "The first computer game to allow players to save their progress was 'Zork'."
+    },
+    {
+        "index": 34,
+        "fact": "Apple's original name was Apple Computer, Inc."
+    },
+    {
+        "index": 35,
+        "fact": "The first email sent to a non-technical person was sent in 1972."
+    },
+    {
+        "index": 36,
+        "fact": "The first online purchase was a pizza from Pizza Hut in 1994."
+    },
+    {
+        "index": 37,
+        "fact": "The first computer to use a GUI was the Xerox Alto."
+    },
+    {
+        "index": 38,
+        "fact": "The world's first website is still online at info.cern.ch."
+    },
+    {
+        "index": 39,
+        "fact": "The first mobile phone call was made in 1973."
+    },
+    {
+        "index": 40,
+        "fact": "The first computer animated film was 'Toy Story', released in 1995."
+    },
+    {
+        "index": 41,
+        "fact": "The first ATM was installed in 1967."
+    },
+    {
+        "index": 42,
+        "fact": "The first social media platform was Six Degrees, launched in 1997."
+    },
+    {
+        "index": 43,
+        "fact": "The first tablet computer was the GRiDPad, released in 1989."
+    },
+    {
+        "index": 44,
+        "fact": "The first mobile app was created in 2008 for the iPhone."
+    },
+    {
+        "index": 45,
+        "fact": "The first video game console was the Magnavox Odyssey, released in 1972."
+    },
+    {
+        "index": 46,
+        "fact": "The first email marketing campaign was sent in 1978."
+    },
+    {
+        "index": 47,
+        "fact": "The first computer network was ARPANET, established in 1969."
+    },
+    {
+        "index": 48,
+        "fact": "The first computer language for children was Logo."
+    },
+    {
+        "index": 49,
+        "fact": "The first website to stream live video was Ustream, launched in 2007."
+    },
+    {
+        "index": 50,
+        "fact": "The first computer game to feature a level editor was 'Doom'."
+    },
+    {
+        "index": 51,
+        "fact": "The first smartphone to have a front-facing camera was the Sony Ericsson Saito."
+    },
+    {
+        "index": 52,
+        "fact": "The first instant messaging service was ICQ, released in 1996."
+    },
+    {
+        "index": 53,
+        "fact": "The first online video platform was YouTube, launched in 2005."
+    },
+    {
+        "index": 54,
+        "fact": "The first computer to be sold commercially was the UNIVAC I."
+    },
+    {
+        "index": 55,
+        "fact": "The first web browser was WorldWideWeb, later renamed Nexus."
+    },
+    {
+        "index": 56,
+        "fact": "The first search engine to use a web crawler was Google."
+    },
+    {
+        "index": 57,
+        "fact": "In 1976, Apple co-founder Steve Wozniak created the first programmable pocket calculator."
+    },
+    {
+        "index": 58,
+        "fact": "The first computer game with graphics was 'Spacewar!', created in 1962."
+    },
+    {
+        "index": 59,
+        "fact": "The first hard disk to store more than 1 gigabyte was the IBM 3380."
+    },
+    {
+        "index": 60,
+        "fact": "The first computer to run a spreadsheet program was the Apple II."
+    },
+    {
+        "index": 61,
+        "fact": "The first online game was 'MUD1', released in 1978."
+    },
+    {
+        "index": 62,
+        "fact": "The first public computer network was ARPANET, developed by the US Department of Defense."
+    },
+    {
+        "index": 63,
+        "fact": "The first video game to feature 3D graphics was 'Battlezone', released in 1980."
+    },
+    {
+        "index": 64,
+        "fact": "The first smartphone with a touchscreen was the IBM Simon."
+    },
+    {
+        "index": 65,
+        "fact": "The first email sent over the internet was sent in 1971."
+    },
+    {
+        "index": 66,
+        "fact": "The first computer game to feature sound was 'Tennis for Two', released in 1958."
+    },
+    {
+        "index": 67,
+        "fact": "The first computer to use an operating system was the IBM 701."
+    },
+    {
+        "index": 68,
+        "fact": "The first digital camera was created in 1975 by Steven Sasson."
+    },
+    {
+        "index": 69,
+        "fact": "The first smartphone with Wi-Fi was the Nokia 9500 Communicator."
+    },
+    {
+        "index": 70,
+        "fact": "The first video game console to use CD-ROMs was the Philips CD-i."
+    },
+    {
+        "index": 71,
+        "fact": "The first web-based email service was Hotmail, launched in 1996."
+    },
+    {
+        "index": 72,
+        "fact": "The first computer to use a graphical user interface was the Xerox Alto."
+    },
+    {
+        "index": 73,
+        "fact": "The first mobile phone with a color screen was the Siemens S10."
+    },
+    {
+        "index": 74,
+        "fact": "The first online auction site was eBay, launched in 1995."
+    },
+    {
+        "index": 75,
+        "fact": "The first smartphone to use a fingerprint scanner was the Motorola Atrix."
+    },
+    {
+        "index": 76,
+        "fact": "The first computer to use a mouse was the Xerox Alto."
+    },
+    {
+        "index": 77,
+        "fact": "The first social media site was SixDegrees.com, launched in 1997."
+    },
+    {
+        "index": 78,
+        "fact": "The first computer with a hard disk drive was the IBM 305 RAMAC."
+    },
+    {
+        "index": 79,
+        "fact": "The first online banking service was Stanford Federal Credit Union in 1994."
+    },
+    {
+        "index": 80,
+        "fact": "The first mobile phone to use a SIM card was the Nokia 1011."
+    },
+    {
+        "index": 81,
+        "fact": "The first home computer was the Altair 8800."
+    },
+    {
+        "index": 82,
+        "fact": "The first computer to use a transistor was the TX-0, developed in 1956."
+    },
+    {
+        "index": 83,
+        "fact": "The first digital watch was developed by Hamilton Watch Company in 1972."
+    },
+    {
+        "index": 84,
+        "fact": "The first smartphone to run Android was the HTC Dream."
+    },
+    {
+        "index": 85,
+        "fact": "The first video game to be played in space was 'Tetris' on the Russian Mir space station."
+    },
+    {
+        "index": 86,
+        "fact": "The first computer with a GUI was the Xerox Alto, developed in 1973."
+    },
+    {
+        "index": 87,
+        "fact": "The first computer game to use multiplayer was 'MUD', released in 1978."
+    },
+    {
+        "index": 88,
+        "fact": "The first graphical web browser was Mosaic, released in 1993."
+    },
+    {
+        "index": 89,
+        "fact": "The first computer to connect to the internet was the Stanford Research Institute in 1969."
+    },
+    {
+        "index": 90,
+        "fact": "The first mobile phone call was made by Martin Cooper in 1973."
+    },
+    {
+        "index": 91,
+        "fact": "The first video game to use a 3D engine was 'Wolfenstein 3D', released in 1992."
+    },
+    {
+        "index": 92,
+        "fact": "The first computer to use a screen was the RCA Spectra 70."
+    },
+    {
+        "index": 93,
+        "fact": "The first computer with a color display was the IBM 5150."
+    },
+    {
+        "index": 94,
+        "fact": "The first online video game was 'MUD', which allowed players to interact in a shared world."
+    },
+    {
+        "index": 95,
+        "fact": "The first digital assistant was the Apple Newton, released in 1993."
+    },
+    {
+        "index": 96,
+        "fact": "The first smartphone to have GPS was the Nokia 6110."
+    },
+    {
+        "index": 97,
+        "fact": "The first computer to use a keyboard was the Teletype Model 33."
+    },
+    {
+        "index": 98,
+        "fact": "The first successful commercial computer was the UNIVAC I."
+    },
+    {
+        "index": 99,
+        "fact": "The first computer to be programmed using a high-level language was the ENIAC."
+    },
+    {
+        "index": 100,
+        "fact": "The first successful commercial computer was the UNIVAC I."
+    } 
+]

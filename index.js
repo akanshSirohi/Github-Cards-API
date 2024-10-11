@@ -2,20 +2,22 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
 
+// Available cards
 const available_cards = {
   "/jokes-card": require("./src/cards/joke-card"),
   "/programming-quotes-card": require("./src/cards/programming-quote"),
   "/motivational-quotes-card": require("./src/cards/motivational-quote"),
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
   "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
-  "/team-work-quote-card" : require("./src/cards/team-work-quote"),
-  "/breaking-bad-quote-card" : require("./src/cards/breaking-bad-quotes"),
-  "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
+  "/team-work-quote-card": require("./src/cards/team-work-quote"),
+  "/breaking-bad-quote-card": require("./src/cards/breaking-bad-quotes"),
+  "/bhagavad-geeta-card": require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
-  "/random-facts-card": require("./src/cards/random-facts")
+  "/random-facts-card": require("./src/cards/random-facts"),
+  "/tech-trivia-joke-card": require("./src/cards/tech-trivia-joke-card"), // Tech Trivia Joke Card
 };
 
 app.use(express.json());
@@ -23,16 +25,18 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", require("./src/help"));
 
-for(const key in available_cards) {
-  if(available_cards.hasOwnProperty(key)) {
+// Registering the routes for available cards
+for (const key in available_cards) {
+  if (available_cards.hasOwnProperty(key)) {
     app.use(key, available_cards[key]);
   }
 }
 
-app.get("/random-card", (req,res) => {
+// Route to get a random card
+app.get("/random-card", (req, res) => {
   let urls = Object.keys(available_cards);
   let query = "";
-  if(req.originalUrl.indexOf("?") > -1) {
+  if (req.originalUrl.indexOf("?") > -1) {
     const queryParameters = req.originalUrl.split("?")[1];
     query = `?${queryParameters}`;
   }
@@ -40,6 +44,7 @@ app.get("/random-card", (req,res) => {
   res.redirect(urls[randomIndex] + query);
 });
 
+// Starting the server
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
