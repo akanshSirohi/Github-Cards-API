@@ -42,24 +42,22 @@ You can embed one of the available cards in your README using either Markdown **
 
 Here is a list of cards that can currently be used:
 
-| Available Cards | Example | Preview |
-| --------------- | ------- | ------- |
-| `jokes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark) |
-| `programming-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card) |
-| `motivational-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card) |
-| `word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card) |
-| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card) |
-| `team-work-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card) |
-| `bhagavad-geeta-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card) |
-| `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card) |
-| `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
-| `top-tweets-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card) |
-| `spanish-quote-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)     |
-
-| `fun-fact-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark) |
-
-| `github-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)     |
-| `random-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)     |
+| Available Cards | Example |
+| --------------- | ------- |
+| `jokes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)` | 
+| `programming-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)` |
+| `motivational-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)` |
+| `word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)` |
+| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)` |
+| `team-work-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)` |
+| `bhagavad-geeta-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)` |
+| `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` |
+| `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` |
+| `top-tweets-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card)` |
+| `spanish-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)` |
+| `fun-fact-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark)` |
+| `github-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)` |
+| `random-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)` |
 
 
 ## Themes
@@ -156,6 +154,13 @@ You can also create cards in HTML and CSS! Check out the `src/cards/motivational
 3. Add your theme name to the `src/themes.js` file, placing it second-to-last in the array and ensuring the name is unique.
 4. Define your theme in `src/themes.js` (refer to existing themes for structure).
 5. Update the `src/help.js` file and the `README` with your new theme's API reference.
+
+### Contributing Guidelines
+- Ensure your code is properly formatted and follows the existing code style.
+- Ensure your code is well-commented and tested before creating a pull request.
+- Ensure your card/theme is unique and not a duplicate of an existing card/theme.
+- Ensure your card/theme is not offensive or inappropriate.
+- Do not commit package-lock.json, yarn.lock, package.json, or any other unnecessary files.
 
 ## Additional Information
 
