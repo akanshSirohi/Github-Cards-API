@@ -21,6 +21,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=dark`,
         `${baseurl}/motivational-quotes-card?theme=dark`,
         `${baseurl}/random-facts-card?theme=dark`,
+        `${baseurl}/tech-trivia-joke-card?theme=dark`,
       ],
     },
     "dark_2": {
@@ -31,6 +32,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=dark_2`,
         `${baseurl}/motivational-quotes-card?theme=dark_2`,
         `${baseurl}/random-facts-card?theme=dark_2`,
+        `${baseurl}/tech-trivia-joke-card?theme=dark_2`,
       ],
     },
     "light": {
@@ -41,6 +43,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=light`,
         `${baseurl}/motivational-quotes-card?theme=light`,
         `${baseurl}/random-facts-card?theme=light`,
+        `${baseurl}/tech-trivia-joke-card?theme=light`,
       ],
     },
     "rgb": {
@@ -51,6 +54,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=rgb`,
         `${baseurl}/motivational-quotes-card?theme=rgb`,
         `${baseurl}/random-facts-card?theme=rgb`,
+        `${baseurl}/tech-trivia-joke-card?theme=rgb`,
       ],
     },
     "pattern_1": {
@@ -61,6 +65,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=pattern_1`,
         `${baseurl}/motivational-quotes-card?theme=pattern_1`,
         `${baseurl}/random-facts-card?theme=pattern_1`,
+        `${baseurl}/tech-trivia-joke-card?theme=pattern_1`,
       ],
     },
     "pattern_2": {
@@ -71,6 +76,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=pattern_2`,
         `${baseurl}/motivational-quotes-card?theme=pattern_2`,
         `${baseurl}/random-facts-card?theme=pattern_2`,
+        `${baseurl}/tech-trivia-joke-card?theme=pattern_2`,
       ],
     },
     "pattern_3": {
@@ -81,6 +87,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=pattern_3`,
         `${baseurl}/motivational-quotes-card?theme=pattern_3`,
         `${baseurl}/random-facts-card?theme=pattern_3`,
+        `${baseurl}/tech-trivia-joke-card?theme=pattern_3`,
       ],
     },
     "lemonade": {
@@ -91,6 +98,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=lemonade`,
         `${baseurl}/motivational-quotes-card?theme=lemonade`,
         `${baseurl}/random-facts-card?theme=lemonade`,
+        `${baseurl}/tech-trivia-joke-card?theme=lemonade`,
       ],
     },
     "custom": {
@@ -112,6 +120,8 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000`,
         `${baseurl}/programming-facts-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
         `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
+        `${baseurl}/tech-trivia-joke-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
+        `${baseurl}/tech-trivia-joke-card?theme=custom&bg_color=008000&font_color=000000`,
       ],
     }
   };
