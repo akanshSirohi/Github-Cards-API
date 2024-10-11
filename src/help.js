@@ -240,6 +240,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/github-facts-card`],
       },
     },
+    "tech-trivia-joke-card": {
+      info: "Displays a random tech trivia joke card",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/tech-trivia-joke-card`],
+      },
+    },
     "random-facts-card": {
       info: "Generates a random interesting fact",
       api: {
