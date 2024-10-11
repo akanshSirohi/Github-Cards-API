@@ -17,7 +17,8 @@ const available_cards = {
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
   "/random-facts-card": require("./src/cards/random-facts"),
-  "/tech-trivia-joke-card": require("./src/cards/tech-trivia-joke-card"), // Tech Trivia Joke Card
+  "/tech-trivia-joke-card": require("./src/cards/tech-trivia-joke-card"),
+  "/fun-fact-card": require("./src/cards/fun-fact-card"),
 };
 
 app.use(express.json());
