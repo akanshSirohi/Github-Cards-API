@@ -60,6 +60,7 @@ Here is a list of cards that can currently be used:
 
 | `github-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)     |
 | `random-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)     |
+| `harry-potter-spell-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/harry-potter-spell-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/harry-potter-spell-card?theme=dark)     |
 
 
 ## Themes
