@@ -133,6 +133,10 @@ args: {
   (Limited to HTML Cards)<br>
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card?theme=techy)
 
+- #### `Neon_Horizon` Theme Card
+  (Limited to HTML Cards)<br>
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card?theme=neon_horizon)
+
 ## Contributing
 
 ### Adding a New Card
