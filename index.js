@@ -9,12 +9,14 @@ const available_cards = {
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
   "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
   "/team-work-quote-card" : require("./src/cards/team-work-quote"),
+  "/breaking-bad-quote-card" : require("./src/cards/breaking-bad-quotes"),
   "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
-  "/got-quotes-card": require("./src/cards/got-quotes")
+  "/got-quotes-card": require("./src/cards/got-quotes"),
+  "/random-facts-card": require("./src/cards/random-facts")
 };
 
 app.use(express.json());

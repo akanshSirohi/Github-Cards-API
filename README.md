@@ -55,6 +55,8 @@ Here is a list of cards that can currently be used:
 | `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
 | `top-tweets-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card) |
 | `spanish-quote-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)     |
+| `github-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)     |
+| `random-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)     |
 
 ## Themes
 
@@ -72,6 +74,10 @@ You can customize the appearance of the cards by selecting one of the following 
 8. [`pattern_3`](#pattern_3-theme-card)
 9. `random` - A random theme from those listed above will be applied
 10. `custom` - You may set your own custom arguments
+
+#### NEW HTML THEMES (LIMITED TO HTML CARDS)
+1. [`techy`](#techy-theme-card)
+2. (More coming soon...)
 
 ### Custom Arguments
 
@@ -120,6 +126,10 @@ args: {
 - #### `Pattern_3` Theme Card
 
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
+
+- #### `Techy` Theme Card
+  (Limited to HTML Cards)<br>
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card?theme=techy)
 
 ## Contributing
 
