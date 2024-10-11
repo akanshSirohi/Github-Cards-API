@@ -55,10 +55,14 @@ Here is a list of cards that can currently be used:
 | `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
 | `top-tweets-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card) |
 | `spanish-quote-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)     |
+
+| `fun-fact-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark) |
+
 | `github-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)     |
 | `random-facts-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)     |
 | `brealing-bad-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/breaking-bad-quote-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/breaking-bad-quote-card?theme=dark)     |
 | `got-quote-card`         | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/got-quotes-card?theme=dark)`     | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/got-quotes-card?theme=dark)     |
+
 
 ## Themes
 

@@ -203,7 +203,7 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/bhagavad-geeta-card`],
       },
     },
-
+    
     "programming-facts-card": {
       info: "Random programming facts card",
       api: {
@@ -213,6 +213,18 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/programming-facts-card`],
       },
     },
+
+
+    "fun-fact-card": {
+  info: "Displays a random fun fact card",
+  api: {
+    args: {
+      theme: "Theme of card. All themes. Default: light  [Optional]"
+    },
+    example: [`${baseurl}/fun-fact-card`],
+  },
+},
+
      "spanish-quote-card": {
           info: "Random spanish quote card",
           api: {
@@ -249,6 +261,7 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/random-facts`],
       },
     },
+
   };
 
   res.json({themes,cards});
