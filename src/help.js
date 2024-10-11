@@ -93,6 +93,22 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=lemonade`,
       ],
     },
+    "techy": {
+      info: "Techy theme",
+      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
+      example: [
+        `${baseurl}/programming-quotes-card?theme=techy`,
+        `${baseurl}/motivational-quotes-card?theme=techy`,
+      ],
+    },
+    "neon_horizon": {
+      info: "Neon horizon theme",
+      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
+      example: [
+        `${baseurl}/programming-quotes-card?theme=neon_horizon`,
+        `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
+      ],
+    },
     "custom": {
       info: "Custom theme",
       args: {
