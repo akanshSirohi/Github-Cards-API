@@ -101,6 +101,22 @@ router.get("/", (req, res) => {
         `${baseurl}/harry-potter-spell-card?theme=lemonade`,
       ],
     },
+    "techy": {
+      info: "Techy theme",
+      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
+      example: [
+        `${baseurl}/programming-quotes-card?theme=techy`,
+        `${baseurl}/motivational-quotes-card?theme=techy`,
+      ],
+    },
+    "neon_horizon": {
+      info: "Neon horizon theme",
+      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
+      example: [
+        `${baseurl}/programming-quotes-card?theme=neon_horizon`,
+        `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
+      ],
+    },
     "custom": {
       info: "Custom theme",
       args: {
@@ -183,6 +199,17 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/team-work-quote-card`],
       },
     },
+    
+    "got-quotes-card": {
+      info: "Generate random motivational quote related to the game of thrones.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+        },
+        example: [`${baseurl}/got-quotes-card`],
+        },
+    },
+    
     "breaking-bad-quote-card": {
       info: "Generate random motivational quote related to the breaking bad.",
       api: {
@@ -192,6 +219,7 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/breaking-bad-quote-card`],
       },
     },
+    
     "bhagavad-geeta-card": {
       info: "Generate a random quote from the bhagavad-geeta-card",
       api: {
