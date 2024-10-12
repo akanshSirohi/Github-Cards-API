@@ -25,7 +25,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
       await fs.readFile(DATA_FILE_PATH, "utf8")
     );
     const randomQuote = teamcommunicationcardsData[Math.floor(Math.random() * teamcommunicationcardsData.length)];
-    const quoteContent = `"${randomQuote.quote}"\n\nAuthor- ${randomQuote.author}`;
+    const quoteContent = `"${randomQuote.message}"\n\nscenario- ${randomQuote.scenario}`;
 
     const quoteCard = await generateCard(
       quoteContent,
