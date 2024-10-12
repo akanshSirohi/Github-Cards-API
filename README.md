@@ -64,7 +64,7 @@ Here is a list of cards that can currently be used:
 
 ## Themes
 
-### Options:wq
+### Options
 
 You can customize the appearance of the cards by selecting one of the following themes:
 
