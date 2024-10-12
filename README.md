@@ -58,6 +58,8 @@ Here is a list of cards that can currently be used:
 | `fun-fact-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark)` |
 | `github-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)` |
 | `random-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)` |
+| `breaking-bad-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/breaking-bad-quote-card?theme=dark)` |
+| `got-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/got-quotes-card?theme=dark)` |
 
 
 ## Themes

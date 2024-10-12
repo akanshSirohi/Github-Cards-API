@@ -17,6 +17,7 @@ const available_cards = {
   "/github-facts-card": require("./src/cards/github-facts"),
   "/random-facts-card": require("./src/cards/random-facts"),
   "/fun-fact-card": require("./src/cards/fun-fact-card"),
+  "/got-quotes-card": require("./src/cards/got-quotes"),
 };
 
 app.use(express.json());
