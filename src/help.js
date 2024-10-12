@@ -93,20 +93,14 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=lemonade`,
       ],
     },
-    "techy": {
-      info: "Techy theme",
-      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
+    "galaxy": {
+      info: "Galaxy theme",
       example: [
-        `${baseurl}/programming-quotes-card?theme=techy`,
-        `${baseurl}/motivational-quotes-card?theme=techy`,
-      ],
-    },
-    "neon_horizon": {
-      info: "Neon horizon theme",
-      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
-      example: [
-        `${baseurl}/programming-quotes-card?theme=neon_horizon`,
-        `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
+        `${baseurl}/jokes-card?theme=galaxy`,
+        `${baseurl}/programming-quotes-card?theme=galaxy`,
+        `${baseurl}/programming-facts-card?theme=galaxy`,
+        `${baseurl}/motivational-quotes-card?theme=galaxy`,
+        `${baseurl}/random-facts-card?theme=galaxy`,
       ],
     },
     "custom": {
@@ -207,7 +201,7 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/bhagavad-geeta-card`],
       },
     },
-    
+
     "programming-facts-card": {
       info: "Random programming facts card",
       api: {
@@ -217,18 +211,6 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/programming-facts-card`],
       },
     },
-
-
-    "fun-fact-card": {
-  info: "Displays a random fun fact card",
-  api: {
-    args: {
-      theme: "Theme of card. All themes. Default: light  [Optional]"
-    },
-    example: [`${baseurl}/fun-fact-card`],
-  },
-},
-
      "spanish-quote-card": {
           info: "Random spanish quote card",
           api: {
@@ -265,7 +247,6 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/random-facts`],
       },
     },
-
   };
 
   res.json({themes,cards});
