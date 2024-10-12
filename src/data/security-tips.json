@@ -1,0 +1,62 @@
+[
+    {
+        "index": 1,
+        "tip": "Always validate and sanitize user input to prevent SQL injection attacks."
+    },
+    {
+        "index": 2,
+        "tip": "Use parameterized queries or prepared statements when interacting with databases."
+    },
+    {
+        "index": 3,
+        "tip": "Implement proper authentication and authorization mechanisms to control access to resources."
+    },
+    {
+        "index": 4,
+        "tip": "Use HTTPS to encrypt data in transit and protect against man-in-the-middle attacks."
+    },
+    {
+        "index": 5,
+        "tip": "Never store sensitive information like passwords in plain text. Use strong hashing algorithms with salts."
+    },
+    {
+        "index": 6,
+        "tip": "Implement rate limiting to prevent brute force attacks on authentication endpoints."
+    },
+    {
+        "index": 7,
+        "tip": "Keep all software dependencies and libraries up to date to patch known vulnerabilities."
+    },
+    {
+        "index": 8,
+        "tip": "Use the principle of least privilege when assigning permissions to users and processes."
+    },
+    {
+        "index": 9,
+        "tip": "Implement proper error handling to avoid exposing sensitive information in error messages."
+    },
+    {
+        "index": 10,
+        "tip": "Use Content Security Policy (CSP) headers to mitigate cross-site scripting (XSS) attacks."
+    },
+    {
+        "index": 11,
+        "tip": "Implement multi-factor authentication (MFA) for added security on user accounts."
+    },
+    {
+        "index": 12,
+        "tip": "Use secure random number generators for cryptographic operations and session tokens."
+    },
+    {
+        "index": 13,
+        "tip": "Implement proper session management, including secure session storage and expiration."
+    },
+    {
+        "index": 14,
+        "tip": "Use security headers like X-Frame-Options and X-XSS-Protection to enhance application security."
+    },
+    {
+        "index": 15,
+        "tip": "Implement proper input validation on both client and server sides."
+    }
+]
