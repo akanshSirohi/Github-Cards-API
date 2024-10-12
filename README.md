@@ -116,6 +116,10 @@ args: {
 
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=lemonade)
 
+- #### `Galaxy` Theme Card
+
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=galaxy)
+
 - #### `Pattern_1` Theme Card
 
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_1)
