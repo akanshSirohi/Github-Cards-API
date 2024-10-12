@@ -11,6 +11,7 @@ const THEMES = [
     "pattern_3",
     "rgb",
     "lemonade",
+    "galaxy",
     "custom" // It should be in the last position always, add your theme name above this
 ];
 
@@ -97,6 +98,13 @@ const create_theme = async (ctx, canvas, theme, W) => {
             theme_obj.card_bg = "#E1E5EA";
             theme_obj.font_color = "#222";
             theme_obj.shadow = false;
+            break;
+        case "galaxy":
+            theme_obj.background = await generateGradient(GradientConstants.GALAXY, ctx, canvas, W);
+            theme_obj.card_bg = "#000"; 
+            theme_obj.font_color = "#F0F0F0"; 
+            theme_obj.shadow = true; 
+            theme_obj.shadowColor = "#8800FF"; 
             break;
 
     }
