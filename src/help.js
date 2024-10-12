@@ -117,6 +117,16 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
       ],
     },
+    "galaxy": {
+      info: "Galaxy theme",
+      example: [
+        `${baseurl}/jokes-card?theme=galaxy`,
+        `${baseurl}/programming-quotes-card?theme=galaxy`,
+        `${baseurl}/programming-facts-card?theme=galaxy`,
+        `${baseurl}/motivational-quotes-card?theme=galaxy`,
+        `${baseurl}/random-facts-card?theme=galaxy`,
+      ],
+    },
     "custom": {
       info: "Custom theme",
       args: {

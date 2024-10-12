@@ -6,7 +6,8 @@ const GradientConstants = {
     DARK_2: "dark_2",
     LIGHT: "light",
     RGB: "rgb",
-    LEMONADE: "lemonade"
+    LEMONADE: "lemonade",
+    GALAXY: "galaxy"
 };
 
 const generateGradient = async (grad_name, ctx, canvas, w) => {
@@ -51,8 +52,35 @@ const generateGradient = async (grad_name, ctx, canvas, w) => {
             background.addColorStop(0.49, "rgba(238, 219, 92, 1)"); 
             background.addColorStop(1, "rgba(249, 245, 75, 1)");
             return background;
-            
 
+        case GradientConstants.GALAXY:
+            background = ctx.createLinearGradient(
+                w / 2 - canvas.height >= 0 ? w / 2 - canvas.height : 0,
+                canvas.height / 2,
+                w / 2 + canvas.height,
+                canvas.height >= 290 ? canvas.height - 290 : 0
+            );
+
+            background.addColorStop(0, "rgba(40, 40, 100, 1)");
+            background.addColorStop(0.3, "rgba(70, 30, 100, 1)");
+            background.addColorStop(0.6, "rgba(0, 0, 0, 1)");
+            background.addColorStop(1, "rgba(20, 20, 50, 1)");
+            
+            ctx.fillStyle = background;
+            ctx.fillRect(0, 0, w, canvas.height);
+
+            for(let i = 0; i < 250; i++) {
+                let xPos = Math.random() * w;
+                let yPos = Math.random() * canvas.height;
+                let alpha = 0.5 + Math.random() * 0.5;
+                let size = Math.random() * 2;
+            
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                ctx.fillRect(xPos, yPos, size, size);
+            }
+            
+            ctx.fillStyle = `rgba(255, 255, 255, 0)`;
+            ctx.fillRect(0, 0, w, canvas.height);
     }
 };
 module.exports.GradientConstants = GradientConstants;
