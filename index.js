@@ -19,6 +19,8 @@ const available_cards = {
   "/random-facts-card": require("./src/cards/random-facts"),
   "/tech-trivia-joke-card": require("./src/cards/tech-trivia-joke-card"),
   "/fun-fact-card": require("./src/cards/fun-fact-card"),
+  "/got-quotes-card": require("./src/cards/got-quotes"),
+  "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
 };
 
 app.use(express.json());

@@ -1,0 +1,502 @@
+[
+    {
+      "index": 1,
+      "sentence": "I did not kill Joffrey, but I wish that I had! Watching your vicious bastard die gave me more relief than a thousand lying whores!",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 2,
+      "sentence": "I am your son. I have always been your son.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 3,
+      "sentence": "Never forget what you are. The rest of the world will not. Wear it like armour, and it can never be used to hurt you.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 4,
+      "sentence": "Thoros isn't here anymore, so I hope you're not about to give a sermon. Because if you are, the Lord of Light's gonna wonder why he brought you back 19 times just to watch you die when I chuck you over this fucking wall.",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 5,
+      "sentence": "I am the dragon's daughter, and I swear to you that those who would harm you will die screaming.",
+      "character": "Daenerys Targaryen"
+    },
+    {
+      "index": 6,
+      "sentence": "Fighting bravely for a losing cause is admirable. Fighting for a winning cause is far more rewarding.",
+      "character": "Jaime Lannister"
+    },
+    {
+      "index": 7,
+      "sentence": "No matter who you are, no matter how strong you are, sooner or later, you'll face circumstances beyond your control.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 8,
+      "sentence": "A Lannister always pays his debts.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 9,
+      "sentence": "You love your children. It's your one redeeming quality. That and your cheekbones.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 10,
+      "sentence": "Well, my brother has his sword, and I have my mind, and a mind needs books like a sword needs a whetstone, if it's to keep its edge.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 11,
+      "sentence": "You love your children. It's why you'll never win.",
+      "character": "Cersei Lannister"
+    },
+    {
+      "index": 12,
+      "sentence": "Tell your father I'm here. And tell him the Lannisters aren't the only ones who pay their debts.",
+      "character": "Oberyn Martell"
+    },
+    {
+      "index": 13,
+      "sentence": "All I ever wanted was to fight for a lord I believed in. But the good lords are dead and the rest are monsters.",
+      "character": "Brienne of Tarth"
+    },
+    {
+      "index": 14,
+      "sentence": "It's not easy being drunk all the time. Everyone would do it, if it were easy.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 15,
+      "sentence": "All men must die, but we are not men.",
+      "character": "Daenerys Targaryen"
+    },
+    {
+      "index": 16,
+      "sentence": "I was nothing at all. And when you're nothing at all, there's no reason to be afraid.",
+      "character": "Samwell Tarly"
+    },
+    {
+      "index": 17,
+      "sentence": "The more people you love, the weaker you are.",
+      "character": "Cersei Lannister"
+    },
+    {
+      "index": 18,
+      "sentence": "I will shield your back and keep your counsel, and give my life for yours if need be.",
+      "character": "Brienne of Tarth"
+    },
+    {
+      "index": 19,
+      "sentence": "Leave one wolf alive and the sheep are never safe.",
+      "character": "Arya Stark"
+    },
+    {
+      "index": 20,
+      "sentence": "Any man who must say 'I am the King' is no true King.",
+      "character": "Tywin Lannister"
+    },
+    {
+      "index": 21,
+      "sentence": "I have a tender spot in my heart for cripples, bastards and broken things.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 22,
+      "sentence": "Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 23,
+      "sentence": "The day will come when you think you are safe and happy, and your joy will turn to ashes in your mouth.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 24,
+      "sentence": "Power, is power",
+      "character": "Cersei Lannister"
+    },
+    {
+      "index": 25,
+      "sentence": "He's a Lannister! Maybe the lowest of the Lannisters, but he's one of us. And everyday that he remains a prisoner, the less our name commands respect.",
+      "character": "Tywin Lannister"
+    },
+    {
+      "index": 26,
+      "sentence": "You want to lead one day? Then learn how to follow",
+      "character": "Joer Mormont"
+    },
+    {
+      "index": 27,
+      "sentence": "I'm the King, I get what I want. I never loved my brothers. Sad thing for a man to admit, but it's true. You were the brother I chose.",
+      "character": "Robert Baratheon"
+    },
+    {
+      "index": 28,
+      "sentence": "'Tis a big and beautiful world. Most of us live and die in the same corner where we were born and never get to see any of it. I don't want to be most of us.",
+      "character": "Oberyn Martell"
+    },
+    {
+      "index": 29,
+      "sentence": "If you can't protect yourself, die and get out of the way of those who can. Sharp steel and strong arms rule this world, don't ever believe any different.",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 30,
+      "sentence": "It's better to be cruel than weak.",
+      "character": "Theon Greyjoy"
+    },
+    {
+      "index": 31,
+      "sentence": "I have a lot of experience in losing.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 32,
+      "sentence": "People often claim to hunger for truth, but seldom like the taste when it's served up.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 33,
+      "sentence": "Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 34,
+      "sentence": "Fear cuts deeper than swords.",
+      "character": "Arya Stark"
+    },
+    {
+      "index": 35,
+      "sentence": "Whilst Lord Janos was hiding with the women and children, Jon Snow was leading.",
+      "character": "Samwell Tarly"
+    },
+    {
+      "index": 36,
+      "sentence": "By what right does the wolf judge the lion?",
+      "character": "Jaime Lannister"
+    },
+    {
+      "index": 37,
+      "sentence": "No need to seize the last word, Lord Baelish. I'll assume it was something clever.",
+      "character": "Sansa Stark"
+    },
+    {
+      "index": 38,
+      "sentence": "The storms come and go, the big fish eat the little fish and I keep on paddling.",
+      "character": "Lord Varys"
+    },
+    {
+      "index": 39,
+      "sentence": "All this horror that has come to my family, it's all because I couldn't love a motherless child.",
+      "character": "Catelyn Stark"
+    },
+    {
+      "index": 40,
+      "sentence": "My sword is yours, in victory and defeat, from this day until my last day.",
+      "character": "Theon Greyjoy"
+    },
+    {
+      "index": 41,
+      "sentence": "I hate the king more than any of them.",
+      "character": "Sansa Stark"
+    },
+    {
+      "index": 42,
+      "sentence": "Gingers are beautiful. We've been kissed by fire.",
+      "character": "Tormund"
+    },
+    {
+      "index": 43,
+      "sentence": "Everything before the word \"but\" is horseshit.",
+      "character": "Jon Snow"
+    },
+    {
+      "index": 44,
+      "sentence": "I may not know the north, but I know men. They're more or less the same in any corner of the world and even the bravest of them don't want to see their wives and children skinned for a lost cause.",
+      "character": "Davos Seaworth"
+    },
+    {
+      "index": 45,
+      "sentence": "If I fall, don't bring me back.",
+      "character": "Jon Snow"
+    },
+    {
+      "index": 46,
+      "sentence": "I was told you were drunk, impertinent and thoroughly debauched. You can imagine my disappointment at finding nothing but a browbeaten bookkeeper.",
+      "character": "Olenna Tyrell"
+    },
+    {
+      "index": 47,
+      "sentence": "The things I do for love.",
+      "character": "Jaime Lannister"
+    },
+    {
+      "index": 48,
+      "sentence": "We are only human, and the gods have fashioned us for love. That is our great glory, and our great tragedy.",
+      "character": "Aemon Targaryen"
+    },
+    {
+      "index": 49,
+      "sentence": "Your lips are moving and you're complaining about something. That's whinging. This one's been killed six times. (points to Beric) You don't hear him bitching about it.",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 50,
+      "sentence": "The fall breaks them. And some are given a chance to climb; they cling to the real or the gods or love.",
+      "character": "Petyr Baelish"
+    },
+    {
+      "index": 51,
+      "sentence": "If another house can seize one of our own and hold him captive with impunity, we are no longer a house to be feared.",
+      "character": "Tywin Lannister"
+    },
+    {
+      "index": 52,
+      "sentence": "A man with no motive is a man no one suspects. Always keep your foes confused.",
+      "character": "Petyr Baelish"
+    },
+    {
+      "index": 53,
+      "sentence": "There are no men like me. Only me.",
+      "character": "Jaime Lannister"
+    },
+    {
+      "index": 54,
+      "sentence": "I swore a vow to the Night's Watch. If I don't take my own word seriously, what sort of \"Lord of Winterfell\" would I be?",
+      "character": "Jon Snow"
+    },
+    {
+      "index": 55,
+      "sentence": "Hold the door.",
+      "character": "Hodor"
+    },
+    {
+      "index": 56,
+      "sentence": "When the snows fall and the white winds blow, the lone wolf dies but the pack survives.",
+      "character": "Eddard \"Ned\" Stark"
+    },
+    {
+      "index": 57,
+      "sentence": "Tears aren't a woman's only weapon. The best one's between your legs.",
+      "character": "Cersei Lannister"
+    },
+    {
+      "index": 58,
+      "sentence": "If you think this has a happy ending, you haven't been paying attention.",
+      "character": "Ramsay Bolton"
+    },
+    {
+      "index": 59,
+      "sentence": "A ruler who hides behind paid executioners soon forgets what death is.",
+      "character": "Eddard \"Ned\" Stark"
+    },
+    {
+      "index": 60,
+      "sentence": "The man who passes the sentence should swing the sword.",
+      "character": "Eddard \"Ned\" Stark"
+    },
+    {
+      "index": 61,
+      "sentence": "Chaos isn't a pit. Chaos is a ladder.",
+      "character": "Petyr Baelish"
+    },
+    {
+      "index": 62,
+      "sentence": "You are being counseled at this very moment.",
+      "character": "Tywin Lannister"
+    },
+    {
+      "index": 63,
+      "sentence": "I want our baby to live. Don't let me die, Jaime. Please don't let me die.",
+      "character": "Cersei Lannister"
+    },
+    {
+      "index": 64,
+      "sentence": "Say what you will about the Targaryens, they were conquerors.",
+      "character": "Joffrey Baratheon"
+    },
+    {
+      "index": 65,
+      "sentence": "It doesn’t matter what we want. Once we get it, then we want something else.",
+      "character": "Petyr Baelish"
+    },
+    {
+      "index": 66,
+      "sentence": "I am Daenerys Stormborn of the Blood of old Valyria and I will take what is mine, with fire and blood I will take it.",
+      "character": "Daenerys Targaryen"
+    },
+    {
+      "index": 67,
+      "sentence": "When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might say.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 68,
+      "sentence": "How did a mad fucker like you live this long?",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 69,
+      "sentence": "The North remembers! We know no king but the King in the North whose name is Stark.",
+      "character": "Lyanna Mormont"
+    },
+    {
+      "index": 70,
+      "sentence": "Yes, well I suppose life is irregular.",
+      "character": "Samwell Tarly"
+    },
+    {
+      "index": 71,
+      "sentence": "There is only one war that matters. The Great War. And it is here.",
+      "character": "Jon Snow"
+    },
+    {
+      "index": 72,
+      "sentence": "Can a man still be brave if he's afraid? That is the only time a man can be brave.",
+      "character": "Bran Stark"
+    },
+    {
+      "index": 73,
+      "sentence": "Which war was won without deceit and mass murder?",
+      "character": "Daenerys Targaryen"
+    },
+    {
+      "index": 74,
+      "sentence": "A lion does not concern himself with the opinion of sheep.",
+      "character": "Tywin Lannister"
+    },
+    {
+      "index": 75,
+      "sentence": "I have always found revenge to be the purest of motivations.",
+      "character": "Petyr Baelish"
+    },
+    {
+      "index": 76,
+      "sentence": "All my life men like you have sneered at me, and all my life I've been knocking men like you into the dust.",
+      "character": "Brienne of Tarth"
+    },
+    {
+      "index": 77,
+      "sentence": "Thousands of men don't need to die. Only one of us. Let's end this the old way. You against me.",
+      "character": "Jon Snow"
+    },
+    {
+      "index": 78,
+      "sentence": "I'm guilty of being a dwarf.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 79,
+      "sentence": "We don't have time for all this. The Night King has your dragon. He's one of them now. The Wall has fallen. The dead march south.",
+      "character": "Bran Stark"
+    },
+    {
+      "index": 80,
+      "sentence": "The freedom to make my own mistakes was all I ever wanted.",
+      "character": "Mance Rayder"
+    },
+    {
+      "index": 81,
+      "sentence": "Burn them all!",
+      "character": "Aerys II Targaryen"
+    },
+    {
+      "index": 82,
+      "sentence": "If you ever call me sister again, I'll have you strangled in your sleep.",
+      "character": "Cersei Lannister"
+    },
+    {
+      "index": 83,
+      "sentence": "You're a dragon. Be a dragon.",
+      "character": "Olenna Tyrell"
+    },
+    {
+      "index": 84,
+      "sentence": "The war is not over. And I promise you, friend, the true enemy won't wait out the storm. He brings the storm.",
+      "character": "Jon Snow"
+    },
+    {
+      "index": 85,
+      "sentence": "A hound will die for you, but never lie to you.",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 86,
+      "sentence": "He was no dragon. Fire cannot kill a dragon.",
+      "character": "Daenerys Targaryen"
+    },
+    {
+      "index": 87,
+      "sentence": "It's always seemed there was an impossible choice I had to make...Stark or Greyjoy.",
+      "character": "Theon Greyjoy"
+    },
+    {
+      "index": 88,
+      "sentence": "You're shit at dying you know that?.",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 89,
+      "sentence": "Hate's as good a thing as any to keep a person going. Better than most. We come across my brother, maybe we can both cross a name off our list.",
+      "character": "Sandor Clegane"
+    },
+    {
+      "index": 90,
+      "sentence": "I wish I was the monster you think I am! I wish I had enough poison for the whole pack of you! I would gladly give my life to watch you all swallow it!",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 91,
+      "sentence": "That bit of theatre will haunt our family for a generation.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 92,
+      "sentence": "Laughter is poison to fear.",
+      "character": "Catelyn Stark"
+    },
+    {
+      "index": 93,
+      "sentence": "But sometimes before we can usher in the new, the old must be put to rest.",
+      "character": "Qyburn"
+    },
+    {
+      "index": 94,
+      "sentence": "Everyone who makes a joke about a dwarf's height thinks he's the only person ever to make a joke about a dwarf's height.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 95,
+      "sentence": "I'm a constant disappointment to my own father, and I have learned to live with it.",
+      "character": "Tyrion Lannister"
+    },
+    {
+      "index": 96,
+      "sentence": "When the snows fall and the white winds blow, the lone wolf dies, but the pack survives.",
+      "character": "Sansa Stark"
+    },
+    {
+      "index": 97,
+      "sentence": "It doesn't matter what we want. Once we get it, then we want something else.",
+      "character": "Petyr Baelish"
+    },
+    {
+      "index": 98,
+      "sentence": "When people ask you what happened here, tell them the North remembers. Tell them winter came for House Frey.",
+      "character": "Arya Stark"
+    },
+    {
+      "index": 99,
+      "sentence": "Everyone is mine to torment.",
+      "character": "Joffrey Baratheon"
+    },
+    {
+      "index": 100,
+      "sentence": "The night is dark and full of terrors.",
+      "character": "Melisandre"
+    }
+  ]

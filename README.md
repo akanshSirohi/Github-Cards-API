@@ -59,8 +59,9 @@ Here is a list of cards that can currently be used:
 | `github-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)` |
 | `random-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)` |
 | `tech-trivia-joke-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/tech-trivia-joke-card?theme=dark)` |
-
-
+| `harry-potter-spell-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/harry-potter-spell-card?theme=dark)` |
+| `breaking-bad-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/breaking-bad-quote-card?theme=dark)` |
+| `got-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/got-quotes-card?theme=dark)` |
 
 ## Themes
 
@@ -134,6 +135,10 @@ args: {
 - #### `Techy` Theme Card
   (Limited to HTML Cards)<br>
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card?theme=techy)
+
+- #### `Neon_Horizon` Theme Card
+  (Limited to HTML Cards)<br>
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card?theme=neon_horizon)
 
 ## Contributing
 
