@@ -81,7 +81,8 @@ You can customize the appearance of the cards by selecting one of the following 
 
 #### NEW HTML THEMES (LIMITED TO HTML CARDS)
 1. [`techy`](#techy-theme-card)
-2. (More coming soon...)
+2. [`neon_horizon`](#neon_horizon-theme-card)
+3. (More coming soon...)
 
 ### Custom Arguments
 
