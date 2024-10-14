@@ -22,6 +22,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=dark`,
         `${baseurl}/random-facts-card?theme=dark`,
         `${baseurl}/harry-potter-spell-card?theme=dark`,
+        `${baseurl}/team-communication-cards?theme=dark`,
       ],
     },
     "dark_2": {
@@ -33,6 +34,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=dark_2`,
         `${baseurl}/random-facts-card?theme=dark_2`,
         `${baseurl}/harry-potter-spell-card?theme=dark_2`,
+        `${baseurl}/team-communication-cards?theme=dark_2`,
       ],
     },
     "light": {
@@ -44,6 +46,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=light`,
         `${baseurl}/random-facts-card?theme=light`,
         `${baseurl}/harry-potter-spell-card?theme=light`,
+        `${baseurl}/team-communication-cards?theme=light`,
       ],
     },
     "rgb": {
@@ -55,6 +58,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=rgb`,
         `${baseurl}/random-facts-card?theme=rgb`,
         `${baseurl}/harry-potter-spell-card?theme=rgb`,
+        `${baseurl}/team-communication-cards?theme=rgb`,
       ],
     },
     "pattern_1": {
@@ -66,6 +70,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=pattern_1`,
         `${baseurl}/random-facts-card?theme=pattern_1`,
         `${baseurl}/harry-potter-spell-card?theme=pattern_1`,
+        `${baseurl}/team-communication-cards?theme=pattern_1`,
       ],
     },
     "pattern_2": {
@@ -77,6 +82,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=pattern_2`,
         `${baseurl}/random-facts-card?theme=pattern_2`,
         `${baseurl}/harry-potter-spell-card?theme=pattern_2`,
+        `${baseurl}/team-communication-cards?theme=pattern_2`,
       ],
     },
     "pattern_3": {
@@ -88,6 +94,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=pattern_3`,
         `${baseurl}/random-facts-card?theme=pattern_3`,
         `${baseurl}/harry-potter-spell-card?theme=pattern_3`,
+        `${baseurl}/team-communication-cards?theme=pattern_3`,
       ],
     },
     "lemonade": {
@@ -99,6 +106,7 @@ router.get("/", (req, res) => {
         `${baseurl}/motivational-quotes-card?theme=lemonade`,
         `${baseurl}/random-facts-card?theme=lemonade`,
         `${baseurl}/harry-potter-spell-card?theme=lemonade`,
+        `${baseurl}/team-communication-cards?theme=lemonade`,
       ],
     },
     "techy": {
@@ -147,6 +155,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
         `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
         `${baseurl}/harry-potter-spell-card?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
+        `${baseurl}/team-communication-cards?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
 
       ],
     }
@@ -302,6 +311,15 @@ router.get("/", (req, res) => {
       api: {
         args: {
           theme: "Theme of a card. All themes. Default: darrk [Optional]"
+        },
+        example: [`${baseurl}/harry-potter-spell-card`]
+      },
+    },
+    "team-communication-cards": {
+      info: "Team Communication Message Card",
+      api: {
+        args: {
+          theme: "Displays professional team messages for different scenarios [Optional]"
         },
         example: [`${baseurl}/harry-potter-spell-card`]
       },
