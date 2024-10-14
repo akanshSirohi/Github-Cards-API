@@ -1,53 +1,92 @@
 # Github-Cards-Api
 
-### How to use
+## Table of Contents
 
-Visit endpoint url for all available cards and available options for each card <br/>
-Endpoint URL: `https://afraid-ninnetta-github-cards.koyeb.app`
+- [Github-Cards-Api](#github-cards-api)
+  - [Table of Contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Using Markdown](#using-markdown)
+    - [Using HTML](#using-html)
+  - [Available Cards](#available-cards)
+  - [Themes](#themes)
+    - [Options](#options)
+    - [Custom Arguments](#custom-arguments)
+    - [Examples](#examples)
+  - [Contributing](#contributing)
+    - [Adding a New Card](#adding-a-new-card)
+    - [Adding a New Theme](#adding-a-new-theme)
+  - [Additional Information](#additional-information)
 
-Embed one of these in your README:
+## Usage
+
+Visit the following endpoint URL for **all available cards and their respective options**:  
+[`https://afraid-ninnetta-github-cards.koyeb.app/`](https://afraid-ninnetta-github-cards.koyeb.app/)
+
+You can embed one of the available cards in your README using either Markdown **OR** HTML:
+
+### Using Markdown
 
 ```md
 <!-- Markdown -->
-
 ![Card](https://afraid-ninnetta-github-cards.koyeb.app/any_card_name)
 ```
 
-<h3 align="center">OR</h3>
+### Using HTML
 
 ```html
 <!-- HTML -->
 <img src="https://afraid-ninnetta-github-cards.koyeb.app/any_card_name" alt="Card" />
 ```
 
-### List of card names currently available
+## Available Cards
 
-| Available Cards | Example | Preview |
-| --------------- | ------- | ------- |
-| `jokes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark) |
-| `programming-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card) |
-| `motivational-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card) |
-| `word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card) |
-| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card) |
-| `team-work-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card) |
-| `bhagavad-geeta-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card) |
-| `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card) |
-| `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` | ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark) |
+Here is a list of cards that can currently be used:
 
-### Available Themes List
+| Available Cards | Example |
+| --------------- | ------- |
+| `jokes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)` | 
+| `programming-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card)` |
+| `motivational-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card)` |
+| `word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/word-of-the-day-card)` |
+| `challenge-of-the-week-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/challenge-of-the-week-card)` |
+| `team-work-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/team-work-quote-card)` |
+| `bhagavad-geeta-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/bhagavad-geeta-card)` |
+| `random-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-card)` |
+| `programming-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-facts-card?theme=dark)` |
+| `top-tweets-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/top-tweets-card)` |
+| `spanish-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/spanish-quote-card?theme=dark)` |
+| `fun-fact-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/fun-fact-card?theme=dark)` |
+| `github-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/github-facts-card?theme=dark)` |
+| `random-facts-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/random-facts-card?theme=dark)` |
+| `harry-potter-spell-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/harry-potter-spell-card?theme=dark)` |
+| `breaking-bad-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/breaking-bad-quote-card?theme=dark)` |
+| `got-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/got-quotes-card?theme=dark)` |
 
-1. light
-2. dark
-3. dark_2
-4. rgb
-5. lemonade
-6. pattern_1
-7. pattern_2
-8. pattern_3
-9. random - Any random theme will we applied
-10. custom - You can set your custom arguments
+## Themes
 
-## Custom Theme Arguments
+### Options
+
+You can customize the appearance of the cards by selecting one of the following themes:
+
+1. [`light`](#light-theme-card)
+2. [`dark`](#dark-theme-card)
+3. [`dark_2`](#dark_2-theme-card)
+4. [`rgb`](#rgb-theme-card)
+5. [`lemonade`](#lemonade-theme-card)
+6. [`pattern_1`](#pattern_1-theme-card)
+7. [`pattern_2`](#pattern_2-theme-card)
+8. [`pattern_3`](#pattern_3-theme-card)
+9. `random` - A random theme from those listed above will be applied
+10. `custom` - You may set your own custom arguments
+
+#### NEW HTML THEMES (LIMITED TO HTML CARDS)
+1. [`techy`](#techy-theme-card)
+2. [`neon_horizon`](#neon_horizon-theme-card)
+3. (More coming soon...)
+
+### Custom Arguments
+
+If you choose the `custom` theme, you can configure the card with the following arguments:
 
 ```JS
 args: {
@@ -59,56 +98,81 @@ args: {
 },
 ```
 
-## Themes Example
+### Examples
 
-- Light Theme Card <br/>
+- #### `Light` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=light)
 
-- Dark Theme Card <br/>
+- #### `Dark` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark)
 
-- Dark_2 Theme Card <br/>
+- #### `Dark_2` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=dark_2)
 
-- Rgb Theme Card <br/>
+- #### `Rgb` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=rgb)
 
-- Lemonade Theme Card <br/>
+- #### `Lemonade` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=lemonade)
 
-- Pattern_1 Theme Card <br/>
+- #### `Galaxy` Theme Card
+
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=galaxy)
+
+- #### `Pattern_1` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_1)
 
-- Pattern_2 Theme Card <br/>
+- #### `Pattern_2` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_2)
 
-- Pattern_3 Theme Card <br/>
+- #### `Pattern_3` Theme Card
+
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
 
-## For More Visit
+- #### `Techy` Theme Card
+  (Limited to HTML Cards)<br>
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/motivational-quotes-card?theme=techy)
 
-[https://afraid-ninnetta-github-cards.koyeb.app/](https://afraid-ninnetta-github-cards.koyeb.app/)
+- #### `Neon_Horizon` Theme Card
+  (Limited to HTML Cards)<br>
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/programming-quotes-card?theme=neon_horizon)
 
-## How to contribute
+## Contributing
 
-### Add new card
-
-1. Fork this repository.
-2. Add your card in `src/cards` directory, you can take the refrence from already added cards.
-3. Add any data file inside data directory that your card will use. (Languages Support: Hindi & English)
-4. Add route of your card in `index.js` file.
-5. Add your card api refrence inside in `src/help.js` file and also in README.md file.
-6. Create pull request.
-7. Data file must have around 100 entries minimum.
-8. You can create cards in HTML and CSS too! Check out the `src/cards/motivational-quote.js` file to see how you can generate cards with your own unique styles. This project uses Satori to generate cards via HTML, so please refer to the official Satori documentation for the supported CSS properties.
-
-### Add new theme
+### Adding a New Card
 
 1. Fork this repository.
-2. If you want to add gradient background then add your gradient code in `src/gradients.js` file.
-   > Take refrence from already added gradients.
-3. Add your theme name in the `src/themes.js` file.
-   > Theme name should be unique and should be in the second last position of the array.
-4. Create your theme in `src/themes.js` file.
-   > Take refrence from already added themes.
-5. Add your theme api refrence inside in `src/help.js` file and also in `README.md` file.
+2. Add your card in the `src/cards` directory. You can refer to the existing cards for guidance.
+3. If your card needs data, add a file inside the `data` directory (supported languages: English and Hindi).
+4. Add a route for your card in the `index.js` file.
+5. Update the `src/help.js` file and the `README` with your new card's API reference.
+6. Create a pull request.
+7. Ensure your data file has at least around 100 entries.
+
+You can also create cards in HTML and CSS! Check out the `src/cards/motivational-quote.js` file to see how cards are generated with unique styles using HTML and Satori. Refer to the official Satori documentation [here](https://github.com/vercel/satori?tab=readme-ov-file#documentation) for supported CSS properties.
+
+### Adding a New Theme
+
+1. Fork this repository.
+2. If you want to add a gradient background, add your gradient code in `src/gradients.js` (refer to the existing gradients).
+3. Add your theme name to the `src/themes.js` file, placing it second-to-last in the array and ensuring the name is unique.
+4. Define your theme in `src/themes.js` (refer to existing themes for structure).
+5. Update the `src/help.js` file and the `README` with your new theme's API reference.
+
+### Contributing Guidelines
+- Ensure your code is properly formatted and follows the existing code style.
+- Ensure your code is well-commented and tested before creating a pull request.
+- Ensure your card/theme is unique and not a duplicate of an existing card/theme.
+- Ensure your card/theme is not offensive or inappropriate.
+- Do not commit package-lock.json, yarn.lock, package.json, or any other unnecessary files.
+
+## Additional Information
+
+For more information, visit [https://afraid-ninnetta-github-cards.koyeb.app/](https://afraid-ninnetta-github-cards.koyeb.app/).

@@ -1,0 +1,782 @@
+[
+  {
+    "index": 1,
+    "type": "single",
+    "joke": "¿Qué le dice una iguana a su hermana gemela? Somos iguanitas."
+  },
+  {
+    "index": 2,
+    "type": "single",
+    "joke": "¿Cómo se despiden los químicos? Ácido un placer."
+  },
+  {
+    "index": 3,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los pájaros no usan Facebook?",
+      "a": "Porque ya tienen Twitter."
+    }
+  },
+  {
+    "index": 4,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace una abeja en el gimnasio?",
+      "a": "Zum-ba."
+    }
+  },
+  {
+    "index": 5,
+    "type": "single",
+    "joke": "Mi ordenador me gana al ajedrez, pero yo le gano al fútbol."
+  },
+  {
+    "index": 6,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice una impresora a otra?",
+      "a": "¿Esa hoja es tuya o es una impresión mía?"
+    }
+  },
+  {
+    "index": 7,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo maldice un pollito a otro pollito?",
+      "a": "¡Caldo seas!"
+    }
+  },
+  {
+    "index": 8,
+    "type": "single",
+    "joke": "¿Qué hace una rata con una ametralladora? ¡Ratatatatatatata!"
+  },
+  {
+    "index": 9,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los esqueletos no pelean entre sí?",
+      "a": "Porque no tienen agallas."
+    }
+  },
+  {
+    "index": 10,
+    "type": "single",
+    "joke": "¿Cómo se llama el pez que cayó en un hechizo? ¡Mojarra mágica!"
+  },
+  {
+    "index": 11,
+    "type": "single",
+    "joke": "¿Qué hace una abeja en la computadora? Zumbido de datos."
+  },
+  {
+    "index": 12,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué el libro de matemáticas estaba triste?",
+      "a": "Porque tenía demasiados problemas."
+    }
+  },
+  {
+    "index": 13,
+    "type": "single",
+    "joke": "No confíes en los átomos, ¡ellos lo componen todo!"
+  },
+  {
+    "index": 14,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace una pelota en el gimnasio?",
+      "a": "¡Se entrena!"
+    }
+  },
+  {
+    "index": 15,
+    "type": "single",
+    "joke": "¿Qué le dice un semáforo a otro? ¡No me mires, me estoy cambiando!"
+  },
+  {
+    "index": 16,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué las bicicletas no pueden pararse solas?",
+      "a": "Porque están dos cansadas."
+    }
+  },
+  {
+    "index": 17,
+    "type": "single",
+    "joke": "Me preguntaron si sé alguna palabra más corta que “corto”, y les dije: ¡sí!"
+  },
+  {
+    "index": 18,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dijo el lápiz al papel?",
+      "a": "Tengo una buena punta para ti."
+    }
+  },
+  {
+    "index": 19,
+    "type": "single",
+    "joke": "El tiempo vuela... ¡cuando lanzas un reloj!"
+  },
+  {
+    "index": 20,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué las vacas no usan computadoras?",
+      "a": "Porque les da miedo el mouse."
+    }
+  },
+  {
+    "index": 21,
+    "type": "single",
+    "joke": "¿Qué hace un perro con un taladro? ¡Perfora!"
+  },
+  {
+    "index": 22,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué el espagueti fue a la fiesta?",
+      "a": "Porque estaba hecho un fideo."
+    }
+  },
+  {
+    "index": 23,
+    "type": "single",
+    "joke": "El fútbol no es lo mismo desde que los balones tienen complejo de hinchazón."
+  },
+  {
+    "index": 24,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo se despiden los gatos?",
+      "a": "Hasta maullido."
+    }
+  },
+  {
+    "index": 25,
+    "type": "single",
+    "joke": "Los camarones nunca comparten, siempre son egoístas."
+  },
+  {
+    "index": 26,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace una mosca cuando sale del bar?",
+      "a": "Se va volando."
+    }
+  },
+  {
+    "index": 27,
+    "type": "single",
+    "joke": "Mi televisor tiene dos canales, uno es aburrido y el otro no funciona."
+  },
+  {
+    "index": 28,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué no juega póker el tomate?",
+      "a": "Porque siempre se salsa."
+    }
+  },
+  {
+    "index": 29,
+    "type": "single",
+    "joke": "¿Cómo llama un matemático a una escalera? Un conjunto ordenado de peldaños."
+  },
+  {
+    "index": 30,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un pato a otro?",
+      "a": "Estamos en el mismo lago."
+    }
+  },
+  {
+    "index": 31,
+    "type": "single",
+    "joke": "No confío en los elevadores, están llenos de altibajos."
+  },
+  {
+    "index": 32,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué el café nunca choca las cinco?",
+      "a": "Porque siempre está descafeinado."
+    }
+  },
+  {
+    "index": 33,
+    "type": "single",
+    "joke": "No me gusta la escalera de caracol, me da vueltas la cabeza."
+  },
+  {
+    "index": 34,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un libro a otro?",
+      "a": "Tengo mucho que contarte."
+    }
+  },
+  {
+    "index": 35,
+    "type": "single",
+    "joke": "Me compré una calculadora solar, pero solo funciona de día."
+  },
+  {
+    "index": 36,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué el pollo cruzó el campo de fútbol?",
+      "a": "Para llegar al otro equipo."
+    }
+  },
+  {
+    "index": 37,
+    "type": "single",
+    "joke": "El sol no sabe hacer bromas, siempre es muy brillante."
+  },
+  {
+    "index": 38,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo se siente un reloj en el gimnasio?",
+      "a": "Muy ajustado."
+    }
+  },
+  {
+    "index": 39,
+    "type": "single",
+    "joke": "¿Por qué el queso se estresó? Porque estaba bajo presión."
+  },
+  {
+    "index": 40,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué dice el reloj cuando va rápido?",
+      "a": "¡Tic, tac, te alcanzo!"
+    }
+  },
+  {
+    "index": 41,
+    "type": "single",
+    "joke": "¿Cómo organizan una fiesta los astronautas? ¡Lo hacen a lo grande!"
+  },
+  {
+    "index": 42,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un tornillo al otro?",
+      "a": "Voy a darte una vuelta."
+    }
+  },
+  {
+    "index": 43,
+    "type": "single",
+    "joke": "Los relojes no se estresan, porque siempre tienen tiempo."
+  },
+  {
+    "index": 44,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo llama un carpintero a su perro?",
+      "a": "Talo."
+    }
+  },
+  {
+    "index": 45,
+    "type": "single",
+    "joke": "¿Por qué las ovejas no hacen ruido en la peluquería? Porque son muy educadas."
+  },
+  {
+    "index": 46,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice una moneda a otra?",
+      "a": "Estamos bien juntos, aunque de bajo valor."
+    }
+  },
+  {
+    "index": 47,
+    "type": "single",
+    "joke": "No confío en las estufas, tienen demasiada chispa."
+  },
+  {
+    "index": 48,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace un elefante con una computadora?",
+      "a": "Guarda todo en su memoria."
+    }
+  },
+  {
+    "index": 49,
+    "type": "single",
+    "joke": "¿Qué hace una ventana triste? ¡Se empaña!"
+  },
+  {
+    "index": 50,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dijo una sartén a la otra?",
+      "a": "¡Tienes una buena base!"
+    }
+  },
+  {
+    "index": 51,
+    "type": "single",
+    "joke": "¿Cómo llaman a una computadora que no puede dejar de cantar? Un microcantante."
+  },
+  {
+    "index": 52,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué las naranjas nunca se pierden?",
+      "a": "Porque siempre encuentran el jugo."
+    }
+  },
+  {
+    "index": 53,
+    "type": "single",
+    "joke": "Me encantan los espejos, siempre me dan una buena reflexión."
+  },
+  {
+    "index": 54,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dijo una flor a otra?",
+      "a": "¡Hueles increíble!"
+    }
+  },
+  {
+    "index": 55,
+    "type": "single",
+    "joke": "El café no puede mentir, siempre es claro."
+  },
+  {
+    "index": 56,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo llaman los robots a sus padres?",
+      "a": "Robo-padres."
+    }
+  },
+  {
+    "index": 57,
+    "type": "single",
+    "joke": "¿Por qué los peces nunca van a la escuela? Porque ya lo saben todo."
+  },
+  {
+    "index": 58,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué dice una nube a otra?",
+      "a": "Vamos a juntarnos para hacer algo grande."
+    }
+  },
+  {
+    "index": 59,
+    "type": "single",
+    "joke": "El lápiz tenía problemas, pero siempre lo borraba todo."
+  },
+  {
+    "index": 60,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué el aire nunca va a fiestas?",
+      "a": "Porque siempre lo ignoran."
+    }
+  },
+  {
+    "index": 61,
+    "type": "single",
+    "joke": "Mi paraguas es muy educado, siempre se abre cuando es necesario."
+  },
+  {
+    "index": 62,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los limones no juegan al ajedrez?",
+      "a": "Porque siempre se amargan."
+    }
+  },
+  {
+    "index": 63,
+    "type": "single",
+    "joke": "Los lápices son geniales, siempre tienen buenas ideas en mente."
+  },
+  {
+    "index": 64,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué el pan siempre es tan popular?",
+      "a": "Porque es muy enrollado."
+    }
+  },
+  {
+    "index": 65,
+    "type": "single",
+    "joke": "Me gusta el queso, porque siempre es tan cremoso."
+  },
+  {
+    "index": 66,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué la escoba siempre está cansada?",
+      "a": "Porque barre todo el día."
+    }
+  },
+  {
+    "index": 67,
+    "type": "single",
+    "joke": "Mi guitarra es muy dramática, siempre está en tensión."
+  },
+  {
+    "index": 68,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los relojes siempre están ocupados?",
+      "a": "Porque tienen muchas manecillas."
+    }
+  },
+  {
+    "index": 69,
+    "type": "single",
+    "joke": "Las llaves son muy abiertas, siempre encuentran la salida."
+  },
+  {
+    "index": 70,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice una chaqueta a otra?",
+      "a": "¡Estamos en el mismo armario!"
+    }
+  },
+  {
+    "index": 71,
+    "type": "single",
+    "joke": "Me gustan las escaleras, siempre van hacia arriba."
+  },
+  {
+    "index": 72,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué las puertas son buenas amigas?",
+      "a": "Porque siempre te abren oportunidades."
+    }
+  },
+  {
+    "index": 73,
+    "type": "single",
+    "joke": "El panadero tiene muchas levaduras, siempre está creciendo."
+  },
+  {
+    "index": 74,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo se llama el árbol que sabe chistes?",
+      "a": "El árbol bromista."
+    }
+  },
+  {
+    "index": 75,
+    "type": "single",
+    "joke": "Los plátanos nunca se enojan, siempre son muy tranquilos."
+  },
+  {
+    "index": 76,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace una radio en la cocina?",
+      "a": "Escucha mientras cocinas."
+    }
+  },
+  {
+    "index": 77,
+    "type": "single",
+    "joke": "Los tomates son buenos en matemáticas, siempre suman."
+  },
+  {
+    "index": 78,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo llama un jardinero a su pájaro?",
+      "a": "Floriposa."
+    }
+  },
+  {
+    "index": 79,
+    "type": "single",
+    "joke": "El tren siempre tiene buenos amigos, ¡siempre está bien acompañado!"
+  },
+  {
+    "index": 80,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los relojes no mienten?",
+      "a": "Porque siempre son puntuales."
+    }
+  },
+  {
+    "index": 81,
+    "type": "single",
+    "joke": "El planeta Tierra tiene buen sentido del humor, ¡es todo un mundo!"
+  },
+  {
+    "index": 82,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un pescado a otro?",
+      "a": "Nada, nada."
+    }
+  },
+  {
+    "index": 83,
+    "type": "single",
+    "joke": "Mi gato no es muy sociable, ¡siempre está entre sus patas!"
+  },
+  {
+    "index": 84,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué las estrellas no tienen novio?",
+      "a": "Porque ya tienen mucho brillo."
+    }
+  },
+  {
+    "index": 85,
+    "type": "single",
+    "joke": "El calendario siempre está lleno de citas."
+  },
+  {
+    "index": 86,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los lápices no usan teléfonos?",
+      "a": "Porque siempre se quedan sin puntos."
+    }
+  },
+  {
+    "index": 87,
+    "type": "single",
+    "joke": "El reloj es muy puntual, siempre está a tiempo."
+  },
+  {
+    "index": 88,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice el chocolate al azúcar?",
+      "a": "Somos muy dulces juntos."
+    }
+  },
+  {
+    "index": 89,
+    "type": "single",
+    "joke": "Mi cama siempre está cansada, pero yo nunca."
+  },
+  {
+    "index": 90,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los helados no hablan?",
+      "a": "Porque siempre se derriten."
+    }
+  },
+  {
+    "index": 91,
+    "type": "single",
+    "joke": "Mi teléfono tiene muchos amigos, siempre está en línea."
+  },
+  {
+    "index": 92,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo llama el mar a su amigo?",
+      "a": "¡Ola, ola!"
+    }
+  },
+  {
+    "index": 93,
+    "type": "single",
+    "joke": "Los paraguas siempre tienen algo sobre sus cabezas."
+  },
+  {
+    "index": 94,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un pez a otro?",
+      "a": "Sigue nadando."
+    }
+  },
+  {
+    "index": 95,
+    "type": "single",
+    "joke": "El pastel está siempre muy dulce, ¡es el favorito en las fiestas!"
+  },
+  {
+    "index": 96,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice una nube a otra?",
+      "a": "Nos vemos en la tormenta."
+    }
+  },
+  {
+    "index": 97,
+    "type": "single",
+    "joke": "El piano siempre está afinado, ¡es música para los oídos!"
+  },
+  {
+    "index": 98,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un faro a otro?",
+      "a": "¡Te veo desde lejos!"
+    }
+  },
+  {
+    "index": 99,
+    "type": "single",
+    "joke": "El ventilador es muy refrescante, ¡siempre mantiene la calma!"
+  },
+  {
+    "index": 100,
+    "type": "double",
+    "joke": {
+      "q": "¿Cómo se siente un refrigerador?",
+      "a": "Siempre está enfriado."
+    }
+  },
+  {
+    "index": 101,
+    "type": "single",
+    "joke": "La radio es muy habladora, siempre está en sintonía."
+  },
+  {
+    "index": 102,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué hace una campana en el gimnasio?",
+      "a": "Se toca todo el tiempo."
+    }
+  },
+  {
+    "index": 103,
+    "type": "single",
+    "joke": "Las estrellas siempre tienen sueños brillantes."
+  },
+  {
+    "index": 104,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un tren a otro?",
+      "a": "Nos encontramos en la próxima estación."
+    }
+  },
+  {
+    "index": 105,
+    "type": "single",
+    "joke": "El avión siempre está volando alto."
+  },
+  {
+    "index": 106,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice el viento al árbol?",
+      "a": "¡No te muevas tanto!"
+    }
+  },
+  {
+    "index": 107,
+    "type": "single",
+    "joke": "Mi guitarra es muy optimista, siempre tiene una cuerda positiva."
+  },
+  {
+    "index": 108,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los relojes siempre tienen prisa?",
+      "a": "Porque el tiempo vuela."
+    }
+  },
+  {
+    "index": 109,
+    "type": "single",
+    "joke": "El viento siempre está en movimiento, ¡nunca se queda quieto!"
+  },
+  {
+    "index": 110,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un zapato a otro?",
+      "a": "¡Vamos juntos!"
+    }
+  },
+  {
+    "index": 111,
+    "type": "single",
+    "joke": "El gato es muy misterioso, ¡siempre se esconde!"
+  },
+  {
+    "index": 112,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un avión a otro?",
+      "a": "Nos vemos en el cielo."
+    }
+  },
+  {
+    "index": 113,
+    "type": "single",
+    "joke": "Mi bicicleta siempre tiene buen ritmo, ¡nunca pierde el equilibrio!"
+  },
+  {
+    "index": 114,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué las hormigas no usan teléfono?",
+      "a": "Porque siempre están ocupadas."
+    }
+  },
+  {
+    "index": 115,
+    "type": "single",
+    "joke": "El agua siempre sigue fluyendo, ¡nunca se detiene!"
+  },
+  {
+    "index": 116,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice una bicicleta a otra?",
+      "a": "¡Pedaleemos juntas!"
+    }
+  },
+  {
+    "index": 117,
+    "type": "single",
+    "joke": "El hielo es muy frío, pero siempre mantiene la calma."
+  },
+  {
+    "index": 118,
+    "type": "double",
+    "joke": {
+      "q": "¿Qué le dice un farol a otro?",
+      "a": "¡Siempre alumbramos el camino!"
+    }
+  },
+  {
+    "index": 119,
+    "type": "single",
+    "joke": "Los aviones siempre están volando alto."
+  },
+  {
+    "index": 120,
+    "type": "double",
+    "joke": {
+      "q": "¿Por qué los trenes nunca se cansan?",
+      "a": "Porque siempre están en marcha."
+    }
+  }
+]

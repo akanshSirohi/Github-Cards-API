@@ -8,6 +8,7 @@ const {
   Languages,
 } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
+const { HTML_THEMES } = require("../html-themes");
 
 const DATA_FILE_PATH = "./src/data/motivational_quotes.json";
 const DEFAULT_THEME = "dark_2";
@@ -30,6 +31,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
     const random_quote = quotes[Math.floor(Math.random() * quotes.length)];
 
     let quote_card;
+    let all_html_themes = Object.keys(HTML_THEMES);
 
     // Custom theme moderation
     if (req.theme === "skeleton") {
@@ -54,6 +56,10 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
     `;
       // Generate card using custom HTML
       quote_card = await generateHTMLCard(html_content, Languages.ENGLISH);
+    }else if(all_html_themes.includes(req.theme.toUpperCase())) {
+      // Generate card using the HTML theme
+      let html_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
+      quote_card = await generateHTMLCard(html_content, Languages.ENGLISH, HTML_THEMES[req.theme.toUpperCase()]);
     } else {
       const quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
       quote_card = await generateCard(
