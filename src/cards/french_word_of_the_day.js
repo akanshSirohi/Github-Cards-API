@@ -1,9 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
+const { generateCard,  Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
 
+ const CARD_AGE=86400;
+ 
 const DATA_FILE_PATH = "./src/data/french_word_of_the_day.json";
 const DEFAULT_THEME = "light";
 
