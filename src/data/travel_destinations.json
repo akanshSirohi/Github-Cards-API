@@ -177,7 +177,7 @@
   {
     "index": 35,
     "destination": "Krakow, Poland",
-    "fact": "Krakow’s Main Square is the largest medieval town square in Europe, covering about 40,000 square meters."
+    "fact": "Krakow's Main Square is the largest medieval town square in Europe, covering about 40,000 square meters."
   },
   {
     "index": 36,
@@ -222,7 +222,7 @@
   {
     "index": 44,
     "destination": "Tallinn, Estonia",
-    "fact": "Tallinn’s Old Town is a UNESCO World Heritage Site, famous for its medieval architecture and cobblestone streets."
+    "fact": "Tallinn's Old Town is a UNESCO World Heritage Site, famous for its medieval architecture and cobblestone streets."
   },
   {
     "index": 45,
@@ -243,5 +243,265 @@
     "index": 48,
     "destination": "Copenhagen, Denmark",
     "fact": "Copenhagen is known for its bike culture, with over 50% of its residents commuting to work or school by bicycle."
+  },
+  {
+    "index": 49,
+    "destination": "Cusco, Peru",
+    "fact": "Cusco was once the capital of the Inca Empire and sits at an elevation of 3,399 meters (11,152 feet) above sea level."
+  },
+  {
+    "index": 50,
+    "destination": "Queenstown, New Zealand",
+    "fact": "Queenstown is known as the adventure capital of the world, offering activities like bungee jumping, skydiving, and white-water rafting."
+  },
+  {
+    "index": 51,
+    "destination": "Chiang Mai, Thailand",
+    "fact": "Chiang Mai is home to over 300 temples, with some dating back to the 13th century when the city was founded."
+  },
+  {
+    "index": 52,
+    "destination": "Havana, Cuba",
+    "fact": "Havana's Old Town, known as Habana Vieja, is a UNESCO World Heritage site with over 900 buildings of historical importance."
+  },
+  {
+    "index": 53,
+    "destination": "Siem Reap, Cambodia",
+    "fact": "Siem Reap is the gateway to the Angkor Archaeological Park, which contains the remains of the Khmer Empire's different capitals from the 9th to 15th centuries."
+  },
+  {
+    "index": 54,
+    "destination": "Quito, Ecuador",
+    "fact": "Quito, the capital of Ecuador, was the first city to be declared a UNESCO World Heritage Site in 1978."
+  },
+  {
+    "index": 55,
+    "destination": "Cartagena, Colombia",
+    "fact": "Cartagena's walled city and fortress, built in the 16th century, is one of the most well-preserved examples of Spanish colonial architecture in South America."
+  },
+  {
+    "index": 56,
+    "destination": "Luang Prabang, Laos",
+    "fact": "Luang Prabang is known for its daily alms-giving ceremony, where hundreds of monks collect offerings from locals and tourists at dawn."
+  },
+  {
+    "index": 57,
+    "destination": "Jaipur, India",
+    "fact": "Jaipur is known as the 'Pink City' due to the distinctive color of its buildings, which were painted pink to welcome the Prince of Wales in 1876."
+  },
+  {
+    "index": 58,
+    "destination": "Porto, Portugal",
+    "fact": "Porto is famous for its port wine production and is home to the spectacular Livraria Lello, often cited as one of the world's most beautiful bookstores."
+  },
+  {
+    "index": 59,
+    "destination": "Fes, Morocco",
+    "fact": "Fes is home to the world's oldest university, the University of Al Quaraouiyine, founded in 859 AD."
+  },
+  {
+    "index": 60,
+    "destination": "Wrocław, Poland",
+    "fact": "Wrocław is known for its population of small bronze gnome statues scattered throughout the city, with over 350 of these whimsical figures."
+  },
+  {
+    "index": 61,
+    "destination": "Hoi An, Vietnam",
+    "fact": "Hoi An's Ancient Town is a remarkably well-preserved example of a Southeast Asian trading port from the 15th to 19th centuries."
+  },
+  {
+    "index": 62,
+    "destination": "Valparaíso, Chile",
+    "fact": "Valparaíso is known for its colorful clifftop homes and its unique system of funiculars that help residents navigate the steep hills."
+  },
+  {
+    "index": 63,
+    "destination": "Bled, Slovenia",
+    "fact": "Lake Bled features a small island with a church, where it's tradition for a groom to carry his bride up the 99 steps for good luck."
+  },
+  {
+    "index": 64,
+    "destination": "Annecy, France",
+    "fact": "Annecy is often called the 'Venice of the Alps' due to its system of canals and the picturesque old town built around them."
+  },
+  {
+    "index": 65,
+    "destination": "Antigua, Guatemala",
+    "fact": "Antigua is renowned for its well-preserved Spanish Baroque-influenced architecture and the ruins of colonial churches."
+  },
+  {
+    "index": 66,
+    "destination": "Bukhara, Uzbekistan",
+    "fact": "Bukhara's historic center is a UNESCO World Heritage site, with over 140 architectural monuments dating back to the Middle Ages."
+  },
+  {
+    "index": 67,
+    "destination": "Sintra, Portugal",
+    "fact": "Sintra is famous for its colorful palaces, including the Pena Palace, which looks like it came straight out of a fairytale."
+  },
+  {
+    "index": 68,
+    "destination": "Vigan, Philippines",
+    "fact": "Vigan is one of the best-preserved examples of a planned Spanish colonial town in Asia, with its cobblestone streets and unique architecture."
+  },
+  {
+    "index": 69,
+    "destination": "Lalibela, Ethiopia",
+    "fact": "Lalibela is home to 11 rock-hewn churches, carved entirely out of a single block of granite with its roof at ground level."
+  },
+  {
+    "index": 70,
+    "destination": "Kotor, Montenegro",
+    "fact": "Kotor's Old Town is tucked in a secluded part of the Gulf of Kotor, surrounded by dramatic limestone cliffs."
+  },
+  {
+    "index": 71,
+    "destination": "Guanajuato, Mexico",
+    "fact": "Guanajuato is known for its network of underground tunnels that serve as roads, originally built to prevent flooding."
+  },
+  {
+    "index": 72,
+    "destination": "Český Krumlov, Czech Republic",
+    "fact": "Český Krumlov's castle complex is the second largest in the Czech Republic, after Prague Castle."
+  },
+  {
+    "index": 73,
+    "destination": "Gjirokastër, Albania",
+    "fact": "Gjirokastër is known as the 'City of Stone' due to its distinctive Ottoman-era stone houses and castle."
+  },
+  {
+    "index": 74,
+    "destination": "Nara, Japan",
+    "fact": "Nara is famous for its free-roaming deer, considered sacred messengers of the gods in the Shinto religion."
+  },
+  {
+    "index": 75,
+    "destination": "Colmar, France",
+    "fact": "Colmar's old town is often called 'Little Venice' due to its canals, colorful half-timbered houses, and flower-lined streets."
+  },
+  {
+    "index": 76,
+    "destination": "San Miguel de Allende, Mexico",
+    "fact": "San Miguel de Allende is known for its colonial architecture and vibrant arts scene, with no traffic lights in its historic center."
+  },
+  {
+    "index": 77,
+    "destination": "Mdina, Malta",
+    "fact": "Mdina, known as the 'Silent City,' is a fortified medieval town that serves as a prime example of an ancient walled city."
+  },
+  {
+    "index": 78,
+    "destination": "Mostar, Bosnia and Herzegovina",
+    "fact": "Mostar is famous for its iconic Stari Most (Old Bridge), a 16th-century Ottoman bridge destroyed in 1993 and rebuilt in 2004."
+  },
+  {
+    "index": 79,
+    "destination": "Hội An, Vietnam",
+    "fact": "Hội An is renowned for its monthly lantern festival, where the town turns off its electric lights and is illuminated solely by colorful lanterns."
+  },
+  {
+    "index": 80,
+    "destination": "Sighișoara, Romania",
+    "fact": "Sighișoara is the birthplace of Vlad the Impaler, the historical inspiration for Bram Stoker's Dracula."
+  },
+  {
+    "index": 81,
+    "destination": "Plovdiv, Bulgaria",
+    "fact": "Plovdiv is one of the oldest continuously inhabited cities in Europe, with a history spanning over 8,000 years."
+  },
+  {
+    "index": 82,
+    "destination": "Arequipa, Peru",
+    "fact": "Arequipa is known as the 'White City' due to its buildings made from sillar, a white volcanic rock."
+  },
+  {
+    "index": 83,
+    "destination": "Ghent, Belgium",
+    "fact": "Ghent's historic center is home to more than 900 listed buildings, including the famous Gravensteen castle."
+  },
+  {
+    "index": 84,
+    "destination": "Barichara, Colombia",
+    "fact": "Barichara is often called Colombia's prettiest town, known for its well-preserved colonial architecture and cobblestone streets."
+  },
+  {
+    "index": 85,
+    "destination": "Rothenburg ob der Tauber, Germany",
+    "fact": "Rothenburg ob der Tauber is one of the best-preserved medieval towns in Europe, with its town walls still largely intact."
+  },
+  {
+    "index": 86,
+    "destination": "Ait Benhaddou, Morocco",
+    "fact": "Ait Benhaddou is a fortified village (ksar) that has been featured in numerous films, including Gladiator and Game of Thrones."
+  },
+  {
+    "index": 87,
+    "destination": "Yangon, Myanmar",
+    "fact": "Yangon is home to the Shwedagon Pagoda, a 2,500-year-old Buddhist temple covered in gold leaf and diamonds."
+  },
+  {
+    "index": 88,
+    "destination": "Suzdal, Russia",
+    "fact": "Suzdal, part of Russia's Golden Ring, has over 200 architectural and historical monuments, despite having a population of only about 10,000."
+  },
+  {
+    "index": 89,
+    "destination": "Óbidos, Portugal",
+    "fact": "Óbidos is a small medieval town completely enclosed by ancient walls, and was traditionally given as a wedding gift to Portuguese queens."
+  },
+  {
+    "index": 90,
+    "destination": "Hvar, Croatia",
+    "fact": "Hvar is known for its lavender fields, and is said to receive more hours of sunshine than any other place in Europe."
+  },
+  {
+    "index": 91,
+    "destination": "Gyeongju, South Korea",
+    "fact": "Gyeongju, once the capital of the ancient kingdom of Silla, is often called 'the museum without walls' due to its abundance of historical sites."
+  },
+  {
+    "index": 92,
+    "destination": "Lucerne, Switzerland",
+    "fact": "Lucerne is home to the Chapel Bridge, the oldest covered wooden bridge in Europe, originally built in the 14th century."
+  },
+  {
+    "index": 93,
+    "destination": "Valladolid, Mexico",
+    "fact": "Valladolid is known for its cenotes, natural sinkholes filled with freshwater that were sacred to the ancient Maya civilization."
+  },
+  {
+    "index": 94,
+    "destination": "Nantes, France",
+    "fact": "Nantes is home to Les Machines de l'île, a unique artistic project featuring giant mechanical animals, including a 12-meter-tall elephant that visitors can ride."
+  },
+  {
+    "index": 95,
+    "destination": "Yazd, Iran",
+    "fact": "Yazd is one of the oldest continuously inhabited cities in the world, known for its unique Persian architecture and wind-catching towers."
+  },
+  {
+    "index": 96,
+    "destination": "Hallstatt, Austria",
+    "fact": "Hallstatt is so picturesque that a full-scale replica of the entire town was built in China's Guangdong province."
+  },
+  {
+    "index": 97,
+    "destination": "Burano, Italy",
+    "fact": "Burano is famous for its brightly colored houses, which follow a specific color system established centuries ago."
+  },
+  {
+    "index": 98,
+    "destination": "Galle, Sri Lanka",
+    "fact": "Galle's fortified old town, founded by Portuguese colonists in the 16th century, is a unique blend of European architecture and South Asian traditions."
+  },
+  {
+    "index": 99,
+    "destination": "Ifrane, Morocco",
+    "fact": "Ifrane, with its alpine-style architecture, is often called 'Little Switzerland' due to its resemblance to a Swiss mountain resort."
+  },
+  {
+    "index": 100,
+    "destination": "Visby, Sweden",
+    "fact": "Visby, on the island of Gotland, is one of the best-preserved medieval cities in Scandinavia, with its 13th-century ring wall still largely intact."
   }
 ]
