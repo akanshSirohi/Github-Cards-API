@@ -8,9 +8,10 @@ const available_cards = {
   "/motivational-quotes-card": require("./src/cards/motivational-quote"),
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
   "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
-  "/team-work-quote-card" : require("./src/cards/team-work-quote"),
-  "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
+  "/team-work-quote-card": require("./src/cards/team-work-quote"),
+  "/bhagavad-geeta-card": require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
+  "/travel-destinations-card": require("./src/cards/travel_destinations"),
 };
 
 app.use(express.json());
@@ -18,16 +19,16 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", require("./src/help"));
 
-for(const key in available_cards) {
-  if(available_cards.hasOwnProperty(key)) {
+for (const key in available_cards) {
+  if (available_cards.hasOwnProperty(key)) {
     app.use(key, available_cards[key]);
   }
 }
 
-app.get("/random-card", (req,res) => {
+app.get("/random-card", (req, res) => {
   let urls = Object.keys(available_cards);
   let query = "";
-  if(req.originalUrl.indexOf("?") > -1) {
+  if (req.originalUrl.indexOf("?") > -1) {
     const queryParameters = req.originalUrl.split("?")[1];
     query = `?${queryParameters}`;
   }

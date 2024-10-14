@@ -1,0 +1,247 @@
+[
+  {
+    "index": 0,
+    "destination": "Kyoto, Japan",
+    "fact": "Kyoto was Japan's capital for over 1,000 years and is famous for its historic temples and beautiful gardens."
+  },
+  {
+    "index": 1,
+    "destination": "Machu Picchu, Peru",
+    "fact": "Machu Picchu was built in the 15th century by the Inca Empire and is often called the 'Lost City of the Incas.'"
+  },
+  {
+    "index": 2,
+    "destination": "Venice, Italy",
+    "fact": "Venice is made up of 118 small islands, separated by canals and connected by bridges."
+  },
+  {
+    "index": 3,
+    "destination": "New York City, USA",
+    "fact": "Central Park in New York City is larger than the country of Monaco."
+  },
+  {
+    "index": 4,
+    "destination": "Sydney, Australia",
+    "fact": "The Sydney Opera House's iconic design was inspired by the sails of boats in Sydney Harbor."
+  },
+  {
+    "index": 5,
+    "destination": "Reykjavik, Iceland",
+    "fact": "Reykjavik is the northernmost capital in the world and is known for its stunning views of the Northern Lights."
+  },
+  {
+    "index": 6,
+    "destination": "Cappadocia, Turkey",
+    "fact": "Cappadocia is famous for its 'fairy chimneys,' which are unique rock formations created by volcanic eruptions."
+  },
+  {
+    "index": 7,
+    "destination": "Barcelona, Spain",
+    "fact": "The Sagrada Familia in Barcelona has been under construction since 1882 and is expected to be completed in 2026."
+  },
+  {
+    "index": 8,
+    "destination": "Cape Town, South Africa",
+    "fact": "Cape Town's Table Mountain is over 260 million years old, making it one of the oldest mountains in the world."
+  },
+  {
+    "index": 9,
+    "destination": "Dubai, United Arab Emirates",
+    "fact": "The Burj Khalifa in Dubai is the tallest building in the world, standing at 828 meters (2,717 feet)."
+  },
+  {
+    "index": 10,
+    "destination": "Paris, France",
+    "fact": "The Eiffel Tower can be up to 15 cm taller in the summer due to the expansion of the metal in the heat."
+  },
+  {
+    "index": 11,
+    "destination": "Santorini, Greece",
+    "fact": "The blue domes of Santorini's churches are meant to represent the sea and sky."
+  },
+  {
+    "index": 12,
+    "destination": "Rio de Janeiro, Brazil",
+    "fact": "Rio de Janeiro is home to the world's largest Carnival festival, which attracts over 2 million people each year."
+  },
+  {
+    "index": 13,
+    "destination": "Rome, Italy",
+    "fact": "Rome has more fountains than any other city in the world, with over 1,500 fountains."
+  },
+  {
+    "index": 14,
+    "destination": "Petra, Jordan",
+    "fact": "Petra is known as the 'Rose City' due to the pink-colored sandstone cliffs from which it was carved."
+  },
+  {
+    "index": 15,
+    "destination": "Prague, Czech Republic",
+    "fact": "Prague's Astronomical Clock is the third-oldest astronomical clock in the world and the oldest one still in operation."
+  },
+  {
+    "index": 16,
+    "destination": "Bali, Indonesia",
+    "fact": "Bali is home to the world's largest turtle conservation center, dedicated to the protection of endangered sea turtles."
+  },
+  {
+    "index": 17,
+    "destination": "Vancouver, Canada",
+    "fact": "Vancouver has one of the mildest climates in Canada and is often ranked as one of the world's most livable cities."
+  },
+  {
+    "index": 18,
+    "destination": "Edinburgh, Scotland",
+    "fact": "Edinburgh is the world's first UNESCO City of Literature, a title it earned in 2004."
+  },
+  {
+    "index": 19,
+    "destination": "Amsterdam, Netherlands",
+    "fact": "Amsterdam's canals cover more than 100 kilometers and have 1,500 bridges, earning it the nickname 'Venice of the North.'"
+  },
+  {
+    "index": 20,
+    "destination": "Jerusalem, Israel",
+    "fact": "Jerusalem is considered a holy city by three major religions: Judaism, Christianity, and Islam."
+  },
+  {
+    "index": 21,
+    "destination": "Lisbon, Portugal",
+    "fact": "Lisbon is older than Rome, making it one of the oldest cities in Western Europe."
+  },
+  {
+    "index": 22,
+    "destination": "Cairo, Egypt",
+    "fact": "The Great Pyramid of Giza, located just outside of Cairo, is the last remaining wonder of the ancient world."
+  },
+  {
+    "index": 23,
+    "destination": "Buenos Aires, Argentina",
+    "fact": "Buenos Aires is known as the 'Paris of South America' due to its European-style architecture and vibrant culture."
+  },
+  {
+    "index": 24,
+    "destination": "Kyiv, Ukraine",
+    "fact": "Kyiv is home to one of the deepest metro stations in the world, Arsenalna, which is 105.5 meters below ground."
+  },
+  {
+    "index": 25,
+    "destination": "Stockholm, Sweden",
+    "fact": "Stockholm is built on 14 islands, connected by more than 50 bridges."
+  },
+  {
+    "index": 26,
+    "destination": "Marrakech, Morocco",
+    "fact": "Marrakech's Medina is a UNESCO World Heritage Site, known for its vibrant souks (markets) and stunning palaces."
+  },
+  {
+    "index": 27,
+    "destination": "Athens, Greece",
+    "fact": "Athens is one of the oldest cities in the world, with recorded history going back over 3,400 years."
+  },
+  {
+    "index": 28,
+    "destination": "Bangkok, Thailand",
+    "fact": "Bangkok's real name is the longest city name in the world, containing 169 characters in Thai."
+  },
+  {
+    "index": 29,
+    "destination": "Berlin, Germany",
+    "fact": "Berlin has more museums than rainy days in a year, with over 180 museums to explore."
+  },
+  {
+    "index": 30,
+    "destination": "Hanoi, Vietnam",
+    "fact": "Hanoi is known for its centuries-old architecture and a rich culture with Southeast Asian, Chinese, and French influences."
+  },
+  {
+    "index": 31,
+    "destination": "Bruges, Belgium",
+    "fact": "Bruges is often called the 'Venice of the North' due to its canals and medieval buildings."
+  },
+  {
+    "index": 32,
+    "destination": "Florence, Italy",
+    "fact": "Florence is considered the birthplace of the Renaissance and is home to Michelangelo's famous statue of David."
+  },
+  {
+    "index": 33,
+    "destination": "Seoul, South Korea",
+    "fact": "Seoul is home to five grand palaces, including the famous Gyeongbokgung Palace, which was built in 1395."
+  },
+  {
+    "index": 34,
+    "destination": "Moscow, Russia",
+    "fact": "Moscow's Red Square is not named for the color red or its association with communism, but from the word 'krasnaya,' meaning 'beautiful' in old Russian."
+  },
+  {
+    "index": 35,
+    "destination": "Krakow, Poland",
+    "fact": "Krakow’s Main Square is the largest medieval town square in Europe, covering about 40,000 square meters."
+  },
+  {
+    "index": 36,
+    "destination": "Zanzibar, Tanzania",
+    "fact": "Zanzibar is known as the 'Spice Island' due to its vast production of cloves, cinnamon, and nutmeg."
+  },
+  {
+    "index": 37,
+    "destination": "Salzburg, Austria",
+    "fact": "Salzburg is the birthplace of Wolfgang Amadeus Mozart and the setting for the famous movie 'The Sound of Music.'"
+  },
+  {
+    "index": 38,
+    "destination": "Budapest, Hungary",
+    "fact": "Budapest is actually made up of three cities: Buda, Obuda, and Pest, which were united in 1873."
+  },
+  {
+    "index": 39,
+    "destination": "Hong Kong, China",
+    "fact": "Hong Kong has more skyscrapers than any other city in the world, with over 8,000 buildings standing taller than 14 stories."
+  },
+  {
+    "index": 40,
+    "destination": "Brisbane, Australia",
+    "fact": "Brisbane is known as the 'River City,' with the Brisbane River winding its way through the heart of the city."
+  },
+  {
+    "index": 41,
+    "destination": "Auckland, New Zealand",
+    "fact": "Auckland is home to the Sky Tower, the tallest freestanding structure in the Southern Hemisphere, standing at 328 meters."
+  },
+  {
+    "index": 42,
+    "destination": "Casablanca, Morocco",
+    "fact": "Casablanca is home to the Hassan II Mosque, which has the tallest minaret in the world at 210 meters."
+  },
+  {
+    "index": 43,
+    "destination": "Helsinki, Finland",
+    "fact": "Helsinki has been ranked one of the most livable cities in the world and is known for its design and architecture."
+  },
+  {
+    "index": 44,
+    "destination": "Tallinn, Estonia",
+    "fact": "Tallinn’s Old Town is a UNESCO World Heritage Site, famous for its medieval architecture and cobblestone streets."
+  },
+  {
+    "index": 45,
+    "destination": "Lima, Peru",
+    "fact": "Lima was the most important city in Spanish South America during colonial times and is home to the oldest university in the Americas, founded in 1551."
+  },
+  {
+    "index": 46,
+    "destination": "Oslo, Norway",
+    "fact": "Oslo is one of the world's greenest cities, with vast forest areas within the city limits and 343 lakes."
+  },
+  {
+    "index": 47,
+    "destination": "Dubrovnik, Croatia",
+    "fact": "Dubrovnik's Old Town is completely encircled by well-preserved medieval walls, and is known as the 'Pearl of the Adriatic.'"
+  },
+  {
+    "index": 48,
+    "destination": "Copenhagen, Denmark",
+    "fact": "Copenhagen is known for its bike culture, with over 50% of its residents commuting to work or school by bicycle."
+  }
+]
