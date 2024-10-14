@@ -92,7 +92,29 @@
       { "french": "Vélo", "english": "Bicycle" },
       { "french": "Monde", "english": "World" },
       { "french": "Étoile", "english": "Star" },
-      { "french": "Saison", "english": "Season" }
-    ]
+      { "french": "Saison", "english": "Season" },
+        {"french": "travail", "english": "work"},
+        {"french": "valeur", "english": "value"},
+        {"french": "vérité", "english": "truth"},
+        {"french": "voix", "english": "voice"},
+        {"french": "absolu", "english": "absolute"},
+        {"french": "aventure", "english": "adventure"},
+        {"french": "bonté", "english": "kindness"},
+        {"french": "chance", "english": "luck"},
+        {"french": "défi", "english": "challenge"},
+        {"french": "énergie", "english": "energy"},
+        {"french": "esprit", "english": "spirit"},
+        {"french": "fantaisie", "english": "fantasy"},
+        {"french": "gentillesse", "english": "kindness"},
+        {"french": "intelligence", "english": "intelligence"},
+        {"french": "joie", "english": "joy"},
+        {"french": "libération", "english": "liberation"},
+        {"french": "mémoire", "english": "memory"},
+        {"french": "mystère", "english": "mystery"},
+        {"french": "noblesse", "english": "nobility"},
+        {"french": "optimisme", "english": "optimism"},
+        {"french": "persévérance", "english": "perseverance"}
+      ]
+    
   
   
