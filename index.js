@@ -8,18 +8,19 @@ const available_cards = {
   "/motivational-quotes-card": require("./src/cards/motivational-quote"),
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
   "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
-  "/team-work-quote-card" : require("./src/cards/team-work-quote"),
+  "/team-work-quote-card": require("./src/cards/team-work-quote"),
   "/breaking-bad-quote-card" : require("./src/cards/breaking-bad-quotes"),
-  "/bhagavad-geeta-card" : require("./src/cards/bhagavad-geeta-quotes"),
+  "/bhagavad-geeta-card": require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
-  "/security-tips-card": require("./src/cards/security-tips")
+  "/security-tips-card": require("./src/cards/security-tips"),
   "/random-facts-card": require("./src/cards/random-facts"),
   "/fun-fact-card": require("./src/cards/fun-fact-card"),
   "/got-quotes-card": require("./src/cards/got-quotes"),
   "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
+  "/travel-destinations-card": require("./src/cards/travel_destinations"),
   "/french-word-of-the-day-card": require("./src/cards/french_word_of_the_day"),
 };
 
@@ -28,16 +29,16 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", require("./src/help"));
 
-for(const key in available_cards) {
-  if(available_cards.hasOwnProperty(key)) {
+for (const key in available_cards) {
+  if (available_cards.hasOwnProperty(key)) {
     app.use(key, available_cards[key]);
   }
 }
 
-app.get("/random-card", (req,res) => {
+app.get("/random-card", (req, res) => {
   let urls = Object.keys(available_cards);
   let query = "";
-  if(req.originalUrl.indexOf("?") > -1) {
+  if (req.originalUrl.indexOf("?") > -1) {
     const queryParameters = req.originalUrl.split("?")[1];
     query = `?${queryParameters}`;
   }
