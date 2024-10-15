@@ -191,6 +191,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/word-of-the-day-card`],
       },
     },
+    "french-word-of-the-day-card": {
+      info: "Generates random french word of the day with their english meanings.",
+      api: {
+        args: {
+        theme: "Theme of card. All themes. Default: light  [Optional]",
+        },
+        example: [`${baseurl}/french-word-of-the-day-card`],
+      },
+    },
     "challenge-of-the-week-card": {
       info: "Generates a random challenge for you to take on in that week.",
       api: {
