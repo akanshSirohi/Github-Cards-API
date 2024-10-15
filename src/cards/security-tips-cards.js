@@ -4,9 +4,8 @@ const fs = require("fs").promises;
 const { generateCard, CARD_AGE, Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
 
-
-const DATA_FILE_PATH = "./src/data/breaking-bad-quotes.json";
-const DEFAULT_THEME = "dark_2";
+const DATA_FILE_PATH = "./src/data/security-tips.json";
+const DEFAULT_THEME = "light";
 
 const handleTheme = (req, res, next) => {
   req.theme = req.query.theme || DEFAULT_THEME;
@@ -14,7 +13,15 @@ const handleTheme = (req, res, next) => {
 };
 
 const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
+  // Custom theme moderation
+  if (req.theme === "my_theme") {
+    req.theme = "pattern_3";
+    req.options = {
+      card_color: "#ffffffc2",
+      font_color: "#000",
+      shadow: false,
+    };
+  } else if (req.theme === "custom") {
     req.options = parseOptions(req.query);
   }
   next();
@@ -22,14 +29,11 @@ const handleOptions = (req, res, next) => {
 
 router.get("/", handleTheme, handleOptions, async (req, res) => {
   try {
-    const breakingbadQuotesData = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomQuote = breakingbadQuotesData[Math.floor(Math.random() * breakingbadQuotesData.length)];
-    const quoteContent = `"${randomQuote.quote}"\n\nAuthor- ${randomQuote.author}`;
+    const tips = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf8"));
+    const random_tip = tips[Math.floor(Math.random() * tips.length)];
 
-    const quoteCard = await generateCard(
-      quoteContent,
+    const tip_card = await generateCard(
+      random_tip.tip,
       req.theme,
       req.options,
       Languages.ENGLISH
@@ -39,7 +43,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
       "Content-Type": "image/svg+xml",
       "Cache-Control": `public, max-age=${CARD_AGE}`,
     });
-    res.end(quoteCard);
+    res.end(tip_card);
   } catch (error) {
     console.error("Error:", error);
     res.status(500).send("Internal Server Error");

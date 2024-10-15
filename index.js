@@ -15,11 +15,13 @@ const available_cards = {
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
+  "/security-tips-card": require("./src/cards/security-tips"),
   "/random-facts-card": require("./src/cards/random-facts"),
   "/fun-fact-card": require("./src/cards/fun-fact-card"),
   "/got-quotes-card": require("./src/cards/got-quotes"),
   "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
   "/travel-destinations-card": require("./src/cards/travel_destinations"),
+  "/french-word-of-the-day-card": require("./src/cards/french_word_of_the_day"),
 };
 
 app.use(express.json());
