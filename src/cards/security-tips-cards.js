@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const { generateCard, CARD_AGE, Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
 
-const DATA_FILE_PATH = "./src/data/jokes.json";
+const DATA_FILE_PATH = "./src/data/security-tips.json";
 const DEFAULT_THEME = "light";
 
 const handleTheme = (req, res, next) => {
@@ -29,18 +29,11 @@ const handleOptions = (req, res, next) => {
 
 router.get("/", handleTheme, handleOptions, async (req, res) => {
   try {
-    const jokes = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf8"));
-    const random_joke = jokes[Math.floor(Math.random() * jokes.length)];
+    const tips = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf8"));
+    const random_tip = tips[Math.floor(Math.random() * tips.length)];
 
-    let joke_content;
-    if (random_joke.type === "single") {
-      joke_content = random_joke.joke;
-    } else if (random_joke.type === "double") {
-      joke_content = `Q. ${random_joke.joke.q}\n\n${random_joke.joke.a}`;
-    }
-
-    const joke_card = await generateCard(
-      joke_content,
+    const tip_card = await generateCard(
+      random_tip.tip,
       req.theme,
       req.options,
       Languages.ENGLISH
@@ -50,7 +43,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
       "Content-Type": "image/svg+xml",
       "Cache-Control": `public, max-age=${CARD_AGE}`,
     });
-    res.end(joke_card);
+    res.end(tip_card);
   } catch (error) {
     console.error("Error:", error);
     res.status(500).send("Internal Server Error");
