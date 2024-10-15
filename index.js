@@ -20,6 +20,7 @@ const available_cards = {
   "/fun-fact-card": require("./src/cards/fun-fact-card"),
   "/got-quotes-card": require("./src/cards/got-quotes"),
   "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
+  "/french-word-of-the-day-card": require("./src/cards/french_word_of_the_day"),
 };
 
 app.use(express.json());
