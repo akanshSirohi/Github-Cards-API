@@ -27,7 +27,10 @@ const available_cards = {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/", require("./src/help"));
+app.use("/help", require("./src/help"));
+
+// serve public directory on root
+app.use("/", express.static("public"));
 
 for (const key in available_cards) {
   if (available_cards.hasOwnProperty(key)) {
