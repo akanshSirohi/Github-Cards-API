@@ -297,6 +297,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/github-facts-card`],
       },
     },
+    "security-tips-card": {
+      info: "Programming security tips",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: light  [Optional]"
+        },
+        example: [`${baseurl}/security-tips-cards`],
+       },
+    },
     "random-facts-card": {
       info: "Generates a random interesting fact",
       api: {
