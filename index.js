@@ -15,7 +15,7 @@ const available_cards = {
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
   "/top-tweets-card": require("./src/cards/top-tweets"),
   "/github-facts-card": require("./src/cards/github-facts"),
-  "/security-tips-card": require("./src/cards/security-tips"),
+  "/security-tips-card": require("./src/cards/security-tips-cards"),
   "/random-facts-card": require("./src/cards/random-facts"),
   "/fun-fact-card": require("./src/cards/fun-fact-card"),
   "/got-quotes-card": require("./src/cards/got-quotes"),
