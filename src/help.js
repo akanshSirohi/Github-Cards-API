@@ -135,7 +135,7 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=galaxy`,
       ],
     },
-    "pandaLight":{
+    pandaLight:{
       info:"Kungfu Panda Light theme",
       example:[
         `${baseurl}/jokes-card?theme=pandaLight`,
@@ -145,7 +145,7 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=pandaLight`,
       ]
     },
-    "pandaDark":{
+    pandaDark:{
       info:"Kungfu Panda Dark theme",
       example:[
         `${baseurl}/jokes-card?theme=pandaDark`,
@@ -155,7 +155,6 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=pandaDark`,
       ]
     },
-    "custom": {
     custom: {
       info: "Custom theme",
       args: {
@@ -181,7 +180,6 @@ router.get("/", (req, res) => {
       ],
     },
   };
-  
   const cards = {
     "jokes-card": {
       info: "Random programming jokes card",
