@@ -127,6 +127,26 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=galaxy`,
       ],
     },
+    "pandaLight":{
+      info:"Kungfu Panda Light theme",
+      example:[
+        `${baseurl}/jokes-card?theme=pandaLight`,
+        `${baseurl}/programming-quotes-card?theme=pandaLight`,
+        `${baseurl}/programming-facts-card?theme=pandaLight`,
+        `${baseurl}/motivational-quotes-card?theme=pandaLight`,
+        `${baseurl}/random-facts-card?theme=pandaLight`,
+      ]
+    },
+    "pandaDark":{
+      info:"Kungfu Panda Dark theme",
+      example:[
+        `${baseurl}/jokes-card?theme=pandaDark`,
+        `${baseurl}/programming-quotes-card?theme=pandaDark`,
+        `${baseurl}/programming-facts-card?theme=pandaDark`,
+        `${baseurl}/motivational-quotes-card?theme=pandaDark`,
+        `${baseurl}/random-facts-card?theme=pandaDark`,
+      ]
+    },
     "custom": {
       info: "Custom theme",
       args: {
@@ -147,7 +167,7 @@ router.get("/", (req, res) => {
         `${baseurl}/programming-facts-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
         `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
         `${baseurl}/harry-potter-spell-card?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
-
+        `${baseurl}/kungfu_panda?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
       ],
     }
   };
@@ -306,6 +326,16 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/harry-potter-spell-card`]
       },
     },
+    "kungfu_panda": {
+      info: "Generates your favorite quote from Kungfu Panda!",
+      api: {
+        args: {
+          theme: "Theme of a card. All themes. Default: pandaLight [Optional]"
+        },
+        example: [`${baseurl}/kungfu_panda`]
+      },
+    },
+    
   };
 
   res.json({themes,cards});

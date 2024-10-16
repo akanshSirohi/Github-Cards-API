@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const { generateCard, CARD_AGE, Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
 const DATA_FILE_PATH = "./src/data/kungfu_panda_quotes.json";
-const DEFAULT_THEME = "dark";
+const DEFAULT_THEME = "pandaLight";
 
 const handleTheme = (req, res, next) => {
   req.theme = req.query.theme || DEFAULT_THEME;
@@ -14,15 +14,6 @@ const handleOptions = (req, res, next) => {
   if (req.theme === "custom") {
     req.options = parseOptions(req.query);
   }
-  else{
-    req.theme = "panda";
-    req.options = {
-      card_color: "#000000",
-      font_color: "#FFFFFF",
-      background: "#000000",
-      shadow: false,
-    };
-  }
   next();
 };
 
@@ -30,7 +21,7 @@ router.get("/", handleTheme, handleOptions, async (req, res) => {
   try {
     const quotes = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf-8"));
     const random_quotes = quotes[Math.floor(Math.random() * quotes.length)];
-    let quote_content = `${random_quotes.quote}\n\n- ${random_quotes.author}`;;
+    let quote_content = `${random_quotes.quote}\n\n- ${random_quotes.author}`;
     const quote_card = await generateCard(
       quote_content,
       req.theme,
