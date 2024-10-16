@@ -61,6 +61,9 @@ Here is a list of cards that can currently be used:
 | `harry-potter-spell-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/harry-potter-spell-card?theme=dark)` |
 | `breaking-bad-quote-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/breaking-bad-quote-card?theme=dark)` |
 | `got-quotes-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/got-quotes-card?theme=dark)` |
+| `security-tips-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/security-tips-card?theme=dark)` |
+| `french-word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/french-word-of-the-day-card)` |
+| `travel-destinations-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/travel-destinations-card?theme=dark)` |
 
 ## Themes
 
