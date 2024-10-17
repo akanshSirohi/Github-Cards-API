@@ -154,10 +154,9 @@ args: {
 1. Fork this repository.
 2. Add your card in the `src/cards` directory. You can refer to the existing cards for guidance.
 3. If your card needs data, add a file inside the `data` directory (supported languages: English and Hindi).
-4. Add a route for your card in the `index.js` file.
-5. Update the `src/help.js` file and the `README` with your new card's API reference.
-6. Create a pull request.
-7. Ensure your data file has at least around 100 entries.
+4. Update the `src/help.js` file and the `README` with your new card's API reference.
+5. Create a pull request.
+6. Ensure your data file has at least around 100 entries.
 
 You can also create cards in HTML and CSS! Check out the `src/cards/motivational-quote.js` file to see how cards are generated with unique styles using HTML and Satori. Refer to the official Satori documentation [here](https://github.com/vercel/satori?tab=readme-ov-file#documentation) for supported CSS properties.
 
