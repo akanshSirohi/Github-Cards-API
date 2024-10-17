@@ -1,28 +1,9 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
+const { getAvailableCards } = require('./utils')
 
-const available_cards = {
-  "/jokes-card": require("./src/cards/joke-card"),
-  "/programming-quotes-card": require("./src/cards/programming-quote"),
-  "/motivational-quotes-card": require("./src/cards/motivational-quote"),
-  "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
-  "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
-  "/team-work-quote-card": require("./src/cards/team-work-quote"),
-  "/breaking-bad-quote-card" : require("./src/cards/breaking-bad-quotes"),
-  "/bhagavad-geeta-card": require("./src/cards/bhagavad-geeta-quotes"),
-  "/programming-facts-card": require("./src/cards/programming-facts"),
-  "/spanish-quote-card": require("./src/cards/spanish-quote"),
-  "/top-tweets-card": require("./src/cards/top-tweets"),
-  "/github-facts-card": require("./src/cards/github-facts"),
-  "/security-tips-card": require("./src/cards/security-tips-cards"),
-  "/random-facts-card": require("./src/cards/random-facts"),
-  "/fun-fact-card": require("./src/cards/fun-fact-card"),
-  "/got-quotes-card": require("./src/cards/got-quotes"),
-  "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
-  "/travel-destinations-card": require("./src/cards/travel_destinations"),
-  "/french-word-of-the-day-card": require("./src/cards/french_word_of_the_day"),
-};
+const available_cards = getAvailableCards();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
