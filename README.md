@@ -64,6 +64,7 @@ Here is a list of cards that can currently be used:
 | `security-tips-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/security-tips-card?theme=dark)` |
 | `french-word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/french-word-of-the-day-card)` |
 | `travel-destinations-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/travel-destinations-card?theme=dark)` |
+| `kungfu_panda` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/kungfu_panda)` |
 
 ## Themes
 
@@ -79,6 +80,8 @@ You can customize the appearance of the cards by selecting one of the following 
 6. [`pattern_1`](#pattern_1-theme-card)
 7. [`pattern_2`](#pattern_2-theme-card)
 8. [`pattern_3`](#pattern_3-theme-card)
+8. [`pandaLight`](#pandaLight)
+8. [`pandaDark`](#pandaDark)
 9. `random` - A random theme from those listed above will be applied
 10. `custom` - You may set your own custom arguments
 
@@ -138,6 +141,14 @@ args: {
 - #### `Pattern_3` Theme Card
 
   ![Card](https://afraid-ninnetta-github-cards.koyeb.app/jokes-card?theme=pattern_3)
+
+- #### `pandaLight` Theme Card
+
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/kungfu_panda?theme=pandaLight)
+
+- #### `pandaDark` Theme Card
+
+  ![Card](https://afraid-ninnetta-github-cards.koyeb.app/kungfu_panda?theme=pandaDark)
 
 - #### `Techy` Theme Card
   (Limited to HTML Cards)<br>

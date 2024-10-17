@@ -135,6 +135,26 @@ router.get("/", (req, res) => {
         `${baseurl}/random-facts-card?theme=galaxy`,
       ],
     },
+    pandaLight:{
+        info:"Kungfu Panda Light theme",
+        example:[
+          `${baseurl}/jokes-card?theme=pandaLight`,
+          `${baseurl}/programming-quotes-card?theme=pandaLight`,
+          `${baseurl}/programming-facts-card?theme=pandaLight`,
+          `${baseurl}/motivational-quotes-card?theme=pandaLight`,
+          `${baseurl}/random-facts-card?theme=pandaLight`,
+        ]
+    },
+    pandaDark:{
+        info:"Kungfu Panda Dark theme",
+        example:[
+            `${baseurl}/jokes-card?theme=pandaDark`,
+            `${baseurl}/programming-quotes-card?theme=pandaDark`,
+            `${baseurl}/programming-facts-card?theme=pandaDark`,
+            `${baseurl}/motivational-quotes-card?theme=pandaDark`,
+            `${baseurl}/random-facts-card?theme=pandaDark`,
+        ]
+    },
     custom: {
       info: "Custom theme",
       args: {
@@ -338,6 +358,15 @@ router.get("/", (req, res) => {
           theme: "Theme of card. All themes. Default: dark  [Optional]",
         },
         example: [`${baseurl}/travel-destinations-card`],
+      },
+    },
+    "kungfu_panda": {
+      info: "Generates your favorite quote from Kungfu Panda!",
+      api: {
+        args: {
+          theme: "Theme of a card. All themes. Default: pandaLight [Optional]"
+        },
+        example: [`${baseurl}/kungfu_panda`]
       },
     },
   };
