@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const { generateCard, CARD_AGE, Languages } = require("../card-generator");
 const { parseOptions } = require("../options-parser");
 const DATA_FILE_PATH = "./src/data/kungfu_panda_quotes.json";
-const DEFAULT_THEME = "pandaLight";
+const DEFAULT_THEME = "pandaDark";
 
 const handleTheme = (req, res, next) => {
   req.theme = req.query.theme || DEFAULT_THEME;
