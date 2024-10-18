@@ -340,6 +340,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/travel-destinations-card`],
       },
     },
+    "health-tip-card": {
+      info: "Generates a random health tips for your good health",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark  [Optional]",
+        },
+        example: [`${baseurl}/health-tip-card`],
+      },
+    },
   };
 
   res.json({ themes, cards });

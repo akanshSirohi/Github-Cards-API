@@ -64,6 +64,7 @@ Here is a list of cards that can currently be used:
 | `security-tips-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/security-tips-card?theme=dark)` |
 | `french-word-of-the-day-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/french-word-of-the-day-card)` |
 | `travel-destinations-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/travel-destinations-card?theme=dark)` |
+| `health-tip-card` | `![Card](https://afraid-ninnetta-github-cards.koyeb.app/health-tip-card?theme=dark)` |
 
 ## Themes
 
