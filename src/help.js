@@ -340,6 +340,7 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/travel-destinations-card`],
       },
     },
+ Productivity
     "productivity-tips-card": {
       info: "Random and helpful productive tips for your day",
       api: {
@@ -347,6 +348,15 @@ router.get("/", (req, res) => {
           theme: "Theme of a card. All themes. Default: dark [Optional]",
         },
         example: [`${baseurl}/productivity-tips-card`],
+
+    "health-tip-card": {
+      info: "Generates a random health tips for your good health",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: dark  [Optional]",
+        },
+        example: [`${baseurl}/health-tip-card`],
+ master
       },
     },
   };

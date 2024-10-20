@@ -22,7 +22,11 @@ const available_cards = {
   "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
   "/travel-destinations-card": require("./src/cards/travel_destinations"),
   "/french-word-of-the-day-card": require("./src/cards/french_word_of_the_day"),
+ Productivity
   "/productivity-tips-card": require("./src/cards/productivity-tips"),
+
+  "/health-tip-card": require("./src/cards/health-tip-card"),
+ master
 };
 
 app.use(express.json());
