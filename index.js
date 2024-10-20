@@ -9,7 +9,7 @@ const available_cards = {
   "/word-of-the-day-card": require("./src/cards/word_of_the_day"),
   "/challenge-of-the-week-card": require("./src/cards/challenge-of-the-week"),
   "/team-work-quote-card": require("./src/cards/team-work-quote"),
-  "/breaking-bad-quote-card" : require("./src/cards/breaking-bad-quotes"),
+  "/breaking-bad-quote-card": require("./src/cards/breaking-bad-quotes"),
   "/bhagavad-geeta-card": require("./src/cards/bhagavad-geeta-quotes"),
   "/programming-facts-card": require("./src/cards/programming-facts"),
   "/spanish-quote-card": require("./src/cards/spanish-quote"),
@@ -22,7 +22,11 @@ const available_cards = {
   "/harry-potter-spell-card": require("./src/cards/harry-potter-spells"),
   "/travel-destinations-card": require("./src/cards/travel_destinations"),
   "/french-word-of-the-day-card": require("./src/cards/french_word_of_the_day"),
+ Productivity
+  "/productivity-tips-card": require("./src/cards/productivity-tips"),
+
   "/health-tip-card": require("./src/cards/health-tip-card"),
+ master
 };
 
 app.use(express.json());

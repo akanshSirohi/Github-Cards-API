@@ -159,7 +159,7 @@ router.get("/", (req, res) => {
       ],
     },
   };
-  
+
   const cards = {
     "jokes-card": {
       info: "Random programming jokes card",
@@ -340,6 +340,15 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/travel-destinations-card`],
       },
     },
+ Productivity
+    "productivity-tips-card": {
+      info: "Random and helpful productive tips for your day",
+      api: {
+        args: {
+          theme: "Theme of a card. All themes. Default: dark [Optional]",
+        },
+        example: [`${baseurl}/productivity-tips-card`],
+
     "health-tip-card": {
       info: "Generates a random health tips for your good health",
       api: {
@@ -347,6 +356,7 @@ router.get("/", (req, res) => {
           theme: "Theme of card. All themes. Default: dark  [Optional]",
         },
         example: [`${baseurl}/health-tip-card`],
+ master
       },
     },
   };
