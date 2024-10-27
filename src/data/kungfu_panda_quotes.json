@@ -1,0 +1,468 @@
+[
+    {
+      "id": 1,
+      "quote": "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 2,
+      "quote": "There are no accidents.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 3,
+      "quote": "Your mind is like water. When it's agitated, it becomes difficult to see. But if you allow it to settle, the answer becomes clear.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 4,
+      "quote": "If you only do what you can do, you will never be more than you are now.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 5,
+      "quote": "I'm not a big fat panda. I'm THE big fat panda.",
+      "author": "Po"
+    },
+    {
+      "id": 6,
+      "quote": "There is no secret ingredient. It's just you.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 7,
+      "quote": "The more you take, the less you have.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 8,
+      "quote": "To make something special, you just believe it's special.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 9,
+      "quote": "The hardest part is letting go of the illusion of control.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 10,
+      "quote": "We often meet our destiny on the path we take to avoid it.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 11,
+      "quote": "Your story may not have such a happy beginning, but that doesn't make you who you are. It is the rest of your story, who you choose to be.",
+      "author": "Soothsayer"
+    },
+    {
+      "id": 12,
+      "quote": "Anything is possible when you have inner peace.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 13,
+      "quote": "Before the battle of the fist comes the battle of the mind.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 14,
+      "quote": "The only thing that matters is what you choose to be now.",
+      "author": "Po"
+    },
+    {
+      "id": 15,
+      "quote": "There is always something more to learn, even for a master.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 16,
+      "quote": "Inner peace comes from within.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 17,
+      "quote": "The mark of a true hero is humility.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 18,
+      "quote": "You must let go of the illusion of control.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 19,
+      "quote": "I'm not trying to turn you into me. I'm trying to turn you into you.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 20,
+      "quote": "Real strength comes from being your true self.",
+      "author": "Po"
+    },
+    {
+      "id": 21,
+      "quote": "Sometimes you eat the dumpling, sometimes the dumpling eats you.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 22,
+      "quote": "Don't push past memories deeper inside of yourself. Let those memories breathe and set them free.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 23,
+      "quote": "The past is the past. You gotta let go of it.",
+      "author": "Po"
+    },
+    {
+      "id": 24,
+      "quote": "When will you realize? The more you take, the less you have.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 25,
+      "quote": "There is no good news or bad news. There is just news.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 26,
+      "quote": "The true path to victory is to find your opponent's weakness and make him suffer for it.",
+      "author": "Tai Lung"
+    },
+    {
+      "id": 27,
+      "quote": "You are too concerned with what was and what will be.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 28,
+      "quote": "Your real strength comes from being the best you you can be.",
+      "author": "Po"
+    },
+    {
+      "id": 29,
+      "quote": "The secret to limitless power lies in mastering chi.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 30,
+      "quote": "Who knows the ways of the universe? Certainly not a mortal like me.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 31,
+      "quote": "To find your destiny, you must let go of the illusion of control.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 32,
+      "quote": "Every adventure is an opportunity for growth.",
+      "author": "Po"
+    },
+    {
+      "id": 33,
+      "quote": "A true warrior never gives up.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 34,
+      "quote": "Sometimes the path we think we should follow is not the one we're meant to take.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 35,
+      "quote": "In the end, all that matters is what you become.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 36,
+      "quote": "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
+      "author": "Po"
+    },
+    {
+      "id": 37,
+      "quote": "There are no shortcuts to any place worth going.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 38,
+      "quote": "A warrior never blames others for their own shortcomings.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 39,
+      "quote": "The best recipes are handed down from heart to heart.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 40,
+      "quote": "True power lies not in the strength of your fists, but in the strength of your heart.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 41,
+      "quote": "The journey of a thousand miles begins with a single dumpling.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 42,
+      "quote": "Sometimes life can be bitter, like a cup of cold noodles.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 43,
+      "quote": "You must believe in yourself. That's the real secret.",
+      "author": "Po"
+    },
+    {
+      "id": 44,
+      "quote": "A real warrior never quits.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 45,
+      "quote": "The path to victory lies within.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 46,
+      "quote": "Every mistake is an opportunity to learn.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 47,
+      "quote": "The greatest enemy is the one inside yourself.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 48,
+      "quote": "A true master is an eternal student.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 49,
+      "quote": "The secret of the dragon scroll is within you.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 50,
+      "quote": "There is no greater power than the power of belief.",
+      "author": "Po"
+    },
+    {
+      "id": 51,
+      "quote": "A warrior's greatest weapon is patience.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 52,
+      "quote": "Your destiny is what you make of it.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 53,
+      "quote": "The past can hurt, but you can either run from it or learn from it.",
+      "author": "Po"
+    },
+    {
+      "id": 54,
+      "quote": "True strength comes from the heart.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 55,
+      "quote": "In kung fu, speed is nothing without accuracy.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 56,
+      "quote": "A true warrior fights not because they hate what is in front of them, but because they love what is behind them.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 57,
+      "quote": "The best noodles take time, just like the best warriors.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 58,
+      "quote": "Your story is still being written. Make it a good one.",
+      "author": "Po"
+    },
+    {
+      "id": 59,
+      "quote": "The greatest victories are those that require no battle.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 60,
+      "quote": "Sometimes the hardest person to forgive is yourself.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 61,
+      "quote": "Every day is a new opportunity to become legendary.",
+      "author": "Po"
+    },
+    {
+      "id": 62,
+      "quote": "The best time to plant a tree was twenty years ago. The second best time is now.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 63,
+      "quote": "True mastery comes from understanding, not just knowing.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 64,
+      "quote": "The secret ingredient of success is believing in yourself.",
+      "author": "Po"
+    },
+    {
+      "id": 65,
+      "quote": "A warrior's greatest strength is knowing their own weakness.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 66,
+      "quote": "The path to inner peace starts with acceptance.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 67,
+      "quote": "You cannot fill your cup until you empty it first.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 68,
+      "quote": "The way to a warrior's heart is through their stomach.",
+      "author": "Mr. Ping"
+    },
+    {
+      "id": 69,
+      "quote": "Sometimes we do the wrong things for the right reasons.",
+      "author": "Po"
+    },
+    {
+      "id": 70,
+      "quote": "The journey of self-discovery never ends.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 71,
+      "quote": "A single grain of rice can tip the scale.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 72,
+      "quote": "The only impossible journey is the one you never begin.",
+      "author": "Po"
+    },
+    {
+      "id": 73,
+      "quote": "Inner strength comes from outer challenges.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 74,
+      "quote": "The present is a gift. Use it wisely.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 75,
+      "quote": "In every defeat, there is a lesson.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 76,
+      "quote": "A true hero's strength lies in their heart.",
+      "author": "Po"
+    },
+    {
+      "id": 77,
+      "quote": "Patience is not just waiting, but how we act while waiting.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 78,
+      "quote": "The greatest battles are fought within.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 79,
+      "quote": "Every ending is just a new beginning.",
+      "author": "Po"
+    },
+    {
+      "id": 80,
+      "quote": "True courage is facing your fears.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 81,
+      "quote": "The path to greatness is paved with small steps.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 82,
+      "quote": "A master's strength lies in their ability to learn from their students.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 83,
+      "quote": "Sometimes the best action is no action.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 84,
+      "quote": "Your greatest weakness can become your greatest strength.",
+      "author": "Po"
+    },
+    {
+      "id": 85,
+      "quote": "The warrior's path is endless.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 86,
+      "quote": "In quietness comes understanding.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 87,
+      "quote": "True wisdom comes from experience.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 88,
+      "quote": "Every warrior was once a beginner.",
+      "author": "Po"
+    },
+    {
+      "id": 89,
+      "quote": "The strongest tree has the deepest roots.",
+      "author": "Master Oogway"
+    },
+    {
+      "id": 90,
+      "quote": "Your mind is your strongest weapon.",
+      "author": "Master Shifu"
+    },
+    {
+      "id": 91,
+      "quote": "The best victories are the ones that unite us.",
+      "author": "Po"
+    },
+    {
+      "id": 92,
+      "quote": "Discipline is choosing between what you want now and what you want most.",
+      "author": "Master Tigress"
+    },
+    {
+      "id": 93,
+      "quote": "Each moment contains infinite possibilities.",
+      "author": "Master Oogway"
+    }
+  ]
+  

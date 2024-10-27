@@ -12,6 +12,8 @@ const THEMES = [
     "rgb",
     "lemonade",
     "galaxy",
+    "pandaDark",
+    "pandaLight",
     "custom" // It should be in the last position always, add your theme name above this
 ];
 
@@ -105,6 +107,20 @@ const create_theme = async (ctx, canvas, theme, W) => {
             theme_obj.font_color = "#F0F0F0"; 
             theme_obj.shadow = true; 
             theme_obj.shadowColor = "#8800FF"; 
+            break;
+        case "pandaDark":
+            theme_obj.background = "#F0F0F0";
+            theme_obj.card_bg = "#000000";
+            theme_obj.font_color = "#FFFFFF";
+            theme_obj.shadow = true;
+            theme_obj.shadowColor = "#888888";
+            break;
+        case "pandaLight":
+            theme_obj.background = "#FFFFFF";
+            theme_obj.card_bg = "#E0E0E0";
+            theme_obj.font_color = "#000000";
+            theme_obj.shadow = true;
+            theme_obj.shadowColor = "#BBBBBB";
             break;
 
     }
