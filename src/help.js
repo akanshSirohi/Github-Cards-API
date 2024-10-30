@@ -371,25 +371,17 @@ router.get("/", (req, res) => {
         example: [`${baseurl}/health-tip-card`],
       },
     },
-    pandaLight:{
-      info:"Kungfu Panda Light theme",
-      example:[
-        `${baseurl}/jokes-card?theme=pandaLight`,
-        `${baseurl}/programming-quotes-card?theme=pandaLight`,
-        `${baseurl}/programming-facts-card?theme=pandaLight`,
-        `${baseurl}/motivational-quotes-card?theme=pandaLight`,
-        `${baseurl}/random-facts-card?theme=pandaLight`,
-      ]
-    },
-    pandaDark:{
-        info:"Kungfu Panda Dark theme",
-        example:[
-            `${baseurl}/jokes-card?theme=pandaDark`,
-            `${baseurl}/programming-quotes-card?theme=pandaDark`,
-            `${baseurl}/programming-facts-card?theme=pandaDark`,
-            `${baseurl}/motivational-quotes-card?theme=pandaDark`,
-            `${baseurl}/random-facts-card?theme=pandaDark`,
-        ]
+    "kungfu-panda": {
+      info: "Kungfu panda quotes",
+      api: {
+        args: {
+          theme: "Theme of card. All themes. Default: pandaLight  [Optional]",
+        },
+        example: [
+          `${baseurl}/kungfu-panda`,
+          `${baseurl}/kungfu-panda?theme=pandaDark`
+        ],
+      },
     },
   };
 
