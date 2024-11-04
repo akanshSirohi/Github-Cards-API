@@ -936,10 +936,10 @@ satori-html@^0.3.2:
   dependencies:
     ultrahtml "^1.2.0"
 
-satori@^0.11.2:
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/satori/-/satori-0.11.2.tgz#23ca07c2c354fc29e4fbe669a2ad18e5fc5bc313"
-  integrity sha512-uEPLbx89BfwzJroECvnTg8IQ+XxqkMl0apvB41mm8fmc6brzHA8bu9Etu43UoUF4ECnACPiDDFz6PfYDG0S46Q==
+satori@^0.11.3:
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/satori/-/satori-0.11.3.tgz#65443e0531207ab9a77780539f1277c56d7c08d2"
+  integrity sha512-Wg7sls0iYAEETzi9YYcY16QVIqXjZT06XjkwondC5CGhw1mhmgKBCub8cCmkxdl/naXXQD+m29CFgn8pwtYCnA==
   dependencies:
     "@shuding/opentype.js" "1.4.0-beta.0"
     css-background-parser "^0.1.0"
