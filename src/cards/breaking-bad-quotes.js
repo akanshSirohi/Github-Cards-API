@@ -1,49 +1,36 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require("../card-generator");
 
-
-const DATA_FILE_PATH = "./src/data/breaking-bad-quotes.json";
-const DEFAULT_THEME = "dark_2";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function programmingQuoteHandler({ req, env }) {
   try {
-    const breakingbadQuotesData = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomQuote = breakingbadQuotesData[Math.floor(Math.random() * breakingbadQuotesData.length)];
-    const quoteContent = `"${randomQuote.quote}"\n\nAuthor- ${randomQuote.author}`;
+    const programmingQuotesData = await loadJSONFile(env, 'breaking-bad-quotes.json');
 
-    const quoteCard = await generateCard(
-      quoteContent,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Return 404 if data not found
+    if (!programmingQuotesData) {
+      return new Response('Data not found', { status: 404 });
+    }
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Parse URL and query params
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
+
+    // Pick a random quote
+    const random_quote = programmingQuotesData[Math.floor(Math.random() * programmingQuotesData.length)];
+    const quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
+
+    // Generate SVG card with HTML theme
+    const quote_card = await generateHTMLCard(env, quote_content, searchParams, Languages.ENGLISH, theme);
+
+    // Return response
+    return new Response(quote_card, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`
+      }
     });
-    res.end(quoteCard);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}

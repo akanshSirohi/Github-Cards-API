@@ -18,11 +18,6 @@ const parseOptions = (query) => {
     }else{
         options.font_color = "#000";
     }
-    if ("shadow" in query) {
-        options.shadow = String(query.shadow).toLowerCase() == "true";
-    }else{
-        options.shadow = false;
-    }
     if("bg_color" in query) {
         query.bg_color = `#${query.bg_color.replace(regex, "")}`;
         options.bg_color = isValidHexColor(query.bg_color) ? query.bg_color : "#fff";
@@ -33,7 +28,7 @@ const parseOptions = (query) => {
         query.shadow_color = `#${query.shadow_color.replace(regex, "")}`;
         options.shadow_color = isValidHexColor(query.shadow_color) ? query.shadow_color : "#000";
     }else{
-        options.shadow_color = "#000";
+        options.shadow_color = "#00000000";
     }
     return options;
 };

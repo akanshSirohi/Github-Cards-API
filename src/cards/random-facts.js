@@ -1,49 +1,37 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const DATA_FILE_PATH = "./src/data/random_facts.json";
-const DEFAULT_THEME = "dark";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function randomFactsHandler({ req, env }) {
   try {
-    const randomFactData = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomFact =
-      randomFactData[Math.floor(Math.random() * randomFactData.length)];
+    // Load random facts JSON from assets/mock-data (or R2 in production)
+    const randomFactData = await loadJSONFile(env, 'random_facts.json');
+
+    // Return 404 if data not found
+    if (!randomFactData) {
+      return new Response('Data not found', { status: 404 });
+    }
+
+    // Pick a random fact
+    const randomFact = randomFactData[Math.floor(Math.random() * randomFactData.length)];
     const factContent = `Random Fact #${randomFact.index}\n\n${randomFact.fact}`;
 
-    const factCard = await generateCard(
-      factContent,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Parse URL for theme and additional search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, factContent, searchParams, Languages.ENGLISH, theme);
+
+    // Return response with SVG and cache headers
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
     });
-    res.end(factCard);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}

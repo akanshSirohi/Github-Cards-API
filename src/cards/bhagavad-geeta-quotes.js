@@ -1,54 +1,33 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { generateHTMLCard, CARD_AGE, Languages } from '../card-generator';
+import { loadJSONFile } from '../utils/load-json-file';
 
-const DATA_FILE_PATH = "./src/data/bhagavad_geeta_quotes.json";
-const DEFAULT_THEME = "light";
+export default async function bhagavadGeetaQuoteHandler({ req, env }) {
+  // Load Bhagavad Gita quotes JSON from assets/mock-data (or R2 in production)
+  const quotes = await loadJSONFile(env, 'bhagavad_geeta_quotes.json');
 
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
+  // Pick a random quote
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
+  // Determine language and construct card content
+  let language = Languages.ENGLISH;
+  let cardContent = `Quote of the day:-\n\n"${randomQuote.quote}"`;
+
+  if (randomQuote.lang && randomQuote.lang.toLowerCase() === 'hi') {
+    language = Languages.HINDI;
+    cardContent = `आज का विचार:-\n\n"${randomQuote.quote}"`;
   }
-  next();
-};
 
-router.get("/", handleTheme, handleOptions, async (req, res) => {
-  try {
-    const bhagavad_geeta_quotes = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomQuote =
-      bhagavad_geeta_quotes[
-        Math.floor(Math.random() * bhagavad_geeta_quotes.length)
-      ];
+  const url = new URL(req.url)
+  const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+  const searchParams = Object.fromEntries(url.searchParams.entries());
 
-    let language;
-    let quoteContent = "";
+  // Generate SVG card using the default TECHY HTML theme
+  const svgCard = await generateHTMLCard(env, cardContent, searchParams,  language, theme);
 
-    if (randomQuote.lang == "en") {
-      quoteContent = `Quote of the day:-\n\n"${randomQuote.quote}"`;
-      language = Languages.ENGLISH;
-    } else if (randomQuote.lang == "hi") {
-      quoteContent = `आज का विचार:-\n\n"${randomQuote.quote}"`;
-      language = Languages.HINDI;
-    }
-    const quoteCard = await generateCard(quoteContent, req.theme, req.options, language);
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
-    });
-    res.end(quoteCard);
-  } catch (error) {
-    console.error("Error:", error.message);
-    res.status(500).send("Internal Server Error");
-  }
-});
-
-module.exports = router;
+  return new Response(svgCard, {
+    headers: {
+      'Content-Type': 'image/svg+xml',
+      'Cache-Control': `public, max-age=${CARD_AGE}`,
+    },
+  });
+}

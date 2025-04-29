@@ -1,0 +1,34 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "github-cards-worker",
+	"main": "./src/index.js",
+	"compatibility_date": "2025-04-26",
+	"observability": {
+		"enabled": true
+	},
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"vars": {
+		"ENVIRONMENT": "production",
+		"ASSETS_BASE_URL": "https://raw.githubusercontent.com/akanshSirohi/github-readme-cards/refs/heads/master/assets",
+		"BASE_URL": "https://github-cards-worker.akanshsirohi-dev.workers.dev"
+	},
+	"env": {
+		"local": {
+			"vars": {
+				"ENVIRONMENT": "development",
+				"ASSETS_BASE_URL": "http://localhost:8787",
+				"BASE_URL": "http://localhost:8787"
+			},
+			"assets": {
+				"directory": "./assets",
+				"binding": "ASSETS"
+			}
+		}
+	}
+}

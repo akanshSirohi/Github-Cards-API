@@ -1,49 +1,36 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const DATA_FILE_PATH = "./src/data/harry-potter-spells.json";
-const DEFAULT_THEME = "dark";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function harryPotterSpellsHandler({ req, env }) {
   try {
-    const harryPotterSpellsData = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomSpell =
-      harryPotterSpellsData[Math.floor(Math.random() * harryPotterSpellsData.length)];
+    // Load Harry Potter spells JSON from assets/mock-data (or R2 in production)
+    const harryPotterSpellsData = await loadJSONFile(env, 'harry-potter-spells.json');
+
+    // Return 404 if data not found
+    if (!harryPotterSpellsData) {
+      return new Response('Data not found', { status: 404 });
+    }
+
+    // Pick a random spell
+    const randomSpell = harryPotterSpellsData[Math.floor(Math.random() * harryPotterSpellsData.length)];
     const spellContent = `"${randomSpell.spell}"\n\nEffect: ${randomSpell.effect}`;
 
-    const spellCard = await generateCard(
-      spellContent,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Parse URL for theme and additional search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, spellContent, searchParams, Languages.ENGLISH, theme);
+
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
     });
-    res.end(spellCard);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}
