@@ -15,7 +15,7 @@
 	],
 	"vars": {
 		"ENVIRONMENT": "production",
-		"ASSETS_BASE_URL": "https://raw.githubusercontent.com/akanshSirohi/github-readme-cards/refs/heads/master/assets",
+		"ASSETS_BASE_URL": "https://raw.githubusercontent.com/akanshSirohi/Github-Cards-API/refs/heads/master/assets",
 		"BASE_URL": "https://github-cards-worker.akanshsirohi-dev.workers.dev"
 	},
 	"env": {
