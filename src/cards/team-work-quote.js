@@ -1,48 +1,37 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const DATA_FILE_PATH = "./src/data/team-work-quote.json";
-const DEFAULT_THEME = "dark_2";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function teamWorkQuoteHandler({ req, env }) {
   try {
-    const teamworkQuotesData = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomQuote = teamworkQuotesData[Math.floor(Math.random() * teamworkQuotesData.length)];
-    const quoteContent = `"${randomQuote.quote}"\n\nAuthor- ${randomQuote.author}`;
+    // Load Team Work quotes JSON from assets/mock-data (or R2 in production)
+    const quotes = await loadJSONFile(env, 'team-work-quote.json');
 
-    const quoteCard = await generateCard(
-      quoteContent,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Return 404 if data not found
+    if (!quotes) {
+      return new Response('Data not found', { status: 404 });
+    }
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Pick a random quote
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    const quoteContent = `${randomQuote.quote}\n\n- ${randomQuote.author}`;
+
+    // Parse URL for theme and additional search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
+
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, quoteContent, searchParams, Languages.ENGLISH, theme);
+
+    // Return response with SVG and cache headers
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
     });
-    res.end(quoteCard);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}

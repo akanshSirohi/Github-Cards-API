@@ -1,46 +1,39 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require("../card-generator");
 
-const DATA_FILE_PATH = "./src/data/challenge_of_the_week.json";
-const DEFAULT_THEME = "light";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function challengeOfTheWeekHandler({ req, env }) {
   try {
-    const challengeData = await fs.readFile(DATA_FILE_PATH, "utf8");
-    const challengeArray = JSON.parse(challengeData);
-    const randomChallenge = challengeArray[Math.floor(Math.random() * challengeArray.length)];
-    const challengeContent = `Challenge of the week:\n${randomChallenge.challenge}`;
-    const challengeCard = await generateCard(
-      challengeContent,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Load Challenge of the Week JSON from assets/mock-data (or R2 in production)
+    const challengeData = await loadJSONFile(env, 'challenge_of_the_week.json');
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Return 404 if data not found
+    if (!challengeData) {
+      return new Response('Data not found', { status: 404 });
+    }
+
+    // Pick a random challenge
+    const randomChallenge = challengeData[Math.floor(Math.random() * challengeData.length)];
+
+    // Construct card content
+    const cardContent = `Challenge of the Week:\n\n${randomChallenge.challenge}`;
+
+    // Parse URL and extract theme and search params
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
+
+    // Generate SVG card with HTML theme
+    const svgCard = await generateHTMLCard(env, cardContent, searchParams, Languages.ENGLISH, theme);
+
+    // Return response
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`
+      }
     });
-    res.end(challengeCard);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}

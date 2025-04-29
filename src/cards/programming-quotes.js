@@ -1,11 +1,12 @@
 import { loadJSONFile } from '../utils/load-json-file'
 const { CARD_AGE, Languages, generateHTMLCard } = require("../card-generator");
 
-export default async function programmingFactsHandler({ req, env }) {
+export default async function programmingQuoteHandler({ req, env }) {
   try {
-    const programmingFactsData = await loadJSONFile(env, 'programming_facts.json')
 
-    if (!programmingFactsData) {
+    const programmingQuotesData = await loadJSONFile(env, 'programming_quotes.json')
+
+    if (!programmingQuotesData) {
       return new Response('Data not found', { status: 404 })
     }
 
@@ -13,17 +14,17 @@ export default async function programmingFactsHandler({ req, env }) {
     const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
     const searchParams = Object.fromEntries(url.searchParams.entries());
 
-    const random_fact = programmingFactsData[Math.floor(Math.random() * programmingFactsData.length)];
-    const facts_content = `${random_fact.facts}\n\n- ${random_fact.topic}`;
+    const random_quote = programmingQuotesData[Math.floor(Math.random() * programmingQuotesData.length)]
+    const quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`
 
-    let quote_card = await generateHTMLCard(env, facts_content, searchParams, Languages.ENGLISH, theme);
+    let quote_card = await generateHTMLCard(env, quote_content, searchParams, Languages.ENGLISH, theme)    
 
     return new Response(quote_card, {
       headers: {
         'Content-Type': 'image/svg+xml',
         'Cache-Control': `public, max-age=${CARD_AGE}`
       }
-    });
+    })
   } catch (error) {
     console.error('Error:', error)
     return new Response('Internal Server Error', { status: 500 })

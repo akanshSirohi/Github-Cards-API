@@ -1,104 +1,92 @@
-const express = require("express");
-const router = express.Router();
-
-// All available api routes and parameters
-
-router.get("/", (req, res) => {
-  const port = process.env.PORT || 5000;
-  let hostname = req.hostname;
-  let baseurl;
-  if (hostname == "localhost") {
-    baseurl = `http://localhost:${port}`;
-  } else {
-    baseurl = `https://${hostname}`;
-  }
+export default async function helpHandler({ req, env }) {
+  const baseurl = env.BASE_URL;
   const themes = {
-    dark: {
-      info: "Dark theme",
+    techy: {
+      info: "Techy Theme",
       example: [
-        `${baseurl}/jokes-card?theme=dark`,
-        `${baseurl}/programming-quotes-card?theme=dark`,
-        `${baseurl}/programming-facts-card?theme=dark`,
-        `${baseurl}/motivational-quotes-card?theme=dark`,
-        `${baseurl}/travel-destinations-card?theme=dark`,
-        `${baseurl}/random-facts-card?theme=dark`,
-        `${baseurl}/harry-potter-spell-card?theme=dark`,
+        `${baseurl}/jokes-card?theme=techy`,
+        `${baseurl}/programming-quotes-card?theme=techy`,
+        `${baseurl}/programming-facts-card?theme=techy`,
+        `${baseurl}/motivational-quotes-card?theme=techy`,
+        `${baseurl}/travel-destinations-card?theme=techy`,
+        `${baseurl}/random-facts-card?theme=techy`,
+        `${baseurl}/harry-potter-spell-card?theme=techy`,
       ],
     },
-    dark_2: {
-      info: "Dark theme 2",
+    neon_horizon: {
+      info: "Neon Horizon Theme",
       example: [
-        `${baseurl}/jokes-card?theme=dark_2`,
-        `${baseurl}/programming-quotes-card?theme=dark_2`,
-        `${baseurl}/programming-facts-card?theme=dark_2`,
-        `${baseurl}/motivational-quotes-card?theme=dark_2`,
-        `${baseurl}/travel-destinations-card?theme=dark_2`,
-        `${baseurl}/random-facts-card?theme=dark_2`,
-        `${baseurl}/harry-potter-spell-card?theme=dark_2`,
+        `${baseurl}/jokes-card?theme=neon_horizon`,
+        `${baseurl}/programming-quotes-card?theme=neon_horizon`,
+        `${baseurl}/programming-facts-card?theme=neon_horizon`,
+        `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
+        `${baseurl}/travel-destinations-card?theme=neon_horizon`,
+        `${baseurl}/random-facts-card?theme=neon_horizon`,
+        `${baseurl}/harry-potter-spell-card?theme=neon_horizon`,
       ],
     },
-    light: {
-      info: "Light theme",
+    galactic_dusk: {
+      info: "Galactic Dusk Theme",
       example: [
-        `${baseurl}/jokes-card?theme=light`,
-        `${baseurl}/programming-quotes-card?theme=light`,
-        `${baseurl}/programming-facts-card?theme=light`,
-        `${baseurl}/motivational-quotes-card?theme=light`,
-        `${baseurl}/travel-destinations-card?theme=light`,
-        `${baseurl}/random-facts-card?theme=light`,
-        `${baseurl}/harry-potter-spell-card?theme=light`,
+        `${baseurl}/jokes-card?theme=galactic_dusk`,
+        `${baseurl}/programming-quotes-card?theme=galactic_dusk`,
+        `${baseurl}/programming-facts-card?theme=galactic_dusk`,
+        `${baseurl}/motivational-quotes-card?theme=galactic_dusk`,
+        `${baseurl}/travel-destinations-card?theme=galactic_dusk`,
+        `${baseurl}/random-facts-card?theme=galactic_dusk`,
+        `${baseurl}/harry-potter-spell-card?theme=galactic_dusk`,
       ],
     },
-    rgb: {
-      info: "Rgb theme",
+    aurora_borealis: {
+      info: "Aurora Borealis Theme",
       example: [
-        `${baseurl}/jokes-card?theme=rgb`,
-        `${baseurl}/programming-quotes-card?theme=rgb`,
-        `${baseurl}/programming-facts-card?theme=rgb`,
-        `${baseurl}/motivational-quotes-card?theme=rgb`,
-        `${baseurl}/travel-destinations-card?theme=rgb`,
-        `${baseurl}/random-facts-card?theme=rgb`,
-        `${baseurl}/harry-potter-spell-card?theme=rgb`,
+        `${baseurl}/jokes-card?theme=aurora_borealis`,
+        `${baseurl}/programming-quotes-card?theme=aurora_borealis`,
+        `${baseurl}/programming-facts-card?theme=aurora_borealis`,
+        `${baseurl}/motivational-quotes-card?theme=aurora_borealis`,
+        `${baseurl}/travel-destinations-card?theme=aurora_borealis`,
+        `${baseurl}/random-facts-card?theme=aurora_borealis`,
+        `${baseurl}/harry-potter-spell-card?theme=aurora_borealis`,
       ],
     },
-    pattern_1: {
-      info: "Pattern theme 1",
+    retro_block: {
+      info: "Retro Block Theme",
       example: [
-        `${baseurl}/jokes-card?theme=pattern_1`,
-        `${baseurl}/programming-quotes-card?theme=pattern_1`,
-        `${baseurl}/programming-facts-card?theme=pattern_1`,
-        `${baseurl}/motivational-quotes-card?theme=pattern_1`,
-        `${baseurl}/travel-destinations-card?theme=pattern_1`,
-        `${baseurl}/random-facts-card?theme=pattern_1`,
-        `${baseurl}/harry-potter-spell-card?theme=pattern_1`,
+        `${baseurl}/jokes-card?theme=retro_block`,
+        `${baseurl}/programming-quotes-card?theme=retro_block`,
+        `${baseurl}/programming-facts-card?theme=retro_block`,
+        `${baseurl}/motivational-quotes-card?theme=retro_block`,
+        `${baseurl}/travel-destinations-card?theme=retro_block`,
+        `${baseurl}/random-facts-card?theme=retro_block`,
+        `${baseurl}/harry-potter-spell-card?theme=retro_block`,
       ],
     },
-    pattern_2: {
-      info: "Pattern theme 2",
+    rainbow_vortex: {
+      info: "Rainbow Vortex Theme",
       example: [
-        `${baseurl}/jokes-card?theme=pattern_2`,
-        `${baseurl}/programming-quotes-card?theme=pattern_2`,
-        `${baseurl}/programming-facts-card?theme=pattern_2`,
-        `${baseurl}/motivational-quotes-card?theme=pattern_2`,
-        `${baseurl}/travel-destinations-card?theme=pattern_2`,
-        `${baseurl}/random-facts-card?theme=pattern_2`,
-        `${baseurl}/harry-potter-spell-card?theme=pattern_2`,
+        `${baseurl}/jokes-card?theme=rainbow_vortex`,
+        `${baseurl}/programming-quotes-card?theme=rainbow_vortex`,
+        `${baseurl}/programming-facts-card?theme=rainbow_vortex`,
+        `${baseurl}/motivational-quotes-card?theme=rainbow_vortex`,
+        `${baseurl}/travel-destinations-card?theme=rainbow_vortex`,
+        `${baseurl}/random-facts-card?theme=rainbow_vortex`,
+        `${baseurl}/harry-potter-spell-card?theme=rainbow_vortex`,
       ],
     },
-    pattern_3: {
-      info: "Pattern theme 3",
+    endless_constellation: {
+      info: "Endless Constellation Theme",
       example: [
-        `${baseurl}/jokes-card?theme=pattern_3`,
-        `${baseurl}/programming-quotes-card?theme=pattern_3`,
-        `${baseurl}/programming-facts-card?theme=pattern_3`,
-        `${baseurl}/motivational-quotes-card?theme=pattern_3`,
-        `${baseurl}/travel-destinations-card?theme=pattern_3`,
-        `${baseurl}/random-facts-card?theme=pattern_3`,
-        `${baseurl}/harry-potter-spell-card?theme=pattern_3`,
+        `${baseurl}/jokes-card?theme=endless_constellation`,
+        `${baseurl}/programming-quotes-card?theme=endless_constellation`,
+        `${baseurl}/programming-facts-card?theme=endless_constellation`,
+        `${baseurl}/motivational-quotes-card?theme=endless_constellation`,
+        `${baseurl}/travel-destinations-card?theme=endless_constellation`,
+        `${baseurl}/random-facts-card?theme=endless_constellation`,
+        `${baseurl}/harry-potter-spell-card?theme=endless_constellation`,
       ],
     },
     lemonade: {
-      info: "Lemonade theme",
+      info: "Lemonade Theme",
       example: [
         `${baseurl}/jokes-card?theme=lemonade`,
         `${baseurl}/programming-quotes-card?theme=lemonade`,
@@ -109,20 +97,16 @@ router.get("/", (req, res) => {
         `${baseurl}/harry-potter-spell-card?theme=lemonade`,
       ],
     },
-    techy: {
-      info: "Techy theme",
-      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
+    vintage: {
+      info: "Vintage Theme",
       example: [
-        `${baseurl}/programming-quotes-card?theme=techy`,
-        `${baseurl}/motivational-quotes-card?theme=techy`,
-      ],
-    },
-    neon_horizon: {
-      info: "Neon horizon theme",
-      supported_cards: ["programming-quotes-card", "motivational-quotes-card"],
-      example: [
-        `${baseurl}/programming-quotes-card?theme=neon_horizon`,
-        `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
+        `${baseurl}/jokes-card?theme=vintage`,
+        `${baseurl}/programming-quotes-card?theme=vintage`,
+        `${baseurl}/programming-facts-card?theme=vintage`,
+        `${baseurl}/motivational-quotes-card?theme=vintage`,
+        `${baseurl}/travel-destinations-card?theme=vintage`,
+        `${baseurl}/random-facts-card?theme=vintage`,
+        `${baseurl}/harry-potter-spell-card?theme=vintage`,
       ],
     },
     galaxy: {
@@ -138,24 +122,21 @@ router.get("/", (req, res) => {
     custom: {
       info: "Custom theme",
       args: {
-        card_color: "Card color. Default: #ffffff  [Optional]",
-        font_color: "Card text color. Default: #000000  [Optional]",
-        bg_color: "Card Background color. Default: #fff  [Optional]",
-        shadow: "Card shadow. Default: false  [Optional]",
-        shadow_color: "Card shadow color. Default: #000000  [Optional]",
+        card_color: "Card color. Default: #ffffff [Optional]",
+        font_color: "Card text color. Default: #000000 [Optional]",
+        bg_color: "Card Background color. Default: #ffffff [Optional]",
+        shadow_color: "Card shadow color. Default: #00000000 [Optional]",
       },
       example: [
-        `${baseurl}/jokes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
-        `${baseurl}/programming-quotes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
-        `${baseurl}/motivational-quotes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
-        `${baseurl}/jokes-card?theme=custom&bg_color=ffff00&font_color=0000ff&shadow=true`,
-        `${baseurl}/programming-quotes-card?theme=custom&bg_color=000000&font_color=ff0000&shadow=true&shadow_color=ff0000`,
+        `${baseurl}/jokes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow_color=fff`,
+        `${baseurl}/motivational-quotes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow_color=fff`,
+        `${baseurl}/jokes-card?theme=custom&bg_color=ffff00&font_color=0000ff`,
+        `${baseurl}/programming-quotes-card?theme=custom&bg_color=000000&font_color=ff0000&shadow_color=ff0000`,
         `${baseurl}/motivational-quotes-card?theme=custom&bg_color=008000&font_color=000000`,
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000`,
-        `${baseurl}/programming-facts-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow=false&shadow_color=fff`,
         `${baseurl}/travel-destinations-card?theme=custom&bg_color=0000ff&font_color=ffffff`,
-        `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
-        `${baseurl}/harry-potter-spell-card?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow=true&shadow_color=fff`,
+        `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow_color=fff`,
+        `${baseurl}/harry-potter-spell-card?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow_color=fff`,
       ],
     },
   };
@@ -165,11 +146,11 @@ router.get("/", (req, res) => {
       info: "Random programming jokes card",
       api: {
         args: {
-          theme: "Theme of card: All themes. Default: light  [Optional]",
+          theme: "Theme of card: All themes. [Optional]",
         },
         example: [
-          `${baseurl}/jokes-card?theme=light`,
-          `${baseurl}/jokes-card?theme=dark`,
+          `${baseurl}/jokes-card?theme=galactic_dusk`,
+          `${baseurl}/jokes-card?theme=vintage`,
         ],
       },
     },
@@ -177,7 +158,7 @@ router.get("/", (req, res) => {
       info: "Random programming quotes card",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/programming-quotes-card`],
       },
@@ -187,12 +168,11 @@ router.get("/", (req, res) => {
       api: {
         args: {
           theme:
-            "Theme of card. All themes. Default: dark_2  [Optional]. Additional themes: skeleton, neon",
+            "Theme of card [Optional]",
         },
         example: [
           `${baseurl}/motivational-quotes-card`,
-          `${baseurl}/motivational-quotes-card?theme=neon`,
-          `${baseurl}/motivational-quotes-card?theme=skeleton`,
+          `${baseurl}/motivational-quotes-card?theme=neon_horizon`,
         ],
       },
     },
@@ -200,7 +180,7 @@ router.get("/", (req, res) => {
       info: "Generates random word of the day with their meanings.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/word-of-the-day-card`],
       },
@@ -209,7 +189,7 @@ router.get("/", (req, res) => {
       info: "Generates random french word of the day with their english meanings.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/french-word-of-the-day-card`],
       },
@@ -218,7 +198,7 @@ router.get("/", (req, res) => {
       info: "Generates a random challenge for you to take on in that week.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/challenge-of-the-week-card`],
       },
@@ -227,7 +207,7 @@ router.get("/", (req, res) => {
       info: "Generate random motivational quote related to the teamwork.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/team-work-quote-card`],
       },
@@ -236,7 +216,7 @@ router.get("/", (req, res) => {
       info: "Generate random motivational quote related to the game of thrones.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/got-quotes-card`],
       },
@@ -245,7 +225,7 @@ router.get("/", (req, res) => {
       info: "Generate random motivational quote related to the breaking bad.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/breaking-bad-quote-card`],
       },
@@ -254,7 +234,7 @@ router.get("/", (req, res) => {
       info: "Generate a random quote from the bhagavad-geeta-card",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/bhagavad-geeta-card`],
       },
@@ -263,7 +243,7 @@ router.get("/", (req, res) => {
       info: "Random programming facts card",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/programming-facts-card`],
       },
@@ -272,25 +252,25 @@ router.get("/", (req, res) => {
       info: "Displays a random fun fact card",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/fun-fact-card`],
       },
     },
-    "spanish-quote-card": {
-      info: "Random spanish quote card",
+    "spanish-jokes-card": {
+      info: "Random spanish jokes card",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark  [Optional]",
+          theme: "Theme of card [Optional]",
         },
-        example: [`${baseurl}/spanish-quote-card`],
+        example: [`${baseurl}/spanish-jokes-card`],
       },
     },
     "top-tweets-card": {
       info: "Random top Twitter Tweets card",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark_2  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/top-tweets-card`],
       },
@@ -299,7 +279,7 @@ router.get("/", (req, res) => {
       info: "Random github facts",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/github-facts-card`],
       },
@@ -308,25 +288,25 @@ router.get("/", (req, res) => {
       info: "Programming security tips",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: light  [Optional]",
+          theme: "Theme of card [Optional]",
         },
-        example: [`${baseurl}/security-tips-cards`],
+        example: [`${baseurl}/security-tips-card`],
       },
     },
     "random-facts-card": {
       info: "Generates a random interesting fact",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark [Optional]",
+          theme: "Theme of card [Optional]",
         },
-        example: [`${baseurl}/random-facts`],
+        example: [`${baseurl}/random-facts-card`],
       },
     },
     "harry-potter-spell-card": {
       info: "Generates a random spell from the Harry Potter books",
       api: {
         args: {
-          theme: "Theme of a card. All themes. Default: darrk [Optional]",
+          theme: "Theme of a card [Optional]",
         },
         example: [`${baseurl}/harry-potter-spell-card`],
       },
@@ -335,7 +315,7 @@ router.get("/", (req, res) => {
       info: "Generates a random travel destination and an interesting fact.",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/travel-destinations-card`],
       },
@@ -344,14 +324,16 @@ router.get("/", (req, res) => {
       info: "Generates a random health tips for your good health",
       api: {
         args: {
-          theme: "Theme of card. All themes. Default: dark  [Optional]",
+          theme: "Theme of card [Optional]",
         },
         example: [`${baseurl}/health-tip-card`],
       },
     },
   };
 
-  res.json({ themes, cards });
-});
-
-module.exports = router;
+  return new Response(JSON.stringify({ themes, cards }),{
+    headers: {
+      "Content-Type": "application/json"
+    },
+  });
+};

@@ -1,84 +1,37 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const {
-  generateCard,
-  CARD_AGE,
-  generateHTMLCard,
-  Languages,
-} = require("../card-generator");
-const { parseOptions } = require("../options-parser");
-const { HTML_THEMES } = require("../html-themes");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const DATA_FILE_PATH = "./src/data/motivational_quotes.json";
-const DEFAULT_THEME = "dark_2";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function motivationalQuoteHandler({ req, env }) {
   try {
-    const quotes = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf8"));
-    const random_quote = quotes[Math.floor(Math.random() * quotes.length)];
+    // Load motivational quotes JSON from assets/mock-data (or R2 in production)
+    const data = await loadJSONFile(env, 'motivational_quotes.json');
 
-    let quote_card;
-    let all_html_themes = Object.keys(HTML_THEMES);
-
-    // Custom theme moderation
-    if (req.theme === "skeleton") {
-      const html_content = `
-        <div style="display: flex; flex-direction: column; border: 1px solid #000; padding: 20px; width: 400px; margin: 0 auto; text-align: center;align-items:center;border-radius:10px;">
-          <span style="font-size: 20px; font-weight: bold;">${random_quote.quote}</span>
-          <span style="font-size: 16px;color: #888; margin-top:10px;">- ${random_quote.author}</span>
-        </div>
-      `;
-
-      // Generate card using custom HTML
-      quote_card = await generateHTMLCard(html_content, Languages.ENGLISH);
-    } else if (req.theme === "neon") {
-      const html_content = `
-      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #1e1e1e; color: #ffffff; border: 2px solid #3a3a3a; padding: 25px; width: 420px; text-align: center; border-radius: 12px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif;">
-        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-          <span style="font-size: 16px; font-weight: bold; color: #ffffff; background: linear-gradient(90deg, #00ff9d, #00e4ff);padding:10px;">"${random_quote.quote}"</span>
-          <span style="font-size: 14px; color: #bbbbbb; margin-top: 12px;">- ${random_quote.author}</span>
-        </div>
-        <div style="display: flex; width: 100%; height: 2px; background: linear-gradient(90deg, #00ff9d, #00e4ff); margin-top: 15px;"></div>
-      </div>
-    `;
-      // Generate card using custom HTML
-      quote_card = await generateHTMLCard(html_content, Languages.ENGLISH);
-    }else if(all_html_themes.includes(req.theme.toUpperCase())) {
-      // Generate card using the HTML theme
-      let html_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
-      quote_card = await generateHTMLCard(html_content, Languages.ENGLISH, HTML_THEMES[req.theme.toUpperCase()]);
-    } else {
-      const quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
-      quote_card = await generateCard(
-        quote_content,
-        req.theme,
-        req.options,
-        Languages.ENGLISH
-      );
+    // Return 404 if data not found
+    if (!data) {
+      return new Response('Data not found', { status: 404 });
     }
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
-    });
-    res.end(quote_card);
-  } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
-  }
-});
+    // Pick a random motivational quote
+    const randomQuote = data[Math.floor(Math.random() * data.length)];
+    const cardContent = `${randomQuote.quote}\n\n- ${randomQuote.author}`;
 
-module.exports = router;
+    // Parse URL for theme and additional search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
+
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, cardContent, searchParams, Languages.ENGLISH, theme);
+
+    // Return response with SVG and cache headers
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
+    });
+  } catch (error) {
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
+  }
+}

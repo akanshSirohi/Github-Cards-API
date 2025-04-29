@@ -1,53 +1,37 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const DATA_FILE_PATH = "./src/data/security-tips.json";
-const DEFAULT_THEME = "light";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  // Custom theme moderation
-  if (req.theme === "my_theme") {
-    req.theme = "pattern_3";
-    req.options = {
-      card_color: "#ffffffc2",
-      font_color: "#000",
-      shadow: false,
-    };
-  } else if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function securityTipsHandler({ req, env }) {
   try {
-    const tips = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf8"));
-    const random_tip = tips[Math.floor(Math.random() * tips.length)];
+    // Load security tips JSON from assets/mock-data (or R2 in production)
+    const data = await loadJSONFile(env, 'security-tips.json');
 
-    const tip_card = await generateCard(
-      random_tip.tip,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Return 404 if data not found
+    if (!data) {
+      return new Response('Data not found', { status: 404 });
+    }
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Pick a random security tip
+    const randomTip = data[Math.floor(Math.random() * data.length)];
+    const cardContent = `${randomTip.tip}`;
+
+    // Parse URL for theme and search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
+
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, cardContent, searchParams, Languages.ENGLISH, theme);
+
+    // Return response with SVG and cache headers
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
     });
-    res.end(tip_card);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}

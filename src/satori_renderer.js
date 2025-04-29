@@ -1,43 +1,26 @@
-const { loadImage } = require("canvas");
-const fs = require('fs').promises;
+import { html as parseHTML } from 'satori-html'
+import satori from 'satori'
 
-let html, satori, ubuntuFontBuffer, notoFontBuffer;
-(async () => {
-    const htmlModule = await import('satori-html');
-    const satoriModule = await import('satori');
-  
-    html = htmlModule.html;
-    satori = satoriModule.default;
-
-    // English font
-    const ubuntu_buffer = await fs.readFile("src/assets/fonts/Ubuntu-Regular.ttf");
-    ubuntuFontBuffer = new Uint8Array(ubuntu_buffer).buffer;
-
-    // Hindi font
-    const noto_buffer = await fs.readFile("src/assets/fonts/NotoSans-Regular.ttf");
-    notoFontBuffer = new Uint8Array(noto_buffer).buffer;
-})();
-
-const generateCssGradient = async (css_gradient_code,width,height,ctx) => {
-    let markup = html(`
-        <div style="display:flex;width:${width}px;height:${height}px;background:${css_gradient_code}"></div>
-    `);
-    let svg = await satori(markup, {
-        width: width,
-        height: height,
-    });
-    let img = await loadImage("data:image/svg+xml;base64," + Buffer.from(svg).toString('base64'));
-    img = ctx.createPattern(img, "repeat");
-    return img;
+// Helper function to fetch fonts from /fonts
+async function fetchFont(path) {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(`Failed to fetch font from ${path}`);
+    return await res.arrayBuffer();
 }
 
-const generateSvg = async (html_code, font) => {
-    let markup = html(`
-        <div style="display:flex;width:auto;height:auto;font-family:${font};">
-            ${html_code}
-        </div>
-    `);
-    let svg = await satori(markup, {
+// Generate SVG from HTML string and font
+export async function generateSvg(html_code, font, env) {
+    const base = env.ASSETS_BASE_URL;
+    const ubuntuFontBuffer = await fetchFont(`${base}/fonts/Ubuntu-Regular.ttf`)
+    const notoFontBuffer = await fetchFont(`${base}/fonts/NotoSans-Regular.ttf`)
+
+    const markup = parseHTML(`
+    <div style="display:flex;width:auto;height:auto;font-family:${font};">
+      ${html_code}
+    </div>
+  `)
+
+    const svg = await satori(markup, {
         fonts: [
             {
                 name: 'Ubuntu',
@@ -52,9 +35,7 @@ const generateSvg = async (html_code, font) => {
                 style: 'normal',
             }
         ],
-    });
-    return svg;
-}
+    })
 
-module.exports.generateCssGradient = generateCssGradient;
-module.exports.generateSvg = generateSvg;
+    return svg
+}

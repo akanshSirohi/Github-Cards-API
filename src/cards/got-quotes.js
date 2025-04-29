@@ -1,47 +1,36 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const {generateCard, CARD_AGE, Languages} = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+export default async function gotQuotesHandler({ req, env }) {
+  try {
+    // Load GoT quotes JSON from assets/mock-data (or R2 in production)
+    const gotQuotes = await loadJSONFile(env, 'got-quotes.json');
 
-const DATA_FILE_PATH = "./src/data/got-quotes.json";
-const DEFAULT_THEME = "dark_2";
-
-const handleTheme = (req, res, next) => {
-    req.theme = req.query.theme || DEFAULT_THEME;
-    next();
-};
-
-const handleOptions = (req, res, next) => {
-    if (req.theme === "custom") {
-        req.options = parseOptions(req.query);
+    // Return 404 if data not found
+    if (!gotQuotes) {
+      return new Response('Data not found', { status: 404 });
     }
-    next();
-};
 
-router.get("/", handleTheme, handleOptions, async (req, res) => {
-    try {
-        const gotquotes = JSON.parse(await fs.readFile(DATA_FILE_PATH, "utf8"));
-        const random_quotes = gotquotes[Math.floor(Math.random() * gotquotes.length)];
+    // Pick a random quote
+    const random_quotes = gotQuotes[Math.floor(Math.random() * gotQuotes.length)];
+    const quotes_content = `${random_quotes.sentence}\n\n- ${random_quotes.character}`;
 
-        const quotes_content = `${random_quotes.sentence}\n\n- ${random_quotes.character}`;
-        const got_card = await generateCard(
-            quotes_content,
-            req.theme,
-            req.options,
-            Languages.ENGLISH
-        );
-    
-        res.writeHead(200, {
-            "Content-Type": "image/svg+xml",
-            "Cache-Control": `public, max-age=${CARD_AGE}`,
-        });
-        res.end(got_card);
-    } catch (error) {
-        console.error("Error:", error);
-        res.status(500).send("Internal Server Error");
-    }
-});
+    // Parse URL for theme and additional search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
 
-module.exports = router;
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, quotes_content, searchParams, Languages.ENGLISH, theme);
+
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
+    });
+  } catch (error) {
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
+  }
+}

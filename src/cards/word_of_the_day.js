@@ -1,49 +1,37 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs").promises;
-const { generateCard, CARD_AGE, Languages } = require("../card-generator");
-const { parseOptions } = require("../options-parser");
+import { loadJSONFile } from '../utils/load-json-file';
+const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
-const DATA_FILE_PATH = "./src/data/word_of_the_day.json";
-const DEFAULT_THEME = "light";
-
-const handleTheme = (req, res, next) => {
-  req.theme = req.query.theme || DEFAULT_THEME;
-  next();
-};
-
-const handleOptions = (req, res, next) => {
-  if (req.theme === "custom") {
-    req.options = parseOptions(req.query);
-  }
-  next();
-};
-
-router.get("/", handleTheme, handleOptions, async (req, res) => {
+export default async function wordOfTheDayHandler({ req, env }) {
   try {
-    const wordOfTheDayData = JSON.parse(
-      await fs.readFile(DATA_FILE_PATH, "utf8")
-    );
-    const randomWord =
-      wordOfTheDayData[Math.floor(Math.random() * wordOfTheDayData.length)];
+    // Load Word of the Day JSON from assets/mock-data (or R2 in production)
+    const data = await loadJSONFile(env, 'word_of_the_day.json');
+
+    // Return 404 if data not found
+    if (!data) {
+      return new Response('Data not found', { status: 404 });
+    }
+
+    // Pick a random word
+    const randomWord = data[Math.floor(Math.random() * data.length)];
     const wordContent = `${randomWord.word}\n\nMeaning: ${randomWord.meaning}`;
 
-    const wordCard = await generateCard(
-      wordContent,
-      req.theme,
-      req.options,
-      Languages.ENGLISH
-    );
+    // Parse URL for theme and additional search parameters
+    const url = new URL(req.url);
+    const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
+    const searchParams = Object.fromEntries(url.searchParams.entries());
 
-    res.writeHead(200, {
-      "Content-Type": "image/svg+xml",
-      "Cache-Control": `public, max-age=${CARD_AGE}`,
+    // Generate SVG card
+    const svgCard = await generateHTMLCard(env, wordContent, searchParams, Languages.ENGLISH, theme);
+
+    // Return response with SVG and cache headers
+    return new Response(svgCard, {
+      headers: {
+        'Content-Type': 'image/svg+xml',
+        'Cache-Control': `public, max-age=${CARD_AGE}`,
+      },
     });
-    res.end(wordCard);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.error('Error:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
-});
-
-module.exports = router;
+}
