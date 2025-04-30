@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function harryPotterSpellsHandler({ req, env }) {
   try {
-    // Load Harry Potter spells JSON from assets/mock-data (or R2 in production)
+    // Load Harry Potter spells JSON
     const harryPotterSpellsData = await loadJSONFile(env, 'harry-potter-spells.json');
 
     // Return 404 if data not found

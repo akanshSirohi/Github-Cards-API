@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function securityTipsHandler({ req, env }) {
   try {
-    // Load security tips JSON from assets/mock-data (or R2 in production)
+    // Load security tips JSON 
     const data = await loadJSONFile(env, 'security-tips.json');
 
     // Return 404 if data not found

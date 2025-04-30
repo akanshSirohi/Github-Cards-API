@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function funFactCardHandler({ req, env }) {
   try {
-    // Load fun facts JSON from assets/mock-data (or R2 in production)
+    // Load fun facts JSON 
     const data = await loadJSONFile(env, 'fun_facts.json');
 
     // Return 404 if data not found

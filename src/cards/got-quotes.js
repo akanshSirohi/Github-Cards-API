@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function gotQuotesHandler({ req, env }) {
   try {
-    // Load GoT quotes JSON from assets/mock-data (or R2 in production)
+    // Load GoT quotes JSON
     const gotQuotes = await loadJSONFile(env, 'got-quotes.json');
 
     // Return 404 if data not found

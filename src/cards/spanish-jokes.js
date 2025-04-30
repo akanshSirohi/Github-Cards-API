@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function spanishJokesHandler({ req, env }) {
   try {
-    // Load Spanish jokes JSON from assets/mock-data (or R2 in production)
+    // Load Spanish jokes JSON
     const jokes = await loadJSONFile(env, 'spanish_jokes.json');
 
     // Return 404 if data not found

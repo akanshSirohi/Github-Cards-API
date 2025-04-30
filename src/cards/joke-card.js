@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function jokeCardHandler({ req, env }) {
   try {
-    // Load jokes JSON from assets/mock-data (or R2 in production)
+    // Load jokes JSON 
     const jokes = await loadJSONFile(env, 'jokes.json');
 
     // Return 404 if data not found

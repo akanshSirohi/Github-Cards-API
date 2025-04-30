@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function wordOfTheDayHandler({ req, env }) {
   try {
-    // Load Word of the Day JSON from assets/mock-data (or R2 in production)
+    // Load Word of the Day JSON
     const data = await loadJSONFile(env, 'word_of_the_day.json');
 
     // Return 404 if data not found

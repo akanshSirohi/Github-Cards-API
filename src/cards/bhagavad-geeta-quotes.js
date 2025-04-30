@@ -2,7 +2,8 @@ import { generateHTMLCard, CARD_AGE, Languages } from '../card-generator';
 import { loadJSONFile } from '../utils/load-json-file';
 
 export default async function bhagavadGeetaQuoteHandler({ req, env }) {
-  // Load Bhagavad Gita quotes JSON from assets/mock-data (or R2 in production)
+  
+  // Load Bhagavad Gita quotes JSON
   const quotes = await loadJSONFile(env, 'bhagavad_geeta_quotes.json');
 
   // Pick a random quote

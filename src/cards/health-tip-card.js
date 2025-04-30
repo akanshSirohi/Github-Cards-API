@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function healthTipCardHandler({ req, env }) {
   try {
-    // Load health tips JSON from assets/mock-data (or R2 in production)
+    // Load health tips JSON 
     const healthTips = await loadJSONFile(env, 'health-tips.json');
 
     // Return 404 if data not found

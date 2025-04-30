@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require("../card-generator");
 
 export default async function challengeOfTheWeekHandler({ req, env }) {
   try {
-    // Load Challenge of the Week JSON from assets/mock-data (or R2 in production)
+    // Load Challenge of the Week JSON 
     const challengeData = await loadJSONFile(env, 'challenge_of_the_week.json');
 
     // Return 404 if data not found

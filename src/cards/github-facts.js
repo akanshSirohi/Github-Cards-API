@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function githubFactsHandler({ req, env }) {
   try {
-    // Load GitHub facts JSON from assets/mock-data (or R2 in production)
+    // Load GitHub facts JSON 
     const data = await loadJSONFile(env, 'github_facts.json');
 
     // Return 404 if data not found

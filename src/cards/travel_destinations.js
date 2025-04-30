@@ -2,7 +2,7 @@ import { generateHTMLCard, CARD_AGE, Languages } from '../card-generator';
 import { loadJSONFile } from '../utils/load-json-file';
 
 export default async function travelDestinationsHandler({ req, env }) {
-  // Load travel destinations JSON from assets/mock-data (or R2 in production)
+  // Load travel destinations JSON
   const destinations = await loadJSONFile(env, 'travel_destinations.json');
 
   // Pick a random destination

@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function teamWorkQuoteHandler({ req, env }) {
   try {
-    // Load Team Work quotes JSON from assets/mock-data (or R2 in production)
+    // Load Team Work quotes JSON
     const quotes = await loadJSONFile(env, 'team-work-quote.json');
 
     // Return 404 if data not found

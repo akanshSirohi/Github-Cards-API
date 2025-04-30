@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function topTweetsHandler({ req, env }) {
   try {
-    // Load top tweets JSON from assets/mock-data (or R2 in production)
+    // Load top tweets JSON 
     const tweets = await loadJSONFile(env, 'top_tweets.json');
 
     // Return 404 if data not found

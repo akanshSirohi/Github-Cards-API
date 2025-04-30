@@ -3,7 +3,7 @@ const { CARD_AGE, Languages, generateHTMLCard } = require('../card-generator');
 
 export default async function motivationalQuoteHandler({ req, env }) {
   try {
-    // Load motivational quotes JSON from assets/mock-data (or R2 in production)
+    // Load motivational quotes JSON
     const data = await loadJSONFile(env, 'motivational_quotes.json');
 
     // Return 404 if data not found
