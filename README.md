@@ -54,7 +54,7 @@ All cards are managed via `help.js`. A few popular examples include:
 | `bhagwad-geeta-quotes` | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/bhagavad-geeta-card )`     |
 | `fun-facts`            | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/fun-fact-card)`            |
 
-👉 For the full list, visit [`/help`](https://github-cards-worker.akanshsirohi-dev.workers.dev/help)
+👉 For the full list, visit [`https://github-cards-worker.akanshsirohi-dev.workers.dev`](https://github-cards-worker.akanshsirohi-dev.workers.dev)
 
 ---
 
