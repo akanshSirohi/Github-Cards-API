@@ -78,20 +78,44 @@ All themes are created using HTML and rendered via **Satori**.
 
 ### ⚙️ Custom Arguments (for `CUSTOM` theme only)
 
-| Parameter      | Description                  | Default     |
-| -------------- | ---------------------------- | ----------- |
-| `card_color`   | Card's main background color | `#ffffff`   |
-| `font_color`   | Text color                   | `#000000`   |
-| `bg_color`     | Outer background color       | `#ffffff`   |
-| `shadow_color` | Card shadow color            | `#00000000` |
+| Parameter      | Description                                                                      | Default     |
+| -------------- | -------------------------------------------------------------------------------- | ----------- |
+| `card_color`   | Card's main background color **or** a Base64‑encoded CSS gradient string          | `#ffffff`   |
+| `font_color`   | Text color                                                                       | `#000000`   |
+| `bg_color`     | Outer background color **or** a Base64‑encoded CSS gradient string               | `#ffffff`   |
+| `shadow_color` | Card shadow color                                                                | `#00000000` |
 
-#### Example
+> **Gradient Support**  
+> `card_color` and `bg_color` accept linear or radial gradients. Because commas & parentheses are not URL‑safe, supply the gradient as a **URL‑safe Base64 string**.
+> Use <https://www.base64encode.org/enc/safe/> (or any encoder) and copy the **Encode (URL‑Safe)** output.
+>
+> ```text
+> # Original CSS
+> linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+>
+> # URL‑safe Base64
+> bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs
+> ```
+>
+> Then call the API:
+>
+> ```md
+> ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/jokes-card?theme=custom&card_color=<BASE64>&bg_color=<BASE64>&font_color=000&shadow_color=000)
+> ```
+
+#### Example (Solid Colors)
 
 ```md
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=custom&card_color=000000&font_color=ffffff&shadow_color=ff0000)
 ```
 
-### 🖼️ Examples
+#### Example (Gradients)
+
+```md
+![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/jokes-card?theme=custom&card_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoNDIsIDEyMywgMTU1LCAxKSAwJSwgcmdiYSg4NywgMTk5LCAxMzMsIDEpIDUwJSwgcmdiYSgyMzcsIDIyMSwgODMsIDEpIDEwMCUpOw&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs&font_color=000&shadow_color=000)
+```
+
+### 🖼️ Theme Examples
 
 - **Galactic Dusk Theme** <br>
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=galactic_dusk)
@@ -99,8 +123,8 @@ All themes are created using HTML and rendered via **Satori**.
 - **Neon Horizon Theme** <br>
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=neon_horizon)
 
-- **Custom Theme Example** <br>
-![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow_color=fff)
+- **Custom (Gradient)**  <br>
+![Custom Gradient](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card?theme=custom&card_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoNDIsIDEyMywgMTU1LCAxKSAwJSwgcmdiYSg4NywgMTk5LCAxMzMsIDEpIDUwJSwgcmdiYSgyMzcsIDIyMSwgODMsIDEpIDEwMCUpOw&font_color=fff&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs&shadow_color=fff)
 
 ---
 
