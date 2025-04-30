@@ -44,13 +44,13 @@ Access all available cards and their respective options at:
 
 All cards are managed via `help.js`. A few popular examples include:
 
-| Card Name              | Example                                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------------------- |
-| `programming-facts`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts)`    |
-| `motivational-quote`   | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quote)`   |
-| `programming-quote`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-quote)`    |
-| `bhagwad-geeta-quotes` | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/bhagavad-geeta-card )` |
-| `fun-facts`            | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/fun-facts)`            |
+| Card Name              | Example                                                                                      |
+| ---------------------- | -------------------------------------------------------------------------------------------- |
+| `programming-facts`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card)`   |
+| `motivational-quote`   | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card)` |
+| `programming-quote`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-quotes-card)`  |
+| `bhagwad-geeta-quotes` | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/bhagavad-geeta-card )`     |
+| `fun-facts`            | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/fun-fact-card)`            |
 
 👉 For the full list, visit [`/help`](https://github-cards-worker.akanshsirohi-dev.workers.dev/help)
 
@@ -62,17 +62,17 @@ All themes are created using HTML and rendered via **Satori**.
 
 ### ✅ Available Themes
 
-- `CUSTOM` (fully customizable)
-- `TECHY`
-- `NEON_HORIZON`
-- `GALACTIC_DUSK`
-- `AURORA_BOREALIS`
-- `RETRO_BLOCK`
-- `RAINBOW_VORTEX`
-- `ENDLESS_CONSTELLATION`
-- `LEMONADE`
-- `GALAXY`
-- `VINTAGE`
+- `custom` (fully customizable)
+- `techy`
+- `neon_horizon`
+- `galactic_dusk`
+- `aurora_borealis`
+- `retro_block`
+- `rainbow_vortex`
+- `endless_constellation`
+- `lemonade`
+- `galaxy`
+- `vintage`
 
 ### ⚙️ Custom Arguments (for `CUSTOM` theme only)
 
@@ -86,7 +86,7 @@ All themes are created using HTML and rendered via **Satori**.
 #### Example
 
 ```md
-![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts?theme=CUSTOM&card_color=%23000000&font_color=%23ffffff&shadow_color=%23ff0000)
+![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=custom&card_color=000000&font_color=ffffff&shadow_color=ff0000)
 ```
 
 ### 🖼️ Examples
