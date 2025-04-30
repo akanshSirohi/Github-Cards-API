@@ -19,7 +19,6 @@ const generateHTMLCard = async (env, html, query, language, theme = false) => {
       theme = HTML_THEMES[theme];
       let options = parseOptions(query);
       html = theme.replace("{{card_content}}", html);
-      console.log(html);
       for (const [key, value] of Object.entries(options)) {
         html = html.replace(`{{${key}}}`, value);
       }

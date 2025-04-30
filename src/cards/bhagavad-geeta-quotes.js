@@ -17,7 +17,7 @@ export default async function bhagavadGeetaQuoteHandler({ req, env }) {
     cardContent = `आज का विचार:-\n\n"${randomQuote.quote}"`;
   }
 
-  const url = new URL(req.url)
+  const url = new URL(req.url);
   const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
   const searchParams = Object.fromEntries(url.searchParams.entries());
 
