@@ -87,7 +87,7 @@ All themes are created using HTML and rendered via **Satori**.
 
 > **Gradient Support**  
 > `card_color` and `bg_color` accept linear or radial gradients. Because commas & parentheses are not URL‑safe, supply the gradient as a **URL‑safe Base64 string**.
-> Use <https://www.base64encode.org/enc/safe/> (or any encoder) and copy the **Encode (URL‑Safe)** output.
+> Use <https://www.base64encode.org/> (or any encoder) and copy the **Encode (URL‑Safe)** output.
 >
 > ```text
 > # Original CSS
