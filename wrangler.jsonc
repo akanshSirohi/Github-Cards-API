@@ -15,20 +15,20 @@
 	],
 	"vars": {
 		"ENVIRONMENT": "production",
-		"ASSETS_BASE_URL": "https://raw.githubusercontent.com/akanshSirohi/Github-Cards-API/refs/heads/master/assets",
+		"ASSETS_BASE_URL": "https://raw.githubusercontent.com/akanshSirohi/Github-Cards-API/refs/heads/master/public/assets",
 		"BASE_URL": "https://github-cards-worker.akanshsirohi-dev.workers.dev"
 	},
 	"env": {
 		"local": {
 			"vars": {
 				"ENVIRONMENT": "development",
-				"ASSETS_BASE_URL": "http://localhost:8787",
+				"ASSETS_BASE_URL": "http://localhost:8787/assets",
 				"BASE_URL": "http://localhost:8787"
-			},
-			"assets": {
-				"directory": "./assets",
-				"binding": "ASSETS"
 			}
 		}
+	},
+	"assets": {
+		"directory": "./public",
+		"binding": "ASSETS"
 	}
 }
