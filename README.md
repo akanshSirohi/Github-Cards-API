@@ -4,6 +4,7 @@ A fully serverless card rendering service built with **Cloudflare Workers** and 
 
 ---
 
+<!--
 ## 📚 Table of Contents
 
 - [Usage](#usage)
@@ -20,6 +21,7 @@ A fully serverless card rendering service built with **Cloudflare Workers** and 
 - [Additional Information](#additional-information)
 
 ---
+-->
 
 ## 🚀 Usage
 
