@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode background override */
+html.dark {
+  background-color: #111827;
+}
+
+/* Color picker focus ring */
+input[type="color"] {
+  transition: box-shadow 0.2s;
+}
+input[type="color"]:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+}

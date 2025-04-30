@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GitHub Card Generator</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: "class" };</script>
+
+  <!-- Flowbite (plain-JS UI widgets) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" />
+
+  <!-- Pickr colour-picker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+
+  <style>
+    html.dark {
+      background: #0f172a
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100
+           min-h-screen flex items-center justify-center p-6">
+
+  <div class="w-full max-w-3xl bg-white dark:bg-gray-800 shadow-2xl
+             rounded-2xl p-8 space-y-10">
+
+    <h1 class="text-center text-4xl font-extrabold">
+      GitHub Card Generator
+    </h1>
+
+    <!-- =========================  FORM  ========================= -->
+    <form id="cardForm" class="space-y-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card type -->
+        <div>
+          <label for="cardSelect" class="block mb-2 text-sm font-medium">
+            Card type
+          </label>
+          <select id="cardSelect" name="card_name" required class="block w-full rounded-lg border border-gray-300 bg-gray-50
+                     p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500
+                     dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100">
+            <option value="" disabled selected hidden>Select a card…</option>
+          </select>
+        </div>
+
+        <!-- Theme -->
+        <div>
+          <label for="themeSelect" class="block mb-2 text-sm font-medium">
+            Theme
+          </label>
+          <select id="themeSelect" name="theme" required class="block w-full rounded-lg border border-gray-300 bg-gray-50
+                     p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500
+                     dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100">
+            <option value="" disabled selected hidden>Select a theme…</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ---------- Custom theme options (shown only for custom) ---------- -->
+      <div id="customWrapper" class="hidden space-y-8">
+        <h3 class="text-lg font-semibold">Custom theme options</h3>
+
+        <!-- colour blocks -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- card colour -->
+          <fieldset class="card_color_pickr">
+            <legend class="mb-2 text-sm font-medium">Card colour</legend>
+            <div class="flex items-center gap-4 mb-3">
+              <label class="text-sm flex items-center gap-1">
+                <input type="radio" name="cardColorMode" value="solid" class="accent-indigo-600" checked />
+                Solid
+              </label>
+              <label class="text-sm flex items-center gap-1">
+                <input type="radio" name="cardColorMode" value="gradient" class="accent-indigo-600" />
+                Gradient
+              </label>
+            </div>
+            <input id="cardColorGradientInput" type="text" placeholder="linear-gradient(...)" class="hidden w-full rounded-lg border border-gray-300 bg-gray-50
+                            p-2.5 text-sm dark:border-gray-600 dark:bg-gray-700
+                            dark:text-gray-100" />
+            <input type="text" id="cardColorHex" class="hidden" />
+            <div id="cardPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+          </fieldset>
+
+          <!-- background colour -->
+          <fieldset class="bg_color_pickr">
+            <legend class="mb-2 text-sm font-medium">
+              Background colour
+            </legend>
+            <div class="flex items-center gap-4 mb-3">
+              <label class="text-sm flex items-center gap-1">
+                <input type="radio" name="bgColorMode" value="solid" class="accent-indigo-600" checked />
+                Solid
+              </label>
+              <label class="text-sm flex items-center gap-1">
+                <input type="radio" name="bgColorMode" value="gradient" class="accent-indigo-600" />
+                Gradient
+              </label>
+            </div>
+            <input id="bgColorGradientInput" type="text" placeholder="radial-gradient(...)" class="hidden w-full rounded-lg border border-gray-300 bg-gray-50
+                            p-2.5 text-sm dark:border-gray-600 dark:bg-gray-700
+                            dark:text-gray-100" />
+            <input type="text" id="bgColorHex" class="hidden" />
+            <div id="bgPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+          </fieldset>
+        </div>
+
+        <!-- font & shadow colour pickers -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <fieldset>
+            <legend class="mb-2 text-sm font-medium">Font colour</legend>
+            <input type="text" id="fontColorHex" class="hidden" />
+            <div id="fontPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="mb-2 text-sm font-medium">Shadow colour</legend>
+            <input type="text" id="shadowColorHex" class="hidden" />
+            <div id="shadowPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+          </fieldset>
+        </div>
+      </div>
+
+      <button type="submit" class="w-full py-3 rounded-lg bg-indigo-600 text-white font-semibold
+                 hover:bg-indigo-500 transition">
+        Generate card
+      </button>
+    </form>
+
+    <!-- =========================  RESULTS  ========================= -->
+    <div id="resultSection" class="hidden space-y-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Preview</h2>
+        <a id="downloadBtn" href="#" download="github-card.png" class="text-sm text-indigo-600 hover:underline">
+          Download SVG
+        </a>
+      </div>
+      <div class="flex justify-center">
+        <img id="preview" class="max-w-full rounded-xl shadow-lg" />
+      </div>
+      <div>
+        <label for="codeOutput" class="block mb-2 text-sm font-medium">
+          Markdown / direct URL
+        </label>
+        <textarea id="codeOutput" rows="6" readonly class="w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5
+                   text-sm dark:border-gray-600 dark:bg-gray-700
+                   dark:text-gray-100"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+
+  <!-- main logic -->
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
