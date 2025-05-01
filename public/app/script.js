@@ -2,6 +2,8 @@
     ---------------------------------------------------------- */
 import { CARD_TYPES, THEMES } from "./config.js";
 
+let card_url_state = null;
+
 /* ---------- helpers ---------- */
 const $ = (id) => document.getElementById(id);
 
@@ -12,16 +14,36 @@ const human = (s) =>
   s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
 const addOption = (select, item) => {
-  const o = document.createElement("option");
+  const opt = document.createElement("option");
   if (typeof item === "string") {
-    o.value = item;
-    o.textContent = human(item);
+    opt.value = item;
+    opt.textContent = human(item);
   } else {
-    o.value = item.value;
-    o.textContent = item.label ?? human(item.value);
+    opt.value = item.value;
+    opt.textContent = item.label ?? human(item.value);
   }
-  select.appendChild(o);
+  select.appendChild(opt);
 };
+
+function rgbToHex(rgbString) {
+  // Match rgba or rgb values inside the string
+  const match = rgbString.match(/rgba?\s*\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*(\d*\.?\d+))?\s*\)/);
+
+  if (!match) {
+      throw new Error("Invalid RGB(A) string");
+  }
+
+  const r = parseInt(match[1], 10);
+  const g = parseInt(match[2], 10);
+  const b = parseInt(match[3], 10);
+  const a = match[4] !== undefined ? Math.round(parseFloat(match[4]) * 255) : null;
+
+  const toHex = (value) => value.toString(16).padStart(2, '0');
+
+  const hex = `#${toHex(r)}${toHex(g)}${toHex(b)}${a !== null ? toHex(a) : ''}`;
+  return hex.toUpperCase();
+}
+
 
 /* ---------- populate selects ---------- */
 const cardItems = Array.isArray(CARD_TYPES)
@@ -38,51 +60,37 @@ themeSelect.addEventListener("change", () => {
 });
 
 /* ---------- Pickr colour pickers ---------- */
-function newPickr(el, hidden, def) {
-  hidden.value = def;
-  return Pickr.create({
-    el,
-    theme: "nano",
-    default: def,
-    components: {
-      preview: true,
-      opacity: true,
-      hue: true,
-      interaction: { hex: true, rgba: true, input: true, save: true },
-    },
-  }).on("save", (c, self) => {
-    const hex = c.toHEXA().toString();
-    self.applyColor(hex);
-    hidden.value = hex;
-  });
-}
+new lc_color_picker('#fontColorHex',{
+  modes : ['solid'],
+  dark_theme : true,
+  preview_style : {
+      separator_color : '#374151',
+  }
+});
 
-newPickr("#cardPickr", $("cardColorHex"), "#fff");
-newPickr("#bgPickr", $("bgColorHex"), "#fff");
-newPickr("#fontPickr", $("fontColorHex"), "#000");
-newPickr("#shadowPickr", $("shadowColorHex"), "#000");
+new lc_color_picker('#shadowColorHex',{
+  modes : ['solid'],
+  dark_theme : true,
+  preview_style : {
+      separator_color : '#374151',
+  }
+});
 
-/* ---------- radio-driven visibility for card/bg ---------- */
-function bindMode(radios, gradInput, pickrRoot) {
-  radios.forEach((r) =>
-    r.addEventListener("change", () => {
-      const grad = r.value === "gradient" && r.checked;
-      gradInput.classList.toggle("hidden", !grad);
-      document.querySelectorAll(`.${pickrRoot} .pickr`)[0].classList.toggle("hidden", grad);
-    })
-  );
-}
+new lc_color_picker('#bgColorHex',{
+  modes : ['solid', 'linear-gradient', 'radial-gradient'],
+  dark_theme : true,
+  preview_style : {
+      separator_color : '#374151',
+  }
+});
 
-bindMode(
-  document.querySelectorAll('input[name="cardColorMode"]'),
-  $("cardColorGradientInput"),
-  'card_color_pickr'
-);
-bindMode(
-  document.querySelectorAll('input[name="bgColorMode"]'),
-  $("bgColorGradientInput"),
-  'bg_color_pickr'
-);
+new lc_color_picker('#cardColorHex',{
+  modes : ['solid', 'linear-gradient', 'radial-gradient'],
+  dark_theme : true,
+  preview_style : {
+      separator_color : '#374151',
+  }
+});
 
 function cardTitleMaker(slug) {
   let title = slug.replaceAll("-", " ");
@@ -107,23 +115,30 @@ cardForm.addEventListener("submit", (e) => {
   });
 
   if (data.get("theme") === "custom") {
-    /* card colour */
-    if (data.get("cardColorMode") === "solid") {
-      qs.set("card_color", $("cardColorHex").value.slice(1));
+    let card_color = $("cardColorHex").value;
+    if (card_color.includes("gradient")) {
+      qs.set("card_color", encodeGradient(card_color.trim()));
     } else {
-      qs.set("card_color", encodeGradient($("cardColorGradientInput").value.trim()));
+      card_color = card_color.includes("rgb") ? rgbToHex(card_color) : card_color
+      qs.set("card_color", card_color.slice(1));
     }
 
     /* background colour */
-    if (data.get("bgColorMode") === "solid") {
-      qs.set("bg_color", $("bgColorHex").value.slice(1));
+    let bg_color = $("bgColorHex").value;
+    if (bg_color.includes("gradient")) {
+      qs.set("bg_color", encodeGradient(bg_color.trim()));
     } else {
-      qs.set("bg_color", encodeGradient($("bgColorGradientInput").value.trim()));
+      bg_color = bg_color.includes("rgb") ? rgbToHex(bg_color) : bg_color;
+      qs.set("bg_color", bg_color.slice(1));
     }
 
     /* font & shadow */
-    qs.set("font_color", $("fontColorHex").value.slice(1));
-    qs.set("shadow_color", $("shadowColorHex").value.slice(1));
+    let font_color = $("fontColorHex").value.slice(1);
+    let shadow_color = $("shadowColorHex").value.slice(1);
+    font_color = font_color.includes("rgb") ? rgbToHex(font_color) : font_color;
+    shadow_color = shadow_color.includes("rgb") ? rgbToHex(shadow_color) : shadow_color;
+    qs.set("font_color", font_color);
+    qs.set("shadow_color", shadow_color);
   }
 
   /* ----------- build final card URL ----------- */
@@ -131,11 +146,17 @@ cardForm.addEventListener("submit", (e) => {
   const url = `${cardPath}?${qs.toString()}`;
   const host = window.location.protocol + "//" + window.location.host;
 
+  if(card_url_state === url) {
+    return;
+  }
+
+  card_url_state = url;
+
   $("preview").src = url;
   $("downloadBtn").href = url;
   let title = cardTitleMaker(data.get("card_name"));
   $("codeOutput").value =
-    `![${title}](${host}${url})\n\n` +
+    `Markdown:\n![${title}](${host}${url})\n\n` +
     `HTML Tag:\n<img src="${host}${url}" alt="${title}" />`;
   $("resultSection").classList.remove("hidden");
 });

@@ -1,16 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Dark mode background override */
 html.dark {
-  background-color: #111827;
+  background: #0f172a
 }
 
-/* Color picker focus ring */
-input[type="color"] {
-  transition: box-shadow 0.2s;
+*, #lccp_modes_wrap span, .pccp_circle_f_wrap span {
+  font-family: "Jost", sans-serif !important;
 }
-input[type="color"]:focus {
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+
+input.color_picker {
+  /* color: black !important; */
+  color: white;
+  background-color: rgb(55, 65, 81);
+  border-color: rgb(75, 85, 99);
+}
+.lccp-preview-right {
+  border-radius: 5px;
+}
+.lccp-preview-right span {
+  border-radius: 0 5px 5px 0;
+}
+.lccp-preview-right input {
+  border-radius: 5px;
+}
+#lccp_modes_wrap span, .pccp_circle_f_wrap span {
+  color: #000 !important;
 }

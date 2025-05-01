@@ -16,11 +16,7 @@
   <!-- Pickr colour-picker -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
 
-  <style>
-    html.dark {
-      background: #0f172a
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100
@@ -70,21 +66,7 @@
           <!-- card colour -->
           <fieldset class="card_color_pickr">
             <legend class="mb-2 text-sm font-medium">Card colour</legend>
-            <div class="flex items-center gap-4 mb-3">
-              <label class="text-sm flex items-center gap-1">
-                <input type="radio" name="cardColorMode" value="solid" class="accent-indigo-600" checked />
-                Solid
-              </label>
-              <label class="text-sm flex items-center gap-1">
-                <input type="radio" name="cardColorMode" value="gradient" class="accent-indigo-600" />
-                Gradient
-              </label>
-            </div>
-            <input id="cardColorGradientInput" type="text" placeholder="linear-gradient(...)" class="hidden w-full rounded-lg border border-gray-300 bg-gray-50
-                            p-2.5 text-sm dark:border-gray-600 dark:bg-gray-700
-                            dark:text-gray-100" />
-            <input type="text" id="cardColorHex" class="hidden" />
-            <div id="cardPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+            <input type="text" id="cardColorHex" class="color_picker" value="#fff" />
           </fieldset>
 
           <!-- background colour -->
@@ -92,21 +74,7 @@
             <legend class="mb-2 text-sm font-medium">
               Background colour
             </legend>
-            <div class="flex items-center gap-4 mb-3">
-              <label class="text-sm flex items-center gap-1">
-                <input type="radio" name="bgColorMode" value="solid" class="accent-indigo-600" checked />
-                Solid
-              </label>
-              <label class="text-sm flex items-center gap-1">
-                <input type="radio" name="bgColorMode" value="gradient" class="accent-indigo-600" />
-                Gradient
-              </label>
-            </div>
-            <input id="bgColorGradientInput" type="text" placeholder="radial-gradient(...)" class="hidden w-full rounded-lg border border-gray-300 bg-gray-50
-                            p-2.5 text-sm dark:border-gray-600 dark:bg-gray-700
-                            dark:text-gray-100" />
-            <input type="text" id="bgColorHex" class="hidden" />
-            <div id="bgPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+            <input type="text" id="bgColorHex" class="color_picker" value="#fff" />
           </fieldset>
         </div>
 
@@ -114,14 +82,12 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <fieldset>
             <legend class="mb-2 text-sm font-medium">Font colour</legend>
-            <input type="text" id="fontColorHex" class="hidden" />
-            <div id="fontPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+            <input type="text" id="fontColorHex" class="color_picker" value="#000" />
           </fieldset>
 
           <fieldset>
             <legend class="mb-2 text-sm font-medium">Shadow colour</legend>
-            <input type="text" id="shadowColorHex" class="hidden" />
-            <div id="shadowPickr" class="h-9 w-9 rounded cursor-pointer"></div>
+            <input type="text" id="shadowColorHex" class="color_picker" value="#000" />
           </fieldset>
         </div>
       </div>
@@ -157,6 +123,7 @@
   <!-- libs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
+  <script src="./lc_color_picker.min.js"></script>
 
   <!-- main logic -->
   <script type="module" src="./script.js"></script>
