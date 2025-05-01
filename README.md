@@ -4,6 +4,16 @@ A fully serverless card rendering service built with **Cloudflare Workers** and 
 
 ---
 
+## 🌟 Live Demo & Interactive UI
+
+Try the web-based Card Generator to build and preview your GitHub Cards without writing any code:
+
+**🔗 Live Generator**: https://github-cards-worker.akanshsirohi-dev.workers.dev/app
+
+Use the form to select a card type and theme, tweak custom colors or gradients, then generate and download your SVG card instantly.
+
+---
+
 <!--
 ## 📚 Table of Contents
 
@@ -27,6 +37,13 @@ A fully serverless card rendering service built with **Cloudflare Workers** and 
 
 Access all available cards and their respective options at:
 [`https://github-cards-worker.akanshsirohi-dev.workers.dev/`](https://github-cards-worker.akanshsirohi-dev.workers.dev/)
+
+### 📜 Using the Interactive UI
+
+1. Select a **Card type** and **Theme**.
+2. (Optional) For the **custom** theme, adjust the card, background, font, and shadow colors or gradients.
+3. Click **Generate card**.
+4. Preview your card, download the SVG, or copy the Markdown/HTML embed code.
 
 ### 📎 Using Markdown
 
