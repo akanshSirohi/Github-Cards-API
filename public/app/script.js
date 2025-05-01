@@ -1,5 +1,3 @@
-/*  GitHub Card Generator front-end
-    ---------------------------------------------------------- */
 import { CARD_TYPES, THEMES } from "./config.js";
 
 let card_url_state = null;
@@ -7,11 +5,13 @@ let card_url_state = null;
 /* ---------- helpers ---------- */
 const $ = (id) => document.getElementById(id);
 
-const encodeGradient = (str) =>
-  btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+const encodeGradient = (str) => {
+  return btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "")
+}
 
-const human = (s) =>
-  s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+const human = (s) => {
+  return s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
 
 const addOption = (select, item) => {
   const opt = document.createElement("option");
@@ -30,7 +30,7 @@ function rgbToHex(rgbString) {
   const match = rgbString.match(/rgba?\s*\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*(\d*\.?\d+))?\s*\)/);
 
   if (!match) {
-      throw new Error("Invalid RGB(A) string");
+    throw new Error("Invalid RGB(A) string");
   }
 
   const r = parseInt(match[1], 10);
@@ -60,35 +60,35 @@ themeSelect.addEventListener("change", () => {
 });
 
 /* ---------- Pickr colour pickers ---------- */
-new lc_color_picker('#fontColorHex',{
-  modes : ['solid'],
-  dark_theme : true,
-  preview_style : {
-      separator_color : '#374151',
+new lc_color_picker('#fontColorHex', {
+  modes: ['solid'],
+  dark_theme: true,
+  preview_style: {
+    separator_color: '#374151',
   }
 });
 
-new lc_color_picker('#shadowColorHex',{
-  modes : ['solid'],
-  dark_theme : true,
-  preview_style : {
-      separator_color : '#374151',
+new lc_color_picker('#shadowColorHex', {
+  modes: ['solid'],
+  dark_theme: true,
+  preview_style: {
+    separator_color: '#374151',
   }
 });
 
-new lc_color_picker('#bgColorHex',{
-  modes : ['solid', 'linear-gradient', 'radial-gradient'],
-  dark_theme : true,
-  preview_style : {
-      separator_color : '#374151',
+new lc_color_picker('#bgColorHex', {
+  modes: ['solid', 'linear-gradient', 'radial-gradient'],
+  dark_theme: true,
+  preview_style: {
+    separator_color: '#374151',
   }
 });
 
-new lc_color_picker('#cardColorHex',{
-  modes : ['solid', 'linear-gradient', 'radial-gradient'],
-  dark_theme : true,
-  preview_style : {
-      separator_color : '#374151',
+new lc_color_picker('#cardColorHex', {
+  modes: ['solid', 'linear-gradient', 'radial-gradient'],
+  dark_theme: true,
+  preview_style: {
+    separator_color: '#374151',
   }
 });
 
@@ -146,17 +146,60 @@ cardForm.addEventListener("submit", (e) => {
   const url = `${cardPath}?${qs.toString()}`;
   const host = window.location.protocol + "//" + window.location.host;
 
-  if(card_url_state === url) {
+  if (card_url_state === url) {
     return;
   }
 
   card_url_state = url;
 
-  $("preview").src = url;
+
+
+  const preview = $('preview');
+  const loader = $('loader');
+  const preload = new Image();
+  preload.onload = () => {
+    preview.src = preload.src;
+    preview.classList.remove('hidden');
+    loader.classList.add('hidden');
+  };
+  preload.onerror = () => {
+    loader.textContent = 'Failed to load';
+  };
+  preload.src = url;
+  preview.classList.add('hidden');
+  loader.classList.remove('hidden');
+
   $("downloadBtn").href = url;
   let title = cardTitleMaker(data.get("card_name"));
-  $("codeOutput").value =
-    `Markdown:\n![${title}](${host}${url})\n\n` +
-    `HTML Tag:\n<img src="${host}${url}" alt="${title}" />`;
+  $("mdOutput").value = `![${title}](${host}${url})`;
+  $("htmlOutput").value = `<img src="${host}${url}" alt="${title}" />`;
   $("resultSection").classList.remove("hidden");
+});
+
+
+
+
+/* Copy functionality */
+
+const clipboard = new ClipboardJS('.copy-btn');
+
+clipboard.on('success', e => {
+  const btn = e.trigger;
+  btn.dataset.tooltip = 'Copied!';
+  btn.dataset.show = 'true';
+
+  setTimeout(() => {
+    btn.dataset.tooltip = 'Copy';
+    delete btn.dataset.show;
+  }, 1200);
+});
+
+clipboard.on('error', e => {
+  const btn = e.trigger;
+  btn.dataset.tooltip = 'Failed';
+  btn.dataset.show = 'true';
+  setTimeout(() => {
+    btn.dataset.tooltip = 'Copy';
+    delete btn.dataset.show;
+  }, 1200);
 });

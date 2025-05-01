@@ -4,7 +4,9 @@ html.dark {
   background: #0f172a
 }
 
-*, #lccp_modes_wrap span, .pccp_circle_f_wrap span {
+*,
+#lccp_modes_wrap span,
+.pccp_circle_f_wrap span {
   font-family: "Jost", sans-serif !important;
 }
 
@@ -14,15 +16,67 @@ input.color_picker {
   background-color: rgb(55, 65, 81);
   border-color: rgb(75, 85, 99);
 }
+
 .lccp-preview-right {
   border-radius: 5px;
 }
+
 .lccp-preview-right span {
   border-radius: 0 5px 5px 0;
 }
+
 .lccp-preview-right input {
   border-radius: 5px;
 }
-#lccp_modes_wrap span, .pccp_circle_f_wrap span {
+
+#lccp_modes_wrap span,
+.pccp_circle_f_wrap span {
   color: #000 !important;
+}
+
+
+.copy-btn {
+  position: relative;
+}
+
+.copy-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .35rem .6rem;
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: #f1f5f9;
+  background: #475569;
+  border-radius: .375rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity .15s ease-out;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.copy-btn::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px 6px 0 6px;
+  border-style: solid;
+  border-color: #475569 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity .15s ease-out;
+  z-index: 19;
+}
+
+.copy-btn:hover::after,
+.copy-btn:hover::before,
+.copy-btn[data-show="true"]::after,
+.copy-btn[data-show="true"]::before {
+  opacity: 1;
 }

@@ -106,24 +106,82 @@
           Download SVG
         </a>
       </div>
-      <div class="flex justify-center">
-        <img id="preview" class="max-w-full rounded-xl shadow-lg" />
+      <div id="holder" class="relative flex justify-center items-center min-h-[50px]">
+        <!-- 🔄 loader -->
+        <div id="loader"
+          class="absolute w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin">
+        </div>
+
+        <!-- real image: hidden until loaded -->
+        <img id="preview" class="max-w-full shadow-lg hidden" />
       </div>
-      <div>
+      <!-- <div>
         <label for="codeOutput" class="block mb-2 text-sm font-medium">
           Markdown / HTML 
         </label>
         <textarea id="codeOutput" rows="6" readonly class="w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5
                    text-sm dark:border-gray-600 dark:bg-gray-700
                    dark:text-gray-100"></textarea>
+      </div> -->
+
+      <!-- ===== Markdown + HTML outputs ===== -->
+      <div class="space-y-6">
+
+        <!-- Markdown field -->
+        <div>
+          <label for="mdOutput" class="block mb-2 text-sm font-medium">
+            Markdown
+          </label>
+
+          <div class="flex items-stretch">
+            <input id="mdOutput" type="text" readonly class="flex-1 rounded-l-lg border border-gray-300 bg-gray-50 p-2.5 text-sm
+                          dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100" />
+
+            <!-- copy button -->
+            <button type="button" class="copy-btn relative rounded-r-lg border border-l-0 border-gray-300
+                           bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-500
+                           dark:border-gray-600" data-clipboard-target="#mdOutput" data-tooltip="Copy">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 20px;fill:#fff;">
+                <path
+                  d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- HTML field -->
+        <div>
+          <label for="htmlOutput" class="block mb-2 text-sm font-medium">
+            HTML Tag
+          </label>
+
+          <div class="flex items-stretch">
+            <input id="htmlOutput" type="text" readonly class="flex-1 rounded-l-lg border border-gray-300 bg-gray-50 p-2.5 text-sm
+                          dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100" />
+
+            <!-- copy button -->
+            <button type="button" class="copy-btn relative rounded-r-lg border border-l-0 border-gray-300
+                           bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-500
+                           dark:border-gray-600" data-clipboard-target="#htmlOutput" data-tooltip="Copy">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 20px;fill:#fff;">
+                <path
+                  d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
       </div>
+
+
     </div>
   </div>
 
   <!-- libs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
-  <script src="./lc_color_picker.min.js"></script>
+  <script src="./libs/lc_color_picker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
 
   <!-- main logic -->
   <script type="module" src="./script.js"></script>
