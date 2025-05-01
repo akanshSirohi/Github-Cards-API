@@ -24,11 +24,23 @@
 				"ENVIRONMENT": "development",
 				"ASSETS_BASE_URL": "http://localhost:8787/assets",
 				"BASE_URL": "http://localhost:8787"
-			}
+			},
+			"kv_namespaces": [
+				{
+					"binding": "CARDS_CACHE_KV",
+					"id": "9248ea7a46d4488fba80ee7d747d70bb"
+				}
+			]
 		}
 	},
 	"assets": {
 		"directory": "./public",
 		"binding": "ASSETS"
-	}
+	},
+	"kv_namespaces": [
+		{
+			"binding": "CARDS_CACHE_KV",
+			"id": "9248ea7a46d4488fba80ee7d747d70bb"
+		}
+	]
 }

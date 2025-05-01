@@ -1,4 +1,5 @@
 import { Router } from '@tsndr/cloudflare-worker-router'
+import { withKvCache } from './middleware/withKvCache';
 
 // Initialize the router
 const router = new Router()
@@ -54,20 +55,8 @@ const availableCards = {
 
 // Mount all card routes
 for (const path in availableCards) {
-  router.get(path, availableCards[path])
+  router.get(path, withKvCache(availableCards[path]));
 }
-
-// Random Card Redirect
-router.get('/random-card', ({ req }) => {
-  const urls = Object.keys(availableCards)
-  const randomIndex = Math.floor(Math.random() * urls.length)
-
-  const url = new URL(req.url)
-  const query = url.search || ''
-
-  const randomPath = urls[randomIndex] + query
-  return Response.redirect(randomPath, 302)
-})
 
 // Root route
 router.get('/', helpHandler);
