@@ -133,10 +133,10 @@ cardForm.addEventListener("submit", (e) => {
     }
 
     /* font & shadow */
-    let font_color = $("fontColorHex").value.slice(1);
-    let shadow_color = $("shadowColorHex").value.slice(1);
-    font_color = font_color.includes("rgb") ? rgbToHex(font_color) : font_color;
-    shadow_color = shadow_color.includes("rgb") ? rgbToHex(shadow_color) : shadow_color;
+    let font_color = $("fontColorHex").value;
+    let shadow_color = $("shadowColorHex").value;
+    font_color = font_color.includes("rgb") ? rgbToHex(font_color) : font_color.slice(1);
+    shadow_color = shadow_color.includes("rgb") ? rgbToHex(shadow_color) : shadow_color.slice(1);
     qs.set("font_color", font_color);
     qs.set("shadow_color", shadow_color);
   }
