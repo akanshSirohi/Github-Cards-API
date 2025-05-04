@@ -145,6 +145,11 @@ const parseOptions = (query) => {
     } else {
         options.shadow_color = "#00000000";
     }
+    if("google_font" in query) {
+        options.google_font = query.google_font;
+    }else{
+        options.google_font = null;
+    }
     return options;
 };
 module.exports.parseOptions = parseOptions;

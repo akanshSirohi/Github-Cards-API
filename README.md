@@ -97,10 +97,11 @@ All themes are created using HTML and rendered via **Satori**.
 
 | Parameter      | Description                                                                      | Default     |
 | -------------- | -------------------------------------------------------------------------------- | ----------- |
-| `card_color`   | Card's main background color **or** a Base64‑encoded CSS gradient string          | `#ffffff`   |
+| `card_color`   | Card's main background color **or** a Base64‑encoded CSS gradient string         | `#ffffff`   |
 | `font_color`   | Text color                                                                       | `#000000`   |
 | `bg_color`     | Outer background color **or** a Base64‑encoded CSS gradient string               | `#ffffff`   |
 | `shadow_color` | Card shadow color                                                                | `#00000000` |
+| `google_font`  | Custom google font                                                               | none        |
 
 > **Gradient Support**  
 > `card_color` and `bg_color` accept linear or radial gradients. Because commas & parentheses are not URL‑safe, supply the gradient as a **URL‑safe Base64 string**.

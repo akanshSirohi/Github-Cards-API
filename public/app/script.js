@@ -142,8 +142,9 @@ cardForm.addEventListener("submit", (e) => {
   }
 
   /* ----------- build final card URL ----------- */
+  const DEBUG = true;
   const cardPath = `/${data.get("card_name")}`;
-  const url = `${cardPath}?${qs.toString()}`;
+  const url = `${cardPath}?${qs.toString()}${DEBUG ? `&t=${new Date().getTime()}` : ''}`;
   const host = window.location.protocol + "//" + window.location.host;
 
   if (card_url_state === url) {
@@ -151,8 +152,6 @@ cardForm.addEventListener("submit", (e) => {
   }
 
   card_url_state = url;
-
-
 
   const preview = $('preview');
   const loader = $('loader');
@@ -164,9 +163,12 @@ cardForm.addEventListener("submit", (e) => {
   };
   preload.onerror = () => {
     loader.textContent = 'Failed to load';
+    loader.setAttribute("class","absolute");
   };
   preload.src = url;
   preview.classList.add('hidden');
+  loader.textContent = '';
+  loader.setAttribute("class","absolute w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin");
   loader.classList.remove('hidden');
 
   $("downloadBtn").href = url;

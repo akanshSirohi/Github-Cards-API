@@ -53,9 +53,15 @@ const availableCards = {
   '/health-tip-card': healthTip,
 }
 
+const CACHE_ENABLED = false;
+
 // Mount all card routes
 for (const path in availableCards) {
-  router.get(path, withKvCache(availableCards[path]));
+  if(CACHE_ENABLED) {
+    router.get(path, withKvCache(availableCards[path]));
+  }else {
+    router.get(path, availableCards[path]);
+  }
 }
 
 // Root route

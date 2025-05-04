@@ -1,15 +1,9 @@
-const { generateSvg } = require("./satori_renderer");
+const { generateSvg, Languages } = require("./satori_renderer");
 const { HTML_THEMES } = require("../src/themes");
 const { parseOptions } = require("./options-parser");
 
-// Supported Languages
-const Languages = {
-  HINDI: 'hindi',
-  ENGLISH: 'english',
-}
-
-const generateHTMLCard = async (env, html, query, language, theme = false) => {
-  const font = language === Languages.ENGLISH ? "Ubuntu" : "NotoSans";
+const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, theme = false) => {
+  let g_font = null;
   if(theme) {
     theme = theme.toUpperCase();
     if(Object.keys(HTML_THEMES).includes(theme) === false) {
@@ -22,16 +16,16 @@ const generateHTMLCard = async (env, html, query, language, theme = false) => {
       for (const [key, value] of Object.entries(options)) {
         html = html.replace(`{{${key}}}`, value);
       }
+      g_font = options.google_font;
     }else{
       theme = HTML_THEMES[theme];
       html = theme.replace("{{card_content}}", html);
     }
   }
-  return await generateSvg(html, font, env);
+  return await generateSvg(html, env, language, g_font);
 }
 
 module.exports.generateHTMLCard = generateHTMLCard;
 
 // Card Options
-module.exports.CARD_AGE = 300;
 module.exports.Languages = Languages;
