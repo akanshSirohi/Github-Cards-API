@@ -1,4 +1,4 @@
-import { generateHTMLCard, CARD_AGE, Languages } from '../card-generator';
+import { generateHTMLCard, Languages } from '../card-generator';
 import { loadJSONFile } from '../utils/load-json-file';
 
 export default async function bhagavadGeetaQuoteHandler({ req, env }) {
@@ -27,8 +27,7 @@ export default async function bhagavadGeetaQuoteHandler({ req, env }) {
 
   return new Response(svgCard, {
     headers: {
-      'Content-Type': 'image/svg+xml',
-      'Cache-Control': `public, max-age=${CARD_AGE}`,
+      'Content-Type': 'image/svg+xml'
     },
   });
 }

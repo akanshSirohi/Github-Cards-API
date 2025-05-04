@@ -1,5 +1,5 @@
 import { loadJSONFile } from '../utils/load-json-file';
-const { CARD_AGE, Languages, generateHTMLCard } = require("../card-generator");
+const { Languages, generateHTMLCard } = require("../card-generator");
 
 export default async function programmingQuoteHandler({ req, env }) {
   try {
@@ -25,8 +25,7 @@ export default async function programmingQuoteHandler({ req, env }) {
     // Return response
     return new Response(quote_card, {
       headers: {
-        'Content-Type': 'image/svg+xml',
-        'Cache-Control': `public, max-age=${CARD_AGE}`
+        'Content-Type': 'image/svg+xml'
       }
     });
   } catch (error) {

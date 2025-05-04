@@ -1,5 +1,12 @@
 import { html as parseHTML } from 'satori-html'
-import satori from 'satori'
+import satori from 'satori';
+import {google_font_loader} from "./utils/google-fonts-loader";
+
+// Supported Languages
+export const Languages = {
+    HINDI: 'hindi',
+    ENGLISH: 'english',
+}
 
 // Helper function to fetch fonts from /fonts
 async function fetchFont(path) {
@@ -9,32 +16,52 @@ async function fetchFont(path) {
 }
 
 // Generate SVG from HTML string and font
-export async function generateSvg(html_code, font, env) {
+export async function generateSvg(html_code, env, language = Languages.ENGLISH, google_font = null) {
     const base = env.ASSETS_BASE_URL;
-    const ubuntuFontBuffer = await fetchFont(`${base}/fonts/Ubuntu-Regular.ttf`)
-    const notoFontBuffer = await fetchFont(`${base}/fonts/NotoSans-Regular.ttf`)
+
+    const getFontConfig = async () => {
+        if (language === Languages.HINDI) {
+            const fontBuffer = await fetchFont(`${base}/fonts/NotoSans-Regular.ttf`);
+            return {
+                name: 'NotoSans',
+                data: fontBuffer,
+                weight: 400,
+                style: 'normal'
+            };
+        }
+
+        if (google_font) {
+            const fontData = await google_font_loader(google_font);
+            if (fontData) {
+                return {
+                    name: fontData.fontFamily,
+                    data: fontData.fontBuffer,
+                    weight: fontData.fontWeight,
+                    style: fontData.fontStyle
+                };
+            }
+        }
+
+        // Default font configuration
+        const fontBuffer = await fetchFont(`${base}/fonts/Ubuntu-Regular.ttf`);
+        return {
+            name: 'Ubuntu',
+            data: fontBuffer,
+            weight: 400,
+            style: 'normal'
+        };
+    };
+
+    let fontConfig = await getFontConfig();
 
     const markup = parseHTML(`
-    <div style="display:flex;width:auto;height:auto;font-family:${font};">
-      ${html_code}
-    </div>
+        <div style="display:flex;width:auto;height:auto;font-family:${fontConfig.name};">
+        ${html_code}
+        </div>
   `)
 
     const svg = await satori(markup, {
-        fonts: [
-            {
-                name: 'Ubuntu',
-                data: ubuntuFontBuffer,
-                weight: 400,
-                style: 'normal',
-            },
-            {
-                name: 'NotoSans',
-                data: notoFontBuffer,
-                weight: 400,
-                style: 'normal',
-            }
-        ],
+        fonts: [fontConfig]
     })
 
     return svg

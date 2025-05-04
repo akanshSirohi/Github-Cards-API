@@ -6,7 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "github-cards-worker",
 	"main": "./src/index.js",
-	"compatibility_date": "2025-04-26",
+	"compatibility_date": "2025-05-01",
 	"observability": {
 		"enabled": true
 	},

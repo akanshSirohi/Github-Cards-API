@@ -1,6 +1,6 @@
 {
 	"name": "github-cards-worker",
-	"version": "0.0.0",
+	"version": "2.0.0",
 	"private": true,
 	"scripts": {
 		"deploy": "wrangler deploy",
@@ -11,11 +11,10 @@
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
 		"vitest": "~3.0.7",
-		"wrangler": "^4.13.2"
+		"wrangler": "^4.14.1"
 	},
 	"dependencies": {
 		"@tsndr/cloudflare-worker-router": "^3.2.10",
-		"itty-router": "^5.0.18",
 		"satori": "^0.12.2",
 		"satori-html": "^0.3.2"
 	}
