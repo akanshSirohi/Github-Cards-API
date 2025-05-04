@@ -126,6 +126,7 @@ export default async function helpHandler({ req, env }) {
         font_color: "Card text color. Default: #000000 [Optional]",
         bg_color: "Card Background color. Default: #ffffff [Optional]",
         shadow_color: "Card shadow color. Default: #00000000 [Optional]",
+        google_font: "Custom google font. Default: none [Optional]"
       },
       example: [
         `${baseurl}/jokes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow_color=fff`,
@@ -137,6 +138,7 @@ export default async function helpHandler({ req, env }) {
         `${baseurl}/travel-destinations-card?theme=custom&bg_color=0000ff&font_color=ffffff`,
         `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow_color=fff`,
         `${baseurl}/harry-potter-spell-card?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow_color=fff`,
+        `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000&google_font=Tagesschrift`,
       ],
     },
   };

@@ -142,7 +142,7 @@ cardForm.addEventListener("submit", (e) => {
   }
 
   /* ----------- build final card URL ----------- */
-  const DEBUG = true;
+  const DEBUG = false;
   const cardPath = `/${data.get("card_name")}`;
   const url = `${cardPath}?${qs.toString()}${DEBUG ? `&t=${new Date().getTime()}` : ''}`;
   const host = window.location.protocol + "//" + window.location.host;

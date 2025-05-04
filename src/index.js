@@ -53,7 +53,7 @@ const availableCards = {
   '/health-tip-card': healthTip,
 }
 
-const CACHE_ENABLED = false;
+const CACHE_ENABLED = true;
 
 // Mount all card routes
 for (const path in availableCards) {
