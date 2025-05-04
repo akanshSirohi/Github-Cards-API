@@ -55,7 +55,8 @@ const availableCards = {
 
 // Mount all card routes
 for (const path in availableCards) {
-  router.get(path, withKvCache(availableCards[path]));
+  // router.get(path, withKvCache(availableCards[path]));
+  router.get(path, availableCards[path]);
 }
 
 // Root route

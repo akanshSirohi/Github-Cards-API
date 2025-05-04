@@ -1,5 +1,6 @@
-import { html as parseHTML } from 'satori-html'
-import satori from 'satori'
+import { html as parseHTML } from 'satori-html';
+import satori from 'satori';
+import { patchHindi } from './patch-hindi';
 
 // Helper function to fetch fonts from /fonts
 async function fetchFont(path) {
@@ -35,7 +36,17 @@ export async function generateSvg(html_code, font, env) {
                 style: 'normal',
             }
         ],
-    })
+    });
 
-    return svg
+    try {
+        let test = await patchHindi(svg, env, {
+            fontBuf: notoFontBuffer,
+            text: "उत्तम",
+            fontSize: 20,
+        });
+        console.log(test);
+    }catch(e) {
+        console.log(e);
+    }
+    return svg;
 }
