@@ -139,6 +139,11 @@ cardForm.addEventListener("submit", (e) => {
     shadow_color = shadow_color.includes("rgb") ? rgbToHex(shadow_color) : shadow_color.slice(1);
     qs.set("font_color", font_color);
     qs.set("shadow_color", shadow_color);
+
+    let custom_font = $("customGoogleFont").value;
+    if (custom_font) {
+      qs.set("google_font", custom_font);
+    }
   }
 
   /* ----------- build final card URL ----------- */

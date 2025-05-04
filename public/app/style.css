@@ -19,6 +19,7 @@ input.color_picker {
 
 .lccp-preview-right {
   border-radius: 5px;
+  width: 100%;
 }
 
 .lccp-preview-right span {
