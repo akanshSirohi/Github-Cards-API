@@ -25,6 +25,7 @@ import harryPotterSpells from './cards/harry-potter-spells'
 import travelDestinations from './cards/travel_destinations'
 import frenchWordOfTheDay from './cards/french_word_of_the_day'
 import healthTip from './cards/health-tip-card'
+import myCard from './cards/my-card'
 
 // Help route
 import helpHandler from './help'
@@ -51,6 +52,7 @@ const availableCards = {
   '/travel-destinations-card': travelDestinations,
   '/french-word-of-the-day-card': frenchWordOfTheDay,
   '/health-tip-card': healthTip,
+  '/my-card': myCard
 }
 
 const CACHE_ENABLED = true;
