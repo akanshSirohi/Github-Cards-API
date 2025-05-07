@@ -1,9 +1,9 @@
 const HTML_THEMES = {
     'CUSTOM':`
-        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-width: 400px; max-width: 400px; min-height: 100px; background: {{bg_color}}; padding: 15px;">
-            <div style="display: flex; justify-content: flex-start; align-items: flex-start; width: 100%; height: 100%; background: {{card_color}}; padding: 15px; border-radius: 10px; overflow: hidden; box-sizing: border-box; box-shadow: 0px 0px 10px {{shadow_color}};">
-                <div style="display: flex; flex-direction: column; align-items: flex-start; white-space: pre-line; text-align: left;">
-                    <span style="font-size: 11px; font-weight: bold; color: {{font_color}};">{{card_content}}</span>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: {{card_width}}px; background: {{bg_color}}; padding: {{outer_pad}}px; min-height: {{card_min_height}}px;">
+            <div style="display: flex; justify-content: {{card_justify}}; align-items: {{card_align}}; width: 100%; height: 100%; background: {{card_color}}; padding: {{inner_pad}}px; border-radius: 10px; overflow: hidden; box-sizing: border-box; box-shadow: 0px 0px 10px {{shadow_color}};">
+                <div style="display: flex; flex-direction: column; align-items: {{text_align}}; white-space: pre-line; text-align: {{text_align}}; color: {{font_color}};">
+                    <div style="display:flex; font-size: {{font_size}}px;">{{card_content}}</div>
                 </div>
             </div>
         </div>

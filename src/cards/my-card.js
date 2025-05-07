@@ -7,7 +7,7 @@ export default async function myCardHandler({ req, env }) {
     const theme = url.searchParams.get('theme') || 'GALACTIC_DUSK';
     const searchParams = Object.fromEntries(url.searchParams.entries());
 
-    const content = Object.hasOwn(searchParams, 'text') ? decodeBase64(searchParams.text) : 'Hello, World!';
+    let content = Object.hasOwn(searchParams, 'text') ? decodeBase64(searchParams.text) : 'Hello, World!';
 
     let card = await generateHTMLCard(env, content, searchParams, Languages.ENGLISH, theme);
 
