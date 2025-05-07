@@ -1,5 +1,5 @@
 import { loadJSONFile } from '../utils/load-json-file';
-const { Languages, generateHTMLCard } = require('../card-generator');
+const { Languages, generateHTMLCard } = require('../core/card-generator');
 
 export default async function jokeCardHandler({ req, env }) {
   try {

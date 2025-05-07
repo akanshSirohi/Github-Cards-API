@@ -1,6 +1,6 @@
 const { generateSvg, Languages } = require("./satori_renderer");
-const { HTML_THEMES } = require("../src/themes");
-const { parseOptions } = require("./options-parser");
+const { HTML_THEMES } = require("./themes");
+const { parseOptions } = require("../utils/options-parser");
 
 const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, theme = false) => {
   let g_font = null;

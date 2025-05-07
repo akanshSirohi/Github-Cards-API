@@ -1,4 +1,4 @@
-import { generateHTMLCard, Languages } from '../card-generator';
+import { generateHTMLCard, Languages } from '../core/card-generator';
 import { loadJSONFile } from '../utils/load-json-file';
 
 export default async function bhagavadGeetaQuoteHandler({ req, env }) {

@@ -1,6 +1,6 @@
 import { html as parseHTML } from 'satori-html'
 import satori from 'satori';
-import {google_font_loader} from "./utils/google-fonts-loader";
+import {google_font_loader} from "../utils/google-fonts-loader";
 
 // Supported Languages
 export const Languages = {

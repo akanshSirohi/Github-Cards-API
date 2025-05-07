@@ -1,41 +1,4 @@
 /**
- * Decode Base64 / Base64-URL (padded **or** un-padded) to a UTF-8 string.
- *
- * @param {string} input   The Base64 text to decode.
- * @returns {string}       Decoded UTF-8 string.
- *
- */
-const decodeBase64 = (input) => {
-    if (typeof input !== "string" || input.length === 0) {
-        return ""; // invalid Base64: return empty string
-    }
-
-    // 1. URL-safe → standard charset
-    let base64 = input.replace(/-/g, "+").replace(/_/g, "/");
-
-    // 2. Add missing padding (length mod 4 may be 0, 2, or 3 — never 1)
-    const mod = base64.length % 4;
-    if (mod === 1) {
-        return ""; // invalid Base64: return empty string
-    }
-    if (mod) base64 += "=".repeat(4 - mod);
-
-    // 3. Decode the binary string
-    let binary;
-    try {
-        binary = atob(base64);            // throws on corrupt input
-    } catch (err) {
-        return "";                  // invalid Base64: return empty string
-    }
-
-    // 4. Convert binary → UTF-8
-    const bytes = Uint8Array.from(binary, ch => ch.charCodeAt(0));
-    return new TextDecoder().decode(bytes);
-}
-
-
-
-/**
  * The function `isValidHexColor` checks if a given string is a valid hexadecimal color code.
  * @param hex - The `isValidHexColor` function is used to validate whether a given string is a valid
  * hexadecimal color code. The `hex` parameter represents the hexadecimal color code that needs to be
@@ -87,6 +50,41 @@ const isValidBase64 = (str, urlSafe = true) => {
     }
 }
 
+/**
+ * Decode Base64 / Base64-URL (padded **or** un-padded) to a UTF-8 string.
+ *
+ * @param {string} input   The Base64 text to decode.
+ * @returns {string}       Decoded UTF-8 string.
+ *
+ */
+const decodeBase64 = (input) => {
+    if (isValidBase64(input) === false) {
+        return ""; // invalid Base64: return empty string
+    }
+
+    // 1. URL-safe → standard charset
+    let base64 = input.replace(/-/g, "+").replace(/_/g, "/");
+
+    // 2. Add missing padding (length mod 4 may be 0, 2, or 3 — never 1)
+    const mod = base64.length % 4;
+    if (mod === 1) {
+        return ""; // invalid Base64: return empty string
+    }
+    if (mod) base64 += "=".repeat(4 - mod);
+
+    // 3. Decode the binary string
+    let binary;
+    try {
+        binary = atob(base64);            // throws on corrupt input
+    } catch (err) {
+        return "";                  // invalid Base64: return empty string
+    }
+
+    // 4. Convert binary → UTF-8
+    const bytes = Uint8Array.from(binary, ch => ch.charCodeAt(0));
+    return new TextDecoder().decode(bytes);
+}
+
 
 /**
  * The `parseColor` function takes a raw input and returns a valid color in hexadecimal format or a
@@ -120,6 +118,17 @@ const parseColor = (raw, def = "#fff") => {
 }
 
 
+/**
+ * The `parseOptions` function parses query parameters to set color, font, and font options for a card.
+ * @param query - The `parseOptions` function takes a `query` object as input and parses specific
+ * properties from it to create an `options` object. The function checks for the presence of certain
+ * properties in the `query` object and sets corresponding values in the `options` object based on
+ * certain conditions.
+ * @returns The `parseOptions` function returns an object containing various options based on the input
+ * `query`. The options include `card_color`, `font_color`, `bg_color`, `shadow_color`, and
+ * `google_font`. If the corresponding properties are present in the `query` object, they are parsed
+ * and assigned to the options object. If not present, default values are used.
+ */
 const parseOptions = (query) => {
     let options = {};
     const regex = /[^a-zA-Z0-9]/g;
@@ -152,4 +161,6 @@ const parseOptions = (query) => {
     }
     return options;
 };
+
 module.exports.parseOptions = parseOptions;
+module.exports.decodeBase64 = decodeBase64;
