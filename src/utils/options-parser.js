@@ -171,15 +171,15 @@ const parseOptions = (query) => {
     }else{
         options.google_font = null;
     }
-    if("font_align" in query) {
+    if("text_align" in query) {
         let valid_alignments = ['tl', 'tm', 'tr', 'ml', 'mm', 'mr', 'bl', 'bm', 'br'];
-        if(valid_alignments.includes(query.font_align)) {
-            options.font_align = query.font_align;
+        if(valid_alignments.includes(query.text_align)) {
+            options.text_align = query.text_align;
         }else{
-            options.font_align = 'tl';
+            options.text_align = 'tl';
         }
     }else{
-        options.font_align = 'tl';
+        options.text_align = 'tl';
     }
     if("outer_pad" in query) {
         options.outer_pad = isValidNumber(query.outer_pad) ? query.outer_pad : 15;

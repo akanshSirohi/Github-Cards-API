@@ -155,7 +155,7 @@ cardForm.addEventListener("submit", (e) => {
 
     let text_align = data.get("textAlgnment");
     if (text_align) {
-      qs.set("font_align", text_align);
+      qs.set("text_align", text_align);
     }
   }
 
