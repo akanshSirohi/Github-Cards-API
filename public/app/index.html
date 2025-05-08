@@ -57,6 +57,13 @@
         </div>
       </div>
 
+      <div id="customTextWapper" class="hidden mt-4">
+        <label for="customText" class="block mb-2 text-sm font-medium">
+          Custom Text
+        </label>
+        <textarea id="customText" name="customText" rows="3" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400" placeholder="Write your text here..."></textarea>
+      </div>
+
       <!-- ---------- Custom theme options (shown only for custom) ---------- -->
       <div id="customWrapper" class="hidden space-y-8">
         <h3 class="text-lg font-semibold">Custom theme options</h3>
@@ -66,7 +73,7 @@
           <!-- card colour -->
           <fieldset class="card_color_pickr">
             <legend class="mb-2 text-sm font-medium">Card colour</legend>
-            <input type="text" id="cardColorHex" class="color_picker" value="#fff" />
+            <input type="text" id="cardColorHex" name="cardColorHex" class="color_picker" value="#fff" />
           </fieldset>
 
           <!-- background colour -->
@@ -74,7 +81,7 @@
             <legend class="mb-2 text-sm font-medium">
               Background colour
             </legend>
-            <input type="text" id="bgColorHex" class="color_picker" value="#fff" />
+            <input type="text" id="bgColorHex" name="bgColorHex" class="color_picker" value="#fff" />
           </fieldset>
         </div>
 
@@ -82,22 +89,39 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <fieldset>
             <legend class="mb-2 text-sm font-medium">Font colour</legend>
-            <input type="text" id="fontColorHex" class="color_picker" value="#000" />
+            <input type="text" id="fontColorHex" name="fontColorHex" class="color_picker" value="#000" />
           </fieldset>
 
           <fieldset>
             <legend class="mb-2 text-sm font-medium">Shadow colour</legend>
-            <input type="text" id="shadowColorHex" class="color_picker" value="#000" />
+            <input type="text" id="shadowColorHex" name="shadowColorHex" class="color_picker" value="#000" />
           </fieldset>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <fieldset>
             <legend class="mb-2 text-sm font-medium">Google Font</legend>
-            <input type="text" id="customGoogleFont" placeholder="e.g. Noto Sans" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" />
+            <input type="text" id="customGoogleFont" name="customGoogleFont" placeholder="e.g. Noto Sans"
+              class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" />
           </fieldset>
 
-          <div>&nbsp;</div>
+          <div>
+            <label for="textAlgnment" class="block mb-2 text-sm font-medium">
+              Text Alignment
+            </label>
+            <select id="textAlgnment" name="textAlgnment" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100">
+              <option value="" disabled selected>Select text alignment...</option>
+              <option value="tl">Top Left</option>
+              <option value="tm">Top Mid</option>
+              <option value="tr">Top Right</option>
+              <option value="ml">Mid Left</option>
+              <option value="mm">Mid Mid</option>
+              <option value="mr">Mid Right</option>
+              <option value="bl">Bottom Left</option>
+              <option value="bm">Bottom Mid</option>
+              <option value="br">Bottom Right</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -124,14 +148,6 @@
         <!-- real image: hidden until loaded -->
         <img id="preview" class="max-w-full shadow-lg hidden" />
       </div>
-      <!-- <div>
-        <label for="codeOutput" class="block mb-2 text-sm font-medium">
-          Markdown / HTML 
-        </label>
-        <textarea id="codeOutput" rows="6" readonly class="w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5
-                   text-sm dark:border-gray-600 dark:bg-gray-700
-                   dark:text-gray-100"></textarea>
-      </div> -->
 
       <!-- ===== Markdown + HTML outputs ===== -->
       <div class="space-y-6">
@@ -185,7 +201,8 @@
 
     </div>
     <div class="flex items-center justify-center mt-2">
-      <span>Made with ❤️ by <a href="https://github.com/akanshSirohi" target="_blank" rel="noreferrer" class="text-white hover:underline">Akansh Sirohi</a></span>
+      <span>Made with ❤️ by <a href="https://github.com/akanshSirohi" target="_blank" rel="noreferrer"
+          class="text-white hover:underline">Akansh Sirohi</a></span>
     </div>
   </div>
 

@@ -1,12 +1,15 @@
 const HTML_THEMES = {
     'CUSTOM':`
-        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: {{card_width}}px; background: {{bg_color}}; padding: {{outer_pad}}px; min-height: {{card_min_height}}px;">
-            <div style="display: flex; justify-content: {{card_justify}}; align-items: {{card_align}}; width: 100%; height: 100%; background: {{card_color}}; padding: {{inner_pad}}px; border-radius: 10px; overflow: hidden; box-sizing: border-box; box-shadow: 0px 0px 10px {{shadow_color}};">
-                <div style="display: flex; flex-direction: column; align-items: {{text_align}}; white-space: pre-line; text-align: {{text_align}}; color: {{font_color}};">
-                    <div style="display:flex; font-size: {{font_size}}px;">{{card_content}}</div>
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;width:{{card_width}}px; min-height:{{card_min_height}}px;padding:{{outer_pad}}px; background:{{bg_color}};">
+            <div style="display:flex; justify-content:{{card_justify}}; align-items:{{card_align}};width:100%; height:100%; padding:{{inner_pad}}px;background:{{card_color}}; border-radius:10px;box-shadow:0 0 10px {{shadow_color}}; box-sizing:border-box; overflow:hidden;">
+                <div style="display:flex; flex:1; align-items:{{flex_align}};">
+                    <div style="display:flex; flex:1; flex-direction:column;justify-content:{{flex_align}};align-items:{{flex_align}};text-align:{{css_align}};font-size:{{font_size}}px; color:{{font_color}};white-space:pre-wrap;">
+                        {{card_content}}
+                    </div>
                 </div>
             </div>
         </div>
+
     `,
     'TECHY': `
        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #1a1a1a; color: #ffffff; border: 2px solid #333333; padding: 30px; width: 420px; text-align: center; border-radius: 15px; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);">
@@ -67,7 +70,7 @@ const HTML_THEMES = {
                 <rect width="100%" height="100%" fill="url(#bg)"/>
             </svg>
 
-            <div style="position:relative;margin:20px;background:#282828;padding:15px;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;">
+            <div style="position:relative;margin:20px;background:#282828;padding:15px;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;width:90%;">
                 <span style="font-size:11px;font-weight:bold;color:#fff;">{{card_content}}</span>
             </div>
         </div>

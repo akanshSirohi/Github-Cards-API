@@ -19,7 +19,8 @@ export const CARD_TYPES = [
     { value: 'team-work-quote-card', label: 'Team Work Quote' },
     { value: 'breaking-bad-quote-card', label: 'Breaking Bad Quote' },
     { value: 'got-quotes-card', label: 'Game of Thrones Quote' },
-    { value: 'health-tip-card', label: 'Health Tip' }
+    { value: 'health-tip-card', label: 'Health Tip' },
+    { value: 'my-card', label: 'My Card (Special)'}
   ];
   
   export const THEMES = [

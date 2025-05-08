@@ -4,12 +4,12 @@ const { parseOptions } = require("../utils/options-parser");
 
 const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, theme = false) => {
   let g_font = null;
-  if(theme) {
+  if (theme) {
     theme = theme.toUpperCase();
-    if(Object.keys(HTML_THEMES).includes(theme) === false) {
+    if (Object.keys(HTML_THEMES).includes(theme) === false) {
       theme = 'TECHY';
     }
-    if(theme == 'CUSTOM') {
+    if (theme == 'CUSTOM') {
       theme = HTML_THEMES[theme];
       let options = parseOptions(query);
       html = theme.replace("{{card_content}}", html);
@@ -19,60 +19,50 @@ const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, 
       g_font = options.google_font;
 
       const font_alignements_options = {
-        'tl': {
-          'card_justify': 'flex-start',
-          'card_align': 'flex-start',
-          'text_align': 'flex-start',
+        tl: {
+          card_justify: 'flex-start', card_align: 'flex-start',
+          flex_align: 'flex-start', css_align: 'left'
         },
-        'tm': {
-          'card_justify': 'center',
-          'card_align': 'flex-start',
-          'text_align': 'center'
+        tm: {
+          card_justify: 'center', card_align: 'flex-start',
+          flex_align: 'center', css_align: 'center'
         },
-        'tr': {
-          'card_justify': 'flex-end',
-          'card_align': 'flex-start',
-          'text_align': 'flex-end'
+        tr: {
+          card_justify: 'flex-end', card_align: 'flex-start',
+          flex_align: 'flex-end', css_align: 'right'
         },
-        'ml': {
-          'card_justify': 'flex-start',
-          'card_align': 'center',
-          'text_align': 'flex-start'
+        ml: {
+          card_justify: 'flex-start', card_align: 'center',
+          flex_align: 'flex-start', css_align: 'left'
         },
-        'mm': {
-          'card_justify': 'center',
-          'card_align': 'center',
-          'text_align': 'center'
+        mm: {
+          card_justify: 'center', card_align: 'center',
+          flex_align: 'center', css_align: 'center'
         },
-        'mr': {
-          'card_justify': 'flex-end',
-          'card_align': 'center',
-          'text_align': 'flex-end'
+        mr: {
+          card_justify: 'flex-end', card_align: 'center',
+          flex_align: 'flex-end', css_align: 'right'
         },
-        'bl': {
-          'card_justify': 'flex-start',
-          'card_align': 'flex-end',
-          'text_align': 'flex-start'
+        bl: {
+          card_justify: 'flex-start', card_align: 'flex-end',
+          flex_align: 'flex-start', css_align: 'left'
         },
-        'bm': {
-          'card_justify': 'center',
-          'card_align': 'flex-end',
-          'text_align': 'center'
+        bm: {
+          card_justify: 'center', card_align: 'flex-end',
+          flex_align: 'center', css_align: 'center'
         },
-        'br': {
-          'card_justify': 'flex-end',
-          'card_align': 'flex-end',
-          'text_align': 'flex-end'
+        br: {
+          card_justify: 'flex-end', card_align: 'flex-end',
+          flex_align: 'flex-end', css_align: 'right'
         },
       };
 
       const font_align_config = font_alignements_options[options.font_align];
 
       for (const [key, value] of Object.entries(font_align_config)) {
-        html = html.replace(`{{${key}}}`, value);
+        html = html.replaceAll(`{{${key}}}`, value);
       }
-
-    }else{
+    } else {
       theme = HTML_THEMES[theme];
       html = theme.replace("{{card_content}}", html);
     }

@@ -5,7 +5,7 @@ let card_url_state = null;
 /* ---------- helpers ---------- */
 const $ = (id) => document.getElementById(id);
 
-const encodeGradient = (str) => {
+const b64Encode = (str) => {
   return btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "")
 }
 
@@ -57,6 +57,10 @@ themeItems.forEach((t) => addOption(themeSelect, t));
 /* ---------- custom theme show/hide ---------- */
 themeSelect.addEventListener("change", () => {
   customWrapper.classList.toggle("hidden", themeSelect.value !== "custom");
+});
+
+$("cardSelect").addEventListener("change", function() {
+  $("customTextWapper").classList.toggle("hidden", this.value !== "my-card");
 });
 
 /* ---------- Pickr colour pickers ---------- */
@@ -114,37 +118,48 @@ cardForm.addEventListener("submit", (e) => {
     theme: data.get("theme"),
   });
 
+  if(data.get("card_name") === "my-card") {
+    qs.set("text", b64Encode(data.get("customText")));
+  }
+
   if (data.get("theme") === "custom") {
-    let card_color = $("cardColorHex").value;
+    let card_color = data.get("cardColorHex");
     if (card_color.includes("gradient")) {
-      qs.set("card_color", encodeGradient(card_color.trim()));
+      qs.set("card_color", b64Encode(card_color.trim()));
     } else {
       card_color = card_color.includes("rgb") ? rgbToHex(card_color) : card_color
       qs.set("card_color", card_color.slice(1));
     }
 
     /* background colour */
-    let bg_color = $("bgColorHex").value;
+    let bg_color = data.get("bgColorHex");
     if (bg_color.includes("gradient")) {
-      qs.set("bg_color", encodeGradient(bg_color.trim()));
+      qs.set("bg_color", b64Encode(bg_color.trim()));
     } else {
       bg_color = bg_color.includes("rgb") ? rgbToHex(bg_color) : bg_color;
       qs.set("bg_color", bg_color.slice(1));
     }
 
     /* font & shadow */
-    let font_color = $("fontColorHex").value;
-    let shadow_color = $("shadowColorHex").value;
+    let font_color = data.get("fontColorHex");
+    let shadow_color = data.get("shadowColorHex");
     font_color = font_color.includes("rgb") ? rgbToHex(font_color) : font_color.slice(1);
     shadow_color = shadow_color.includes("rgb") ? rgbToHex(shadow_color) : shadow_color.slice(1);
     qs.set("font_color", font_color);
     qs.set("shadow_color", shadow_color);
 
-    let custom_font = $("customGoogleFont").value;
+    let custom_font = data.get("customGoogleFont");
     if (custom_font) {
       qs.set("google_font", custom_font);
     }
+
+    let text_align = data.get("textAlgnment");
+    if (text_align) {
+      qs.set("font_align", text_align);
+    }
   }
+
+  
 
   /* ----------- build final card URL ----------- */
   const DEBUG = false;

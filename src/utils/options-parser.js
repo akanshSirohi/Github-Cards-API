@@ -178,6 +178,8 @@ const parseOptions = (query) => {
         }else{
             options.font_align = 'tl';
         }
+    }else{
+        options.font_align = 'tl';
     }
     if("outer_pad" in query) {
         options.outer_pad = isValidNumber(query.outer_pad) ? query.outer_pad : 15;
