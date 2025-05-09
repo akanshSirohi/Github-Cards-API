@@ -61,7 +61,9 @@
         <label for="customText" class="block mb-2 text-sm font-medium">
           Custom Text
         </label>
-        <textarea id="customText" name="customText" rows="3" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400" placeholder="Write your text here..."></textarea>
+        <textarea id="customText" name="customText" rows="3"
+          class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400"
+          placeholder="Write your text here..."></textarea>
       </div>
 
       <!-- ---------- Custom theme options (shown only for custom) ---------- -->
@@ -98,18 +100,39 @@
           </fieldset>
         </div>
 
+
+        <div>
+          <label for="customGoogleFont" class="text-sm font-medium">Google Font</label>
+          <input type="text" id="customGoogleFont" name="customGoogleFont" placeholder="e.g. Noto Sans"
+            class="mt-2 bg-gray-700 border border-gray-600 text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" />
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <fieldset>
-            <legend class="mb-2 text-sm font-medium">Google Font</legend>
-            <input type="text" id="customGoogleFont" name="customGoogleFont" placeholder="e.g. Noto Sans"
-              class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" />
-          </fieldset>
+          <div class="relative">
+            <label for="fontSizeRange" class="block mb-2 text-sm font-medium">
+              Font Size <span id="fontSizeRangeLabel"
+                class="ml-2 text-xs text-gray-500 dark:text-gray-400">(16px)</span>
+            </label>
+            <!-- Reset icon button -->
+            <button type="button"
+              class="absolute right-0 -top-[2px] text-gray-400 hover:text-red-500 transition p-1 w-fit reset-btn" data-target="fontSizeRange" data-val="16">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="w-4 h-4 fill-white hover:fill-red-500 transition-colors duration-200 ease-in-out">
+                <path
+                  d="M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z" />
+              </svg>
+            </button>
+            <input type="range" id="fontSizeRange" name="fontSize" min="8" max="72" value="16"
+              class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 dynamic-range"
+              data-target="fontSizeRangeLabel" />
+          </div>
 
           <div>
             <label for="textAlgnment" class="block mb-2 text-sm font-medium">
               Text Alignment
             </label>
-            <select id="textAlgnment" name="textAlgnment" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100">
+            <select id="textAlgnment" name="textAlgnment"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100">
               <option value="" disabled selected>Select text alignment...</option>
               <option value="tl">Top Left</option>
               <option value="tm">Top Mid</option>
@@ -122,7 +145,87 @@
               <option value="br">Bottom Right</option>
             </select>
           </div>
+
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="relative">
+            <label for="innerPadRange" class="block mb-2 text-sm font-medium">
+              Inner Card Padding <span id="innerPadRangeLabel"
+                class="ml-2 text-xs text-gray-500 dark:text-gray-400">(15px)</span>
+            </label>
+            <!-- Reset icon button -->
+            <button type="button"
+              class="absolute right-0 -top-[2px] text-gray-400 hover:text-red-500 transition p-1 w-fit reset-btn" data-target="innerPadRange" data-val="15">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="w-4 h-4 fill-white hover:fill-red-500 transition-colors duration-200 ease-in-out">
+                <path
+                  d="M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z" />
+              </svg>
+            </button>
+            <input type="range" id="innerPadRange" name="innerPad" min="0" max="50" value="15"
+              class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 dynamic-range"
+              data-target="innerPadRangeLabel" />
+          </div>
+          <div class="relative">
+            <label for="outerPadRange" class="block mb-2 text-sm font-medium">
+              Outer Card Padding <span id="outerPadRangeLabel"
+                class="ml-2 text-xs text-gray-500 dark:text-gray-400">(15px)</span>
+            </label>
+            <!-- Reset icon button -->
+            <button type="button"
+              class="absolute right-0 -top-[2px] text-gray-400 hover:text-red-500 transition p-1 w-fit reset-btn" data-target="outerPadRange" data-val="15">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="w-4 h-4 fill-white hover:fill-red-500 transition-colors duration-200 ease-in-out">
+                <path
+                  d="M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z" />
+              </svg>
+            </button>
+            <input type="range" id="outerPadRange" name="outerPad" min="0" max="50" value="15"
+              class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 dynamic-range"
+              data-target="outerPadRangeLabel" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="relative">
+            <label for="cardWidthRange" class="block mb-2 text-sm font-medium">
+              Card Width <span id="cardWidthRangeLabel"
+                class="ml-2 text-xs text-gray-500 dark:text-gray-400">(400px)</span>
+            </label>
+            <!-- Reset icon button -->
+            <button type="button"
+              class="absolute right-0 -top-[2px] text-gray-400 hover:text-red-500 transition p-1 w-fit reset-btn" data-target="cardWidthRange" data-val="400">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="w-4 h-4 fill-white hover:fill-red-500 transition-colors duration-200 ease-in-out">
+                <path
+                  d="M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z" />
+              </svg>
+            </button>
+            <input type="range" id="cardWidthRange" name="cardWidth" min="50" max="1080" value="400"
+              class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 dynamic-range"
+              data-target="cardWidthRangeLabel" />
+          </div>
+          <div class="relative">
+            <label for="cardMinHeightRange" class="block mb-2 text-sm font-medium">
+              Card Min Height <span id="cardMinHeightRangeLabel"
+                class="ml-2 text-xs text-gray-500 dark:text-gray-400">(100px)</span>
+            </label>
+            <!-- Reset icon button -->
+            <button type="button"
+              class="absolute right-0 -top-[2px] text-gray-400 hover:text-red-500 transition p-1 w-fit reset-btn" data-target="cardMinHeightRange" data-val="100">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="w-4 h-4 fill-white hover:fill-red-500 transition-colors duration-200 ease-in-out">
+                <path
+                  d="M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z" />
+              </svg>
+            </button>
+            <input type="range" id="cardMinHeightRange" name="cardMinHeight" min="50" max="1080" value="100"
+              class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 dynamic-range"
+              data-target="cardMinHeightRangeLabel" />
+          </div>
+        </div>
+
       </div>
 
       <button type="submit" class="w-full py-3 rounded-lg bg-indigo-600 text-white font-semibold
@@ -207,6 +310,8 @@
   </div>
 
   <!-- libs -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
   <script src="./libs/lc_color_picker.min.js"></script>

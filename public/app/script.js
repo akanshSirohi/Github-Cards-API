@@ -3,8 +3,6 @@ import { CARD_TYPES, THEMES } from "./config.js";
 let card_url_state = null;
 
 /* ---------- helpers ---------- */
-const $ = (id) => document.getElementById(id);
-
 const b64Encode = (str) => {
   return btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "")
 }
@@ -59,8 +57,13 @@ themeSelect.addEventListener("change", () => {
   customWrapper.classList.toggle("hidden", themeSelect.value !== "custom");
 });
 
-$("cardSelect").addEventListener("change", function() {
-  $("customTextWapper").classList.toggle("hidden", this.value !== "my-card");
+$("#cardSelect").change(function(){
+  $("#customTextWapper").toggleClass("hidden", this.value !== "my-card");
+});
+
+$(".dynamic-range").on('input',function(){
+  let target = $(this).data("target");
+  $(`#${target}`).html(`(${$(this).val()}px)`);
 });
 
 /* ---------- Pickr colour pickers ---------- */
@@ -157,6 +160,32 @@ cardForm.addEventListener("submit", (e) => {
     if (text_align) {
       qs.set("text_align", text_align);
     }
+
+    let outer_pad = data.get("outerPad");
+    if(outer_pad != 15) { // Only add if differ from default
+      qs.set("outer_pad", outer_pad);
+    }
+
+    let inner_pad = data.get("innerPad");
+    if(inner_pad != 15) { // Only add if differ from default
+      qs.set("inner_pad", inner_pad);
+    }
+
+    let font_size = data.get("fontSize");
+    if(font_size != 16) { // Only add if differ from default
+      qs.set("font_size", font_size);
+    }
+
+    let card_width = data.get("cardWidth");
+    if(card_width != 400) { // Only add if differ from default
+      qs.set("card_width", card_width);
+    }
+
+    let card_min_height = data.get("cardMinHeight");
+    if(card_min_height != 100) { // Only add if differ from default
+      qs.set("card_min_height", card_min_height);
+    }
+
   }
 
   
@@ -173,36 +202,39 @@ cardForm.addEventListener("submit", (e) => {
 
   card_url_state = url;
 
-  const preview = $('preview');
-  const loader = $('loader');
+  const preview = $('#preview');
+  const loader = $('#loader');
   const preload = new Image();
   preload.onload = () => {
-    preview.src = preload.src;
-    preview.classList.remove('hidden');
-    loader.classList.add('hidden');
+    preview.attr("src",preload.src);
+    preview.removeClass("hidden")
+    loader.addClass('hidden');
   };
   preload.onerror = () => {
-    loader.textContent = 'Failed to load';
-    loader.setAttribute("class","absolute");
+    loader.text('Failed to load');
+    loader.attr("class","absolute");
   };
   preload.src = url;
-  preview.classList.add('hidden');
-  loader.textContent = '';
-  loader.setAttribute("class","absolute w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin");
-  loader.classList.remove('hidden');
+  preview.addClass('hidden');
+  loader.text('');
+  loader.attr("class","absolute w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin");
+  loader.removeClass('hidden');
 
-  $("downloadBtn").href = url;
+  $("#downloadBtn").attr("href",url);
   let title = cardTitleMaker(data.get("card_name"));
-  $("mdOutput").value = `![${title}](${host}${url})`;
-  $("htmlOutput").value = `<img src="${host}${url}" alt="${title}" />`;
-  $("resultSection").classList.remove("hidden");
+  $("#mdOutput").val(`![${title}](${host}${url})`);
+  $("#htmlOutput").val(`<img src="${host}${url}" alt="${title}" />`);
+  $("#resultSection").removeClass("hidden");
 });
 
-
-
+$(".reset-btn").click(function(){
+  let range = $(this).data("target");
+  let value = $(this).data("val");
+  $(`#${range}`).val(value);
+  $(`#${range}Label`).html(`(${value}px)`);
+});
 
 /* Copy functionality */
-
 const clipboard = new ClipboardJS('.copy-btn');
 
 clipboard.on('success', e => {
