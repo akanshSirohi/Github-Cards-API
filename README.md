@@ -98,13 +98,19 @@ All themes are created using HTML and rendered via **Satori**.
 
 ### ⚙️ Custom Arguments (for `CUSTOM` theme only)
 
-| Parameter      | Description                                                                      | Default     |
-| -------------- | -------------------------------------------------------------------------------- | ----------- |
-| `card_color`   | Card's main background color **or** a Base64‑encoded CSS gradient string         | `#ffffff`   |
-| `font_color`   | Text color                                                                       | `#000000`   |
-| `bg_color`     | Outer background color **or** a Base64‑encoded CSS gradient string               | `#ffffff`   |
-| `shadow_color` | Card shadow color                                                                | `#00000000` |
-| `google_font`  | Custom google font                                                               | none        |
+| Parameter         | Description                                                                      | Default     |
+| ----------------- | -------------------------------------------------------------------------------- | ----------- |
+| `card_color`      | Card's main background color **or** a Base64‑encoded CSS gradient string         | `#ffffff`   |
+| `font_color`      | Text color                                                                       | `#000000`   |
+| `bg_color`        | Outer background color **or** a Base64‑encoded CSS gradient string               | `#ffffff`   |
+| `shadow_color`    | Card shadow color                                                                | `#00000000` |
+| `google_font`     | Custom google font                                                               | none        |
+| `text_align`      | Text alignment (Top/Middle/Bottom + Left/Middle/Right). Available: `tl`, `tm`, `tr`, `ml`, `mm`, `mr`, `bl`, `bm`, `br` | `tl` |
+| `outer_pad`       | Outer card padding in pixels.                                                    | `15`        |
+| `inner_pad`       | Inner card padding in pixels.                                                    | `15`        |
+| `font_size`       | Font size.                                                                       | `12`        |
+| `card_width`      | Width of the card in pixels.                                                     | `400`       |
+| `card_min_height` | Minimum height of the card in pixels.                                            | `100`       |
 
 > **Gradient Support**  
 > `card_color` and `bg_color` accept linear or radial gradients. Because commas & parentheses are not URL‑safe, supply the gradient as a **URL‑safe Base64 string**.
