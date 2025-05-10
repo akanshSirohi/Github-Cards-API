@@ -122,13 +122,32 @@ export default async function helpHandler({ req, env }) {
     custom: {
       info: "Custom theme",
       args: {
-        card_color: "Card color. Default: #ffffff [Optional]",
+        card_color: "Card color, with gradient support. Refer to README.md for more info. Default: #ffffff [Optional]",
         font_color: "Card text color. Default: #000000 [Optional]",
-        bg_color: "Card Background color. Default: #ffffff [Optional]",
+        bg_color: "Card background color, with gradient support. Refer to README.md for more info. Default: #ffffff [Optional]",
         shadow_color: "Card shadow color. Default: #00000000 [Optional]",
-        google_font: "Custom google font. Default: none [Optional]"
+        google_font: "Custom google font. Default: none [Optional]",
+        text_align: {
+          info: "Text alignment. Default: Top Left [Optional]",
+          available_options: {
+            "tl": "Top Left",
+            "tm": "Top Middle",
+            "tr": "Top Right",
+            "ml": "Middle Left",
+            "mm": "Middle Middle",
+            "mr": "Middle Right",
+            "bl": "Bottom Left",
+            "bm": "Bottom Middle",
+            "br": "Bottom Right",
+          },
+        },
+        outer_pad: "Outer card padding. Default: 15 [Optional]",
+        inner_pad: "Inner card padding. Default: 15 [Optional]",
+        font_size: "Font size. Default: 12 [Optional]",
+        card_width: "Card width. Default: 400 [Optional]",
+        card_min_height: "Card minimum height. Default: 100 [Optional]",
       },
-      example: [
+      basic_examples: [
         `${baseurl}/jokes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow_color=fff`,
         `${baseurl}/motivational-quotes-card?theme=custom&card_color=f00&font_color=fff&bg_color=000&shadow_color=fff`,
         `${baseurl}/jokes-card?theme=custom&bg_color=ffff00&font_color=0000ff`,
@@ -138,12 +157,28 @@ export default async function helpHandler({ req, env }) {
         `${baseurl}/travel-destinations-card?theme=custom&bg_color=0000ff&font_color=ffffff`,
         `${baseurl}/random-facts-card?theme=custom&card_color=f0f&font_color=fff&bg_color=000&shadow_color=fff`,
         `${baseurl}/harry-potter-spell-card?theme=custom&card_color=00f&font_color=fff&bg_color=000&shadow_color=fff`,
+      ],
+      advanced_examples: [
         `${baseurl}/programming-quotes-card?theme=custom&bg_color=ff69b4&font_color=000000&google_font=Tagesschrift`,
+        `${baseurl}/programming-facts-card?theme=custom&card_color=515151&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLCAjRkM0NjZCIDAlLCAjM0Y1RUZCIDEwMCUp&font_color=fff&shadow_color=000&google_font=Cascadia+Code&text_align=mm&outer_pad=25&card_width=550&card_min_height=150`
       ],
     },
   };
   
   const cards = {
+    "my-card": {
+      info: "Special card to show the customized text only.",
+      api: {
+        args: {
+          text: "URL safe base64 string, more info in README.md on how to encode. [Required]",
+          theme: "Theme of card: All themes. [Optional]",
+        },
+        example: [
+          `${baseurl}/my-card?theme=neon_horizon&text=SGVsbG8sIFdvcmxkIQ`,
+          `${baseurl}/my-card?theme=custom&text=QWthbnNoIFNpcm9oaQo8c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxNHB4Ij4tIFNvZnR3YXJlIEVuZ2luZWVyPC9zcGFuPg&card_color=515151&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLCAjRkM0NjZCIDAlLCAjM0Y1RUZCIDEwMCUp&font_color=fff&shadow_color=000&google_font=Oswald&text_align=mm&font_size=40`,
+        ],
+      },
+    },
     "jokes-card": {
       info: "Random programming jokes card",
       api: {

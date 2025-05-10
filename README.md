@@ -70,6 +70,9 @@ All cards are managed via `help.js`. A few popular examples include:
 | `programming-quote`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-quotes-card)`  |
 | `bhagwad-geeta-quotes` | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/bhagavad-geeta-card )`     |
 | `fun-facts`            | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/fun-fact-card)`            |
+| `my-card`              | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/my-card?theme=neon_horizon&text=SGVsbG8sIFdvcmxkIQ)` |
+
+**`my-card`**: Special card to show the customized text only.
 
 👉 For the full list, visit [`https://github-cards-worker.akanshsirohi-dev.workers.dev`](https://github-cards-worker.akanshsirohi-dev.workers.dev)
 
@@ -95,13 +98,19 @@ All themes are created using HTML and rendered via **Satori**.
 
 ### ⚙️ Custom Arguments (for `CUSTOM` theme only)
 
-| Parameter      | Description                                                                      | Default     |
-| -------------- | -------------------------------------------------------------------------------- | ----------- |
-| `card_color`   | Card's main background color **or** a Base64‑encoded CSS gradient string         | `#ffffff`   |
-| `font_color`   | Text color                                                                       | `#000000`   |
-| `bg_color`     | Outer background color **or** a Base64‑encoded CSS gradient string               | `#ffffff`   |
-| `shadow_color` | Card shadow color                                                                | `#00000000` |
-| `google_font`  | Custom google font                                                               | none        |
+| Parameter         | Description                                                                      | Default     |
+| ----------------- | -------------------------------------------------------------------------------- | ----------- |
+| `card_color`      | Card's main background color **or** a Base64‑encoded CSS gradient string         | `#ffffff`   |
+| `font_color`      | Text color                                                                       | `#000000`   |
+| `bg_color`        | Outer background color **or** a Base64‑encoded CSS gradient string               | `#ffffff`   |
+| `shadow_color`    | Card shadow color                                                                | `#00000000` |
+| `google_font`     | Custom google font                                                               | none        |
+| `text_align`      | Text alignment (Top/Middle/Bottom + Left/Middle/Right). Available: `tl`, `tm`, `tr`, `ml`, `mm`, `mr`, `bl`, `bm`, `br` | `tl` |
+| `outer_pad`       | Outer card padding in pixels.                                                    | `15`        |
+| `inner_pad`       | Inner card padding in pixels.                                                    | `15`        |
+| `font_size`       | Font size.                                                                       | `12`        |
+| `card_width`      | Width of the card in pixels.                                                     | `400`       |
+| `card_min_height` | Minimum height of the card in pixels.                                            | `100`       |
 
 > **Gradient Support**  
 > `card_color` and `bg_color` accept linear or radial gradients. Because commas & parentheses are not URL‑safe, supply the gradient as a **URL‑safe Base64 string**.
@@ -144,6 +153,8 @@ All themes are created using HTML and rendered via **Satori**.
 - **Custom (Gradient)**  <br>
 ![Custom Gradient](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card?theme=custom&card_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoNDIsIDEyMywgMTU1LCAxKSAwJSwgcmdiYSg4NywgMTk5LCAxMzMsIDEpIDUwJSwgcmdiYSgyMzcsIDIyMSwgODMsIDEpIDEwMCUpOw&font_color=fff&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs&shadow_color=fff)
 
+- **Fully Customized**  <br>
+![Custom Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=custom&card_color=515151&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLCAjRkM0NjZCIDAlLCAjM0Y1RUZCIDEwMCUp&font_color=fff&shadow_color=000&google_font=Cascadia+Code&text_align=mm&outer_pad=25&card_width=550&card_min_height=150)
 ---
 
 ## 🤝 Contributing

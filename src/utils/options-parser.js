@@ -12,6 +12,18 @@ const isValidHexColor = (hex) => {
 }
 
 /**
+ * The function `isValidNumber` checks if a value is a valid number in JavaScript.
+ * @param value - The `isValidNumber` function checks if the `value` parameter is a valid number. It
+ * returns `true` if the `value` is of type 'number' and is not NaN (Not a Number), otherwise it
+ * returns `false`.
+ * @returns The function `isValidNumber` returns `true` if the `value` is a number and not `NaN`,
+ * otherwise it returns `false`.
+ */
+function isValidNumber(value) {
+    return typeof value === 'string' && value.trim() !== '' && !isNaN(Number(value));
+}
+
+/**
  * Validate RFC 4648 Base64 / Base64-URL (padded **or** un-padded).
  * @param {string} str              String to test.
  * @param {boolean} [urlSafe=true] Accept URL-safe charset ( - _ instead of + / ).
@@ -159,6 +171,46 @@ const parseOptions = (query) => {
     }else{
         options.google_font = null;
     }
+    if("text_align" in query) {
+        let valid_alignments = ['tl', 'tm', 'tr', 'ml', 'mm', 'mr', 'bl', 'bm', 'br'];
+        if(valid_alignments.includes(query.text_align)) {
+            options.text_align = query.text_align;
+        }else{
+            options.text_align = 'tl';
+        }
+    }else{
+        options.text_align = 'tl';
+    }
+    if("outer_pad" in query) {
+        options.outer_pad = isValidNumber(query.outer_pad) ? query.outer_pad : 15;
+    }else{
+        options.outer_pad = 15;
+    }
+
+    if("inner_pad" in query) {
+        options.inner_pad = isValidNumber(query.inner_pad) ? query.inner_pad : 15;
+    }else{
+        options.inner_pad = 15;
+    }
+
+    if("font_size" in query) {
+        options.font_size = isValidNumber(query.font_size) ? query.font_size : 12;
+    }else{
+        options.font_size = 12;
+    }
+
+    if("card_width" in query) {
+        options.card_width = isValidNumber(query.card_width) ? query.card_width : 400;
+    }else{
+        options.card_width = 400;
+    }
+
+    if("card_min_height" in query) {
+        options.card_min_height = isValidNumber(query.card_min_height) ? query.card_min_height : 100;
+    }else{
+        options.card_min_height = 100;
+    }
+
     return options;
 };
 
