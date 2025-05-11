@@ -1,4 +1,5 @@
 import { CARD_TYPES, THEMES } from "./config.js";
+import { generateRandomGradient } from "./gradientFactory.js";
 
 let card_url_state = null;
 
@@ -72,7 +73,8 @@ new lc_color_picker('#fontColorHex', {
   dark_theme: true,
   preview_style: {
     separator_color: '#374151',
-  }
+    width: 40
+  },
 });
 
 new lc_color_picker('#shadowColorHex', {
@@ -80,6 +82,7 @@ new lc_color_picker('#shadowColorHex', {
   dark_theme: true,
   preview_style: {
     separator_color: '#374151',
+    width: 40
   }
 });
 
@@ -88,6 +91,7 @@ new lc_color_picker('#bgColorHex', {
   dark_theme: true,
   preview_style: {
     separator_color: '#374151',
+    width: 40
   }
 });
 
@@ -96,6 +100,7 @@ new lc_color_picker('#cardColorHex', {
   dark_theme: true,
   preview_style: {
     separator_color: '#374151',
+    width: 40
   }
 });
 
@@ -232,6 +237,13 @@ $(".reset-btn").click(function(){
   let value = $(this).data("val");
   $(`#${range}`).val(value);
   $(`#${range}Label`).html(`(${value}px)`);
+});
+
+$(".random-grad-gen-btn").click(function(){
+  let target = $(this).data("target");
+  let randomGradient = generateRandomGradient();
+  $(`#${target}`).val(randomGradient);
+  $(`#${target}`).parent().find(".lccp-preview").css("background", randomGradient);
 });
 
 /* Copy functionality */
