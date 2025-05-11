@@ -1,6 +1,18 @@
 # 🌐 Github Cards API&#x20;
 
-A fully serverless card rendering service built with **Cloudflare Workers** and **Satori**. All themes are HTML-based and rendered dynamically without the need for Canvas. Supports a wide variety of card types and customizations.
+**GitHub Cards API** is a lightweight, serverless utility that allows you to generate beautifully customizable GitHub profile cards. Built using **Cloudflare Workers**, this project offers fast, globally distributed performance with minimal overhead. It supports a variety of themes, flexible layout options, and custom styling — making it perfect for embedding in your README, portfolio, or anywhere you want.
+
+### 🔧 Key Features
+
+- ✨ **Theme Support** – Multiple built-in themes and a powerful `custom` mode for full design control.
+- 🎨 **Card Customization** – Tweak font size, color, alignment, padding, shadows, and more.
+- 🖼️ **Live Preview GUI** – Comes with an interactive app to preview and generate your card with ease.
+- ⚡ **Serverless & Fast** – Powered by Cloudflare Workers with optional KV-based caching for performance.
+- 🌍 **Open Source & Extensible** – Contributions are welcome! Easily extend the card options or renderer logic.
+
+### 🚀 Why This Project?
+
+This project started as a learning experiment while transitioning from traditional Node.js + Express apps to modern **serverless deployments**. It demonstrates how Cloudflare Workers can be used to build and deploy scalable, high-performance APIs.
 
 ---
 
