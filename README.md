@@ -214,5 +214,6 @@ wrangler dev
 
 ---
 
-✨ Feel free to create a PR and contribute a card or theme! Let’s build something cool together.
+✨ Feel free to create a PR and contribute a card or theme! Let’s build something cool together
+
 
