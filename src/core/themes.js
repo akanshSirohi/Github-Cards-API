@@ -181,11 +181,11 @@ const HTML_THEMES = {
             </div>
         </div>
     `,
-    'OCEAN_BREEZE': `
-        <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:400px;max-width:400px;min-height:100px;background:linear-gradient(to right,#2E3192,#1BFFFF);padding:15px;">
-            <div style="display:flex;justify-content:flex-start;align-items:flex-start;width:100%;height:100%;background:#ffffff;padding:15px;border-radius:10px;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(0,0,0,0.1);">
+    'CYBER_GRID': `
+        <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:400px;max-width:400px;min-height:100px;padding:15px;background:#0d0d0d;background-image:linear-gradient(rgba(0,255,180,0.2) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,180,0.2) 1px,transparent 1px);background-size:40px 40px;">
+            <div style="display:flex;justify-content:flex-start;align-items:flex-start;width:100%;height:100%;background:#000;padding:15px;border-radius:10px;box-sizing:border-box;overflow:hidden;border:1px solid #0ff;box-shadow:0 0 15px #0ff;">
                 <div style="display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;">
-                    <span style="font-size:11px;font-weight:bold;color:#333;">{{card_content}}</span>
+                    <span style="font-size:11px;font-weight:bold;color:#0ff;">{{card_content}}</span>
                 </div>
             </div>
         </div>

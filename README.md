@@ -107,7 +107,7 @@ All themes are created using HTML and rendered via **Satori**.
 - `lemonade`
 - `galaxy`
 - `vintage`
-- `ocean_breeze`
+- `cyber_grid`
 
 ### ⚙️ Custom Arguments (for `CUSTOM` theme only)
 
@@ -163,8 +163,8 @@ All themes are created using HTML and rendered via **Satori**.
 - **Neon Horizon Theme** <br>
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=neon_horizon)
 
-- **Ocean Breeze Theme** <br>
-![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=ocean_breeze)
+ - **Cyber Grid Theme** <br>
+ ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=cyber_grid)
 
 - **Custom (Gradient)**  <br>
 ![Custom Gradient](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card?theme=custom&card_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoNDIsIDEyMywgMTU1LCAxKSAwJSwgcmdiYSg4NywgMTk5LCAxMzMsIDEpIDUwJSwgcmdiYSgyMzcsIDIyMSwgODMsIDEpIDEwMCUpOw&font_color=fff&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs&shadow_color=fff)

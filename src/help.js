@@ -119,16 +119,16 @@ export default async function helpHandler({ req, env }) {
           `${baseurl}/random-facts-card?theme=galaxy`,
         ],
       },
-      ocean_breeze: {
-        info: "Ocean Breeze Theme",
+      cyber_grid: {
+        info: "Cyber Grid Theme",
         example: [
-          `${baseurl}/jokes-card?theme=ocean_breeze`,
-          `${baseurl}/programming-quotes-card?theme=ocean_breeze`,
-          `${baseurl}/programming-facts-card?theme=ocean_breeze`,
-          `${baseurl}/motivational-quotes-card?theme=ocean_breeze`,
-          `${baseurl}/travel-destinations-card?theme=ocean_breeze`,
-          `${baseurl}/random-facts-card?theme=ocean_breeze`,
-          `${baseurl}/harry-potter-spell-card?theme=ocean_breeze`,
+          `${baseurl}/jokes-card?theme=cyber_grid`,
+          `${baseurl}/programming-quotes-card?theme=cyber_grid`,
+          `${baseurl}/programming-facts-card?theme=cyber_grid`,
+          `${baseurl}/motivational-quotes-card?theme=cyber_grid`,
+          `${baseurl}/travel-destinations-card?theme=cyber_grid`,
+          `${baseurl}/random-facts-card?theme=cyber_grid`,
+          `${baseurl}/harry-potter-spell-card?theme=cyber_grid`,
         ],
       },
       custom: {
