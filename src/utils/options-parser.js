@@ -214,5 +214,4 @@ const parseOptions = (query) => {
     return options;
 };
 
-module.exports.parseOptions = parseOptions;
-module.exports.decodeBase64 = decodeBase64;
+export { parseOptions, decodeBase64 };

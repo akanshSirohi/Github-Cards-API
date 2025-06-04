@@ -1,5 +1,5 @@
 import { loadJSONFile } from '../utils/load-json-file';
-const { Languages, generateHTMLCard } = require("../core/card-generator");
+import { Languages, generateHTMLCard } from "../core/card-generator";
 
 export default async function challengeOfTheWeekHandler({ req, env }) {
   try {

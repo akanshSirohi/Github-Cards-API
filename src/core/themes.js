@@ -1,4 +1,4 @@
-const HTML_THEMES = {
+export const HTML_THEMES = {
     'CUSTOM':`
         <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;width:{{card_width}}px; min-height:{{card_min_height}}px;padding:{{outer_pad}}px; background:{{bg_color}};">
             <div style="display:flex; justify-content:{{card_justify}}; align-items:{{card_align}};width:100%; height:100%; padding:{{inner_pad}}px;background:{{card_color}}; border-radius:10px;box-shadow:0 0 10px {{shadow_color}}; box-sizing:border-box; overflow:hidden;">
@@ -182,5 +182,3 @@ const HTML_THEMES = {
         </div>
     `,
 };
-
-module.exports = { HTML_THEMES };

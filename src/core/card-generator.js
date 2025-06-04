@@ -1,8 +1,8 @@
-const { generateSvg, Languages } = require("./satori_renderer");
-const { HTML_THEMES } = require("./themes");
-const { parseOptions } = require("../utils/options-parser");
+import { generateSvg, Languages } from './satori_renderer';
+import { HTML_THEMES } from './themes';
+import { parseOptions } from '../utils/options-parser';
 
-const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, theme = false) => {
+export const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, theme = false) => {
   let g_font = null;
   if (theme) {
     theme = theme.toUpperCase();
@@ -70,7 +70,4 @@ const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, 
   return await generateSvg(html, env, language, g_font);
 }
 
-module.exports.generateHTMLCard = generateHTMLCard;
-
-// Card Options
-module.exports.Languages = Languages;
+export { Languages };
