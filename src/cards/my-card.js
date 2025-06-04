@@ -1,5 +1,5 @@
-const { Languages, generateHTMLCard } = require("../core/card-generator");
-const { decodeBase64 } = require("../utils/options-parser");
+import { Languages, generateHTMLCard } from "../core/card-generator";
+import { decodeBase64 } from "../utils/options-parser";
 
 export default async function myCardHandler({ req, env }) {
   try {
