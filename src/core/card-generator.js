@@ -18,7 +18,7 @@ const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, 
       }
       g_font = options.google_font;
 
-      const text_alignements_options = {
+      const text_alignment_options = {
         tl: {
           card_justify: 'flex-start', card_align: 'flex-start',
           flex_align: 'flex-start', css_align: 'left'
@@ -57,7 +57,7 @@ const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, 
         },
       };
 
-      const text_align_config = text_alignements_options[options.text_align];
+      const text_align_config = text_alignment_options[options.text_align];
 
       for (const [key, value] of Object.entries(text_align_config)) {
         html = html.replaceAll(`{{${key}}}`, value);
