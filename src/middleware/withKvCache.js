@@ -4,9 +4,9 @@ export function withKvCache(handler, { ttl = 7200 } = {}) {
 
     // Build cache key
     const url = new URL(req.url);
+    // Sort parameters by key to ensure consistent cache keys
     const sorted = [...url.searchParams.entries()]
-      .map(([k, v]) => [k, v.toLowerCase()]) // normalise value case
-      .sort(([a], [b]) => a.localeCompare(b)); // sort by key
+      .sort(([a], [b]) => a.localeCompare(b));
     const key = `cache:${url.pathname}?${new URLSearchParams(sorted)}`;
 
     // Return cached response if exists
