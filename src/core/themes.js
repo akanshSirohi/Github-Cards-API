@@ -181,6 +181,15 @@ const HTML_THEMES = {
             </div>
         </div>
     `,
+    'OCEAN_BREEZE': `
+        <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:400px;max-width:400px;min-height:100px;background:linear-gradient(to right,#2E3192,#1BFFFF);padding:15px;">
+            <div style="display:flex;justify-content:flex-start;align-items:flex-start;width:100%;height:100%;background:#ffffff;padding:15px;border-radius:10px;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(0,0,0,0.1);">
+                <div style="display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;">
+                    <span style="font-size:11px;font-weight:bold;color:#333;">{{card_content}}</span>
+                </div>
+            </div>
+        </div>
+    `,
 };
 
 module.exports = { HTML_THEMES };
