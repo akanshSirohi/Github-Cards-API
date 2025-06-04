@@ -215,6 +215,8 @@ wrangler dev
 - Uses **Satori** for HTML-to-image rendering.
 - All assets (fonts, images) are served via Cloudflare Worker assets.
 - Cards and themes are maintained centrally in `help.js` and `themes.js`.
+- Hindi text is shaped with **HarfBuzzJS** before being embedded in the SVG to
+  ensure proper Devanagari rendering.
 
 ---
 

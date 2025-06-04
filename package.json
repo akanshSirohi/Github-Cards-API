@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"@tsndr/cloudflare-worker-router": "^3.2.10",
+		"harfbuzzjs": "^0.4.7",
 		"satori": "^0.12.2",
 		"satori-html": "^0.3.2"
 	}

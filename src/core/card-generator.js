@@ -3,6 +3,7 @@ import { HTML_THEMES } from './themes';
 import { parseOptions } from '../utils/options-parser';
 
 export const generateHTMLCard = async (env, html, query, language = Languages.ENGLISH, theme = false) => {
+  const cardContent = html;
   let g_font = null;
   if (theme) {
     theme = theme.toUpperCase();
@@ -12,7 +13,7 @@ export const generateHTMLCard = async (env, html, query, language = Languages.EN
     if (theme == 'CUSTOM') {
       theme = HTML_THEMES[theme];
       let options = parseOptions(query);
-      html = theme.replace("{{card_content}}", html);
+      html = theme.replace("{{card_content}}", '__CARD_CONTENT__');
       for (const [key, value] of Object.entries(options)) {
         html = html.replace(`{{${key}}}`, value);
       }
@@ -64,10 +65,10 @@ export const generateHTMLCard = async (env, html, query, language = Languages.EN
       }
     } else {
       theme = HTML_THEMES[theme];
-      html = theme.replace("{{card_content}}", html);
+      html = theme.replace("{{card_content}}", '__CARD_CONTENT__');
     }
   }
-  return await generateSvg(html, env, language, g_font);
+  return await generateSvg(html, env, language, g_font, cardContent);
 }
 
 export { Languages };
