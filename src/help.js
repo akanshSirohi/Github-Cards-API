@@ -108,34 +108,34 @@ export default async function helpHandler({ req, env }) {
         `${baseurl}/random-facts-card?theme=vintage`,
         `${baseurl}/harry-potter-spell-card?theme=vintage`,
       ],
-      },
-      galaxy: {
-        info: "Galaxy theme",
-        example: [
-          `${baseurl}/jokes-card?theme=galaxy`,
-          `${baseurl}/programming-quotes-card?theme=galaxy`,
-          `${baseurl}/programming-facts-card?theme=galaxy`,
-          `${baseurl}/motivational-quotes-card?theme=galaxy`,
-          `${baseurl}/random-facts-card?theme=galaxy`,
-        ],
-      },
-      cyber_grid: {
-        info: "Cyber Grid Theme",
-        example: [
-          `${baseurl}/jokes-card?theme=cyber_grid`,
-          `${baseurl}/programming-quotes-card?theme=cyber_grid`,
-          `${baseurl}/programming-facts-card?theme=cyber_grid`,
-          `${baseurl}/motivational-quotes-card?theme=cyber_grid`,
-          `${baseurl}/travel-destinations-card?theme=cyber_grid`,
-          `${baseurl}/random-facts-card?theme=cyber_grid`,
-          `${baseurl}/harry-potter-spell-card?theme=cyber_grid`,
-        ],
-      },
-      custom: {
-        info: "Custom theme",
-        args: {
-          card_color: "Card color, with gradient support. Refer to README.md for more info. Default: #ffffff [Optional]",
-          font_color: "Card text color. Default: #000000 [Optional]",
+    },
+    galaxy: {
+      info: "Galaxy theme",
+      example: [
+        `${baseurl}/jokes-card?theme=galaxy`,
+        `${baseurl}/programming-quotes-card?theme=galaxy`,
+        `${baseurl}/programming-facts-card?theme=galaxy`,
+        `${baseurl}/motivational-quotes-card?theme=galaxy`,
+        `${baseurl}/random-facts-card?theme=galaxy`,
+      ],
+    },
+    cyber_grid: {
+      info: "Cyber Grid Theme",
+      example: [
+        `${baseurl}/jokes-card?theme=cyber_grid`,
+        `${baseurl}/programming-quotes-card?theme=cyber_grid`,
+        `${baseurl}/programming-facts-card?theme=cyber_grid`,
+        `${baseurl}/motivational-quotes-card?theme=cyber_grid`,
+        `${baseurl}/travel-destinations-card?theme=cyber_grid`,
+        `${baseurl}/random-facts-card?theme=cyber_grid`,
+        `${baseurl}/harry-potter-spell-card?theme=cyber_grid`,
+      ],
+    },
+    custom: {
+      info: "Custom theme",
+      args: {
+        card_color: "Card color, with gradient support. Refer to README.md for more info. Default: #ffffff [Optional]",
+        font_color: "Card text color. Default: #000000 [Optional]",
         bg_color: "Card background color, with gradient support. Refer to README.md for more info. Default: #ffffff [Optional]",
         shadow_color: "Card shadow color. Default: #00000000 [Optional]",
         google_font: "Custom google font. Default: none [Optional]",
@@ -176,7 +176,7 @@ export default async function helpHandler({ req, env }) {
       ],
     },
   };
-  
+
   const cards = {
     "my-card": {
       info: "Special card to show the customized text only.",
@@ -380,7 +380,7 @@ export default async function helpHandler({ req, env }) {
     },
   };
 
-  return new Response(JSON.stringify({ themes, cards }),{
+  return new Response(JSON.stringify({ themes, cards }), {
     headers: {
       "Content-Type": "application/json"
     },
