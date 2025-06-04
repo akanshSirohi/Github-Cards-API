@@ -33,6 +33,7 @@ export const CARD_TYPES = [
     { value: 'endless_constellation', label: 'Endless Constellation' },
     { value: 'lemonade', label: 'Lemonade' },
     { value: 'vintage', label: 'Vintage' },
+    { value: 'cyber_grid', label: 'Cyber Grid' },
     { value: 'galaxy', label: 'Galaxy' },
     { value: 'custom', label: 'Custom' },
   ];

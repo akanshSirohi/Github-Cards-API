@@ -119,6 +119,18 @@ export default async function helpHandler({ req, env }) {
         `${baseurl}/random-facts-card?theme=galaxy`,
       ],
     },
+    cyber_grid: {
+      info: "Cyber Grid Theme",
+      example: [
+        `${baseurl}/jokes-card?theme=cyber_grid`,
+        `${baseurl}/programming-quotes-card?theme=cyber_grid`,
+        `${baseurl}/programming-facts-card?theme=cyber_grid`,
+        `${baseurl}/motivational-quotes-card?theme=cyber_grid`,
+        `${baseurl}/travel-destinations-card?theme=cyber_grid`,
+        `${baseurl}/random-facts-card?theme=cyber_grid`,
+        `${baseurl}/harry-potter-spell-card?theme=cyber_grid`,
+      ],
+    },
     custom: {
       info: "Custom theme",
       args: {
@@ -164,7 +176,7 @@ export default async function helpHandler({ req, env }) {
       ],
     },
   };
-  
+
   const cards = {
     "my-card": {
       info: "Special card to show the customized text only.",
@@ -368,7 +380,7 @@ export default async function helpHandler({ req, env }) {
     },
   };
 
-  return new Response(JSON.stringify({ themes, cards }),{
+  return new Response(JSON.stringify({ themes, cards }), {
     headers: {
       "Content-Type": "application/json"
     },
