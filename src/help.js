@@ -358,7 +358,7 @@ export default async function helpHandler({ req, env }) {
       },
     },
     "health-tip-card": {
-      info: "Generates a random health tips for your good health",
+      info: "Generates a random health tip for good health.",
       api: {
         args: {
           theme: "Theme of card [Optional]",
