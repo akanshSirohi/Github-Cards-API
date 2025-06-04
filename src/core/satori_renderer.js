@@ -16,7 +16,7 @@ async function fetchFont(path) {
 }
 
 async function shapeHindiText(text, fontBuffer, fontSize, color) {
-    const hbModule = await import('harfbuzzjs');
+    const hbModule = await (new Function("return import('harfbuzzjs')"))();
     const hb = await (hbModule.default || hbModule);
     const blob = hb.createBlob(new Uint8Array(fontBuffer));
     const face = hb.createFace(blob, 0);
