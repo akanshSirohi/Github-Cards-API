@@ -191,10 +191,9 @@ export const HTML_THEMES = {
         </div>
     `,
     'DIGITAL_RAIN': (card_content) => {
-
-        const CANVAS_W = 720;
-        const CANVAS_H = 310;
-        const COLS = 80;
+        const CANVAS_W = 440;
+        const CANVAS_H = 135;
+        const COLS = 100;
         const DROP_MIN = 20;
         const DROP_MAX = 30;
 
@@ -219,54 +218,30 @@ export const HTML_THEMES = {
 
         // SVG block
         const svg = `
-    <svg width="${CANVAS_W}" height="${CANVAS_H}" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
-      <defs>
-        ${gradients}
-        <radialGradient id="backGlow" cx="50%" cy="50%" r="90%">
-          <stop offset="0%" stop-color="#173d18"/>
-          <stop offset="100%" stop-color="#070f08"/>
-        </radialGradient>
-      </defs>
-      <rect width="100%" height="100%" fill="#101710"/>
-      <rect width="100%" height="100%" fill="url(#backGlow)" opacity="0.96"/>
-      ${drops}
-    </svg>
-  `.trim();
+            <svg width="${CANVAS_W}" height="${CANVAS_H}" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+                <defs>
+                    ${gradients}
+                    <radialGradient id="backGlow" cx="50%" cy="50%" r="90%">
+                    <stop offset="0%" stop-color="#173d18"/>
+                    <stop offset="100%" stop-color="#070f08"/>
+                    </radialGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="#101710"/>
+                <rect width="100%" height="100%" fill="url(#backGlow)" opacity="0.96"/>
+                ${drops}
+            </svg>
+        `.trim();
 
-    // Card config: always visible, readable, slightly transparent for rain effect
-    return `
-    <div style="position:relative;display:flex;justify-content:center;align-items:center;width:100%;min-height:${CANVAS_H}px;overflow:hidden;background:transparent;">
-      ${svg}
-      <div style="
-        position:relative;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        width:520px;
-        min-height:124px;
-        background:rgba(10,20,10,0.62);
-        padding:28px 34px;
-        border:2.2px solid #39ff14;
-        border-radius:18px;
-        box-shadow:0 0 10px #39ff1450,0 0 60px #39ff1430;
-        backdrop-filter:blur(1.5px);
-      ">
-        <span style="
-          font-family:'Fira Code','Consolas','Courier New',monospace;
-          font-size:1.22rem;
-          line-height:1.52;
-          font-weight:600;
-          color:#d2ffc8;
-          text-align:center;
-          text-shadow:0 0 6px #2cff6a, 0 0 2px #2cff6a;
-          white-space:pre-line;
-          word-break:break-word;
-        ">
-          ${card_content}
-        </span>
-      </div>
-    </div>
-  `.trim();
+        // Card config: always visible, readable, slightly transparent for rain effect
+        return `
+            <div style="position:relative;display:flex;justify-content:center;align-items:center;width:${CANVAS_W}px;min-height:${CANVAS_H}px;overflow:hidden;background:transparent;">
+                ${svg}
+                <div style="position:relative;display:flex;flex-direction:column; align-items:center;justify-content:center;width:400px;min-height:100px;background:rgba(10,20,10,0.62);padding:20px 24px;border:1.5px solid #39ff14;border-radius:14px;box-shadow:0 0 10px #39ff1450,0 0 60px #39ff1430;">
+                    <span style="font-size:11px;line-height:1.4;font-weight:600;color:#d2ffc8;text-align:center;text-shadow:0 0 6px #2cff6a, 0 0 2px #2cff6a;white-space:pre-line;word-break:break-word;">
+                        ${card_content}
+                    </span>
+                </div>
+            </div>
+        `.trim();
     },
 };
