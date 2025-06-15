@@ -131,6 +131,18 @@ export default async function helpHandler({ req, env }) {
         `${baseurl}/harry-potter-spell-card?theme=cyber_grid`,
       ],
     },
+    digital_rain: {
+      info: "Digital Rain Theme",
+      example: [
+        `${baseurl}/jokes-card?theme=digital_rain`,
+        `${baseurl}/programming-quotes-card?theme=digital_rain`,
+        `${baseurl}/programming-facts-card?theme=digital_rain`,
+        `${baseurl}/motivational-quotes-card?theme=digital_rain`,
+        `${baseurl}/travel-destinations-card?theme=digital_rain`,
+        `${baseurl}/random-facts-card?theme=digital_rain`,
+        `${baseurl}/harry-potter-spell-card?theme=digital_rain`,
+      ],
+    },
     custom: {
       info: "Custom theme",
       args: {

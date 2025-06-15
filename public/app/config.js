@@ -34,6 +34,7 @@ export const CARD_TYPES = [
     { value: 'lemonade', label: 'Lemonade' },
     { value: 'vintage', label: 'Vintage' },
     { value: 'cyber_grid', label: 'Cyber Grid' },
+    { value: 'digital_rain', label: 'Digital Rain' },
     { value: 'galaxy', label: 'Galaxy' },
     { value: 'custom', label: 'Custom' },
   ];

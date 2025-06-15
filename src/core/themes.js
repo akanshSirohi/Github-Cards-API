@@ -1,5 +1,5 @@
 export const HTML_THEMES = {
-    'CUSTOM':`
+    'CUSTOM': `
         <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;width:{{card_width}}px; min-height:{{card_min_height}}px;padding:{{outer_pad}}px; background:{{bg_color}};">
             <div style="display:flex; justify-content:{{card_justify}}; align-items:{{card_align}};width:100%; height:100%; padding:{{inner_pad}}px;background:{{card_color}}; border-radius:10px;box-shadow:0 0 10px {{shadow_color}}; box-sizing:border-box; overflow:hidden;">
                 <div style="display:flex; flex:1; align-items:{{flex_align}};">
@@ -190,4 +190,58 @@ export const HTML_THEMES = {
             </div>
         </div>
     `,
+    'DIGITAL_RAIN': (card_content) => {
+        const CANVAS_W = 440;
+        const CANVAS_H = 135;
+        const COLS = 100;
+        const DROP_MIN = 20;
+        const DROP_MAX = 30;
+
+        // SVG Rain
+        let gradients = '';
+        let drops = '';
+        for (let i = 0; i < COLS; i++) {
+            const x = Math.round((i + 0.5) * (CANVAS_W / COLS) + (Math.random() * 7 - 3));
+            const len = DROP_MIN + Math.random() * (DROP_MAX - DROP_MIN);
+            const y = Math.random() * (CANVAS_H - len - 8);
+
+            const id = `rain${i}`;
+            gradients += `
+                <linearGradient id="${id}" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#b8ffb2" stop-opacity="1"/>
+                <stop offset="22%" stop-color="#39ff14" stop-opacity="0.85"/>
+                <stop offset="100%" stop-color="#39ff14" stop-opacity="0.12"/>
+                </linearGradient>
+            `;
+            drops += `<rect x="${x}" y="${y}" width="2" height="${len}" rx="1" fill="url(#${id})"/>`;
+        }
+
+        // SVG block
+        const svg = `
+            <svg width="${CANVAS_W}" height="${CANVAS_H}" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+                <defs>
+                    ${gradients}
+                    <radialGradient id="backGlow" cx="50%" cy="50%" r="90%">
+                    <stop offset="0%" stop-color="#173d18"/>
+                    <stop offset="100%" stop-color="#070f08"/>
+                    </radialGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="#101710"/>
+                <rect width="100%" height="100%" fill="url(#backGlow)" opacity="0.96"/>
+                ${drops}
+            </svg>
+        `.trim();
+
+        // Card config: always visible, readable, slightly transparent for rain effect
+        return `
+            <div style="position:relative;display:flex;justify-content:center;align-items:center;width:${CANVAS_W}px;min-height:${CANVAS_H}px;overflow:hidden;background:transparent;">
+                ${svg}
+                <div style="position:relative;display:flex;flex-direction:column; align-items:center;justify-content:center;width:400px;min-height:100px;background:rgba(10,20,10,0.62);padding:20px 24px;border:1.5px solid #39ff14;border-radius:14px;box-shadow:0 0 10px #39ff1450,0 0 60px #39ff1430;">
+                    <span style="font-size:11px;line-height:1.4;font-weight:600;color:#d2ffc8;text-align:center;text-shadow:0 0 6px #2cff6a, 0 0 2px #2cff6a;white-space:pre-line;word-break:break-word;">
+                        ${card_content}
+                    </span>
+                </div>
+            </div>
+        `.trim();
+    },
 };
