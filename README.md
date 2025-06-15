@@ -169,7 +169,7 @@ All themes are created using HTML and rendered via **Satori**.
 - **Cyber Grid Theme** <br>
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=cyber_grid)
 
-- **Matrix Rain Theme** <br>
+- **Digital Rain Theme** <br>
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=digital_rain)
 
 - **Custom (Gradient)**  <br>
