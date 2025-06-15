@@ -26,6 +26,7 @@ import travelDestinations from './cards/travel_destinations'
 import frenchWordOfTheDay from './cards/french_word_of_the_day'
 import healthTip from './cards/health-tip-card'
 import myCard from './cards/my-card'
+import spaceFacts from './cards/space-facts'
 
 // Help route
 import helpHandler from './help'
@@ -44,6 +45,7 @@ const availableCards = {
   '/spanish-jokes-card': spanishJokes,
   '/top-tweets-card': topTweets,
   '/github-facts-card': githubFacts,
+  '/space-facts-card': spaceFacts,
   '/security-tips-card': securityTips,
   '/random-facts-card': randomFacts,
   '/fun-fact-card': funFact,
