@@ -1,6 +1,6 @@
 import { html as parseHTML } from 'satori-html'
 import satori from 'satori';
-import {google_font_loader} from "../utils/google-fonts-loader";
+import {googleFontLoader} from "../utils/google-fonts-loader";
 
 // Supported Languages
 export const Languages = {
@@ -31,7 +31,7 @@ export async function generateSvg(html_code, env, language = Languages.ENGLISH, 
         }
 
         if (google_font) {
-            const fontData = await google_font_loader(google_font);
+            const fontData = await googleFontLoader(google_font);
             if (fontData) {
                 return {
                     name: fontData.fontFamily,

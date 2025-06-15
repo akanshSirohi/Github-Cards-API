@@ -1,4 +1,4 @@
-export async function google_font_loader(font) {
+export async function googleFontLoader(font) {
     font = font.replace(/\s+/g, '+');
     const res = await fetch(
         `https://fonts.googleapis.com/css2?family=${font}`,
