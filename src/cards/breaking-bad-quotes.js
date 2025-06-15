@@ -3,10 +3,10 @@ import { Languages, generateHTMLCard } from "../core/card-generator";
 
 export default async function breakingBadQuoteHandler({ req, env }) {
   try {
-    const programmingQuotesData = await loadJSONFile(env, 'breaking-bad-quotes.json');
+    const breakingBadQuotesData = await loadJSONFile(env, 'breaking-bad-quotes.json');
 
     // Return 404 if data not found
-    if (!programmingQuotesData) {
+    if (!breakingBadQuotesData) {
       return new Response('Data not found', { status: 404 });
     }
 
@@ -16,7 +16,7 @@ export default async function breakingBadQuoteHandler({ req, env }) {
     const searchParams = Object.fromEntries(url.searchParams.entries());
 
     // Pick a random quote
-    const random_quote = programmingQuotesData[Math.floor(Math.random() * programmingQuotesData.length)];
+    const random_quote = breakingBadQuotesData[Math.floor(Math.random() * breakingBadQuotesData.length)];
     const quote_content = `${random_quote.quote}\n\n- ${random_quote.author}`;
 
     // Generate SVG card with HTML theme
