@@ -1,7 +1,7 @@
 import { loadJSONFile } from '../utils/load-json-file';
 import { Languages, generateHTMLCard } from "../core/card-generator";
 
-export default async function programmingQuoteHandler({ req, env }) {
+export default async function breakingBadQuoteHandler({ req, env }) {
   try {
     const programmingQuotesData = await loadJSONFile(env, 'breaking-bad-quotes.json');
 
