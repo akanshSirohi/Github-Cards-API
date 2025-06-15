@@ -199,42 +199,25 @@ export const HTML_THEMES = {
                         <stop offset="70%" stop-color="#0f0" stop-opacity="0.6" />
                         <stop offset="100%" stop-color="#0f0" stop-opacity="0.9" />
                     </linearGradient>
-                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="32" height="72">
+                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="36" height="72">
                         <g fill="url(#matrixFade)">
-                            <path d="M0 0H4V10H0Z M1 1H3V9H1Z" />
-                            <path d="M2 12H4V22H2Z" />
-                            <path d="M0 24H4V34H0Z M1 25H3V33H1Z" />
-                            <path d="M2 36H4V46H2Z" />
-                            <path d="M0 48H4V58H0Z M1 49H3V57H1Z" />
-
-                            <path d="M8 6H10V16H8Z" />
-                            <path d="M8 18H12V28H8Z M9 19H11V27H9Z" />
-                            <path d="M10 30H12V40H10Z" />
-                            <path d="M8 42H12V52H8Z M9 43H11V51H9Z" />
-                            <path d="M10 54H12V64H10Z" />
-
-                            <path d="M16 3H20V13H16Z M17 4H19V12H17Z" />
-                            <path d="M18 15H20V25H18Z" />
-                            <path d="M16 27H20V37H16Z M17 28H19V36H17Z" />
-                            <path d="M18 39H20V49H18Z" />
-                            <path d="M16 51H20V61H16Z M17 52H19V60H17Z" />
-
-                            <path d="M24 9H26V19H24Z" />
-                            <path d="M24 21H28V31H24Z M25 22H27V30H25Z" />
-                            <path d="M26 33H28V43H26Z" />
-                            <path d="M24 45H28V55H24Z M25 46H27V54H25Z" />
-                            <path d="M26 57H28V67H26Z" />
+                            <path d="M0 0h3v8H0z M1 1h1v6H1z M1 10h1v8H1z M0 20h3v8H0z M1 21h1v6H1z M1 30h1v8H1z M0 40h3v8H0z M1 41h1v6H1z M1 52h1v8H1z M0 62h3v8H0z M1 63h1v6H1z" />
+                            <path d="M6 4h1v8H6z M6 14h3v8H6z M7 15h1v6H7z M6 26h1v8H6z M6 36h3v8H6z M7 37h1v6H7z M6 48h1v8H6z M6 58h3v8H6z M7 59h1v6H7z" />
+                            <path d="M12 2h3v8h-3z M13 3h1v6h-1z M13 12h1v8h-1z M12 22h3v8h-3z M13 23h1v6h-1z M13 32h1v8h-1z M12 42h3v8h-3z M13 43h1v6h-1z M13 52h1v8h-1z M12 62h3v8h-3z M13 63h1v6h-1z" />
+                            <path d="M18 0h1v8h-1z M18 10h3v8h-3z M19 11h1v6h-1z M18 20h1v8h-1z M18 30h3v8h-3z M19 31h1v6h-1z M18 42h1v8h-1z M18 54h3v8h-3z M19 55h1v6h-1z" />
+                            <path d="M24 6h3v8h-3z M25 7h1v6h-1z M25 16h1v8h-1z M24 26h3v8h-3z M25 27h1v6h-1z M25 36h1v8h-1z M24 46h3v8h-3z M25 47h1v6h-1z M25 56h1v8h-1z" />
+                            <path d="M30 8h1v8h-1z M30 18h3v8h-3z M31 19h1v6h-1z M30 28h1v8h-1z M30 40h3v8h-3z M31 41h1v6h-1z M30 50h1v8h-1z M30 60h3v8h-3z M31 61h1v6h-1z" />
                         </g>
                     </pattern>
                 </defs>
                 <rect width="100%" height="100%" fill="#000"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.3"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.2" transform="translate(16,20)"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.25"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.2" transform="translate(18,18)"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.15" transform="translate(9,36)"/>
             </svg>
             <div style="position:relative;width:360px;margin:20px;background:rgba(0,0,0,0.8);padding:15px;border:1px solid #0f0;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;box-shadow:0 0 15px #0f0;">
                 <span style="font-family:'Courier New', monospace;font-size:11px;font-weight:bold;color:#0f0;">{{card_content}}</span>
             </div>
         </div>
-    `,
     `,
 };
