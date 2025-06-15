@@ -195,7 +195,8 @@ export const HTML_THEMES = {
             <svg style="position:absolute;inset:0;width:100%;height:100%;">
                 <defs>
                     <pattern id="matrix" patternUnits="userSpaceOnUse" width="20" height="20">
-                        <text x="0" y="15" font-family='Courier New, monospace' font-size="20" fill="#0f0">01</text>
+                        <!-- Draw "0" using a hollow rectangle and "1" as a solid bar -->
+                        <path d="M2 2 H10 V18 H2 Z M4 4 H8 V16 H4 Z M12 2 H16 V18 H12 Z" fill="#0f0" fill-rule="evenodd" />
                     </pattern>
                 </defs>
                 <rect width="100%" height="100%" fill="#000"/>
