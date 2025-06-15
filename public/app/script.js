@@ -161,7 +161,7 @@ cardForm.addEventListener("submit", (e) => {
       qs.set("google_font", custom_font);
     }
 
-    let text_align = data.get("textAlgnment");
+    let text_align = data.get("textAlignment");
     if (text_align) {
       qs.set("text_align", text_align);
     }
