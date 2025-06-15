@@ -195,26 +195,46 @@ export const HTML_THEMES = {
             <svg style="position:absolute;inset:0;width:100%;height:100%;">
                 <defs>
                     <linearGradient id="matrixFade" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#0f0" stop-opacity="0.5" />
+                        <stop offset="0%" stop-color="#0f0" stop-opacity="0" />
+                        <stop offset="25%" stop-color="#0f0" stop-opacity="0.6" />
                         <stop offset="100%" stop-color="#0f0" stop-opacity="0.1" />
                     </linearGradient>
-                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="32" height="48">
+                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="32" height="72">
                         <g fill="url(#matrixFade)">
-                            <path d="M0 0H8V16H0Z M2 2H6V14H2Z" />
-                            <path d="M0 22H8V38H0Z M2 24H6V36H2Z" />
-                            <path d="M12 10H16V26H12Z" />
-                            <path d="M12 30H16V46H12Z" />
-                            <path d="M24 6H32V22H24Z M26 8H30V20H26Z" />
-                            <path d="M24 28H32V44H24Z M26 30H30V42H26Z" />
+                            <path d="M0 0H6V10H0Z M1 1H5V9H1Z" />
+                            <path d="M2 12H4V22H2Z" />
+                            <path d="M0 24H6V34H0Z M1 25H5V33H1Z" />
+                            <path d="M2 36H4V46H2Z" />
+                            <path d="M0 48H6V58H0Z M1 49H5V57H1Z" />
+
+                            <path d="M8 6H10V16H8Z" />
+                            <path d="M8 18H14V28H8Z M9 19H13V27H9Z" />
+                            <path d="M10 30H12V40H10Z" />
+                            <path d="M8 42H14V52H8Z M9 43H13V51H9Z" />
+                            <path d="M10 54H12V64H10Z" />
+
+                            <path d="M16 3H22V13H16Z M17 4H21V12H17Z" />
+                            <path d="M18 15H20V25H18Z" />
+                            <path d="M16 27H22V37H16Z M17 28H21V36H17Z" />
+                            <path d="M18 39H20V49H18Z" />
+                            <path d="M16 51H22V61H16Z M17 52H21V60H17Z" />
+
+                            <path d="M24 9H26V19H24Z" />
+                            <path d="M24 21H30V31H24Z M25 22H29V30H25Z" />
+                            <path d="M26 33H28V43H26Z" />
+                            <path d="M24 45H30V55H24Z M25 46H29V54H25Z" />
+                            <path d="M26 57H28V67H26Z" />
                         </g>
                     </pattern>
                 </defs>
                 <rect width="100%" height="100%" fill="#000"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.25"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.3"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.2" transform="translate(16,20)"/>
             </svg>
             <div style="position:relative;width:360px;margin:20px;background:rgba(0,0,0,0.8);padding:15px;border:1px solid #0f0;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;box-shadow:0 0 15px #0f0;">
                 <span style="font-family:'Courier New', monospace;font-size:11px;font-weight:bold;color:#0f0;">{{card_content}}</span>
             </div>
         </div>
+    `,
     `,
 };
