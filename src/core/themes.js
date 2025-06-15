@@ -196,33 +196,33 @@ export const HTML_THEMES = {
                 <defs>
                     <linearGradient id="matrixFade" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0%" stop-color="#0f0" stop-opacity="0" />
-                        <stop offset="25%" stop-color="#0f0" stop-opacity="0.6" />
-                        <stop offset="100%" stop-color="#0f0" stop-opacity="0.1" />
+                        <stop offset="70%" stop-color="#0f0" stop-opacity="0.6" />
+                        <stop offset="100%" stop-color="#0f0" stop-opacity="0.9" />
                     </linearGradient>
                     <pattern id="matrix" patternUnits="userSpaceOnUse" width="32" height="72">
                         <g fill="url(#matrixFade)">
-                            <path d="M0 0H6V10H0Z M1 1H5V9H1Z" />
+                            <path d="M0 0H4V10H0Z M1 1H3V9H1Z" />
                             <path d="M2 12H4V22H2Z" />
-                            <path d="M0 24H6V34H0Z M1 25H5V33H1Z" />
+                            <path d="M0 24H4V34H0Z M1 25H3V33H1Z" />
                             <path d="M2 36H4V46H2Z" />
-                            <path d="M0 48H6V58H0Z M1 49H5V57H1Z" />
+                            <path d="M0 48H4V58H0Z M1 49H3V57H1Z" />
 
                             <path d="M8 6H10V16H8Z" />
-                            <path d="M8 18H14V28H8Z M9 19H13V27H9Z" />
+                            <path d="M8 18H12V28H8Z M9 19H11V27H9Z" />
                             <path d="M10 30H12V40H10Z" />
-                            <path d="M8 42H14V52H8Z M9 43H13V51H9Z" />
+                            <path d="M8 42H12V52H8Z M9 43H11V51H9Z" />
                             <path d="M10 54H12V64H10Z" />
 
-                            <path d="M16 3H22V13H16Z M17 4H21V12H17Z" />
+                            <path d="M16 3H20V13H16Z M17 4H19V12H17Z" />
                             <path d="M18 15H20V25H18Z" />
-                            <path d="M16 27H22V37H16Z M17 28H21V36H17Z" />
+                            <path d="M16 27H20V37H16Z M17 28H19V36H17Z" />
                             <path d="M18 39H20V49H18Z" />
-                            <path d="M16 51H22V61H16Z M17 52H21V60H17Z" />
+                            <path d="M16 51H20V61H16Z M17 52H19V60H17Z" />
 
                             <path d="M24 9H26V19H24Z" />
-                            <path d="M24 21H30V31H24Z M25 22H29V30H25Z" />
+                            <path d="M24 21H28V31H24Z M25 22H27V30H25Z" />
                             <path d="M26 33H28V43H26Z" />
-                            <path d="M24 45H30V55H24Z M25 46H29V54H25Z" />
+                            <path d="M24 45H28V55H24Z M25 46H27V54H25Z" />
                             <path d="M26 57H28V67H26Z" />
                         </g>
                     </pattern>
