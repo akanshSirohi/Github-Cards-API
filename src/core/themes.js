@@ -190,4 +190,20 @@ export const HTML_THEMES = {
             </div>
         </div>
     `,
+    'DIGITAL_RAIN': `
+        <div style="position:relative;display:flex;justify-content:center;width:100%;overflow:hidden;">
+            <svg style="position:absolute;inset:0;width:100%;height:100%;">
+                <defs>
+                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="20" height="20">
+                        <text x="0" y="15" font-family='Courier New, monospace' font-size="20" fill="#0f0">01</text>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="#000"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.15"/>
+            </svg>
+            <div style="position:relative;width:360px;margin:20px;background:rgba(0,0,0,0.8);padding:15px;border:1px solid #0f0;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;box-shadow:0 0 15px #0f0;">
+                <span style="font-family:'Courier New', monospace;font-size:11px;font-weight:bold;color:#0f0;">{{card_content}}</span>
+            </div>
+        </div>
+    `,
 };

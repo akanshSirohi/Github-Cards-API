@@ -108,6 +108,7 @@ All themes are created using HTML and rendered via **Satori**.
 - `galaxy`
 - `vintage`
 - `cyber_grid`
+- `digital_rain`
 
 ### ⚙️ Custom Arguments (for `CUSTOM` theme only)
 
