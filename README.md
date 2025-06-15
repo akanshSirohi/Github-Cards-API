@@ -80,7 +80,7 @@ All cards are managed via `help.js`. A few popular examples include:
 | `programming-facts`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card)`   |
 | `motivational-quote`   | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card)` |
 | `programming-quote`    | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-quotes-card)`  |
-| `bhagwad-geeta-quotes` | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/bhagavad-geeta-card )`     |
+| `bhagavad-geeta-card` | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/bhagavad-geeta-card )`     |
 | `fun-facts`            | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/fun-fact-card)`            |
 | `space-facts`          | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/space-facts-card)` |
 | `my-card`              | `![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/my-card?theme=neon_horizon&text=SGVsbG8sIFdvcmxkIQ)` |
