@@ -192,8 +192,8 @@ export const HTML_THEMES = {
     `,
     'DIGITAL_RAIN': (card_content) => {
 
-        const CANVAS_W = 720;
-        const CANVAS_H = 310;
+        const CANVAS_W = 420;
+        const CANVAS_H = 200;
         const COLS = 80;
         const DROP_MIN = 20;
         const DROP_MAX = 30;
@@ -243,19 +243,19 @@ export const HTML_THEMES = {
         flex-direction:column;
         align-items:center;
         justify-content:center;
-        width:520px;
-        min-height:124px;
+        width:400px;
+        min-height:100px;
         background:rgba(10,20,10,0.62);
-        padding:28px 34px;
-        border:2.2px solid #39ff14;
-        border-radius:18px;
+        padding:20px 24px;
+        border:2px solid #39ff14;
+        border-radius:14px;
         box-shadow:0 0 10px #39ff1450,0 0 60px #39ff1430;
         backdrop-filter:blur(1.5px);
       ">
         <span style="
           font-family:'Fira Code','Consolas','Courier New',monospace;
-          font-size:1.22rem;
-          line-height:1.52;
+          font-size:11px;
+          line-height:1.4;
           font-weight:600;
           color:#d2ffc8;
           text-align:center;
