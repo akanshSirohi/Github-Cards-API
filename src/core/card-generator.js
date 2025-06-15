@@ -64,7 +64,12 @@ export const generateHTMLCard = async (env, html, query, language = Languages.EN
       }
     } else {
       theme = HTML_THEMES[theme];
-      html = theme.replace("{{card_content}}", html);
+      // html = theme.replace("{{card_content}}", html);
+      if (typeof theme === 'function') {
+        html = theme(html);
+      } else {
+        html = theme.replace('{{card_content}}', html);
+      }
     }
   }
   return await generateSvg(html, env, language, g_font);

@@ -1,5 +1,5 @@
 export const HTML_THEMES = {
-    'CUSTOM':`
+    'CUSTOM': `
         <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;width:{{card_width}}px; min-height:{{card_min_height}}px;padding:{{outer_pad}}px; background:{{bg_color}};">
             <div style="display:flex; justify-content:{{card_justify}}; align-items:{{card_align}};width:100%; height:100%; padding:{{inner_pad}}px;background:{{card_color}}; border-radius:10px;box-shadow:0 0 10px {{shadow_color}}; box-sizing:border-box; overflow:hidden;">
                 <div style="display:flex; flex:1; align-items:{{flex_align}};">
@@ -190,34 +190,83 @@ export const HTML_THEMES = {
             </div>
         </div>
     `,
-    'DIGITAL_RAIN': `
-        <div style="position:relative;display:flex;justify-content:center;width:100%;overflow:hidden;">
-            <svg style="position:absolute;inset:0;width:100%;height:100%;">
-                <defs>
-                    <linearGradient id="matrixFade" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#0f0" stop-opacity="0" />
-                        <stop offset="70%" stop-color="#0f0" stop-opacity="0.6" />
-                        <stop offset="100%" stop-color="#0f0" stop-opacity="0.9" />
-                    </linearGradient>
-                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="36" height="72">
-                        <g fill="url(#matrixFade)">
-                            <path d="M0 0h3v8H0z M1 1h1v6H1z M1 10h1v8H1z M0 20h3v8H0z M1 21h1v6H1z M1 30h1v8H1z M0 40h3v8H0z M1 41h1v6H1z M1 52h1v8H1z M0 62h3v8H0z M1 63h1v6H1z" />
-                            <path d="M6 4h1v8H6z M6 14h3v8H6z M7 15h1v6H7z M6 26h1v8H6z M6 36h3v8H6z M7 37h1v6H7z M6 48h1v8H6z M6 58h3v8H6z M7 59h1v6H7z" />
-                            <path d="M12 2h3v8h-3z M13 3h1v6h-1z M13 12h1v8h-1z M12 22h3v8h-3z M13 23h1v6h-1z M13 32h1v8h-1z M12 42h3v8h-3z M13 43h1v6h-1z M13 52h1v8h-1z M12 62h3v8h-3z M13 63h1v6h-1z" />
-                            <path d="M18 0h1v8h-1z M18 10h3v8h-3z M19 11h1v6h-1z M18 20h1v8h-1z M18 30h3v8h-3z M19 31h1v6h-1z M18 42h1v8h-1z M18 54h3v8h-3z M19 55h1v6h-1z" />
-                            <path d="M24 6h3v8h-3z M25 7h1v6h-1z M25 16h1v8h-1z M24 26h3v8h-3z M25 27h1v6h-1z M25 36h1v8h-1z M24 46h3v8h-3z M25 47h1v6h-1z M25 56h1v8h-1z" />
-                            <path d="M30 8h1v8h-1z M30 18h3v8h-3z M31 19h1v6h-1z M30 28h1v8h-1z M30 40h3v8h-3z M31 41h1v6h-1z M30 50h1v8h-1z M30 60h3v8h-3z M31 61h1v6h-1z" />
-                        </g>
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="#000"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.25"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.2" transform="translate(18,18)"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.15" transform="translate(9,36)"/>
-            </svg>
-            <div style="position:relative;width:360px;margin:20px;background:rgba(0,0,0,0.8);padding:15px;border:1px solid #0f0;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;box-shadow:0 0 15px #0f0;">
-                <span style="font-family:'Courier New', monospace;font-size:11px;font-weight:bold;color:#0f0;">{{card_content}}</span>
-            </div>
-        </div>
-    `,
+    'DIGITAL_RAIN': (card_content) => {
+
+        const CANVAS_W = 720;
+        const CANVAS_H = 310;
+        const COLS = 80;
+        const DROP_MIN = 20;
+        const DROP_MAX = 30;
+
+        // SVG Rain
+        let gradients = '';
+        let drops = '';
+        for (let i = 0; i < COLS; i++) {
+            const x = Math.round((i + 0.5) * (CANVAS_W / COLS) + (Math.random() * 7 - 3));
+            const len = DROP_MIN + Math.random() * (DROP_MAX - DROP_MIN);
+            const y = Math.random() * (CANVAS_H - len - 8);
+
+            const id = `rain${i}`;
+            gradients += `
+                <linearGradient id="${id}" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#b8ffb2" stop-opacity="1"/>
+                <stop offset="22%" stop-color="#39ff14" stop-opacity="0.85"/>
+                <stop offset="100%" stop-color="#39ff14" stop-opacity="0.12"/>
+                </linearGradient>
+            `;
+            drops += `<rect x="${x}" y="${y}" width="2" height="${len}" rx="1" fill="url(#${id})"/>`;
+        }
+
+        // SVG block
+        const svg = `
+    <svg width="${CANVAS_W}" height="${CANVAS_H}" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+      <defs>
+        ${gradients}
+        <radialGradient id="backGlow" cx="50%" cy="50%" r="90%">
+          <stop offset="0%" stop-color="#173d18"/>
+          <stop offset="100%" stop-color="#070f08"/>
+        </radialGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="#101710"/>
+      <rect width="100%" height="100%" fill="url(#backGlow)" opacity="0.96"/>
+      ${drops}
+    </svg>
+  `.trim();
+
+    // Card config: always visible, readable, slightly transparent for rain effect
+    return `
+    <div style="position:relative;display:flex;justify-content:center;align-items:center;width:100%;min-height:${CANVAS_H}px;overflow:hidden;background:transparent;">
+      ${svg}
+      <div style="
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        width:520px;
+        min-height:124px;
+        background:rgba(10,20,10,0.62);
+        padding:28px 34px;
+        border:2.2px solid #39ff14;
+        border-radius:18px;
+        box-shadow:0 0 10px #39ff1450,0 0 60px #39ff1430;
+        backdrop-filter:blur(1.5px);
+      ">
+        <span style="
+          font-family:'Fira Code','Consolas','Courier New',monospace;
+          font-size:1.22rem;
+          line-height:1.52;
+          font-weight:600;
+          color:#d2ffc8;
+          text-align:center;
+          text-shadow:0 0 6px #2cff6a, 0 0 2px #2cff6a;
+          white-space:pre-line;
+          word-break:break-word;
+        ">
+          ${card_content}
+        </span>
+      </div>
+    </div>
+  `.trim();
+    },
 };
