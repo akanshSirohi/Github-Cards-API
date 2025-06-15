@@ -13,9 +13,12 @@
 		"vitest": "~3.0.7",
 		"wrangler": "^4.14.1"
 	},
-	"dependencies": {
-		"@tsndr/cloudflare-worker-router": "^3.2.10",
-		"satori": "^0.12.2",
-		"satori-html": "^0.3.2"
-	}
+        "dependencies": {
+                "@tsndr/cloudflare-worker-router": "^3.2.10",
+                "satori": "^0.12.2",
+                "satori-html": "^0.3.2"
+        },
+        "engines": {
+                "node": ">=18"
+        }
 }
