@@ -157,6 +157,7 @@ All themes are created using HTML and rendered via **Satori**.
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/jokes-card?theme=custom&card_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoNDIsIDEyMywgMTU1LCAxKSAwJSwgcmdiYSg4NywgMTk5LCAxMzMsIDEpIDUwJSwgcmdiYSgyMzcsIDIyMSwgODMsIDEpIDEwMCUpOw&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs&font_color=000&shadow_color=000)
 ```
 
+
 ### 🖼️ Theme Examples
 
 - **Galactic Dusk Theme** <br>
@@ -165,8 +166,11 @@ All themes are created using HTML and rendered via **Satori**.
 - **Neon Horizon Theme** <br>
 ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=neon_horizon)
 
- - **Cyber Grid Theme** <br>
- ![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=cyber_grid)
+- **Cyber Grid Theme** <br>
+![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=cyber_grid)
+
+- **Digital Rain Theme** <br>
+![Card](https://github-cards-worker.akanshsirohi-dev.workers.dev/programming-facts-card?theme=digital_rain)
 
 - **Custom (Gradient)**  <br>
 ![Custom Gradient](https://github-cards-worker.akanshsirohi-dev.workers.dev/motivational-quotes-card?theme=custom&card_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoNDIsIDEyMywgMTU1LCAxKSAwJSwgcmdiYSg4NywgMTk5LCAxMzMsIDEpIDUwJSwgcmdiYSgyMzcsIDIyMSwgODMsIDEpIDEwMCUpOw&font_color=fff&bg_color=bGluZWFyLWdyYWRpZW50KDkwZGVnLHJnYmEoMiwgMCwgMzYsIDEpIDAlLCByZ2JhKDksIDksIDEyMSwgMSkgMzUlLCByZ2JhKDAsIDIxMiwgMjU1LCAxKSAxMDAlKTs&shadow_color=fff)
