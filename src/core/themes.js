@@ -194,13 +194,23 @@ export const HTML_THEMES = {
         <div style="position:relative;display:flex;justify-content:center;width:100%;overflow:hidden;">
             <svg style="position:absolute;inset:0;width:100%;height:100%;">
                 <defs>
-                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="20" height="20">
-                        <!-- Draw "0" using a hollow rectangle and "1" as a solid bar -->
-                        <path d="M2 2 H10 V18 H2 Z M4 4 H8 V16 H4 Z M12 2 H16 V18 H12 Z" fill="#0f0" fill-rule="evenodd" />
+                    <linearGradient id="matrixFade" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#0f0" stop-opacity="0.5" />
+                        <stop offset="100%" stop-color="#0f0" stop-opacity="0.1" />
+                    </linearGradient>
+                    <pattern id="matrix" patternUnits="userSpaceOnUse" width="32" height="48">
+                        <g fill="url(#matrixFade)">
+                            <path d="M0 0H8V16H0Z M2 2H6V14H2Z" />
+                            <path d="M0 22H8V38H0Z M2 24H6V36H2Z" />
+                            <path d="M12 10H16V26H12Z" />
+                            <path d="M12 30H16V46H12Z" />
+                            <path d="M24 6H32V22H24Z M26 8H30V20H26Z" />
+                            <path d="M24 28H32V44H24Z M26 30H30V42H26Z" />
+                        </g>
                     </pattern>
                 </defs>
                 <rect width="100%" height="100%" fill="#000"/>
-                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.15"/>
+                <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.25"/>
             </svg>
             <div style="position:relative;width:360px;margin:20px;background:rgba(0,0,0,0.8);padding:15px;border:1px solid #0f0;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;white-space:pre-line;text-align:left;box-shadow:0 0 15px #0f0;">
                 <span style="font-family:'Courier New', monospace;font-size:11px;font-weight:bold;color:#0f0;">{{card_content}}</span>
