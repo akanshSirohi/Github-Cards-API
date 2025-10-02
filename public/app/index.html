@@ -1,401 +1,733 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GitHub Card Generator | Create Beautiful Profile Cards</title>
-  <meta name="description" content="Build, preview, and embed customizable GitHub cards with advanced styling options">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>GitHub Card Generator | Create Beautiful Profile Cards</title>
+		<meta name="description" content="Build, preview, and embed customizable GitHub cards with advanced styling options" />
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-  <script>
-    tailwind.config = { 
-      darkMode: "class",
-      theme: {
-        extend: {
-          animation: {
-            'gradient': 'gradient 8s linear infinite',
-            'float': 'float 6s ease-in-out infinite',
-          },
-          keyframes: {
-            gradient: {
-              '0%, 100%': { 'background-position': '0% 50%' },
-              '50%': { 'background-position': '100% 50%' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-10px)' },
-            }
-          }
-        }
-      }
-    };
-  </script>
+		<!-- Tailwind -->
+		<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+		<script>
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						animation: {
+							gradient: 'gradient 8s linear infinite',
+							float: 'float 6s ease-in-out infinite',
+						},
+						keyframes: {
+							gradient: {
+								'0%, 100%': { 'background-position': '0% 50%' },
+								'50%': { 'background-position': '100% 50%' },
+							},
+							float: {
+								'0%, 100%': { transform: 'translateY(0px)' },
+								'50%': { transform: 'translateY(-10px)' },
+							},
+						},
+					},
+				},
+			};
+		</script>
 
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900 min-h-screen transition-colors duration-300">
-  <!-- Animated Background Elements -->
-  <div class="fixed inset-0 -z-10 overflow-hidden">
-    <div class="absolute -top-40 -right-32 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float dark:bg-purple-800 dark:opacity-10"></div>
-    <div class="absolute -bottom-40 -left-32 w-80 h-80 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float animation-delay-2000 dark:bg-yellow-800 dark:opacity-10"></div>
-    <div class="absolute top-40 left-1/2 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float animation-delay-4000 dark:bg-pink-800 dark:opacity-10"></div>
-  </div>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body
+		class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900 min-h-screen transition-colors duration-300"
+	>
+		<!-- Animated Background Elements -->
+		<div class="fixed inset-0 -z-10 overflow-hidden">
+			<div
+				class="absolute -top-40 -right-32 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float dark:bg-purple-800 dark:opacity-10"
+			></div>
+			<div
+				class="absolute -bottom-40 -left-32 w-80 h-80 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float animation-delay-2000 dark:bg-yellow-800 dark:opacity-10"
+			></div>
+			<div
+				class="absolute top-40 left-1/2 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float animation-delay-4000 dark:bg-pink-800 dark:opacity-10"
+			></div>
+		</div>
 
-  <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/50 dark:border-gray-700/50 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-4">
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-            </div>
-            <div>
-              <h1 class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-gray-800 to-indigo-600 dark:from-gray-100 dark:to-indigo-400 bg-clip-text text-transparent">GitHub Card Generator</h1>
-              <p class="text-xs text-gray-600 dark:text-gray-400 hidden sm:block">Build, preview, and embed customizable GitHub cards</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex items-center space-x-4">
-          <button id="themeToggle" class="group relative inline-flex items-center gap-2 rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-2.5 text-sm font-medium bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:scale-105">
-            <span id="themeToggleIcon" aria-hidden="true" class="text-lg transition-transform group-hover:scale-110">🌙</span>
-            <span class="hidden sm:block">Toggle theme</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
+		<header
+			class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/50 dark:border-gray-700/50 transition-all duration-300"
+		>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+				<div class="flex items-center justify-between">
+					<div class="flex items-center space-x-4">
+						<div class="flex items-center space-x-3">
+							<div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+								<svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+									/>
+								</svg>
+							</div>
+							<div>
+								<h1
+									class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-gray-800 to-indigo-600 dark:from-gray-100 dark:to-indigo-400 bg-clip-text text-transparent"
+								>
+									GitHub Card Generator
+								</h1>
+								<p class="text-xs text-gray-600 dark:text-gray-400 hidden sm:block">Build, preview, and embed customizable GitHub cards</p>
+							</div>
+						</div>
+					</div>
 
-  <main class="max-w-7xl mx-auto px-4 pt-20 sm:px-6 lg:px-8 py-8">
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
+					<div class="flex items-center space-x-4">
+						<!-- Toggle Theme button -->
+						<button
+							id="themeToggle"
+							class="group relative inline-flex items-center gap-2 rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-2.5 text-sm font-medium bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-700 dark:text-gray-300"
+						>
+							<span id="themeToggleIcon" aria-hidden="true" class="text-lg transition-transform group-hover:scale-110">🌙</span>
+							<span class="hidden sm:block">Toggle theme</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
 
-      <!-- LEFT: Form Section -->
-      <section class="space-y-8">
-        <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 dark:border-gray-700/20 transition-all duration-300 hover:shadow-2xl">
-          <div class="text-center mb-8">
-            <h2 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">Customize Your Card</h2>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Choose your card type and theme to get started</p>
-          </div>
+		<main class="max-w-7xl mx-auto px-4 pt-20 sm:px-6 lg:px-8 py-8">
+			<div class="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
+				<!-- LEFT: Form Section -->
+				<section class="space-y-8">
+					<div
+						class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 dark:border-gray-700/20 transition-all duration-300 hover:shadow-2xl"
+					>
+						<div class="text-center mb-8">
+							<h2
+								class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent"
+							>
+								Customize Your Card
+							</h2>
+							<p class="text-gray-600 dark:text-gray-400 mt-2">Choose your card type and theme to get started</p>
+						</div>
 
-          <form id="cardForm" class="space-y-8">
-            <!-- Card Type & Theme Selection -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="space-y-2">
-                <label for="cardSelect" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/>
-                    <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/>
-                  </svg>
-                  Card Type
-                </label>
-                <div class="relative">
-                  <select id="cardSelect" name="card_name" required class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 shadow-sm">
-                    <option value="" disabled selected hidden>Select a card type…</option>
-                  </select>
-                  <div class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+						<form id="cardForm" class="space-y-8">
+							<!-- Card Type & Theme Selection -->
+							<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+								<div class="space-y-2">
+									<label for="cardSelect" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
+										<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+											<path
+												fill-rule="evenodd"
+												d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+										Card Type
+									</label>
+									<div class="relative">
+										<select
+											id="cardSelect"
+											name="card_name"
+											required
+											class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 shadow-sm"
+										>
+											<option value="" disabled selected hidden>Select a card type…</option>
+										</select>
+										<div class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+											<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+												<path
+													fill-rule="evenodd"
+													d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</div>
+									</div>
+								</div>
 
-              <div class="space-y-2">
-                <label for="themeSelect" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
-                  </svg>
-                  Theme
-                </label>
-                <div class="relative">
-                  <select id="themeSelect" name="theme" required class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 shadow-sm">
-                    <option value="" disabled selected hidden>Select a theme…</option>
-                  </select>
-                  <div class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                    </svg>
-                  </div>
-                </div>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Choose <span class="font-semibold text-indigo-600 dark:text-indigo-400">custom</span> to unlock advanced styling options</p>
-              </div>
-            </div>
+								<div class="space-y-2">
+									<label for="themeSelect" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
+										<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+											<path
+												d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+										Theme
+									</label>
+									<div class="relative">
+										<select
+											id="themeSelect"
+											name="theme"
+											required
+											class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 shadow-sm"
+										>
+											<option value="" disabled selected hidden>Select a theme…</option>
+										</select>
+										<div class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+											<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+												<path
+													fill-rule="evenodd"
+													d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+										</div>
+									</div>
+									<p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+										Choose <span class="font-semibold text-indigo-600 dark:text-indigo-400">custom</span> to unlock advanced styling options
+									</p>
+								</div>
+							</div>
 
-            <!-- Custom Text Area -->
-            <div id="customTextWapper" class="hidden space-y-2">
-              <label for="customText" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"/>
-                </svg>
-                Custom Text
-              </label>
-              <textarea id="customText" name="customText" rows="3" class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 resize-none shadow-sm" placeholder="Enter your custom text here..."></textarea>
-            </div>
+							<!-- Custom Text Area -->
+							<div id="customTextWapper" class="hidden space-y-2">
+								<label for="customText" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-2">
+									<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+									Custom Text
+								</label>
+								<textarea
+									id="customText"
+									name="customText"
+									rows="3"
+									class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 resize-none shadow-sm"
+									placeholder="Enter your custom text here..."
+								></textarea>
+							</div>
 
-            <!-- Advanced Customization Section -->
-            <div id="customWrapper" class="hidden space-y-8">
-              <div class="border-t border-gray-200 dark:border-gray-600 pt-6">
-                <div class="flex items-center justify-between mb-6">
-                  <h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
-                    </svg>
-                    Advanced Customization
-                  </h3>
-                </div>
+							<!-- Advanced Customization Section -->
+							<div id="customWrapper" class="hidden space-y-8">
+								<div class="border-t border-gray-200 dark:border-gray-600 pt-6">
+									<div class="flex items-center justify-between mb-6">
+										<h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
+											<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+												<path
+													fill-rule="evenodd"
+													d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+											Advanced Customization
+										</h3>
+									</div>
 
-                <!-- Color Controls -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  <div class="space-y-4">
-                    <div class="relative">
-                      <legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Card Color</legend>
-                      <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition p-2 random-grad-gen-btn" title="Random gradient" data-target="cardColorHex" aria-label="Random gradient for card colour">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                          <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
-                        </svg>
-                      </button>
-                      <input type="text" id="cardColorHex" name="cardColorHex" class="color_picker w-full rounded-lg" value="#ffffff" />
-                    </div>
+									<!-- Color Controls -->
+									<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+										<div class="space-y-4">
+											<div class="relative">
+												<legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Card Color</legend>
+												<button
+													type="button"
+													class="absolute right-0 top-0 text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition p-2 random-grad-gen-btn"
+													title="Random gradient"
+													data-target="cardColorHex"
+													aria-label="Random gradient for card colour"
+												>
+													<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+														<path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+														<path
+															fill-rule="evenodd"
+															d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+															clip-rule="evenodd"
+														/>
+													</svg>
+												</button>
+												<input type="text" id="cardColorHex" name="cardColorHex" class="color_picker w-full rounded-lg" value="#ffffff" />
+											</div>
 
-                    <div class="relative">
-                      <legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Font Color</legend>
-                      <input type="text" id="fontColorHex" name="fontColorHex" class="color_picker w-full rounded-lg" value="#000000" />
-                    </div>
-                  </div>
+											<div class="relative">
+												<legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Font Color</legend>
+												<input type="text" id="fontColorHex" name="fontColorHex" class="color_picker w-full rounded-lg" value="#000000" />
+											</div>
+										</div>
 
-                  <div class="space-y-4">
-                    <div class="relative">
-                      <legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Background Color</legend>
-                      <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition p-2 random-grad-gen-btn" title="Random gradient" data-target="bgColorHex" aria-label="Random gradient for background colour">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                          <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
-                        </svg>
-                      </button>
-                      <input type="text" id="bgColorHex" name="bgColorHex" class="color_picker w-full rounded-lg" value="#ffffff" />
-                    </div>
+										<div class="space-y-4">
+											<div class="relative">
+												<legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Background Color</legend>
+												<button
+													type="button"
+													class="absolute right-0 top-0 text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition p-2 random-grad-gen-btn"
+													title="Random gradient"
+													data-target="bgColorHex"
+													aria-label="Random gradient for background colour"
+												>
+													<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+														<path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+														<path
+															fill-rule="evenodd"
+															d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+															clip-rule="evenodd"
+														/>
+													</svg>
+												</button>
+												<input type="text" id="bgColorHex" name="bgColorHex" class="color_picker w-full rounded-lg" value="#ffffff" />
+											</div>
 
-                    <div class="relative">
-                      <legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Shadow Color</legend>
-                      <input type="text" id="shadowColorHex" name="shadowColorHex" class="color_picker w-full rounded-lg" value="#000000" />
-                    </div>
-                  </div>
-                </div>
+											<div class="relative">
+												<legend class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Shadow Color</legend>
+												<input
+													type="text"
+													id="shadowColorHex"
+													name="shadowColorHex"
+													class="color_picker w-full rounded-lg"
+													value="#000000"
+												/>
+											</div>
+										</div>
+									</div>
 
-                <!-- Google Font Input -->
-                <div class="space-y-2">
-                  <label for="customGoogleFont" class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Google Font</label>
-                  <input type="text" id="customGoogleFont" name="customGoogleFont" class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 shadow-sm" placeholder="e.g., Inter, Roboto, Open Sans" />
-                  <p class="text-xs text-gray-500 dark:text-gray-400">Enter exact Google Fonts family name (optional)</p>
-                </div>
+									<!-- Google Font Input -->
+									<div class="space-y-2">
+										<label for="customGoogleFont" class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Google Font</label>
+										<input
+											type="text"
+											id="customGoogleFont"
+											name="customGoogleFont"
+											class="w-full rounded-xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-400 transition-all duration-300 shadow-sm"
+											placeholder="e.g., Inter, Roboto, Open Sans"
+										/>
+										<p class="text-xs text-gray-500 dark:text-gray-400">Enter exact Google Fonts family name (optional)</p>
+									</div>
 
-                <!-- Slider Controls -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  <div class="space-y-6">
-                    <!-- Font Size -->
-                    <div class="relative">
-                      <label for="fontSizeRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                        Font Size <span id="fontSizeRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(16px)</span>
-                      </label>
-                      <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn" data-target="fontSizeRange" data-val="16" aria-label="Reset font size">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
-                        </svg>
-                      </button>
-                      <input type="range" id="fontSizeRange" name="fontSize" min="8" max="72" value="16" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range" data-target="fontSizeRangeLabel" />
-                    </div>
+									<!-- Slider Controls -->
+									<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+										<div class="space-y-6">
+											<!-- Font Size -->
+											<div class="relative">
+												<label for="fontSizeRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+													Font Size
+													<span id="fontSizeRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(16px)</span>
+												</label>
+												<button
+													type="button"
+													class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn"
+													data-target="fontSizeRange"
+													data-val="16"
+													aria-label="Reset font size"
+												>
+													<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+														<path
+															fill-rule="evenodd"
+															d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+															clip-rule="evenodd"
+														/>
+													</svg>
+												</button>
+												<input
+													type="range"
+													id="fontSizeRange"
+													name="fontSize"
+													min="8"
+													max="72"
+													value="16"
+													class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range"
+													data-target="fontSizeRangeLabel"
+												/>
+											</div>
 
-                    <!-- Padding Controls -->
-                    <div class="relative">
-                      <label for="innerPadRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                        Inner Padding <span id="innerPadRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(15px)</span>
-                      </label>
-                      <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn" data-target="innerPadRange" data-val="15" aria-label="Reset inner padding">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
-                        </svg>
-                      </button>
-                      <input type="range" id="innerPadRange" name="innerPad" min="0" max="50" value="15" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range" data-target="innerPadRangeLabel" />
-                    </div>
+											<!-- Padding Controls -->
+											<div class="relative">
+												<label for="innerPadRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+													Inner Padding
+													<span id="innerPadRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(15px)</span>
+												</label>
+												<button
+													type="button"
+													class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn"
+													data-target="innerPadRange"
+													data-val="15"
+													aria-label="Reset inner padding"
+												>
+													<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+														<path
+															fill-rule="evenodd"
+															d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+															clip-rule="evenodd"
+														/>
+													</svg>
+												</button>
+												<input
+													type="range"
+													id="innerPadRange"
+													name="innerPad"
+													min="0"
+													max="50"
+													value="15"
+													class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range"
+													data-target="innerPadRangeLabel"
+												/>
+											</div>
 
-                    <div class="relative">
-                      <label for="outerPadRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                        Outer Padding <span id="outerPadRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(15px)</span>
-                      </label>
-                      <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn" data-target="outerPadRange" data-val="15" aria-label="Reset outer padding">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
-                        </svg>
-                      </button>
-                      <input type="range" id="outerPadRange" name="outerPad" min="0" max="50" value="15" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range" data-target="outerPadRangeLabel" />
-                    </div>
-                  </div>
+											<div class="relative">
+												<label for="outerPadRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+													Outer Padding
+													<span id="outerPadRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(15px)</span>
+												</label>
+												<button
+													type="button"
+													class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn"
+													data-target="outerPadRange"
+													data-val="15"
+													aria-label="Reset outer padding"
+												>
+													<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+														<path
+															fill-rule="evenodd"
+															d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+															clip-rule="evenodd"
+														/>
+													</svg>
+												</button>
+												<input
+													type="range"
+													id="outerPadRange"
+													name="outerPad"
+													min="0"
+													max="50"
+													value="15"
+													class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range"
+													data-target="outerPadRangeLabel"
+												/>
+											</div>
+										</div>
 
-                  <!-- Text Alignment Picker -->
-                  <div class="space-y-3">
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Text Alignment</label>
-                    <input type="hidden" id="textAlignment" name="textAlignment" value="mm">
-                    <div id="alignPicker" class="align-grid w-full aspect-square max-w-[280px] mx-auto bg-gray-50 dark:bg-gray-700/50 rounded-2xl p-4 border border-gray-200 dark:border-gray-600 backdrop-blur-sm">
-                      <button type="button" class="align-btn pos-tl" data-value="tl" role="radio" aria-checked="false" title="Top Left"><span class="sr-only">Top Left</span></button>
-                      <button type="button" class="align-btn pos-tm" data-value="tm" role="radio" aria-checked="false" title="Top Center"><span class="sr-only">Top Center</span></button>
-                      <button type="button" class="align-btn pos-tr" data-value="tr" role="radio" aria-checked="false" title="Top Right"><span class="sr-only">Top Right</span></button>
-                      <button type="button" class="align-btn pos-ml" data-value="ml" role="radio" aria-checked="false" title="Middle Left"><span class="sr-only">Middle Left</span></button>
-                      <button type="button" class="align-btn pos-mm" data-value="mm" role="radio" aria-checked="true" title="Middle Center"><span class="sr-only">Middle Center</span></button>
-                      <button type="button" class="align-btn pos-mr" data-value="mr" role="radio" aria-checked="false" title="Middle Right"><span class="sr-only">Middle Right</span></button>
-                      <button type="button" class="align-btn pos-bl" data-value="bl" role="radio" aria-checked="false" title="Bottom Left"><span class="sr-only">Bottom Left</span></button>
-                      <button type="button" class="align-btn pos-bm" data-value="bm" role="radio" aria-checked="false" title="Bottom Center"><span class="sr-only">Bottom Center</span></button>
-                      <button type="button" class="align-btn pos-br" data-value="br" role="radio" aria-checked="false" title="Bottom Right"><span class="sr-only">Bottom Right</span></button>
-                    </div>
-                  </div>
-                </div>
+										<!-- Text Alignment Picker -->
+										<div class="space-y-3">
+											<label class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Text Alignment</label>
+											<input type="hidden" id="textAlignment" name="textAlignment" value="mm" />
+											<div
+												id="alignPicker"
+												class="align-grid w-full aspect-square max-w-[280px] mx-auto bg-gray-50 dark:bg-gray-700/50 rounded-2xl p-4 border border-gray-200 dark:border-gray-600 backdrop-blur-sm"
+											>
+												<button type="button" class="align-btn pos-tl" data-value="tl" role="radio" aria-checked="false" title="Top Left">
+													<span class="sr-only">Top Left</span>
+												</button>
+												<button type="button" class="align-btn pos-tm" data-value="tm" role="radio" aria-checked="false" title="Top Center">
+													<span class="sr-only">Top Center</span>
+												</button>
+												<button type="button" class="align-btn pos-tr" data-value="tr" role="radio" aria-checked="false" title="Top Right">
+													<span class="sr-only">Top Right</span>
+												</button>
+												<button
+													type="button"
+													class="align-btn pos-ml"
+													data-value="ml"
+													role="radio"
+													aria-checked="false"
+													title="Middle Left"
+												>
+													<span class="sr-only">Middle Left</span>
+												</button>
+												<button
+													type="button"
+													class="align-btn pos-mm"
+													data-value="mm"
+													role="radio"
+													aria-checked="true"
+													title="Middle Center"
+												>
+													<span class="sr-only">Middle Center</span>
+												</button>
+												<button
+													type="button"
+													class="align-btn pos-mr"
+													data-value="mr"
+													role="radio"
+													aria-checked="false"
+													title="Middle Right"
+												>
+													<span class="sr-only">Middle Right</span>
+												</button>
+												<button
+													type="button"
+													class="align-btn pos-bl"
+													data-value="bl"
+													role="radio"
+													aria-checked="false"
+													title="Bottom Left"
+												>
+													<span class="sr-only">Bottom Left</span>
+												</button>
+												<button
+													type="button"
+													class="align-btn pos-bm"
+													data-value="bm"
+													role="radio"
+													aria-checked="false"
+													title="Bottom Center"
+												>
+													<span class="sr-only">Bottom Center</span>
+												</button>
+												<button
+													type="button"
+													class="align-btn pos-br"
+													data-value="br"
+													role="radio"
+													aria-checked="false"
+													title="Bottom Right"
+												>
+													<span class="sr-only">Bottom Right</span>
+												</button>
+											</div>
+										</div>
+									</div>
 
-                <!-- Size Controls -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4">
-                  <div class="relative">
-                    <label for="cardWidthRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                      Card Width <span id="cardWidthRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(400px)</span>
-                    </label>
-                    <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn" data-target="cardWidthRange" data-val="400" aria-label="Reset card width">
-                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
-                      </svg>
-                    </button>
-                    <input type="range" id="cardWidthRange" name="cardWidth" min="50" max="1080" value="400" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range" data-target="cardWidthRangeLabel" />
-                  </div>
+									<!-- Size Controls -->
+									<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4">
+										<div class="relative">
+											<label for="cardWidthRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+												Card Width
+												<span id="cardWidthRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(400px)</span>
+											</label>
+											<button
+												type="button"
+												class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn"
+												data-target="cardWidthRange"
+												data-val="400"
+												aria-label="Reset card width"
+											>
+												<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+													<path
+														fill-rule="evenodd"
+														d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+														clip-rule="evenodd"
+													/>
+												</svg>
+											</button>
+											<input
+												type="range"
+												id="cardWidthRange"
+												name="cardWidth"
+												min="50"
+												max="1080"
+												value="400"
+												class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range"
+												data-target="cardWidthRangeLabel"
+											/>
+										</div>
 
-                  <div class="relative">
-                    <label for="cardMinHeightRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                      Card Min Height <span id="cardMinHeightRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">(100px)</span>
-                    </label>
-                    <button type="button" class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn" data-target="cardMinHeightRange" data-val="100" aria-label="Reset min height">
-                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
-                      </svg>
-                    </button>
-                    <input type="range" id="cardMinHeightRange" name="cardMinHeight" min="50" max="1080" value="100" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range" data-target="cardMinHeightRangeLabel" />
-                  </div>
-                </div>
-              </div>
-            </div>
+										<div class="relative">
+											<label for="cardMinHeightRange" class="block mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+												Card Min Height
+												<span id="cardMinHeightRangeLabel" class="ml-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium"
+													>(100px)</span
+												>
+											</label>
+											<button
+												type="button"
+												class="absolute right-0 top-0 text-gray-400 hover:text-red-500 transition p-2 reset-btn"
+												data-target="cardMinHeightRange"
+												data-val="100"
+												aria-label="Reset min height"
+											>
+												<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+													<path
+														fill-rule="evenodd"
+														d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+														clip-rule="evenodd"
+													/>
+												</svg>
+											</button>
+											<input
+												type="range"
+												id="cardMinHeightRange"
+												name="cardMinHeight"
+												min="50"
+												max="1080"
+												value="100"
+												class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer slider-custom dynamic-range"
+												data-target="cardMinHeightRangeLabel"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
 
-            <!-- Generate Button -->
-            <div class="pt-4">
-              <button type="submit" class="group relative w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 overflow-hidden">
-                <span class="relative z-10 flex items-center justify-center gap-3">
-                  <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                  </svg>
-                  Generate Card
-                </span>
-                <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              </button>
-            </div>
-          </form>
+							<!-- Generate Button -->
+							<div class="pt-4">
+								<button
+									type="submit"
+									class="group relative w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 overflow-hidden"
+								>
+									<span class="relative z-10 flex items-center justify-center gap-3">
+										<svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+										</svg>
+										Generate Card
+									</span>
+									<div
+										class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+									></div>
+								</button>
+							</div>
+						</form>
 
-          <!-- Footer -->
-          <div class="text-center text-sm text-gray-600 dark:text-gray-400 mt-8 pt-6 border-t border-gray-200 dark:border-gray-600">
-            Made with ❤️ by
-            <a href="https://github.com/akanshSirohi" target="_blank" rel="noreferrer" class="font-semibold text-indigo-600 dark:text-indigo-400 hover:underline transition-colors">Akansh Sirohi</a>
-          </div>
-        </div>
-      </section>
+						<!-- Footer -->
+						<div class="text-center text-sm text-gray-600 dark:text-gray-400 mt-8 pt-6 border-t border-gray-200 dark:border-gray-600">
+							Made with ❤️ by
+							<a
+								href="https://github.com/akanshSirohi"
+								target="_blank"
+								rel="noreferrer"
+								class="font-semibold text-indigo-600 dark:text-indigo-400 hover:underline transition-colors"
+								>Akansh Sirohi</a
+							>
+						</div>
+					</div>
+				</section>
 
-      <!-- RIGHT: Preview Section -->
-      <aside class="space-y-8">
-        <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 dark:border-gray-700/20 transition-all duration-300 hover:shadow-2xl xl:sticky xl:top-24 h-fit">
-          <div class="flex items-center justify-between mb-6">
-            <h2 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">Live Preview</h2>
-            <a id="downloadBtn" href="#" download="github-card.svg" class="group inline-flex items-center gap-2 text-sm font-medium rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-2.5 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:scale-105">
-              <span class="text-lg group-hover:scale-110 transition-transform">⬇️</span>
-              <span>Download SVG</span>
-            </a>
-          </div>
+				<!-- RIGHT: Preview Section -->
+				<aside class="space-y-8">
+					<div
+						class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 dark:border-gray-700/20 transition-all duration-300 hover:shadow-2xl xl:sticky xl:top-24 h-fit"
+					>
+						<div class="flex items-center justify-between mb-6">
+							<h2
+								class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent"
+							>
+								Live Preview
+							</h2>
+						<!-- Download SVG button -->
+<a id="downloadBtn" href="#" download="github-card.svg" 
+  class="group inline-flex items-center gap-2 text-sm font-medium rounded-xl border border-gray-300 dark:border-gray-600 
+  px-4 py-2.5 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm 
+  hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:scale-105
+  text-gray-700 dark:text-gray-300">
+  <span class="text-lg group-hover:scale-110 transition-transform">⬇️</span>
+  <span>Download SVG</span>
+</a>
 
-          <!-- Preview Container -->
-          <div id="holder" class="relative flex justify-center items-center min-h-[200px] rounded-2xl border-2 border-dashed border-gray-300 dark:border-gray-600 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm p-8 transition-all duration-300 group hover:border-indigo-400 dark:hover:border-indigo-500">
-            <div id="placeholder" class="text-center text-gray-500 dark:text-gray-400">
-              <div class="w-16 h-16 mx-auto mb-4 text-gray-400 dark:text-gray-500">
-                <svg fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <p class="font-medium opacity-80">Select a card type and theme</p>
-              <p class="text-sm mt-1 opacity-60">Click <span class="font-semibold text-indigo-600 dark:text-indigo-400">Generate Card</span> to see preview</p>
-            </div>
-            
-            <div id="loader" class="absolute hidden w-16 h-16 border-4 border-gray-300 border-t-indigo-500 rounded-full animate-spin"></div>
-            
-            <div id="previewContainer" class="hidden w-full">
-              <img id="preview" class="w-full max-w-full shadow-2xl rounded-xl transition-all duration-300 group-hover:shadow-2xl" alt="GitHub Card Preview" />
-            </div>
-          </div>
+						</div>
 
-          <!-- Output Section -->
-          <div id="resultSection" class="hidden space-y-6 mt-8">
-            <div class="space-y-3">
-              <label for="mdOutput" class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Markdown</label>
-              <div class="flex items-stretch group">
-                <input id="mdOutput" type="text" readonly class="flex-1 rounded-l-2xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm font-mono focus:ring-2 focus:ring-indigo-500 transition-all duration-300" />
-                <button type="button" class="copy-btn relative rounded-r-2xl border border-l-0 border-gray-300 dark:border-gray-600 bg-gradient-to-r from-indigo-600 to-purple-600 px-5 text-sm font-medium text-white hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 group-hover:shadow-lg" data-clipboard-target="#mdOutput" data-tooltip="Copy">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"/>
-                    <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
+						<!-- Preview Container -->
+						<div
+							id="holder"
+							class="relative flex justify-center items-center min-h-[200px] rounded-2xl border-2 border-dashed border-gray-300 dark:border-gray-600 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm p-8 transition-all duration-300 group hover:border-indigo-400 dark:hover:border-indigo-500"
+						>
+							<div id="placeholder" class="text-center text-gray-500 dark:text-gray-400">
+								<div class="w-16 h-16 mx-auto mb-4 text-gray-400 dark:text-gray-500">
+									<svg fill="currentColor" viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<p class="font-medium opacity-80">Select a card type and theme</p>
+								<p class="text-sm mt-1 opacity-60">
+									Click <span class="font-semibold text-indigo-600 dark:text-indigo-400">Generate Card</span> to see preview
+								</p>
+							</div>
 
-            <div class="space-y-3">
-              <label for="htmlOutput" class="block text-sm font-semibold text-gray-700 dark:text-gray-300">HTML Tag</label>
-              <div class="flex items-stretch group">
-                <input id="htmlOutput" type="text" readonly class="flex-1 rounded-l-2xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm font-mono focus:ring-2 focus:ring-indigo-500 transition-all duration-300" />
-                <button type="button" class="copy-btn relative rounded-r-2xl border border-l-0 border-gray-300 dark:border-gray-600 bg-gradient-to-r from-indigo-600 to-purple-600 px-5 text-sm font-medium text-white hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 group-hover:shadow-lg" data-clipboard-target="#htmlOutput" data-tooltip="Copy">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"/>
-                    <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+							<div
+								id="loader"
+								class="absolute hidden w-16 h-16 border-4 border-gray-300 border-t-indigo-500 rounded-full animate-spin"
+							></div>
 
-        <!-- Quick Tips -->
-        <div class="bg-gradient-to-br from-indigo-50 to-purple-100 dark:from-indigo-900/20 dark:to-purple-900/20 backdrop-blur-xl rounded-3xl p-6 border border-indigo-200 dark:border-indigo-800/50">
-          <h3 class="font-semibold text-indigo-800 dark:text-indigo-300 mb-3 flex items-center gap-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-            </svg>
-            Pro Tips
-          </h3>
-          <ul class="text-sm text-indigo-700 dark:text-indigo-300 space-y-2">
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-500 mt-0.5">•</span>
-              <span>Use custom theme for full control over colors and styling</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-500 mt-0.5">•</span>
-              <span>Try random gradients for instant beautiful backgrounds</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-indigo-500 mt-0.5">•</span>
-              <span>Experiment with different alignments for perfect positioning</span>
-            </li>
-          </ul>
-        </div>
-      </aside>
-    </div>
-  </main>
+							<div id="previewContainer" class="hidden w-full">
+								<img
+									id="preview"
+									class="w-full max-w-full shadow-2xl rounded-xl transition-all duration-300 group-hover:shadow-2xl"
+									alt="GitHub Card Preview"
+								/>
+							</div>
+						</div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="./libs/lc_color_picker.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+						<!-- Output Section -->
+						<div id="resultSection" class="hidden space-y-6 mt-8">
+							<div class="space-y-3">
+								<label for="mdOutput" class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Markdown</label>
+								<div class="flex items-stretch group">
+									<input
+										id="mdOutput"
+										type="text"
+										readonly
+										class="flex-1 rounded-l-2xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm font-mono focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
+									/>
+									<button
+										type="button"
+										class="copy-btn relative rounded-r-2xl border border-l-0 border-gray-300 dark:border-gray-600 bg-gradient-to-r from-indigo-600 to-purple-600 px-5 text-sm font-medium text-white hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 group-hover:shadow-lg"
+										data-clipboard-target="#mdOutput"
+										data-tooltip="Copy"
+									>
+										<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+											<path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+										</svg>
+									</button>
+								</div>
+							</div>
 
-  <script type="module" src="./script.js"></script>
-</body>
+							<div class="space-y-3">
+								<label for="htmlOutput" class="block text-sm font-semibold text-gray-700 dark:text-gray-300">HTML Tag</label>
+								<div class="flex items-stretch group">
+									<input
+										id="htmlOutput"
+										type="text"
+										readonly
+										class="flex-1 rounded-l-2xl border border-gray-300 dark:border-gray-600 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm p-3.5 text-sm font-mono focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
+									/>
+									<button
+										type="button"
+										class="copy-btn relative rounded-r-2xl border border-l-0 border-gray-300 dark:border-gray-600 bg-gradient-to-r from-indigo-600 to-purple-600 px-5 text-sm font-medium text-white hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 group-hover:shadow-lg"
+										data-clipboard-target="#htmlOutput"
+										data-tooltip="Copy"
+									>
+										<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+											<path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Quick Tips -->
+					<div
+						class="bg-gradient-to-br from-indigo-50 to-purple-100 dark:from-indigo-900/20 dark:to-purple-900/20 backdrop-blur-xl rounded-3xl p-6 border border-indigo-200 dark:border-indigo-800/50"
+					>
+						<h3 class="font-semibold text-indigo-800 dark:text-indigo-300 mb-3 flex items-center gap-2">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+								<path
+									fill-rule="evenodd"
+									d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Pro Tips
+						</h3>
+						<ul class="text-sm text-indigo-700 dark:text-indigo-300 space-y-2">
+							<li class="flex items-start gap-2">
+								<span class="text-indigo-500 mt-0.5">•</span>
+								<span>Use custom theme for full control over colors and styling</span>
+							</li>
+							<li class="flex items-start gap-2">
+								<span class="text-indigo-500 mt-0.5">•</span>
+								<span>Try random gradients for instant beautiful backgrounds</span>
+							</li>
+							<li class="flex items-start gap-2">
+								<span class="text-indigo-500 mt-0.5">•</span>
+								<span>Experiment with different alignments for perfect positioning</span>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</main>
+
+		<!-- Scripts -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="./libs/lc_color_picker.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+
+		<script type="module" src="./script.js"></script>
+	</body>
 </html>
