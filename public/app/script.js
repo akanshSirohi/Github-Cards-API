@@ -3,6 +3,77 @@ import { generateRandomGradient } from "./gradientFactory.js";
 
 let card_url_state = null;
 
+/* ---------- Repository Stats Functions ---------- */
+async function fetchRepoStats() {
+  try {
+    // Use our own API endpoint which has caching and better rate limit handling
+    const response = await fetch('/api/repo-stats');
+    if (!response.ok) throw new Error('Failed to fetch repo stats from API');
+    
+    const stats = await response.json();
+    
+    // Update UI with stats
+    updateRepoStats({
+      stars: stats.stars,
+      forks: stats.forks,
+      contributors: stats.contributors,
+      updatedAt: stats.updatedAt
+    });
+  } catch (error) {
+    console.warn('Failed to fetch repository stats:', error);
+    // Update UI with fallback values
+    updateRepoStats({
+      stars: '?',
+      forks: '?',
+      contributors: '?',
+      updatedAt: null
+    });
+  }
+}
+
+function updateRepoStats(stats) {
+  const formatNumber = (num) => {
+    if (typeof num !== 'number') return num;
+    return num >= 1000 ? `${(num / 1000).toFixed(1)}k` : num.toString();
+  };
+  
+  const formatDate = (dateString) => {
+    if (!dateString) return 'Unknown';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric' 
+    });
+  };
+  
+  // Update DOM elements and remove loading animation
+  const starsEl = document.getElementById('stars-count');
+  const forksEl = document.getElementById('forks-count');
+  const contributorsEl = document.getElementById('contributors-count');
+  const updatedEl = document.getElementById('updated-date');
+  
+  if (starsEl) {
+    starsEl.textContent = formatNumber(stats.stars);
+    starsEl.classList.remove('stat-loading');
+  }
+  
+  if (forksEl) {
+    forksEl.textContent = formatNumber(stats.forks);
+    forksEl.classList.remove('stat-loading');
+  }
+  
+  if (contributorsEl) {
+    contributorsEl.textContent = formatNumber(stats.contributors);
+    contributorsEl.classList.remove('stat-loading');
+  }
+  
+  if (updatedEl) {
+    updatedEl.textContent = formatDate(stats.updatedAt);
+    updatedEl.classList.remove('stat-loading');
+  }
+}
+
 /* ---------- helpers ---------- */
 const b64Encode = (str) => {
   return btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
@@ -292,3 +363,9 @@ clipboard.on("error", (e) => {
   // optional: default to center
   select(hidden.value || 'mm');
 })();
+
+/* ---------- Initialize Repository Stats ---------- */
+// Fetch repository stats when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  fetchRepoStats();
+});

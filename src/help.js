@@ -452,7 +452,26 @@ export default async function helpHandler({ req, env }) {
     
   };
 
-  return new Response(JSON.stringify({ themes, cards }), {
+  // API endpoints
+  const api_endpoints = {
+    "repo-stats": {
+      info: "Returns GitHub repository statistics in JSON format",
+      endpoint: `${baseurl}/api/repo-stats`,
+      method: "GET",
+      response_format: "application/json",
+      fields: {
+        stars: "Number of GitHub stars",
+        forks: "Number of repository forks", 
+        contributors: "Number of contributors",
+        updatedAt: "Last update timestamp",
+        language: "Primary programming language",
+        method: "Data source method used"
+      },
+      example: `${baseurl}/api/repo-stats`
+    }
+  };
+
+  return new Response(JSON.stringify({ themes, cards, api_endpoints }), {
     headers: {
       "Content-Type": "application/json"
     },

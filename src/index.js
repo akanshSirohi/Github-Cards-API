@@ -27,6 +27,7 @@ import frenchWordOfTheDay from './cards/french_word_of_the_day'
 import healthTip from './cards/health-tip-card'
 import myCard from './cards/my-card'
 import spaceFacts from './cards/space-facts'
+import repoStats from './cards/repo-stats'
 import blockchainFacts from './cards/blockchain-web3-facts';
 
 // Help route
@@ -59,6 +60,11 @@ const availableCards = {
   '/my-card': myCard
 }
 
+// API endpoints (non-cached)
+const apiEndpoints = {
+  '/api/repo-stats': repoStats
+}
+
 const CACHE_ENABLED = true;
 
 // Mount all card routes
@@ -68,6 +74,11 @@ for (const path in availableCards) {
   }else {
     router.get(path, availableCards[path]);
   }
+}
+
+// Mount API endpoints (without caching middleware)
+for (const path in apiEndpoints) {
+  router.get(path, apiEndpoints[path]);
 }
 
 // Root route
